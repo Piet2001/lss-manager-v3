@@ -331,7 +331,7 @@
             },
             expansionDate: {
                 label: 'Datum van voltooiing van de uitbreiding',
-                description: 'Geeft in de lijst met uitbreidingen ook aan wanneer de bouw klaar is (werkt alleen in combinati met de instelling "Toon uitbreidingen")',
+                description: 'Geeft in de lijst met uitbreidingen ook aan wanneer de bouw klaar is (werkt alleen in combinatie met de instelling "Toon uitbreidingen")',
             },
         }
     };
