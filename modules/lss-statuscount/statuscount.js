@@ -126,7 +126,7 @@
     I18n.translations.nl.lssm.statuscount = {
         name: "Status-Teller",
         settings: {
-            show: "Verberg/toon",
+            show: "Verberg/Toon",
             status: {
                 show: {
                     label: "Toon",
