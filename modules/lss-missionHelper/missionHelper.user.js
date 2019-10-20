@@ -785,15 +785,15 @@ const lssm_missionhelper_adjustPosition = () => {
                 description: 'Laat live zien hoeveel patiënten er momenteel in gebruik zijn.'
             },
             vehicles: {
-                label: 'voertuigen',
+                label: 'Voertuigen',
                 description: 'Geeft de benodigde voertuigen weer.'
             },
             patients: {
-                label: 'patiënteninformatie',
+                label: 'Patiënteninformatie',
                 description: 'Toont informatie over (potentiële) patiënten.'
             },
             prisoners: {
-                label: 'gevangeneninformatie',
+                label: 'Gevangeneninformatie',
                 description: 'Toont informatie over (potentiële) gevangenen'
             },
             special: {
