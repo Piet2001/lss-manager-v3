@@ -64,6 +64,69 @@
     }
   }
 
+  I18n.translations.pl_PL.lssm['n-alarm'] = {
+    not_support: "Ta przeglądarka nie obsługuje powiadomień HTML5.",
+    inithead: "Initalizacja",
+    chat_message: "Wiadomość czatowa od ",
+    blend: "Ukryj się potem:",
+    seconds: "sekundy",
+    settings: {
+      title: "Powiadomienie-Alert",
+      chat_title: "Wiadomości czatowe",
+      chat_text: "Uzyskaj wiadomości na czacie jako powiadomienie.",
+      s5_title: "Wniosek o transport",
+      save: "Oszczędzaj.",
+      close: "Zamknij się.",
+      s5_text: "Pobierz wnioski o transport jako powiadomienie",
+      status_title: "Status",
+      status_text: "Uzyskaj wszystkie komunikaty o statusie jako powiadomienie.",
+      chatp_title: "Pobierz wiadomości na czacie jako okienko informacyjne",
+      chatp_text: "Pobierz wszystkie wiadomości czatu jako wiadomość wyskakującą po prawej stronie"
+    }
+  }
+
+  I18n.translations.sv_SE.lssm['n-alarm'] = {
+    not_support: "Den här webbläsaren stöder inte HTML5-aviseringar",
+    inithead: "initiering",
+    chat_message: "Chattmeddelande från",
+    blend: "Göm efter:",
+    seconds: "sekunder",
+    settings: {
+      title: "Anmälan-Alert",
+      chat_title: "Chatta meddelanden",
+      chat_text: "Få chattmeddelanden som avisering.",
+      s5_title: "Transportförfrågan",
+      save: "Spara",
+      close: "Stänga",
+      s5_text: "Få transportförfrågningar som anmälan",
+      status_title: "Status",
+      status_text: "Få alla statusmeddelanden som avisering.",
+      chatp_title: "Få chattmeddelanden som popup-information",
+      chatp_text: "Få alla chattmeddelanden som popup-meddelande på höger sida"
+    }
+  }
+
+  I18n.translations.it_IT.lssm['n-alarm'] = {
+    not_support: "Questo browser non supporta le notifiche HTML5-Notifiche",
+    inithead: "Initalizzazione",
+    chat_message: "Messaggio chat da ",
+    blend: "Nascondersi dopo:",
+    seconds: "secondi",
+    settings: {
+      title: "Allarme di notifica",
+      chat_title: "Messaggi di chat",
+      chat_text: "Ricevi i messaggi di chat come notifica.",
+      s5_title: "Richiesta di trasporto",
+      save: "Risparmiare",
+      close: "Chiudere",
+      s5_text: "Richieste di trasporto come notifica",
+      status_title: "Status",
+      status_text: "Ricevi tutti i messaggi di stato come notifica.",
+      chatp_title: "Ricevi i messaggi di chat come popup informativo",
+      chatp_text: "Ricevi tutti i messaggi di chat come messaggio popup sul lato destro"
+    }
+  }
+
   I18n.translations.nl.lssm['n-alarm'] = {
     not_support: "Deze browser ondersteunt helaas geen HTML5-meldingen",
     inithead: "Aan het laden",

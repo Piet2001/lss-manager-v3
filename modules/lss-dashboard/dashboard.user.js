@@ -118,6 +118,66 @@ I18n.translations.eu['lssm']['dashboard'] = {
     categories_data_school: ['fw_school', 'rd_school', 'pol_school', 'kh_clinic'],
     nofz: "No vehicles found",
 }
+I18n.translations.eu['lssm']['dashboard'] = {
+    name: "Dashboard",
+    vehicles: {
+        name: "Vehicles",
+        type: "Vehicle type",
+        available: "Available",
+        onsite: "On Site",
+        request: "Request",
+        transport: "Transport",
+        fms6: "Status 6",
+    },
+    total: "Sum",
+    overview: "Overview",
+    distribution: "Distribution",
+    station_plan: "Station planning",
+    loading: "Dashboard is loading",
+    ge: 'Buildings',
+    school: 'Schools',
+    wachen: 'Station',
+    other: 'Other',
+    anz: 'Amount',
+    perwp: 'EMPLOYEE',
+    carswp: 'CARS',
+    patiwp: 'PATIENTS',
+    levwp: 'LEVEL',
+    categories: ['Fire Stations', 'Rescue Stations', 'Police Stations', 'Hospitals'],
+    categories_data: ['fw', 'rd', 'pol', 'kh'],
+    categories_data_school: ['fw_school', 'rd_school', 'pol_school', 'kh_clinic'],
+    nofz: "No vehicles found",
+}
+I18n.translations.sv_SE['lssm']['dashboard'] = {
+    name: "Dashboard",
+    vehicles: {
+        name: "fordon",
+        type: "Fordonstyp",
+        available: "Tillgängligt",
+        onsite: "På plats",
+        request: "Begäran",
+        transport: "Transport",
+        fms6: "Status 6",
+    },
+    total: "Summa",
+    overview: "Översikt",
+    distribution: "Distribution",
+    station_plan: "Stationsplanering",
+    loading: "Dashboard laddas",
+    ge: 'Byggnader',
+    school: 'skolor',
+    wachen: 'Station',
+    other: 'Andra',
+    anz: 'Belopp',
+    perwp: 'ANSTÄLLD',
+    carswp: 'BILAR',
+    patiwp: 'PATIENTER',
+    levwp: 'NIVÅ',
+    categories: ['Fire Stations', 'Rescue Stations', 'Police Stations', 'Hospitals'],
+    categories_data: ['fw', 'rd', 'pol', 'kh'],
+    categories_data_school: ['fw_school', 'rd_school', 'pol_school', 'kh_clinic'],
+    nofz: "No vehicles found",
+}
 I18n.translations.es['lssm']['dashboard'] = {
     name: "Tablero de mandos",
     vehicles: {
@@ -143,6 +203,36 @@ I18n.translations.es['lssm']['dashboard'] = {
     carswp: 'AUTOMÓVILES',
     patiwp: 'PACIENTES',
     levwp: 'NIVEL',
+    categories: ['Fire Stations', 'Rescue Stations', 'Police Stations', 'Hospitals'],
+    categories_data: ['fw', 'rd', 'pol', 'kh'],
+    categories_data_school: ['fw_school', 'rd_school', 'pol_school', 'kh_clinic'],
+    nofz: "No vehicles found",
+}
+I18n.translations.it_IT['lssm']['dashboard'] = {
+    name: "Cruscotto",
+    vehicles: {
+        name: "Veicoli",
+        type: "Tipo di veicolo",
+        available: "Disponibile",
+        onsite: "In loco",
+        request: "Richiesta",
+        transport: "Trasporto",
+        fms6: "Stato 6",
+    },
+    total: "Somma",
+    overview: "Panoramica",
+    distribution: "Distribuzione",
+    station_plan: "Pianificazione della stazione",
+    loading: "Il cruscotto si sta caricando",
+    ge: 'Edifici',
+    school: 'Scuole',
+    wachen: 'Stazione',
+    other: 'Altro',
+    anz: 'Quantità',
+    perwp: 'LAVORO',
+    carswp: 'AUTO',
+    patiwp: 'PAZIENTI',
+    levwp: 'LIVELLO',
     categories: ['Fire Stations', 'Rescue Stations', 'Police Stations', 'Hospitals'],
     categories_data: ['fw', 'rd', 'pol', 'kh'],
     categories_data_school: ['fw_school', 'rd_school', 'pol_school', 'kh_clinic'],
@@ -190,7 +280,21 @@ jQuery.expr[":"].conaintsci = jQuery.expr.createPseudo(function (arg) {
 (function ($, I18n) {
     function loadGraphs() {
         // Building Bar Chart
-        let building_amount = { 'fw': 0, 'fw_school': 0, 'rd': 0, 'rd_school': 0, 'pol': 0, 'pol_school': 0, 'thw': 0, 'thw_school': 0, 'kh': 0, 'kh_clinic': 0, 'wret': 0, 'seg': 0, 'bepo': 0 };
+        let building_amount = {
+            'fw': 0,
+            'fw_school': 0,
+            'rd': 0,
+            'rd_school': 0,
+            'pol': 0,
+            'pol_school': 0,
+            'thw': 0,
+            'thw_school': 0,
+            'kh': 0,
+            'kh_clinic': 0,
+            'wret': 0,
+            'seg': 0,
+            'bepo': 0
+        };
         $.each(lssm.buildings, function (key, build) {
             switch (build.building_type) {
                 //Feuerwehr
@@ -254,12 +358,26 @@ jQuery.expr[":"].conaintsci = jQuery.expr.createPseudo(function (arg) {
             data_school.push(building_amount[ds[i]]);
         }
         $('#buildings_chart').highcharts({
-            chart: { type: 'column', backgroundColor: 'rgba(0,0,0,0)', height: '200' },
+            chart: {
+                type: 'column',
+                backgroundColor: 'rgba(0,0,0,0)',
+                height: '200'
+            },
             colors: ["red", "orange", "green", "blue", "gold", 'black', 'yellow', 'darkgreen'],
-            title: { text: I18n.t('lssm.dashboard.ge') },
-            xAxis: { categories: I18n.t('lssm.dashboard.categories') },
-            yAxis: { title: { text: I18n.t('lssm.dashboard.anz') } },
-            legend: { enabled: false },
+            title: {
+                text: I18n.t('lssm.dashboard.ge')
+            },
+            xAxis: {
+                categories: I18n.t('lssm.dashboard.categories')
+            },
+            yAxis: {
+                title: {
+                    text: I18n.t('lssm.dashboard.anz')
+                }
+            },
+            legend: {
+                enabled: false
+            },
             series: [{
                 name: I18n.t('lssm.dashboard.wachen'),
                 colorByPoint: true,
@@ -269,15 +387,31 @@ jQuery.expr[":"].conaintsci = jQuery.expr.createPseudo(function (arg) {
                 name: I18n.t('lssm.dashboard.school') + '/' + I18n.t('lssm.dashboard.ge'),
                 colorByPoint: true,
                 data: data_school
-            }]
+            }
+            ]
         });
         // Car-Donut-Charts
-        let cars = [
-            { 'data': [], 'total': 0 },
-            { 'data': [], 'total': 0 },
-            { 'data': [], 'total': 0 },
-            { 'data': [], 'total': 0 },
-            { 'data': [], 'total': 0 }];
+        let cars = [{
+            'data': [],
+            'total': 0
+        },
+        {
+            'data': [],
+            'total': 0
+        },
+        {
+            'data': [],
+            'total': 0
+        },
+        {
+            'data': [],
+            'total': 0
+        },
+        {
+            'data': [],
+            'total': 0
+        }
+        ];
         // Go through all cars and put them where they belong
         $.each(lssm.car_list_all(), function (key, veh) {
             let c = ["Undefined", 0];
@@ -288,7 +422,10 @@ jQuery.expr[":"].conaintsci = jQuery.expr.createPseudo(function (arg) {
                 if (typeof (cars[c[1]].data[veh.type]) !== 'undefined') {
                     cars[c[1]].data[veh.type].y += 1;
                 } else {
-                    cars[c[1]].data[veh.type] = { name: c[0], y: 1 };
+                    cars[c[1]].data[veh.type] = {
+                        name: c[0],
+                        y: 1
+                    };
                 }
             }
         });
@@ -296,17 +433,33 @@ jQuery.expr[":"].conaintsci = jQuery.expr.createPseudo(function (arg) {
         function gr(k) {
             return (k != "" && k != null);
         }
-        let divs = [['#ff-ges', "#ff-fz", ["#701C1C", "#800000", "#A40000", "#B31B1B", "#B22222", "#CC0000", "#CE1620", "#D73B3E", "#E34234", "#CD5C5C", "#FF0000", "#FF0800", "#FF1C00", "#FF5C5C", "#FF6961"]], ["#rd-ges", "#rd-fz", ["#f9690e", "#f9bf3b", "#d35400"]], ["#pol-ges", "#pol-fz", ["#87d37c", "#65c6bb", "#16a085", "#019875", "#36d7b7"]], ["#thw-ges", "#thw-fz", ["#002366", "#191970", "#00008B", "#00009C", "#002FA7", "#0000FF", "#0080FF", "#2E64FE", "#5578F7", "#5882FA", "#58ACFA", "#2ECCFA", "#002FA7"]], ["#wret-ges", "#wret-fz", ["#636363", "#848484", "#7C7C7C"]]];
+        let divs = [
+            ['#ff-ges', "#ff-fz", ["#701C1C", "#800000", "#A40000", "#B31B1B", "#B22222", "#CC0000", "#CE1620", "#D73B3E", "#E34234", "#CD5C5C", "#FF0000", "#FF0800", "#FF1C00", "#FF5C5C", "#FF6961"]],
+            ["#rd-ges", "#rd-fz", ["#f9690e", "#f9bf3b", "#d35400"]],
+            ["#pol-ges", "#pol-fz", ["#87d37c", "#65c6bb", "#16a085", "#019875", "#36d7b7"]],
+            ["#thw-ges", "#thw-fz", ["#002366", "#191970", "#00008B", "#00009C", "#002FA7", "#0000FF", "#0080FF", "#2E64FE", "#5578F7", "#5882FA", "#58ACFA", "#2ECCFA", "#002FA7"]],
+            ["#wret-ges", "#wret-fz", ["#636363", "#848484", "#7C7C7C"]]
+        ];
         for (let i = 0; i < 5; i++) {
             cars[i].data = $.grep(cars[i].data, gr);
             if (cars[i].total > 0) {
                 $(divs[i][1]).highcharts({
-                    chart: { backgroundColor: "rgba(0,0,0,0)", plotBorderWidth: 0, plotShadow: false },
-                    title: { text: '' },
-                    tooltip: { pointFormat: '<b>{series.name}: <b>{point.y}</b>' },
+                    chart: {
+                        backgroundColor: "rgba(0,0,0,0)",
+                        plotBorderWidth: 0,
+                        plotShadow: false
+                    },
+                    title: {
+                        text: ''
+                    },
+                    tooltip: {
+                        pointFormat: '<b>{series.name}: <b>{point.y}</b>'
+                    },
                     plotOptions: {
                         pie: {
-                            dataLabels: { enabled: false },
+                            dataLabels: {
+                                enabled: false
+                            },
                             center: ['50%', '50%']
                         }
                     },
@@ -323,6 +476,7 @@ jQuery.expr[":"].conaintsci = jQuery.expr.createPseudo(function (arg) {
                 $(divs[i][1]).html('<div class="alert alert-danger">' + I18n.t('lssm.dashboard.nofz') + '</div>');
         }
     }
+
     function load_build_planning() {
         $.each(lssm.buildings, function (i, building) {
             let appendto = "son",
@@ -395,11 +549,11 @@ jQuery.expr[":"].conaintsci = jQuery.expr.createPseudo(function (arg) {
             $.each(vehicles, function (k, car) {
                 printcars +=
                     '<div id="db_veh_' + car.id + '">' +
-                    '<span class="building_list_fms building_list_fms_' + car.fms_real + ' lssm-wp-fz--fms">'
-                    + car.fms_show +
+                    '<span class="building_list_fms building_list_fms_' + car.fms_real + ' lssm-wp-fz--fms">' +
+                    car.fms_show +
                     '</span>' +
-                    '<a href="/vehicles/' + car.id + '" class="lightbox-open building_list_fms lssm-wp-fz--fms-vehicle">'
-                    + car.name +
+                    '<a href="/vehicles/' + car.id + '" class="lightbox-open building_list_fms lssm-wp-fz--fms-vehicle">' +
+                    car.name +
                     '</a>' +
                     '</div>';
             });
@@ -437,7 +591,7 @@ jQuery.expr[":"].conaintsci = jQuery.expr.createPseudo(function (arg) {
                 bd_data +=
                     '<span class="label label-primary">' +
                     '<i class="glyphicon glyphicon-home"></i> ' +
-                    '<span>' + maxcars*-1 + ' </span>' +
+                    '<span>' + maxcars * -1 + ' </span>' +
                     I18n.t('lssm.dashboard.patiwp') +
                     '</span>';
             bd_data += '\
@@ -468,13 +622,27 @@ jQuery.expr[":"].conaintsci = jQuery.expr.createPseudo(function (arg) {
         let c_table = $("#db_fzg_outer table tbody")
         c_table.html("");
         let cars = {};
-        let total = { 'free': 0, 'miss': 0, 'fms5': 0, 'transport': 0, 'fms6': 0, 'sum': 0 };
+        let total = {
+            'free': 0,
+            'miss': 0,
+            'fms5': 0,
+            'transport': 0,
+            'fms6': 0,
+            'sum': 0
+        };
         $.each(lssm.car_list_all(), function (key, veh) {
             let type = 0
             if (veh.type in lssm.carsById)
                 type = lssm.carsById[veh.type][0];
             if (typeof cars[type] == 'undefined') {
-                cars[type] = { 'free': 0, 'miss': 0, 'fms5': 0, 'transport': 0, 'fms6': 0, 'sum': 0 };
+                cars[type] = {
+                    'free': 0,
+                    'miss': 0,
+                    'fms5': 0,
+                    'transport': 0,
+                    'fms6': 0,
+                    'sum': 0
+                };
             }
             switch (veh.fms_real) {
                 case 3:
@@ -557,8 +725,10 @@ jQuery.expr[":"].conaintsci = jQuery.expr.createPseudo(function (arg) {
     }
     // Suche nach Wache/Fahrzeug
     let searchby = "wache";
+
     function wp_suche() {
-        let val = $("#wp_search").val(), elements = $("#db_wachen_outer .db_wachen_item");
+        let val = $("#wp_search").val(),
+            elements = $("#db_wachen_outer .db_wachen_item");
         if (val.length > 0) {
             if (searchby === "wache") {
                 elements.find(".panel-title:not(:conaintsci('" + val + "'))").closest(".db_wachen_item").fadeOut();
@@ -605,10 +775,12 @@ jQuery.expr[":"].conaintsci = jQuery.expr.createPseudo(function (arg) {
             wp_suche();
         });
     }
+
     function closeDashboard() {
         $(document).unbind(lssm.hook.postname("lightboxClose"), closeDashboard)
         $("#" + prefix).remove();
     }
+
     function loadDashboard() {
         $(document).bind(lssm.hook.prename("lightboxClose"), closeDashboard);
         $.get(lssm.getlink("/modules/lss-dashboard/dashboard.html"), function (data) {

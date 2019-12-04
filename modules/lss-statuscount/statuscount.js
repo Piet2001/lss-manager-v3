@@ -75,6 +75,78 @@
             }
         }
     };
+    I18n.translations.pl_PL.lssm.statuscount = {
+        name: "Status-liczba",
+        settings: {
+            show: "Pokaż/Ukryj się",
+            status: {
+                show: {
+                    label: "Pokaż",
+                    description: "Czy status powinien być w ogóle wyświetlany? Ważne: To ustawienie ma wyższy priorytet niż inne ustawienia, tzn. jeśli to ustawienie jest wyłączone, status nigdy nie będzie wyświetlany."
+                },
+                hide: {
+                    label: "Pokaż tylko na żądanie",
+                    description: "Licznik jest wyświetlany tylko wtedy, gdy przynajmniej jeden pojazd znajduje się w tym stanie. (Uwaga: Jeśli licznik jest całkowicie ukryty, nigdy nie zostanie wyświetlony, nawet jeśli to ustawienie jest aktywne!)"
+                },
+                percent: {
+                    label: "Pokaż procenty",
+                    description: "Czy powinien być wyświetlany procent tego statusu?"
+                }
+            },
+            round: {
+                label: "Okrągłe wartości procentowe",
+                description: "Do ilu miejsc po przecinku należy zaokrąglić wartości procentowe (jeśli są wyświetlane)?"
+            }
+        }
+    };
+    I18n.translations.sv_SE.lssm.statuscount = {
+        name: "Status-Count",
+        settings: {
+            show: "Visa gömma",
+            status: {
+                show: {
+                    label: "visa",
+                    description: "Bör statusen visas alls? Viktigt: Den här inställningen har högre prioritet än andra inställningar, dvs om denna inställning är avstängd, kommer status aldrig att visas."
+                },
+                hide: {
+                    label: "Visa endast på begäran",
+                    description: "Räknaren visas endast om minst ett fordon är i denna status. (Observera: Om räknaren är helt dold, kommer den aldrig att visas, även om den här inställningen är aktiverad!)"
+                },
+                percent: {
+                    label: "Visa procentsatser",
+                    description: "Bör andelen av denna status visas?"
+                }
+            },
+            round: {
+                label: "Runda procentsatser",
+                description: "Hur många decimaler ska procentsatserna (om de visas) avrundas till?"
+            }
+        }
+    };
+    I18n.translations.it_IT.lssm.statuscount = {
+        name: "Stato - Conto",
+        settings: {
+            show: "Mostra/Nascondi",
+            status: {
+                show: {
+                    label: "Mostra",
+                    description: "Lo stato dovrebbe essere visualizzato? Importante: questa impostazione ha una priorità maggiore rispetto ad altre impostazioni, cioè se questa impostazione è disattivata, lo stato non verrà mai visualizzato."
+                },
+                hide: {
+                    label: "Mostra solo su richiesta",
+                    description: "Il contatore viene visualizzato solo se almeno un veicolo si trova in questo stato. (Attenzione: Se il contatore è completamente nascosto, non viene mai visualizzato, anche se questa impostazione è attivata!)"
+                },
+                percent: {
+                    label: "Mostra percentuali",
+                    description: "Dovrebbe essere visualizzata la percentuale di questo stato?"
+                }
+            },
+            round: {
+                label: "Percentuali rotonde",
+                description: "A quante cifre decimali devono essere arrotondate le percentuali (se visualizzate)?"
+            }
+        }
+    };
     I18n.translations.nl.lssm.statuscount = {
         name: "Status-Teller",
         settings: {
