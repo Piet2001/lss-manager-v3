@@ -1,6 +1,6 @@
 {
     "0": {
-        "name": "Brinnande soptunna",
+        "name": "Brennende s\u00f8ppeldunk",
         "stations": {
             "0": 1
         },
@@ -11,7 +11,7 @@
         "poi": 4
     },
     "1": {
-        "name": "Brinnande container",
+        "name": "Containerbrann",
         "stations": {
             "0": 1
         },
@@ -21,7 +21,7 @@
         "credits": 170
     },
     "2": {
-        "name": "Brinnande bil",
+        "name": "Brennende bil",
         "stations": {
             "0": 1
         },
@@ -36,7 +36,7 @@
         }
     },
     "3": {
-        "name": "Brinnande motorcykel",
+        "name": "Brennende motorsykkel",
         "stations": {
             "0": 1
         },
@@ -49,7 +49,7 @@
         }
     },
     "4": {
-        "name": "Brinnande gr\u00e4s",
+        "name": "Gressbrann",
         "stations": {
             "0": 1
         },
@@ -62,7 +62,7 @@
         }
     },
     "5": {
-        "name": "Brinnande rum",
+        "name": "Brann i rom",
         "stations": {
             "0": 2
         },
@@ -74,14 +74,14 @@
         "patients": {
             "max": 1,
             "transport": 50,
-            "specialisation": "Inv\u00e4rtesmedicinare"
+            "specialisation": "Generell indremedisiner"
         },
         "percentages": {
             "platform": 30
         }
     },
     "6": {
-        "name": "Brinnande bod",
+        "name": "Brennende hageskur",
         "stations": {
             "0": 2
         },
@@ -91,7 +91,7 @@
         "credits": 600
     },
     "7": {
-        "name": "Brinnande l\u00f6v",
+        "name": "Brennende l\u00f8v",
         "stations": {
             "0": 1
         },
@@ -104,7 +104,7 @@
         }
     },
     "8": {
-        "name": "Brinnande sopor",
+        "name": "S\u00f8ppelbrann",
         "stations": {
             "0": 1
         },
@@ -119,7 +119,7 @@
         }
     },
     "9": {
-        "name": "Brinnande h\u00f6bal",
+        "name": "Brennende halmball",
         "stations": {
             "0": 1
         },
@@ -133,7 +133,7 @@
         }
     },
     "10": {
-        "name": "Brinnande traktor",
+        "name": "Brennende traktor",
         "stations": {
             "0": 1
         },
@@ -143,7 +143,7 @@
         "credits": 600
     },
     "11": {
-        "name": "Brinnande telefonkiosk",
+        "name": "Brennende telefonkiosk",
         "stations": {
             "0": 1
         },
@@ -153,7 +153,7 @@
         "credits": 240
     },
     "12": {
-        "name": "Tr\u00e4d p\u00e5 v\u00e4gen",
+        "name": "Tre p\u00e5 veien",
         "stations": {
             "0": 1
         },
@@ -166,7 +166,7 @@
         }
     },
     "13": {
-        "name": "Brinnande lastbil",
+        "name": "Brennende lastebil",
         "stations": {
             "0": 2
         },
@@ -176,7 +176,7 @@
         "credits": 980
     },
     "14": {
-        "name": "Liten gr\u00e4sbrand",
+        "name": "Liten \u00e5kerbrann",
         "stations": {
             "0": 2
         },
@@ -189,7 +189,7 @@
         }
     },
     "15": {
-        "name": "Liten l\u00f6peld",
+        "name": "Liten buskbrann",
         "stations": {
             "0": 1
         },
@@ -200,7 +200,7 @@
         "poi": 3
     },
     "16": {
-        "name": "Brinnande husvagn",
+        "name": "Brennende bobil",
         "stations": {
             "0": 2
         },
@@ -210,7 +210,7 @@
         "credits": 1100
     },
     "17": {
-        "name": "Brinnande postl\u00e5da",
+        "name": "Brennende postkasse",
         "stations": {
             "0": 1
         },
@@ -220,7 +220,7 @@
         "credits": 340
     },
     "18": {
-        "name": "Rish\u00f6g",
+        "name": "Haug med kvister",
         "stations": {
             "0": 1
         },
@@ -230,7 +230,7 @@
         "credits": 700
     },
     "19": {
-        "name": "Brinnande sl\u00e4p",
+        "name": "Brennende trailer",
         "stations": {
             "0": 1
         },
@@ -240,7 +240,7 @@
         "credits": 650
     },
     "20": {
-        "name": "Brinnande k\u00e4llare",
+        "name": "Kjellerbrann",
         "stations": {
             "0": 3
         },
@@ -251,14 +251,14 @@
         "credits": 2500,
         "patients": {
             "max": 2,
-            "specialisation": "Inv\u00e4rtesmedicinare"
+            "specialisation": "Generell indremedisiner"
         },
         "percentages": {
             "bchief": 90
         }
     },
     "21": {
-        "name": "Brinnande skorsten",
+        "name": "Skorsteinsbrann",
         "stations": {
             "0": 3
         },
@@ -276,7 +276,7 @@
         }
     },
     "22": {
-        "name": "Brinnande tak",
+        "name": "Takbrann",
         "stations": {
             "0": 3
         },
@@ -292,7 +292,7 @@
         }
     },
     "23": {
-        "name": "Brinnande fett",
+        "name": "Fettbrann",
         "stations": {
             "0": 3
         },
@@ -302,7 +302,7 @@
         "credits": 1200
     },
     "24": {
-        "name": "Brinnande busskur",
+        "name": "Brennende busskur",
         "stations": {
             "0": 3
         },
@@ -313,7 +313,7 @@
         "poi": 4
     },
     "25": {
-        "name": "V\u00e4golycka",
+        "name": "Veiulykke",
         "stations": {
             "0": 3
         },
@@ -333,7 +333,7 @@
         }
     },
     "26": {
-        "name": "Brand i mataff\u00e4r",
+        "name": "Liten brann i matvarebutikk",
         "stations": {
             "0": 5,
             "2": 1
@@ -346,12 +346,12 @@
         "patients": {
             "max": 2,
             "transport": 30,
-            "specialisation": "Inv\u00e4rtesmedicinare"
+            "specialisation": "Generell indremedisiner"
         },
         "poi": 9
     },
     "27": {
-        "name": "Brinnande garage",
+        "name": "Brennende garasje",
         "stations": {
             "0": 4
         },
@@ -361,7 +361,7 @@
         "credits": 1400
     },
     "28": {
-        "name": "Brinnande maskin",
+        "name": "Brennende maskin",
         "stations": {
             "0": 5
         },
@@ -377,7 +377,7 @@
         }
     },
     "29": {
-        "name": "Ok\u00e4nt tankutsl\u00e4pp",
+        "name": "Ukjent tankutslipp",
         "stations": {
             "0": 13,
             "6": 2
@@ -386,14 +386,13 @@
             "truck": 4,
             "heavyRescue": 2,
             "bchief": 2,
-            "mcv": 1,
             "police": 3,
             "hazmat": 2
         },
         "credits": 5300
     },
     "30": {
-        "name": "Gasl\u00e4cka",
+        "name": "Gasslekkasje",
         "stations": {
             "0": 1
         },
@@ -403,7 +402,7 @@
         "credits": 400
     },
     "31": {
-        "name": "Brinnande eldstad",
+        "name": "B\u00e5lbrann",
         "stations": {
             "0": 6
         },
@@ -415,7 +414,7 @@
         "credits": 1310
     },
     "32": {
-        "name": "Brinnande tr\u00f6ska",
+        "name": "Brennende tresker",
         "stations": {
             "0": 6
         },
@@ -425,7 +424,7 @@
         "credits": 1200
     },
     "33": {
-        "name": "Brand i mataff\u00e4r",
+        "name": "Liten brann i matvarebutikk",
         "stations": {
             "0": 5,
             "2": 1
@@ -438,12 +437,12 @@
         "patients": {
             "max": 2,
             "transport": 30,
-            "specialisation": "Inv\u00e4rtesmedicinare"
+            "specialisation": "Generell indremedisiner"
         },
         "poi": 9
     },
     "34": {
-        "name": "Brand i sjukhus",
+        "name": "Brann p\u00e5 sykehus",
         "stations": {
             "0": 10,
             "2": 6
@@ -459,12 +458,12 @@
         "patients": {
             "max": 25,
             "transport": 50,
-            "specialisation": "Inv\u00e4rtesmedicinare"
+            "specialisation": "Generell indremedisiner"
         },
         "poi": 2
     },
     "35": {
-        "name": "Alkoholf\u00f6rgiftning",
+        "name": "Alkoholrus",
         "stations": {
             "2": 1,
             "6": 1
@@ -475,11 +474,11 @@
         "patients": {
             "max": 1,
             "min": 1,
-            "specialisation": "Inv\u00e4rtesmedicinare"
+            "specialisation": "Generell indremedisiner"
         }
     },
     "36": {
-        "name": "Br\u00f6stsm\u00e4rta",
+        "name": "Brystsmerter",
         "stations": {
             "2": 3
         },
@@ -488,13 +487,13 @@
         "specialisation": "Kardiologi"
     },
     "37": {
-        "name": "Akut astma",
+        "name": "Akutt astma",
         "stations": {
             "2": 3
         },
         "onlyRd": true,
         "transport": 50,
-        "specialisation": "Inv\u00e4rtesmedicinare"
+        "specialisation": "Generell indremedisiner"
     },
     "38": {
         "name": "Anfall",
@@ -503,7 +502,7 @@
         },
         "onlyRd": true,
         "transport": 50,
-        "specialisation": "Neurologi"
+        "specialisation": "Nevrologi"
     },
     "39": {
         "name": "Feber",
@@ -512,10 +511,10 @@
         },
         "onlyRd": true,
         "transport": 90,
-        "specialisation": "Inv\u00e4rtesmedicinare"
+        "specialisation": "Generell indremedisiner"
     },
     "40": {
-        "name": "Fallolycka",
+        "name": "Fall",
         "stations": {
             "2": 1
         },
@@ -524,7 +523,7 @@
         "specialisation": "Traumatologi"
     },
     "41": {
-        "name": "Brand i bilverkstad",
+        "name": "Brann i verksted",
         "stations": {
             "0": 14,
             "2": 2,
@@ -543,7 +542,7 @@
         "patients": {
             "max": 4,
             "transport": 50,
-            "specialisation": "Inv\u00e4rtesmedicinare"
+            "specialisation": "Generell indremedisiner"
         },
         "poi": 15,
         "percentages": {
@@ -551,7 +550,7 @@
         }
     },
     "42": {
-        "name": "Fallolycka",
+        "name": "Fall",
         "stations": {
             "2": 1
         },
@@ -560,7 +559,7 @@
         "specialisation": "Traumatologi"
     },
     "43": {
-        "name": "Fallolycka",
+        "name": "Fall",
         "stations": {
             "2": 1
         },
@@ -569,7 +568,7 @@
         "specialisation": "Traumatologi"
     },
     "44": {
-        "name": "Snatteri",
+        "name": "Butikktyveri",
         "stations": {
             "6": 1
         },
@@ -583,7 +582,7 @@
         }
     },
     "45": {
-        "name": "Snatteri",
+        "name": "Butikktyveri",
         "stations": {
             "6": 1
         },
@@ -597,7 +596,7 @@
         }
     },
     "46": {
-        "name": "Parkerad bilolycka",
+        "name": "Ulykke med parkert bil",
         "stations": {
             "6": 1
         },
@@ -608,7 +607,7 @@
         "poi": 9
     },
     "47": {
-        "name": "Parkerad bilolycka",
+        "name": "Ulykke med parkert bil",
         "stations": {
             "6": 1
         },
@@ -619,7 +618,7 @@
         "poi": 10
     },
     "48": {
-        "name": "Metallst\u00f6ld",
+        "name": "Innbrudd",
         "stations": {
             "6": 1
         },
@@ -633,7 +632,7 @@
         }
     },
     "49": {
-        "name": "Fickst\u00f6ld",
+        "name": "Lommetyveri",
         "stations": {
             "6": 1
         },
@@ -647,7 +646,7 @@
         }
     },
     "50": {
-        "name": "Plankning",
+        "name": "Billettsniking",
         "stations": {
             "6": 1
         },
@@ -658,7 +657,7 @@
         "poi": 4
     },
     "51": {
-        "name": "Plankning",
+        "name": "Billettsniking",
         "stations": {
             "6": 1
         },
@@ -669,7 +668,7 @@
         "poi": 5
     },
     "52": {
-        "name": "Plankning",
+        "name": "Billettsniking",
         "stations": {
             "6": 1
         },
@@ -680,7 +679,7 @@
         "poi": 6
     },
     "53": {
-        "name": "Plankning",
+        "name": "Billettsniking",
         "stations": {
             "6": 1
         },
@@ -691,7 +690,7 @@
         "poi": 7
     },
     "54": {
-        "name": "Parkerad bilolycka",
+        "name": "Ulykke med parkert bil",
         "stations": {
             "6": 1
         },
@@ -702,7 +701,7 @@
         "poi": 14
     },
     "55": {
-        "name": "Slagsm\u00e5l",
+        "name": "Sl\u00e5sskamp",
         "stations": {
             "6": 3
         },
@@ -719,7 +718,7 @@
         }
     },
     "56": {
-        "name": "Upplopp",
+        "name": "Oppr\u00f8r",
         "stations": {
             "6": 2
         },
@@ -735,14 +734,14 @@
         }
     },
     "57": {
-        "name": "Olovlig protest",
+        "name": "Ikke kunngjort demonstrasjon",
         "vehicles": {
             "police": 7
         },
         "credits": 10020
     },
     "58": {
-        "name": "Brand i k\u00f6k",
+        "name": "Kj\u00f8kkenbrann",
         "stations": {
             "0": 2
         },
@@ -752,7 +751,7 @@
         "credits": 1000
     },
     "59": {
-        "name": "Djurr\u00e4ddning",
+        "name": "Dyreredning",
         "stations": {
             "0": 6
         },
@@ -764,7 +763,7 @@
         "poi": 21
     },
     "60": {
-        "name": "Brand i idrottshall",
+        "name": "Brennende sportshall",
         "stations": {
             "0": 9,
             "2": 2
@@ -778,12 +777,12 @@
         "patients": {
             "max": 4,
             "transport": 50,
-            "specialisation": "Inv\u00e4rtesmedicinare"
+            "specialisation": "Generell indremedisiner"
         },
         "poi": 12
     },
     "61": {
-        "name": "Flygkrasch",
+        "name": "Krasj med lettfly (flyplass)",
         "stations": {
             "0": 4,
             "2": 2
@@ -801,7 +800,7 @@
         "poi": 28
     },
     "62": {
-        "name": "Ov\u00e4sen",
+        "name": "St\u00f8yklage",
         "stations": {
             "6": 1
         },
@@ -811,16 +810,16 @@
         "credits": 400
     },
     "63": {
-        "name": "Transitorisk ischemisk attack",
+        "name": "Transitorisk iskemisk anfall (drypp)",
         "stations": {
             "2": 1
         },
         "onlyRd": true,
         "transport": 70,
-        "specialisation": "Neurokirurgi"
+        "specialisation": "Nevrokirurgi"
     },
     "64": {
-        "name": "Bussolycka",
+        "name": "Ulykke med buss",
         "stations": {
             "0": 3,
             "2": 8
@@ -833,11 +832,11 @@
         "patients": {
             "max": 12,
             "transport": 50,
-            "specialisation": "Inv\u00e4rtesmedicinare"
+            "specialisation": "Generell indremedisiner"
         }
     },
     "65": {
-        "name": "Brand i k\u00f6k",
+        "name": "Kj\u00f8kkenbrann",
         "stations": {
             "0": 2
         },
@@ -847,7 +846,7 @@
         "credits": 1000
     },
     "66": {
-        "name": "Brinnande rum",
+        "name": "Brann i rom",
         "stations": {
             "0": 2
         },
@@ -859,14 +858,14 @@
         "patients": {
             "max": 1,
             "transport": 50,
-            "specialisation": "Inv\u00e4rtesmedicinare"
+            "specialisation": "Generell indremedisiner"
         },
         "percentages": {
             "platform": 30
         }
     },
     "67": {
-        "name": "Slagsm\u00e5l",
+        "name": "Sl\u00e5sskamp",
         "stations": {
             "6": 3
         },
@@ -883,7 +882,7 @@
         }
     },
     "68": {
-        "name": "Brand i stormarknad",
+        "name": "Stor brann i matvarebutikk",
         "stations": {
             "0": 8,
             "2": 3,
@@ -901,7 +900,7 @@
         "patients": {
             "max": 6,
             "transport": 30,
-            "specialisation": "Inv\u00e4rtesmedicinare"
+            "specialisation": "Generell indremedisiner"
         },
         "poi": 10,
         "percentages": {
@@ -909,7 +908,7 @@
         }
     },
     "69": {
-        "name": "Ok\u00e4nt tankutsl\u00e4pp",
+        "name": "Ukjent tankutslipp",
         "stations": {
             "0": 13,
             "6": 2
@@ -924,7 +923,7 @@
         "credits": 4300
     },
     "70": {
-        "name": "Brand i stormarknad",
+        "name": "Stor brann i matvarebutikk",
         "stations": {
             "0": 8,
             "2": 3,
@@ -942,7 +941,7 @@
         "patients": {
             "max": 6,
             "transport": 30,
-            "specialisation": "Inv\u00e4rtesmedicinare"
+            "specialisation": "Generell indremedisiner"
         },
         "poi": 10,
         "percentages": {
@@ -950,15 +949,15 @@
         }
     },
     "71": {
-        "name": "N\u00e4sbl\u00f6dning",
+        "name": "Nesebl\u00f8dning",
         "stations": {
             "2": 1
         },
         "onlyRd": true,
-        "specialisation": "Allm\u00e4nkirurg"
+        "specialisation": "Helsedirekt\u00f8r"
     },
     "72": {
-        "name": "Flygkrasch",
+        "name": "Krasj med lettfly",
         "stations": {
             "0": 13,
             "2": 2
@@ -981,7 +980,7 @@
         }
     },
     "73": {
-        "name": "Allvarlig bussolycka",
+        "name": "Alvorlig ulykke med buss",
         "stations": {
             "0": 5,
             "2": 8,
@@ -998,11 +997,11 @@
         "patients": {
             "max": 12,
             "transport": 80,
-            "specialisation": "Allm\u00e4nkirurg"
+            "specialisation": "Helsedirekt\u00f8r"
         }
     },
     "74": {
-        "name": "Stor brand",
+        "name": "Storbrann",
         "vehicles": {
             "truck": 10,
             "bchief": 3,
@@ -1013,387 +1012,66 @@
         "credits": 10210
     },
     "75": {
-        "name": "Aggresiv passagerare",
+        "name": "Delvis kollapset bygning",
         "stations": {
-            "6": 2
+            "0": 5,
+            "2": 3
         },
         "vehicles": {
-            "police": 2
+            "truck": 2,
+            "platform": 1,
+            "bchief": 2,
+            "heavyRescue": 2
         },
-        "credits": 300,
+        "credits": 7300,
         "patients": {
-            "max": 1,
-            "transport": 30,
-            "specialisation": "Inv\u00e4rtesmedicinare"
+            "max": 2,
+            "specialisation": "Helsedirekt\u00f8r"
         }
     },
     "76": {
-        "name": "St\u00f6ld p\u00e5 julmarknad",
+        "name": "Industribrann",
         "stations": {
-            "6": 2
+            "0": 6,
+            "2": 2
         },
         "vehicles": {
-            "police": 1
+            "truck": 6,
+            "platform": 1,
+            "bchief": 2,
+            "hazmat": 1
         },
-        "credits": 300,
-        "poi": 17
+        "credits": 4800,
+        "patients": {
+            "max": 4,
+            "specialisation": "Helsedirekt\u00f8r"
+        }
     },
     "77": {
-        "name": "Brinnande julst\u00e5nd",
-        "stations": {
-            "0": 2
-        },
-        "vehicles": {
-            "truck": 1
-        },
-        "credits": 610,
-        "patients": {
-            "max": 1,
-            "specialisation": "Inv\u00e4rtesmedicinare"
-        },
-        "poi": 17
+        "name": "Pasienttransport",
+        "onlyRd": true,
+        "transport": 0
     },
     "78": {
-        "name": "Brand p\u00e5 julmarknad",
+        "name": "Hjertestans",
         "stations": {
-            "0": 1
-        },
-        "vehicles": {
-            "truck": 1
-        },
-        "credits": 310,
-        "patients": {
-            "max": 1,
-            "specialisation": "Inv\u00e4rtesmedicinare"
-        },
-        "poi": 17
-    },
-    "79": {
-        "name": "Trafikolycka - is",
-        "stations": {
-            "0": 4
-        },
-        "vehicles": {
-            "heavyRescue": 1,
-            "truck": 1
-        },
-        "credits": 1410,
-        "patients": {
-            "max": 3,
-            "specialisation": "Traumatologi"
-        },
-        "percentages": {
-            "heavyRescue": 100
-        }
-    },
-    "80": {
-        "name": "Brinnande julgran",
-        "stations": {
-            "0": 6
-        },
-        "vehicles": {
-            "truck": 1
-        },
-        "credits": 870
-    },
-    "81": {
-        "name": "Brinnande julkrans",
-        "stations": {
-            "0": 5
-        },
-        "vehicles": {
-            "truck": 1
-        },
-        "credits": 800
-    },
-    "82": {
-        "name": "Br\u00e5k p\u00e5 julmarknad",
-        "stations": {
-            "6": 2
-        },
-        "vehicles": {
-            "police": 2
-        },
-        "credits": 600,
-        "patients": {
-            "max": 2,
-            "specialisation": "Traumatologi"
-        },
-        "poi": 17
-    },
-    "83": {
-        "name": "Person fast under maskineri",
-        "stations": {
-            "0": 4,
             "2": 1
-        },
-        "vehicles": {
-            "truck": 2,
-            "heavyRescue": 2
-        },
-        "credits": 1100,
-        "patients": {
-            "max": 1,
-            "min": 1,
-            "transport": 100,
-            "specialisation": "Traumatologi"
-        }
-    },
-    "84": {
-        "name": "Skadat Tak",
-        "stations": {
-            "0": 3
-        },
-        "vehicles": {
-            "truck": 1,
-            "platform": 1
-        },
-        "credits": 450,
-        "percentages": {
-            "platform": 50
-        }
-    },
-    "85": {
-        "name": "Seriekrock",
-        "stations": {
-            "0": 5,
-            "2": 2,
-            "6": 1
-        },
-        "vehicles": {
-            "truck": 4,
-            "heavyRescue": 1,
-            "bchief": 1,
-            "police": 1,
-            "ambulance": 3
-        },
-        "credits": 1300,
-        "patients": {
-            "max": 5,
-            "min": 1,
-            "transport": 20,
-            "specialisation": "Inv\u00e4rtesmedicinare"
-        }
-    },
-    "86": {
-        "name": "Brinnande lastbil",
-        "stations": {
-            "0": 3
-        },
-        "vehicles": {
-            "truck": 3
-        },
-        "credits": 900
-    },
-    "87": {
-        "name": "Traktorolycka",
-        "stations": {
-            "0": 3,
-            "2": 1
-        },
-        "vehicles": {
-            "truck": 3,
-            "bchief": 1,
-            "ambulance": 1
-        },
-        "credits": 1000,
-        "patients": {
-            "max": 1,
-            "transport": 0,
-            "specialisation": "Allm\u00e4nkirurg"
-        },
-        "poi": 21
-    },
-    "88": {
-        "name": "Bilbrand orsakad av fyrverkerier",
-        "stations": {
-            "0": 1
-        },
-        "vehicles": {
-            "truck": 1
-        },
-        "credits": 370
-    },
-    "89": {
-        "name": "Grovavfallsbrand orsakad av fyrverkerier",
-        "stations": {
-            "0": 1
-        },
-        "vehicles": {
-            "truck": 1
-        },
-        "credits": 220
-    },
-    "90": {
-        "name": "Liten f\u00e4ltbrand orsakad av fyrverkerier",
-        "stations": {
-            "0": 2
-        },
-        "vehicles": {
-            "truck": 2
-        },
-        "credits": 1000
-    },
-    "91": {
-        "name": "Brand i k\u00e4llare orsakad av fyrverkerier",
-        "stations": {
-            "0": 3
-        },
-        "vehicles": {
-            "bchief": 1,
-            "truck": 3
-        },
-        "credits": 2500,
-        "patients": {
-            "max": 2,
-            "specialisation": "Inv\u00e4rtesmedicinare"
-        },
-        "percentages": {
-            "bchief": 90
-        }
-    },
-    "92": {
-        "name": "Bussh\u00e5llplatsbrand orsakad av fyrverkerier",
-        "stations": {
-            "0": 3
-        },
-        "vehicles": {
-            "truck": 1
-        },
-        "credits": 900,
-        "poi": 4
-    },
-    "93": {
-        "name": "Balkongbrand orsakad av fyrverkerier",
-        "stations": {
-            "0": 2
-        },
-        "vehicles": {
-            "truck": 2,
-            "platform": 1
-        },
-        "credits": 1500,
-        "percentages": {
-            "platform": 30
-        }
-    },
-    "94": {
-        "name": "Br\u00e4nder i papperscontainrar orsakade av fyrverkerier",
-        "stations": {
-            "0": 1
-        },
-        "vehicles": {
-            "truck": 1
-        },
-        "credits": 400
-    },
-    "95": {
-        "name": "Buskbrand orsakad av sm\u00e4llare",
-        "stations": {
-            "0": 1
-        },
-        "vehicles": {
-            "truck": 1
-        },
-        "credits": 400
-    },
-    "96": {
-        "name": "Alkoholp\u00e5verkad f\u00f6rare efter ny\u00e5rsfest",
-        "stations": {
-            "6": 1
-        },
-        "vehicles": {
-            "police": 1
-        },
-        "credits": 150
-    },
-    "97": {
-        "name": "Brand i str\u00e5takshus orsakad av fyrverkerier",
-        "stations": {
-            "0": 7,
-            "2": 3,
-            "6": 2
-        },
-        "vehicles": {
-            "truck": 5,
-            "platform": 1,
-            "bchief": 1,
-            "air": 1,
-            "police": 2
-        },
-        "credits": 4200,
-        "patients": {
-            "max": 2,
-            "min": 1,
-            "transport": 50,
-            "specialisation": "Inv\u00e4rtesmedicinare"
-        },
-        "percentages": {
-            "air": 30
-        }
-    },
-    "98": {
-        "name": "Bil skadad av fyrverkerier",
-        "stations": {
-            "6": 1
-        },
-        "vehicles": {
-            "police": 1
-        },
-        "credits": 200
-    },
-    "99": {
-        "name": "Brott mot f\u00f6rordningen om explosiva varor",
-        "stations": {
-            "6": 1
-        },
-        "vehicles": {
-            "police": 1
-        },
-        "credits": 200
-    },
-    "100": {
-        "name": "Handskada orsakad av fyrverkerier",
-        "stations": {
-            "2": 3
         },
         "onlyRd": true,
-        "transport": 90,
-        "specialisation": "Traumatologi"
+        "transport": 100,
+        "specialisation": "Helsedirekt\u00f8r"
     },
-    "101": {
-        "name": "Brinnande tungt lastfordon",
+    "79": {
+        "name": "Pustestopp",
         "stations": {
-            "0": 7,
-            "6": 1
+            "2": 1
         },
-        "vehicles": {
-            "truck": 3,
-            "bchief": 1,
-            "tanker": 1,
-            "police": 1
-        },
-        "credits": 2500,
-        "percentages": {
-            "tanker": 10
-        }
+        "onlyRd": true,
+        "transport": 100,
+        "specialisation": "Helsedirekt\u00f8r"
     },
-    "102": {
-        "name": "Brinnande sopbil",
-        "stations": {
-            "0": 7,
-            "6": 1
-        },
-        "vehicles": {
-            "truck": 3,
-            "bchief": 2,
-            "tanker": 1,
-            "police": 1
-        },
-        "credits": 5000
-    },
-    "103": {
-        "name": "Motorcykelolycka",
+    "80": {
+        "name": "Motorsykkelulykke",
         "stations": {
             "0": 3,
             "2": 1,
@@ -1408,35 +1086,11 @@
         "patients": {
             "max": 2,
             "transport": 50,
-            "specialisation": "Inv\u00e4rtesmedicinare"
+            "specialisation": "Generell indremedisiner"
         }
     },
-    "104": {
-        "name": "Monoxidf\u00f6rgiftning",
-        "stations": {
-            "0": 5,
-            "2": 2,
-            "6": 2
-        },
-        "vehicles": {
-            "truck": 2,
-            "heavyRescue": 1,
-            "air": 1,
-            "police": 1
-        },
-        "credits": 2300,
-        "patients": {
-            "max": 10,
-            "min": 2,
-            "transport": 80,
-            "specialisation": "Inv\u00e4rtesmedicinare"
-        },
-        "percentages": {
-            "air": 30
-        }
-    },
-    "105": {
-        "name": "R\u00e5n, v\u00e4pnat",
+    "81": {
+        "name": "V\u00e6pnet ran",
         "stations": {
             "6": 7
         },
@@ -1446,33 +1100,12 @@
         "credits": 1300,
         "patients": {
             "max": 1,
-            "specialisation": "Inv\u00e4rtesmedicinare"
+            "specialisation": "Generell indremedisiner"
         },
-        "poi": 9,
-        "prisoners": {
-            "max": 2
-        }
+        "poi": 9
     },
-    "106": {
-        "name": "V\u00e5ld\/hot mot tj\u00e4nsteman",
-        "stations": {
-            "6": 4
-        },
-        "vehicles": {
-            "police": 2
-        },
-        "credits": 750,
-        "patients": {
-            "max": 1,
-            "specialisation": "Inv\u00e4rtesmedicinare"
-        },
-        "poi": 41,
-        "prisoners": {
-            "max": 2
-        }
-    },
-    "107": {
-        "name": "Trafikolycka - singel, volt",
+    "82": {
+        "name": "Bilulykke",
         "stations": {
             "0": 4,
             "2": 3,
@@ -1492,27 +1125,51 @@
             "specialisation": "Traumatologi"
         }
     },
-    "108": {
-        "name": "Ofri luftv\u00e4g",
+    "83": {
+        "name": "CO-forgiftning",
+        "stations": {
+            "0": 5,
+            "2": 2,
+            "6": 2
+        },
+        "vehicles": {
+            "truck": 2,
+            "heavyRescue": 1,
+            "air": 1,
+            "police": 1
+        },
+        "credits": 2300,
+        "patients": {
+            "max": 10,
+            "min": 2,
+            "transport": 80,
+            "specialisation": "Generell indremedisiner"
+        },
+        "percentages": {
+            "air": 30
+        }
+    },
+    "84": {
+        "name": "Fremmedlegeme",
         "stations": {
             "2": 1
         },
         "onlyRd": true,
         "transport": 90,
-        "specialisation": "Inv\u00e4rtesmedicinare"
+        "specialisation": "Generell indremedisiner"
     },
-    "109": {
-        "name": "Ryggtrauma",
+    "85": {
+        "name": "Ryggmargskade",
         "stations": {
             "2": 2
         },
         "onlyRd": true,
         "transport": 50,
         "rth": 50,
-        "specialisation": "Allm\u00e4nkirurg"
+        "specialisation": "Helsedirekt\u00f8r"
     },
-    "110": {
-        "name": "Ras\/skred",
+    "86": {
+        "name": "Takras",
         "stations": {
             "0": 5,
             "2": 2,
@@ -1534,8 +1191,8 @@
             "specialisation": "Traumatologi"
         }
     },
-    "111": {
-        "name": "Ras\/skred - byggnad",
+    "87": {
+        "name": "Sammenrast bygning",
         "stations": {
             "0": 7,
             "2": 4,
@@ -1557,38 +1214,38 @@
             "specialisation": "Traumatologi"
         }
     },
-    "112": {
-        "name": "Allvarlig br\u00e4nnskada",
+    "88": {
+        "name": "Brannskade (3. grads)",
         "stations": {
             "2": 4
         },
         "onlyRd": true,
         "transport": 100,
         "rth": 100,
-        "specialisation": "Allm\u00e4nkirurg"
+        "specialisation": "Helsedirekt\u00f8r"
     },
-    "113": {
-        "name": "Skallskada",
+    "89": {
+        "name": "Hodeskade",
         "stations": {
             "2": 3
         },
         "onlyRd": true,
         "transport": 100,
         "rth": 90,
-        "specialisation": "Neurokirurgi"
+        "specialisation": "Nevrokirurgi"
     },
-    "114": {
-        "name": "Amputationsskada",
+    "90": {
+        "name": "Amputasjon",
         "stations": {
             "2": 4
         },
         "onlyRd": true,
         "transport": 80,
         "rth": 50,
-        "specialisation": "Allm\u00e4nkirurg"
+        "specialisation": "Helsedirekt\u00f8r"
     },
-    "115": {
-        "name": "Brand i byggnad - ladug\u00e5rd",
+    "91": {
+        "name": "G\u00e5rdsbrann (stor)",
         "stations": {
             "0": 13
         },
@@ -1601,18 +1258,18 @@
         "credits": 9000,
         "poi": 21
     },
-    "116": {
-        "name": "Ryggsm\u00e4rtor",
+    "92": {
+        "name": "Ryggsmerter",
         "stations": {
             "2": 1
         },
         "onlyRd": true,
         "transport": 80,
         "rth": 30,
-        "specialisation": "Inv\u00e4rtesmedicinare"
+        "specialisation": "Generell indremedisiner"
     },
-    "117": {
-        "name": "Brand i byggnad - skola",
+    "93": {
+        "name": "Brann i kafeteria",
         "stations": {
             "0": 6,
             "2": 2
@@ -1621,16 +1278,15 @@
             "truck": 3,
             "bchief": 1
         },
-        "credits": 1300,
         "patients": {
             "max": 2,
             "transport": 50,
-            "specialisation": "Inv\u00e4rtesmedicinare"
+            "specialisation": "Generell medisin"
         },
         "poi": 12
     },
-    "118": {
-        "name": "Person - sv\u00e5r bel\u00e4genhet",
+    "94": {
+        "name": "Klatreulykke",
         "stations": {
             "0": 4,
             "2": 1
@@ -1640,34 +1296,28 @@
             "heavyRescue": 1,
             "platform": 1
         },
-        "credits": 650,
         "patients": {
             "max": 1,
             "min": 1,
-            "specialisation": "Inv\u00e4rtesmedicinare"
+            "specialisation": "Generell medisin"
         },
         "percentages": {
             "platform": 50
         }
     },
-    "119": {
-        "name": "Explosion - inomhus",
+    "95": {
+        "name": "Vold mot offentlig tjenesteperson",
         "stations": {
-            "0": 13,
-            "2": 3,
-            "6": 3
+            "2": 1,
+            "6": 4
         },
         "vehicles": {
-            "truck": 2,
-            "bchief": 2,
-            "air": 1,
-            "police": 4
+            "police": 2
         },
-        "credits": 2500,
         "patients": {
-            "max": 5,
-            "transport": 60,
-            "specialisation": "Traumatologi"
-        }
+            "max": 1,
+            "specialisation": "Generell medisin"
+        },
+        "poi": 46
     }
 }

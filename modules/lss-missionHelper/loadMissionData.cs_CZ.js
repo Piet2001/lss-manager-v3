@@ -1,4 +1,4 @@
-const missionlink = $('#mission_help').attr('href')||window.location.href.replace(/\?.*$/, "");
+const missionlink = $('#mission_help').attr('href') || window.location.href.replace(/\?.*$/, "");
 const missionID = missionlink.replace(/\?.*$/, "").match(/\d*$/)[0];
 
 $.get(missionlink)
@@ -6,28 +6,21 @@ $.get(missionlink)
         data = $(data);
 
         let vehicleDefinitons = {
-            tankauto: "(t|T)ankautospuiten",
-            noodhulpeen: "(n|N)oodhulpeenheden",
-            ovdb: "OvD-B",
-            redvoertuig: "((r|R)edvoertuigen)|((h|H)oogwerker)",
-            slangenwagen: "(s|S)langenwagen",
-            hulpverlening: "(h|H)ulpverleningsvoertuigen",
-            adembescherming: "Adembeschermingsvoertuig",
-            hovd: "HOVD",
-            waarschuwing: "Waarschuwings",
-            gevaar: "Gevaarlijke Stoffen",
-            ovdp: "Officier(s?) van Dienst Politie",
-            commando: "Commandowagen",
-            ambulance: "Ambulance",
-            mmtarts: "MMT-arts",
-            megroep: "ME Groepsvoertuig",
-            mecommando: "ME Commandovoertuigen",
-            polHeli: "politie helikopter",
-            watervoertuig: "Waterongevallenvoertuig",
-            wateraanhanger: "(w|W)aterongevallenaanhangers",
-            hond: "Hondengeleider",
-            crashtender: "Crashtender",
-            afoosc: "AFO/OSC"
+            truck: "cisternové automobilové",
+            platform: "automobilov",
+            heavyRescue: "těžká technická vozidla",
+            air: "fordon",
+            bchief: "velitelsk",
+            tanker: "kombinované hasící automobily|KHA",
+            hazmat: "vozidla pro práci s nebezpečnými látkami",
+            mcv: "velitelská vozidla",
+            police: "policejní automobily",
+            ambulance: "Sanitkat",
+            arff: "letištní speciály",
+            k9: "Dog Support Units",
+            swatSuv: "Armed Response Vehicle (ARV)",
+            rth: "vrtulník",
+            policeHeli: "Police Helicopter",
         };
 
         let credits;
@@ -39,7 +32,7 @@ $.get(missionlink)
         let prisonersMax = 0;
         let patientsMin = 0;
         let patientsMax = 0;
-        let mmtarts = 0;
+        let nef = 0;
         let transport = 0;
         let specialisation;
         let tragehilfe = 0;
@@ -49,46 +42,50 @@ $.get(missionlink)
         let expansions = [];
         let dauer;
 
-        data.find(".col-md-4:nth-of-type(1) table tbody tr").each(function(){
+        data.find(".col-md-4:nth-of-type(1) table tbody tr").each(function () {
             let content = $(this).text().trim();
             let number = $(this).find("td:last-of-type").text().trim().replace(/\D/g, "");
-            if (content.match(/Credits/)) {
+            if (content.match(/Průměrné kredity/)) {
                 credits = number;
-            } else if (content.match(/Benodigd|Minimaal politie helikopter/)) {
+            } else if (content.match(/Požadované|Krav på|Min./)) {
                 stations[getStation(content)] = number;
-            } else if (content.match(/POI locatie/)) {
+            } else if (content.match(/Místo/)) {
                 poi = getPOI(content);
             }
         });
-        data.find(".col-md-4:nth-of-type(2) table tbody tr").each(function(){
+        data.find(".col-md-4:nth-of-type(2) table tbody tr").each(function () {
             let content = $(this).text().trim();
             let number = $(this).find("td:last-of-type").text().trim().replace(/\D/g, "");
-            if (content.match(/waarschijnlijkheid|benodigdheid/)) {
-                percentages[getVehicle(content)] = number;
-            } else if (content.match(/[bB]enodigd|Crashtender/)) {
+            if (content.match(/Požadované|Požadovaná/)) {
                 vehicles[getVehicle(content)] = number;
+            } else if (content.match(/Pravděpodobnost/)) {
+                percentages[getVehicle(content)] = number;
             }
         });
-        data.find(".col-md-4:nth-of-type(3) table tbody tr").each(function(){
+        data.find(".col-md-4:nth-of-type(3) table tbody tr").each(function () {
             let content = $(this).text().trim();
             let number = $(this).find("td:last-of-type").text().trim().replace(/\D/g, "");
-            if (content.match(/Maximale patiënten/)) {
+            if (content.match(/Maximum pacientů/)) {
                 patientsMax = number;
-            } else if (content.match(/Minimale aantal slachtoffers/)) {
+            } else if (content.match(/Minimální počet pacientů/)) {
                 patientsMin = number;
-            } else if (content.match(/getransporteerd/)) {
+            } else if (content.match(/pacienta transportovat/)) {
                 transport = number;
-            } else if (content.match(/MMT-Arts/)) {
-                mmtarts = number;
-            } else if (content.match(/Gespecialiseerde afdeling/)) {
+            } else if (content.match(/NEF/)) {
+                nef = number;
+            } else if (content.match(/Nemocniční oddělení/)) {
                 specialisation = $(this).find("td:last-of-type").text().trim();
-            } else if (content.match(/gevangenen/)) {
+            } else if (content.match(/Maximální počet vězňů/)) {
                 prisonersMax = number;
-            } else if (content.match(/Duur/)) {
+            } else if (content.match(/vrtulník/)) {
+                rth = number;
+            } else if (content.match(/Armed Response Personnel/)) {
+                special["SWATPersonnel"] = number;
+            } else if (content.match(/Duration/)) {
                 dauer = $(this).find("td:last-of-type").text().trim();
-            } else if (content.match(/Uitbreidingsmogelijkheid/)) {
+            } else if (content.match(/Rozšiřitelné mise/)) {
                 let expansionLinks = $(this).find("a");
-                expansionLinks.each(function() {
+                expansionLinks.each(function () {
                     expansions.push($(this).attr("href").replace(/\D/g, ""));
                 });
             }
@@ -104,8 +101,8 @@ $.get(missionlink)
             if (transport) {
                 mission.transport = transport;
             }
-            if (mmtarts) {
-                mission.mmtarts = mmtarts;
+            if (nef) {
+                mission.nef = nef;
             }
             if (rth) {
                 mission.rth = rth;
@@ -131,8 +128,8 @@ $.get(missionlink)
                 if (transport) {
                     mission.patients.transport = transport;
                 }
-                if (mmtarts) {
-                    mission.patients.mmtarts = mmtarts;
+                if (nef) {
+                    mission.patients.nef = nef;
                 }
                 if (rth) {
                     mission.patients.rth = rth;
@@ -186,10 +183,10 @@ $.get(missionlink)
         $.post(`${lssm.config.server}/modules/lss-missionHelper/writeMission.php`, {
             mission: mission,
             id: missionID,
-            lang: "nl"
+            lang: "cs_CZ"
         })
             .done(response => {
-                if (response.startsWith('Error'))  {
+                if (response.startsWith('Error')) {
                     return console.error(`missionHelper Error:\n${response}`);
                 }
                 console.log(`Registered Missiontype ${missionID}`);
@@ -205,59 +202,58 @@ $.get(missionlink)
         function getPOI(content) {
             let pois = [
                 "Park",
-                "Meer",
-                "Ziekenhuis",
-                "Bos",
-                "Bushalte",
-                "Tramhalte",
-                "Station",
-                "Centraal Station",
-                "Rangeeremplacement",
-                "Buurtsuper",
-                "Supermarkt",
-                "Tankstation",
-                "School",
-                "Museum",
-                "Winkelcentrum",
-                "Garage",
-                "Snelweg oprit / afrit",
-                "Kerstmarkt",
-                "Magazijn",
-                "Café/Club",
+                "Jezero",
+                "Nemocnice",
+                "Les",
+                "Zastávka autobusu",
+                "Zastávka tramvaje",
+                "Železniční stanice \\(regionální doprava\\)",
+                "Železniční stanice \\(regionální a dálková doprava\\)",
+                "Nákladové nádraží",
+                "Supermarket \\(malý\\)",
+                "Supermarket \\(velký\\)",
+                "Čerpací stanice",
+                "Škola",
+                "Muzeum",
+                "Nákupní centrum",
+                "Autoservis",
+                "Dálniční sjezd",
+                "Vánoční trh",
+                "Skladiště",
+                "Diskotéka",
                 "Stadion",
-                "Boerderij",
-                "Kantoorgebouw",
-                "Zwembad",
-                "Spoorwegovergang",
-                "Theater",
-                "Marktplein",
-                "Rivier",
-                "Sloot",
-                "Vliegveld \\(klein\\): Start-/Landingsbaan",
-                "Vliegveld \\(klein\\): Gebouw",
-                "Vliegveld \\(klein\\): Vliegtuig parkeerplaats",
-                "Vliegveld \\(groot\\): Start-/Landingsbaan",
-                "Vliegveld \\(groot\\): Terminal",
-                "Vliegveld \\(groot\\): Platform / Gate",
-                "Vliegveld \\(groot\\): Parkeergarage",
-                "Parkeergarage",
-                "Verzorgingshuis",
-                "Manege",
+                "Farma",
+                "Kancelářská budova",
+                "Plovárna",
+                "Järnvägsövergång",
+                "Divadlo",
+                "Zábavní park",
+                "Řeka",
+                "Malé letiště \\(ranvej\\)",
+                "Velké letiště \\(ranvej\\)",
+                "Letištní terminál",
+                "Banka",
+                "Velkosklad",
+                "Most",
+                "Rychlé občerstvení",
+                "Nákladní přístav",
+                "Sběrný dvůr",
+                "Výšková budova",
+                "Přístaviště výletních lodí",
+                "Malý přístav",
+                "Železniční přejezd",
+                "Tunel",
+                "Chladírenský sklad",
+                "Elektrárna",
+                "Továrna",
+                "Šrotiště",
+                "Stanice metra",
+                "Malá chemická skladovací nádrž",
+                "Velká chemická skladovací nádrž",
                 "Hotel",
-                "Restaurant",
-                "Bankkantoor",
-                "Sporthal",
-                "Camping",
-                "Gevangenis",
-                "Asielzoekerscentrum",
-                "Afvalverwerker",
-                "Kerkgebouw",
-                "Bouwmarkt",
-                "Transformatorhuisje",
-                "Industrieterrein",
-                "Bedrijventerrein",
-                "Haventerrein",
-                "Bouwterrein"
+                "Bar",
+                "Skládka",
+                "Kryté parkoviště"
             ];
             for (let i = 0; i < pois.length; i++) {
                 if (content.match(pois[i])) {
@@ -268,12 +264,10 @@ $.get(missionlink)
 
         function getStation(content) {
             let stationDefinitions = {
-                0: "brandweerposten",
-                3: "Ambulancestandplaats",
-                5: "politiebureau",
-                9: "politie helikopter",
-                11: "Hoofdbureau",
-                "water": "waterongevallenbestrijdingafdelingen"
+                0: "hasičské stanice",
+                2: "záchranářské stanice",
+                6: "policejní stanice",
+                13: "Police Helicopter"
             };
             for (let station in stationDefinitions) {
                 if (content.match(stationDefinitions[station])) {
@@ -290,4 +284,3 @@ $.get(missionlink)
             }
         }
     });
-

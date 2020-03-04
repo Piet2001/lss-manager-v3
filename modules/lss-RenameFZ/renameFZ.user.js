@@ -2,7 +2,7 @@
 
     const LSS_RENAMEFZ_STORAGE = "LSS_RENAMEFZ_STORAGE";
 
-    I18n.translations.de.lssm.renameFz = {
+    I18n.translations.de_DE.lssm.renameFz = {
         name: 'Fahrzeuge Umbenennen',
         rename: "Umbenennen",
         id: "{id} FahrzeugId ",
@@ -153,7 +153,7 @@
         }
     };
 
-    I18n.translations.en.lssm.renameFz = {
+    I18n.translations.en_US.lssm.renameFz = {
         name: 'Rename vehicles',
         rename: "rename",
         id: "{id} Id of Vehicle",
@@ -170,7 +170,7 @@
         statusWaiting: 'Wait for input',
         statusError: '<b>Error during generation!</b> If this error occurs again, please report it. Please provide the following information:',
         statusWorking: 'Generate names and forms. This can take a certain amount of time, depending on the system and number of vehicles.',
-        statusSuccess: 'Names and Forumlare successfully generated!',
+        statusSuccess: 'Names and Forms successfully generated!',
         nameAlreadyCorrect: 'Name already corresponds to the template!',
         nameToLong: 'The name is too long for the following vehicles:',
         nameToLongOriginalName: 'Original Name',
@@ -241,7 +241,7 @@
         }
     };
 
-    I18n.translations.fj.lssm.renameFz = {
+    I18n.translations.en_GB.lssm.renameFz = {
         name: 'Rename vehicles',
         settings: {
             show: 'Show/Hide',
@@ -274,7 +274,7 @@
                 6: 'Water Carrier',
                 7: 'HazMat Unit',
                 8: 'Incident response vehicle (IRV)',
-                9: 'SAR helicopter',
+                9: 'HEMS',
                 10: 'Rapid Response Vehicle',
                 11: 'Police helicopter',
                 12: 'Dog Support Unit (DSU)',
@@ -285,7 +285,8 @@
             }
         }
     };
-    I18n.translations.eu.lssm.renameFz = {
+
+    I18n.translations.en_AU.lssm.renameFz = {
         name: 'Rename vehicles',
         settings: {
             show: 'Show/Hide',
@@ -323,6 +324,134 @@
             }
         }
     };
+
+    I18n.translations.cs_CZ.lssm.renameFz = {
+        name: 'Přejmenovat vozidla',
+        rename: "přejmenovat",
+        id: "{id} Id vozidla",
+        old: "{old} Aktuální jméno",
+        vehicleType: "{vehicleType} Typ vozidla",
+        stationName: "{stationName} Jméno Budovy",
+        tagging: '{tagging} Označení typu vozidla',
+        number: '{number} Počitadlo typů',
+        numberRoman: '{numberRoman} Počitadlo typů (římské číslice)',
+        dispatch: '{dispatch} Jméno dispečera',
+        dispatchAlias: '{dispatchAlias} Alias of Dispatchcenter',
+        stationAlias: '{stationAlias} Budova-Alias',
+        saveAll: 'uložit vše',
+        statusWaiting: 'Počkejte na zadání',
+        statusError: '<b>Chyba při generování!</b> Pokud se tato chyba objeví znovu, nahlaste ji. Uveďte následující informace:',
+        statusWorking: 'Generujte jména a formuláře. To může trvat určitou dobu v závislosti na systému a počtu vozidel.',
+        statusSuccess: 'Jména a fórum byly úspěšně vygenerovány!',
+        nameAlreadyCorrect: 'Název již odpovídá šabloně!',
+        nameToLong: 'Název je příliš dlouhý pro následující vozidla:',
+        nameToLongOriginalName: 'Původní jméno',
+        nameToLongGeneratedName: 'Generované jméno',
+        nameToLongShortenedName: 'Nové / zkrácené jméno',
+        helpTitle: 'Pod tímto odkazem naleznete malou instrukci: ',
+        helpLink: 'https://github.com/LSS-Manager/lss-manager-v3/wiki/RenameFZ',
+        startNum: 'Začátek počítadla',
+        counterOverride: 'Pokud existuje více vozidel stejného typu, začněte přesto s 1.',
+        startNumHelp: 'Zde můžete zadat počáteční hodnotu pro počítadlo typů. Pokud nastavíte 0 jako počáteční hodnotu, první vozidlo typu nedostane číslování, je to velmi praktické, pokud máte na stráži pouze jedno vozidlo typu a nechcete jej číslovat. Počítadlo však můžete také spustit na 5 (z jakéhokoli důvodu chcete, ale je to možné;))',
+        toggleNameCorrect: 'Zobrazit / skrýt vozidla se správnými názvy',
+        settings: {
+            show: 'Zobrazit / skrýt',
+            names: {
+                vehicleTypes: 'typy vozidel',
+                stations: 'Budování aliasu'
+            },
+            descriptions: {
+                vehicleTypes: 'Zde můžete nastavit alternativní názvy pro každý typ vozidla. Můžete je použít při přejmenování vozidel přes dispečink.',
+                stations: 'Zde můžete nastavit alternativní názvy pro každou budovu. Můžete je použít při přejmenování vozidel přes dispečink.'
+            },
+            validStationTypes: {
+                0: "Hasičská stanice",
+                2: "Stanoviště záchranné služby",
+                6: "Policejní stanice",
+                7: "Dispečink",
+                18: "Hasičská stanice (malá)",
+                19: "Policejní stanice (malá)",
+                20: "Stanoviště záchranné služby (malé)"
+            },
+            vehicleTypes: {
+                0: 'CAS 20',
+                1: 'CAS 30',
+                2: 'AZ',
+                3: 'VEA',
+                4: 'TA',
+                5: 'Sanitka',
+                6: 'KHA',
+                7: 'TACH',
+                8: 'Policejní automobil',
+                9: 'Vrtulník LZS',
+                10: 'AP'
+            }
+        }
+    };
+
+    I18n.translations.tr_TR.lssm.renameFz = {
+        name: 'Araçları yeniden adlandırma',
+        rename: "Adını değiştirmek",
+        id: "{id} Araç Kimliği",
+        old: "{old} Şu anki ismi",
+        vehicleType: "{vehicleType} Araç cinsi",
+        stationName: "{stationName} Binanın adı",
+        tagging: '{tagging} Araç tipinin işaretlenmesi',
+        number: '{number} Tip-sayaç',
+        numberRoman: '{numberRoman} Tip sayacı (Romen rakamları)',
+        dispatch: '{dispatch} Dispatchcenter\'ın Adı',
+        dispatchAlias: '{dispatchAlias} Dispatchcenter Takma Adı',
+        stationAlias: '{stationAlias} Yapı-Alias',
+        saveAll: 'hepsini kaydet',
+        statusWaiting: 'Girişi bekleyin',
+        statusError: '<b>Üretim sırasında hata!</b> Bu hata tekrarlanırsa, lütfen bildirin. lütfen aşağıdaki bilgileri girin:',
+        statusWorking: 'İsimler ve formlar oluşturun. Bu, sisteme ve araç sayısına bağlı olarak belirli bir süre alabilir.',
+        statusSuccess: 'İsimler ve Formlar başarıyla oluşturuldu!',
+        nameAlreadyCorrect: 'İsim zaten şablona karşılık geliyor!',
+        nameToLong: 'Aşağıdaki araçlar için ad çok uzun:',
+        nameToLongOriginalName: 'Orjinal isim',
+        nameToLongGeneratedName: 'Oluşturulan Ad',
+        nameToLongShortenedName: 'Yeni / kısaltılmış ad',
+        helpTitle: 'Bu bağlantı altında küçük bir talimat bulabilirsiniz: ',
+        helpLink: 'https://github.com/LSS-Manager/lss-manager-v3/wiki/RenameFZ',
+        startNum: 'Sayaç başlangıcı',
+        counterOverride: 'Aynı türden birkaç araç varsa, yine de 1 ile başlayın.',
+        startNumHelp: 'Burada tür sayacı için bir başlangıç değeri girebilirsiniz. Başlangıç değeri olarak 0\'ı ayarlarsanız, bir türdeki ilk araç numaralandırmayı almayacaktır, bir koruma üzerinde yalnızca bir tip araç varsa ve numaralandırmak istemiyorsanız bu çok pratiktir.Ama aynı zamanda sayacı 5\'te başlatabilirsiniz (ne nedenle olursa olsun, ama mümkündür;))',
+        toggleNameCorrect: 'Doğru isimdeki Araçları Göster / Gizle',
+        settings: {
+            show: 'Göster / Gizle',
+            names: {
+                vehicleTypes: 'araç türleri',
+                stations: 'Diğer ad oluşturma'
+            },
+            descriptions: {
+                vehicleTypes: 'Burada her araç türü için alternatif isimler ayarlayabilirsiniz. Bunları, sevkıyat merkezi aracılığıyla araçlarınızı yeniden adlandırırken kullanabilirsiniz.',
+                stations: 'Burada her bina için alternatif isimler ayarlayabilirsiniz. Bunları, sevkıyat merkezi aracılığıyla araçlarınızı yeniden adlandırırken kullanabilirsiniz.'
+            },
+            validStationTypes: {
+                0: "İtfaiye İstasyonu",
+                2: "Ambulans İstasyonu",
+                6: "Polis Karakolu",
+                7: "Sevk Merkezi",
+                18: "İtfaiye İstasyonu (Küçük)",
+                19: "Polis Karakolu (Küçük karakol)",
+                20: "Ambulans istasyonu (Küçük istasyon)"
+            },
+            vehicleTypes: {
+                0: 'YSA',
+                1: 'IKA',
+                2: 'MA',
+                3: 'KA',
+                4: 'CMA',
+                5: 'AA',
+                6: 'SIA',
+                7: 'TMMA',
+                8: 'Polis Aracı',
+                9: 'Ambulans Helikopteri'
+            }
+        }
+    };
+
     I18n.translations.pl_PL.lssm.renameFz = {
         name: 'Zmiana nazwy pojazdów',
         rename: "zmiana nazwy",
@@ -365,6 +494,7 @@
             validStationTypes: {
                 0: "Jednostka Ratowniczo-Gaśnicza",
                 2: "Stacja Pogotowia Ratunkowego",
+                5: "Stacja helikopterów",
                 6: "Komenda Policji",
                 7: "Centrum Powiadamiania Ratunkowego",
                 18: "Remiza",
@@ -384,10 +514,12 @@
                 9: 'Śmigłowiec LPR',
                 10: 'SPGaz',
                 11: 'Samochód Dowodzenia i Łączności',
-                12: 'GBARt'
+                12: 'GBARt',
+                13: 'Podnośnik hydrauliczny'
             }
         }
     };
+
     I18n.translations.sv_SE.lssm.renameFz = {
         name: 'Byt namn på fordon',
         rename: "döpa om",
@@ -430,6 +562,7 @@
             validStationTypes: {
                 0: "Brandstation",
                 2: "Ambulansstation",
+                5: "Ambulanshelikopterstation",
                 6: "Polisstation",
                 7: "Larmcentral",
                 18: "Brandstation (liten)",
@@ -439,20 +572,150 @@
             vehicleTypes: {
                 0: 'BAS 1 - Släckbil',
                 1: 'BAS 2 - Släckbil',
-                2: 'M32L - Stegbil',
+                2: 'Stegbil',
                 3: 'Befälsfordon',
                 4: 'Lastväxlare',
                 5: 'Ambulans',
-                6: 'BAS 4 - Tankbil',
-                7: 'Industribrandbil',
+                6: 'Tankbil',
+                7: 'Kemskyddsenhet',
                 8: 'Radiobil',
-                9: 'Räddningshelikopter',
+                9: 'Ambulanshelikopter',
                 10: 'Luftfordon',
                 11: 'Mobilt ledningsfordon',
                 12: 'Räddningsfordon'
             }
         }
     };
+
+    I18n.translations.da_DK.lssm.renameFz = {
+        name: 'Omdøb køretøjer',
+        rename: "omdøb",
+        id: "{id} Id for køretøj",
+        old: "{old} Nuværende navn",
+        vehicleType: "{vehicleType} Type køretøj",
+        stationName: "{stationName} Bygningens navn",
+        tagging: '{tagging} Mærkning af køretøjstypen',
+        number: '{number} Type tæller',
+        numberRoman: '{numberRoman} Type tæller (romertal)',
+        dispatch: '{dispatch} Navn på dispatchcenter',
+        dispatchAlias: '{dispatchAlias} Alias of Dispatchcenter',
+        stationAlias: '{stationAlias} Bygning-Alias',
+        saveAll: 'Gem alle',
+        statusWaiting: 'Vent på input',
+        statusError: '<b>Fejl under generation!</b> Hvis denne fejl opstår igen, skal du rapportere den. Angiv følgende oplysninger:',
+        statusWorking: 'Generer navne og formularer. Dette kan tage en vis tid, afhængigt af systemet og antallet af køretøjer.',
+        statusSuccess: 'Navne og Forumlare er genereret!',
+        nameAlreadyCorrect: 'Navn svarer allerede til skabelonen!',
+        nameToLong: 'Navnet er for langt til følgende køretøjer:',
+        nameToLongOriginalName: 'Originalt navn',
+        nameToLongGeneratedName: 'Genereret navn',
+        nameToLongShortenedName: 'Nyt / forkortet navn',
+        helpTitle: 'Du kan finde en lille instruktion under dette link: ',
+        helpLink: 'https://github.com/LSS-Manager/lss-manager-v3/wiki/RenameFZ',
+        startNum: 'Counter start',
+        counterOverride: 'Hvis der er flere køretøjer af samme type, start alligevel med 1.',
+        startNumHelp: 'Her kan du indtaste en startværdi for typetælleren. Hvis du indstiller 0 som startværdi, får det første køretøj af en type ikke nummereringen, dette er meget praktisk, hvis du kun har et køretøj af en type på en vagt og ikke ønsker at nummerere det. Men du kan også starte tælleren kl. 5 (uanset hvad du vil, men det er muligt;) )',
+        toggleNameCorrect: 'Vis / skjul køretøjer med korrekte navne',
+        settings: {
+            show: 'Vis / Skjul',
+            names: {
+                vehicleTypes: 'køretøjstyper',
+                stations: 'Bygning alias'
+            },
+            descriptions: {
+                vehicleTypes: 'Her kan du indstille alternative navne for hver køretøjstype. Du kan bruge dem, når du omdøber dine køretøjer via ekspeditionscentret.',
+                stations: 'Her kan du indstille alternative navne for hver bygning. Du kan bruge dem, når du omdøber dine køretøjer via ekspeditionscentret.'
+            },
+            validStationTypes: {
+                0: "Brandstation",
+                2: "Ambulancestation",
+                5: "Helikopterstation",
+                6: "Politistation",
+                7: "Alarmcentral",
+                18: "Brandstation (lille station)",
+                19: "Politistation (lille station)",
+                20: "Ambulancestation (lille station)"
+            },
+            vehicleTypes: {
+                0: 'Motorsprøjte',
+                1: 'Slangetender',
+                2: 'Stigevogn',
+                3: 'Indsatsleder',
+                4: 'Pionertjenesten',
+                5: 'Ambulance',
+                6: 'Tankvogn',
+                7: 'CBRN',
+                8: 'Patruljevogn',
+                9: 'Rednings Helikopter'
+            }
+        }
+    };
+
+    I18n.translations.nb_NO.lssm.renameFz = {
+        name: 'Gi kjøretøy nytt navn',
+        rename: "Gi nytt navn",
+        id: "{id} ID for kjøretøy",
+        old: "{old} Gjeldende navn",
+        vehicleType: "{vehicleType} Type kjøretøy",
+        stationName: "{stationName} Navn på bygning",
+        tagging: '{tagging} Merking av kjøretøytypen',
+        number: '{number} Type-teller',
+        numberRoman: '{numberRoman} Type-teller (romertall)',
+        dispatch: '{dispatch} Navn på Dispatchcenter',
+        dispatchAlias: '{dispatchAlias} Alias for Dispatchcenter',
+        stationAlias: '{stationAlias} Bygning-alias',
+        saveAll: 'lagre alt',
+        statusWaiting: 'Vent på innspill',
+        statusError: '<b> Feil under generering! </b> Hvis denne feilen oppstår igjen, kan du rapportere den. Oppgi følgende informasjon:',
+        statusWorking: 'Generer navn og skjemaer. Dette kan ta en viss tid, avhengig av system og antall kjøretøy.',
+        statusSuccess: 'Navn og Forumlare er generert!',
+        nameAlreadyCorrect: 'Navn tilsvarer allerede malen!',
+        nameToLong: 'Navnet er for langt på følgende kjøretøy:',
+        nameToLongOriginalName: 'Originalt navn',
+        nameToLongGeneratedName: 'Generert navn',
+        nameToLongShortenedName: 'Nytt / forkortet navn',
+        helpTitle: 'Du finner en liten instruksjon under denne lenken: ',
+        helpLink: 'https://github.com/LSS-Manager/lss-manager-v3/wiki/RenameFZ',
+        startNum: 'Teller Start',
+        counterOverride: 'Hvis det er flere kjøretøyer av samme type, start uansett med 1.',
+        startNumHelp: 'Her kan du legge inn en startverdi for typetelleren. Hvis du setter 0 som startverdi, vil ikke det første kjøretøyet av en type få nummereringen, dette er veldig praktisk hvis du bare har ett kjøretøy av en type på en vakt og ikke vil nummerere det. Men du kan også starte skranken på 5 (uansett grunn du vil, men det er mulig;) )',
+        toggleNameCorrect: 'Vis / skjul kjøretøy med riktige navn',
+        settings: {
+            show: 'Vis / skjul',
+            names: {
+                vehicleTypes: 'kjøretøystyper',
+                stations: 'Bygge alias'
+            },
+            descriptions: {
+                vehicleTypes: 'Her kan du angi alternative navn for hver biltype. Du kan bruke dem når du gir nytt navn til kjøretøyene via utsendelsessenteret.',
+                stations: 'Her kan du angi alternative navn for hver bygning. Du kan bruke dem når du gir nytt navn til kjøretøyene via utsendelsessenteret.'
+            },
+            validStationTypes: {
+                0: "Brannstasjon",
+                2: "Ambulansestasjon",
+                5: "Helikopterstasjon",
+                6: "Politistasjon",
+                7: "Nødetatssenter",
+                18: "Brannstasjon (liten)",
+                19: "Politistasjon (liten)",
+                20: "Ambulansestasjon (liten)"
+            },
+            vehicleTypes: {
+                0: 'Mannskapsbil',
+                1: 'Lett mannskapsbil',
+                2: 'Brannbilstige',
+                3: 'Kommandoenhet',
+                4: 'MRU',
+                5: 'Ambulanse',
+                6: 'Tankbil',
+                7: 'CBRNe enhet',
+                8: 'Patruljebil',
+                9: 'Luftambulanse',
+                10: 'Snorkelbil'
+            }
+        }
+    };
+
     I18n.translations.it_IT.lssm.renameFz = {
         name: 'Rinominare i veicoli',
         rename: "rinominare",
@@ -495,6 +758,7 @@
             validStationTypes: {
                 0: "Caserma dei vigili del fuoco",
                 2: "Stazione ambulanze",
+                5: "Base elisoccorso",
                 6: "Stazione di polizia",
                 7: "Centrale operativa",
                 18: "Caserma dei vigili del fuoco (piccola)",
@@ -506,17 +770,19 @@
                 1: 'AS',
                 2: 'AV/FNZ',
                 3: 'CA/POLI',
-                4: 'Ambulanza Medicalizzata',
+                4: 'Ambulanza BLSA',
                 5: 'KILO',
                 6: 'AF/NBCR',
                 7: 'Volante',
                 8: 'Elisoccorso',
                 9: 'APS',
                 10: 'AF/ARIA',
-                11: 'UCL'
+                11: 'UCL',
+                12: 'Autogrù'
             }
         }
     };
+
     I18n.translations.fr_FR.lssm.renameFz = {
         name: 'Renommer les véhicules',
         rename: "renommer",
@@ -575,13 +841,15 @@
                 6: 'CCGC',
                 7: 'VIRT',
                 8: 'Véhicule de patrouille',
-                9: 'HeliSMUR',
+                9: 'Dragon',
                 10: 'Mobile air',
                 11: 'Véhicule mobile de comm.',
-                12: 'Véhicule de secours'
+                12: 'Véhicule de secours',
+                13: 'Véhicule Toute Utilité'
             }
         }
     };
+
     I18n.translations.ru_RU.lssm.renameFz = {
         name: 'Переименовать автомобили',
         rename: "переименование",
@@ -647,7 +915,71 @@
             }
         }
     };
-    I18n.translations.es.lssm.renameFz = {
+
+    I18n.translations.uk_UA.lssm.renameFz = {
+        name: 'Перейменуйте транспортні засоби',
+        rename: "перейменувати",
+        id: "{id} Ідентифікатор транспортного засобу",
+        old: "{old} Поточна назва",
+        vehicleType: "{vehicleType} Тип транспортного засобу",
+        stationName: "{stationName} Назва будівлі",
+        tagging: '{tagging} Позначення типу транспортного засобу',
+        number: '{number} Тип лічильника',
+        numberRoman: '{numberRoman} Лічильник типу (римські цифри)',
+        dispatch: '{dispatch} Назва диспетчерського центру',
+        dispatchAlias: '{dispatchAlias} Псевдоніми диспетчерського центру',
+        stationAlias: '{stationAlias} Псевдонім будівлі',
+        saveAll: 'зберегти все',
+        statusWaiting: 'Зачекайте на введення',
+        statusError: '<b>Помилка під час покоління!</b> Якщо ця помилка повториться, повідомте про це. Будь ласка, надайте таку інформацію:',
+        statusWorking: 'Утворіть назви та форми. Це може зайняти певний час, залежно від системи та кількості транспортних засобів.',
+        statusSuccess: 'Імена та форми успішно створені!',
+        nameAlreadyCorrect: 'Ім\'я вже відповідає шаблону!',
+        nameToLong: 'Назва занадто довга для таких транспортних засобів:',
+        nameToLongOriginalName: 'Оригінальна назва',
+        nameToLongGeneratedName: 'Генерована назва',
+        nameToLongShortenedName: 'Нова / скорочена назва',
+        helpTitle: 'Ви можете знайти невелику інструкцію за цим посиланням: ',
+        helpLink: 'https://github.com/LSS-Manager/lss-manager-v3/wiki/RenameFZ',
+        startNum: 'Лічильник початку',
+        counterOverride: 'Якщо є кілька транспортних засобів одного типу, почніть з 1 все одно.',
+        startNumHelp: 'Тут ви можете ввести початкове значення для лічильника типів. Якщо в якості початкового значення встановити 0, перший транспортний засіб типу не отримає нумерацію, це дуже практично, якщо у вас є лише один транспортний засіб типу на захисті і не хочете його нумерувати. Але ви також можете запустити лічильник о 5 (з будь-якої причини, але ви хочете;))',
+        toggleNameCorrect: 'Показати / приховати транспортні засоби з правильними назвами',
+        settings: {
+            show: 'Показати сховати',
+            names: {
+                vehicleTypes: 'Типи транспортних засобів',
+                stations: 'Будівництво псевдоніму'
+            },
+            descriptions: {
+                vehicleTypes: 'Тут ви можете встановити альтернативні назви для кожного типу транспортного засобу. Ви можете використовувати їх під час перейменування транспортних засобів через диспетчерський центр.',
+                stations: 'Тут ви можете встановити альтернативні назви для кожної будівлі. Ви можете використовувати їх під час перейменування транспортних засобів через диспетчерський центр.'
+            },
+            validStationTypes: {
+                0: "Пожежна частина",
+                2: "Станція швидкої допомоги",
+                6: "Управління поліції",
+                7: "Диспетчерський центр",
+                18: "Пожежна частина (мала)",
+                19: "Відділ поліції",
+                20: "Підстанція швидкої допомоги"
+            },
+            vehicleTypes: {
+                0: 'Пожежна автоцистерна',
+                1: 'Автомобіль першої допомоги',
+                2: 'Пожежна автодрабина',
+                3: 'Штабний автомобіль',
+                4: 'Пожежно-рятувальний автомобіль',
+                5: 'Автомобіль швидкої медичної допомоги',
+                6: 'Автонасосна пожежна станція',
+                7: 'Автомобіль РХБ захисту',
+                8: 'Поліцейський автомобіль',
+                9: 'Пошуково-рятувальний вертоліт'
+            }
+        }
+    };
+
+    I18n.translations.es_ES.lssm.renameFz = {
         name: 'Renombrar vehículos',
         rename: "cambiar de nombre",
         id: "{id} Id del Vehículo",
@@ -712,7 +1044,206 @@
             }
         }
     };
-    I18n.translations.nl.lssm.renameFz = {
+
+    I18n.translations.es_MX.lssm.renameFz = {
+        name: 'Renombrar vehículos',
+        settings: {
+            show: 'Visualizar/Ocultar',
+            names: {
+                vehicleTypes: 'Tipos de vehículos',
+                stations: 'Edificio alias'
+            },
+            descriptions: {
+                vehicleTypes: 'Aquí puede establecer nombres alternativos para cada tipo de vehículo. Puede utilizarlos al cambiar el nombre de sus vehículos a través del centro de envío..',
+                stations: 'Aquí puede establecer nombres alternativos para cada edificio. Puede utilizarlos al cambiar el nombre de sus vehículos a través del centro de envío.'
+            },
+            validStationTypes: {
+                0: "Parque de bomberos",
+                2: "Parque de ambulancias",
+                6: "Comisaría de policía",
+                7: "Centralita",
+                18: "Parque de bomberos (pequeño)",
+                19: "Comisaría de policía (pequeño)",
+                20: "Parque de ambulancias (pequeño)"
+            },
+            vehicleTypes: {
+                0: 'Camión de Bomberos',
+                1: 'Camión BUL',
+                2: 'Camión con escalera telescópica',
+                3: 'Vehículo UMC',
+                4: 'Camión de Rescate',
+                5: 'Ambulancias Tipo II',
+                6: 'Camión de Bomberos Cisterna',
+                7: 'Camión TPP',
+                8: 'Coche patrulla',
+                9: 'Helicóptero HSR'
+            }
+        }
+    };
+
+    I18n.translations.pt_PT.lssm.renameFz = {
+        name: 'Renomear veículos',
+        rename: "mudar de nome",
+        id: "{id} Id do veículo",
+        old: "{old} Nome atual",
+        vehicleType: "{vehicleType} Tipo de veículo",
+        stationName: "{stationName} Nome do edifício",
+        tagging: '{tagging} Marcação do tipo de veículo',
+        number: '{number} Contador de tipo',
+        numberRoman: '{numberRoman} Contador de tipo (algarismos romanos)',
+        dispatch: '{dispatch} Nome do centro de despacho',
+        dispatchAlias: '{dispatchAlias} Pseudónimos do centro de despacho',
+        stationAlias: '{stationAlias} Edifício-Alias',
+        saveAll: 'Salvar Todos',
+        statusWaiting: 'À espera de entrada',
+        statusError: '<b>Erro durante a geração!</b> Se este erro ocorrer novamente, por favor, informe-o. Por favor, forneça as seguintes informações:',
+        statusWorking: 'Gerar nomes e formas. Isto pode levar algum tempo, dependendo do sistema e do número de veículos.',
+        statusSuccess: 'Nomes e Forumlare gerados com sucesso!',
+        nameAlreadyCorrect: 'O nome já corresponde ao modelo!',
+        nameToLong: 'O nome é demasiado longo para os seguintes veículos:',
+        nameToLongOriginalName: 'Nome original',
+        nameToLongGeneratedName: 'Nome gerado',
+        nameToLongShortenedName: 'Nome novo ou abreviado',
+        helpTitle: 'Pode encontrar uma pequena instrução neste link: ',
+        helpLink: 'https://github.com/LSS-Manager/lss-manager-v3/wiki/RenameFZ',
+        startNum: 'Contra-início',
+        counterOverride: 'Se houver vários veículos do mesmo tipo, comece com 1 de qualquer maneira.',
+        startNumHelp: 'Aqui pode introduzir um valor inicial para o contra-tipo. Se definir 0 como o valor de partida, o primeiro veículo de um tipo não obterá a numeração, isto é muito prático se tiver apenas um veículo de um tipo num guarda e não quiser numerar. Mas também pode começar o balcão às 5 (por qualquer razão que queira, mas é possível ;))',
+        toggleNameCorrect: 'Mostrar/esconder veículos com nomes corretos',
+        settings: {
+            show: 'Mostrar / Ocultar',
+            names: {
+                vehicleTypes: 'Tipos de veículos',
+                stations: 'Edifício Alias'
+            },
+            descriptions: {
+                vehicleTypes: 'Aquí puede establecer nombres alternativos para cada tipo de vehículo. Puede utilizarlos al cambiar el nombre de sus vehículos a través del centro de envío..',
+                stations: 'Aquí puede establecer nombres alternativos para cada edificio. Puede utilizarlos al cambiar el nombre de sus vehículos a través del centro de envío.'
+            },
+            validStationTypes: {
+                0: "Unidade do corpo de bombeiros",
+                2: "Estação de ambulância",
+                6: "Delegacia de polícia",
+                7: "Central de Despacho",
+                18: "Unidade do corpo de bombeiros (pequena)",
+                19: "Delegacia de polícia (estação pequena)",
+                20: "Estação de ambulância (estação pequena)"
+            },
+            vehicleTypes: {
+                0: 'VRCI',
+                1: 'VLCI',
+                2: 'VE32',
+                3: 'VCOT',
+                4: 'VSAT',
+                5: 'ABSC',
+                6: 'VTTU',
+                7: 'VPME',
+                8: 'CP',
+                9: 'Heli INEM'
+            }
+        }
+    };
+
+    I18n.translations.pt_BR.lssm.renameFz = {
+        name: 'Renomear veículos',
+        settings: {
+            show: 'Mostrar / Ocultar',
+            names: {
+                vehicleTypes: 'Tipos de veículos',
+                stations: 'Edifício Alias'
+            },
+            descriptions: {
+                vehicleTypes: 'Aquí puede establecer nombres alternativos para cada tipo de vehículo. Puede utilizarlos al cambiar el nombre de sus vehículos a través del centro de envío..',
+                stations: 'Aquí puede establecer nombres alternativos para cada edificio. Puede utilizarlos al cambiar el nombre de sus vehículos a través del centro de envío.'
+            },
+            validStationTypes: {
+                0: "Unidade de bombeiros militar",
+                2: "Bases do SAMU",
+                6: "Delegacias de polícia militar",
+                7: "Central de Despacho",
+                18: "Unidade de bombeiros militar (pequena)",
+                19: "Delegacias de polícia militar (pequena)",
+                20: "Bases do SAMU (pequena)"
+            },
+            vehicleTypes: {
+                0: 'ABTS',
+                1: 'ABT',
+                2: 'ABE',
+                3: 'APS',
+                4: 'ACA',
+                5: 'SAMU',
+                6: 'AT',
+                7: 'APP',
+                8: 'Carro de Polícia Militar',
+                9: 'Helicóptero Resgate'
+            }
+        }
+    };
+
+    I18n.translations.ja_JP.lssm.renameFz = {
+        name: '車両の名前を変更する',
+        rename: "変更",
+        id: "{id} 車両の ID",
+        old: "{old} 現在の名前",
+        vehicleType: "{vehicleType} 車両の種類",
+        stationName: "{stationName} 建物の名前",
+        tagging: '{tagging} 車種のマーキング',
+        number: '{number} タイプカウンター',
+        numberRoman: '{numberRoman} タイプカウンター（ローマ数字）',
+        dispatch: '{dispatch} 派遣センターの名称',
+        dispatchAlias: '{dispatchAlias} 派遣センターの別名',
+        stationAlias: '{stationAlias} ビルディングエイリアス',
+        saveAll: 'すべてを救う',
+        statusWaiting: '入力待ち',
+        statusError: '<b>生成中にエラーが発生しました！</b> このエラーが再度発生する場合は、報告してください. 以下の情報を提供してください：',
+        statusWorking: '名前とフォームを生成します。 これには、システムと車両の台数に応じて、一定の時間がかかる場合があります。',
+        statusSuccess: '名前とフォームが正常に生成されました！',
+        nameAlreadyCorrect: '名前はすでにテンプレートに対応しています！',
+        nameToLong: '次の車両には名前が長すぎます。',
+        nameToLongOriginalName: '元の名前',
+        nameToLongGeneratedName: '生成された名前',
+        nameToLongShortenedName: '新しい名前/短縮名',
+        helpTitle: 'このリンクの下に小さな指示があります： ',
+        helpLink: 'https://github.com/LSS-Manager/lss-manager-v3/wiki/RenameFZ',
+        startNum: 'カウンタースタート',
+        counterOverride: '同じタイプの車両が複数ある場合は、とにかく1から始めます。',
+        startNumHelp: 'ここで、タイプカウンタの開始値を入力できます。 開始値として0を設定すると、タイプの最初のビークルには番号が付けられません。ガードにタイプのビークルが1つしかなく、番号を付けたくない場合、これは非常に実用的です。 ただし、5からカウンターを開始することもできます（理由はどうあれ、それでも可能です;））',
+        toggleNameCorrect: '正しい名前の車両を表示/非表示',
+        settings: {
+            show: '表示/非表示',
+            names: {
+                vehicleTypes: '車両タイプ',
+                stations: '建物のエイリアス'
+            },
+            descriptions: {
+                vehicleTypes: 'ここで、各車両タイプに代替名を設定できます。 あなたは、ディスパッチセンターを介してあなたの車の名前を変更するときにそれらを使用することができます。',
+                stations: 'ここでは、各建物に代替名を設定できます。 あなたは、ディスパッチセンターを介してあなたの車の名前を変更するときにそれらを使用することができます。'
+            },
+            validStationTypes: {
+                0: "消防局",
+                2: "救急車ステーション",
+                6: "警察署",
+                7: "指令センター",
+                18: "消防局（小）",
+                19: "警察署（小型ステーション）",
+                20: "救急車ステーション（小型ステーション）"
+            },
+            vehicleTypes: {
+                0: '救助ハシゴ',
+                1: '戦術対応車両（TRV）',
+                2: 'ターンテーブルはしご（TL）',
+                3: '指令ユニット',
+                4: '大型救助ユニット（MRU）',
+                5: '救急車',
+                6: '水槽車',
+                7: '危険物取扱ユニット',
+                8: '事故対応車両（IRV）',
+                9: 'SARヘリコプター'
+            }
+        }
+    };
+
+    I18n.translations.nl_NL.lssm.renameFz = {
         name: 'Voertuigen herbenoemen',
         rename: "Naam aanpassen",
         id: "{id} Voertuignaam ",
@@ -814,7 +1345,10 @@
                 49: 'PM-OR',
                 50: 'TS-OR',
                 51: 'HVH',
-                52: 'RR'
+                52: 'RR',
+                53: 'AT-C',
+                54: 'AT-O',
+                55: 'AT-M'
             }
         }
     };

@@ -1,4 +1,4 @@
-const missionlink = $('#mission_help').attr('href') || window.location.href.replace(/\?.*$/, "");
+const missionlink = $('#mission_help').attr('href')||window.location.href.replace(/\?.*$/, "");
 const missionID = missionlink.replace(/\?.*$/, "").match(/\d*$/)[0];
 
 $.get(missionlink)
@@ -7,21 +7,19 @@ $.get(missionlink)
 
         let vehicleDefinitons = {
             truck: "Fire engines",
-            platform: "Aerial Appliance",
-            heavyRescue: "Rescue Support Vehicle",
-            air: "Breathing Apparatus Support Unit",
-            bchief: "Fire Officer",
+            platform: "Turntable Ladder",
+            heavyRescue: "Major Rescue Vehicles",
+            boat: "Boat",
+            air: "Mobile Air",
+            bchief: "Rapid Response Vehicle",
             tanker: "Water Carrier",
             hazmat: "HazMat",
-            mcv: "Incident Command and Control Unit",
+            mcv: "Mobile Command Vehicle",
             police: "Police Car",
-            hems: "HEMS",
-            rtw: "Ambulance",
-            arff: "ARFF",
-            k9: "Dog Support Units",
-            swatSuv: "Armed Response Vehicle (ARV)",
-            hems: "SAR Helicopter",
+            arff: 'ARFF',
+            rth: "HEMS",
             policeHeli: "Police Helicopter",
+            ambulance: "Ambulance"
         };
 
         let credits;
@@ -43,7 +41,7 @@ $.get(missionlink)
         let expansions = [];
         let dauer;
 
-        data.find(".col-md-4:nth-of-type(1) table tbody tr").each(function () {
+        data.find(".col-md-4:nth-of-type(1) table tbody tr").each(function(){
             let content = $(this).text().trim();
             let number = $(this).find("td:last-of-type").text().trim().replace(/\D/g, "");
             if (content.match(/Average credits/)) {
@@ -54,16 +52,16 @@ $.get(missionlink)
                 poi = getPOI(content);
             }
         });
-        data.find(".col-md-4:nth-of-type(2) table tbody tr").each(function () {
+        data.find(".col-md-4:nth-of-type(2) table tbody tr").each(function(){
             let content = $(this).text().trim();
             let number = $(this).find("td:last-of-type").text().trim().replace(/\D/g, "");
             if (content.match(/Required/)) {
                 vehicles[getVehicle(content)] = number;
-            } else if (content.match(/Probability of/)) {
+            } else if (content.match(/Probability/)) {
                 percentages[getVehicle(content)] = number;
             }
         });
-        data.find(".col-md-4:nth-of-type(3) table tbody tr").each(function () {
+        data.find(".col-md-4:nth-of-type(3) table tbody tr").each(function(){
             let content = $(this).text().trim();
             let number = $(this).find("td:last-of-type").text().trim().replace(/\D/g, "");
             if (content.match(/Max\. Patients/)) {
@@ -78,13 +76,13 @@ $.get(missionlink)
                 specialisation = $(this).find("td:last-of-type").text().trim();
             } else if (content.match(/Maximum Number of Prisoners/)) {
                 prisonersMax = number;
-            } else if (content.match(/Armed Response Personnel/)) {
+            } else if (content.match(/SWAT Personnel/)) {
                 special["SWATPersonnel"] = number;
             } else if (content.match(/Duration/)) {
                 dauer = $(this).find("td:last-of-type").text().trim();
             } else if (content.match(/Expandable/)) {
                 let expansionLinks = $(this).find("a");
-                expansionLinks.each(function () {
+                expansionLinks.each(function() {
                     expansions.push($(this).attr("href").replace(/\D/g, ""));
                 });
             }
@@ -182,10 +180,10 @@ $.get(missionlink)
         $.post(`${lssm.config.server}/modules/lss-missionHelper/writeMission.php`, {
             mission: mission,
             id: missionID,
-            lang: "fj"
+            lang: "en_AU"
         })
             .done(response => {
-                if (response.startsWith('Error')) {
+                if (response.startsWith('Error'))  {
                     return console.error(`missionHelper Error:\n${response}`);
                 }
                 console.log(`Registered Missiontype ${missionID}`);
@@ -262,10 +260,9 @@ $.get(missionlink)
 
         function getStation(content) {
             let stationDefinitions = {
-                0: "Fire Station",
-                2: "Rescue Station",
-                6: "Police Station",
-                13: "Police Helicopter"
+              0: "Fire Station",
+              2: "Rescue Station",
+              6: "Police Station"
             };
             for (let station in stationDefinitions) {
                 if (content.match(stationDefinitions[station])) {

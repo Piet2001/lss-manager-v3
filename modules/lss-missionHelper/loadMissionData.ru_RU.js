@@ -17,9 +17,9 @@ $.get(missionlink)
             police: "полицейские автомобили",
             arff: 'АПСР',
             mcv: "мобильные командные пункты",
-            hems: "HEMS",
+            rth: "HEMS",
             policeHeli: "Police Helicopter",
-            rtw: "скорые"
+            ambulance: "скорые"
         };
 
         let credits;
@@ -55,7 +55,7 @@ $.get(missionlink)
         data.find(".col-md-4:nth-of-type(2) table tbody tr").each(function () {
             let content = $(this).text().trim();
             let number = $(this).find("td:last-of-type").text().trim().replace(/\D/g, "");
-            if (content.match(/Требуемые/)) {
+            if (content.match(/Требуемые|Требуются/)) {
                 vehicles[getVehicle(content)] = number;
             } else if (content.match(/Вероятность/)) {
                 percentages[getVehicle(content)] = number;

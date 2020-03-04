@@ -2,7 +2,7 @@
 
     let LSS_CENTERMAP_STORAGE = "LSS_CENTERMAP_STORAGE";
 
-    I18n.translations.de.lssm.centermap = {
+    I18n.translations.de_DE.lssm.centermap = {
         center: "Zentrieren",
         settings: {
             title: "Center-Map",
@@ -18,7 +18,7 @@
         }
     };
 
-    I18n.translations.en.lssm.centermap = {
+    I18n.translations.en_US.lssm.centermap = {
         center: "Center",
         settings: {
             title: "Center-Map",
@@ -31,6 +31,22 @@
             option3: "Custom",
             option3desc: "Set custom position and zoom-level.",
             set: "Save current position"
+        }
+    };
+
+    I18n.translations.cs_CZ.lssm.centermap = {
+        center: "Centrum",
+        settings: {
+            title: "Středová mapa",
+            choose: "Prosím vyberte",
+            option1: "Výchozí",
+            option1desc: "Výchozí úroveň přiblížení a centrování v řídicím centru ",
+            option2: "Dynamický",
+            alliance: "Vezměte v úvahu spojenectví",
+            option2desc: "Středová mapa, na které jsou viditelné všechny mise a stanice.",
+            option3: "Zvyk",
+            option3desc: "Nastavte vlastní polohu a úroveň přiblížení.",
+            set: "Uložit aktuální polohu"
         }
     };
 
@@ -66,7 +82,39 @@
         }
     };
 
-    I18n.translations.es.lssm.centermap = {
+    I18n.translations.da_DK.lssm.centermap = {
+        center: "Centrum",
+        settings: {
+            title: "Centre-kort",
+            choose: "Vælg venligst",
+            option1: "Standard",
+            option1desc: "Standard zoomniveau og centrering på kontrolcentret ",
+            option2: "Dynamisk",
+            alliance: "Tag alliance i betragtning",
+            option2desc: "Centerkort, hvor alle missioner og stationer er synlige.",
+            option3: "skik",
+            option3desc: "Indstil tilpasset position og zoomniveau.",
+            set: "Gem den aktuelle position"
+        }
+    };
+
+    I18n.translations.nb_NO.lssm.centermap = {
+        center: "Senter",
+        settings: {
+            title: "Senter-Map",
+            choose: "Vennligst velg",
+            option1: "Misligholde",
+            option1desc: "Standard zoomnivå og sentrering på kontrollsenteret ",
+            option2: "dynamisk",
+            alliance: "Ta hensyn til allianse",
+            option2desc: "Midtkart over at alle oppdrag og stasjoner er synlige.",
+            option3: "Tilpasset",
+            option3desc: "Angi tilpasset posisjon og zoomnivå.",
+            set: "Lagre gjeldende posisjon"
+        }
+    };
+
+    I18n.translations.es_ES.lssm.centermap = {
         center: "Centro",
         settings: {
             title: "Mapa del centro",
@@ -79,6 +127,22 @@
             option3: "A medida",
             option3desc: "Establecer la posición personalizada y el nivel de zoom.",
             set: "Guardar la posición actual"
+        }
+    };
+
+    I18n.translations.pt_PT.lssm.centermap = {
+        center: "Centro",
+        settings: {
+            title: "Mapa do centro",
+            choose: "Por favor, selecione",
+            option1: "Padrão",
+            option1desc: "Nível de zoom padrão e centrado no centro de controlo ",
+            option2: "Dinâmico",
+            alliance: "Considere a aliança",
+            option2desc: "Mapa do centro indicando que todas as missões e estações são visíveis.",
+            option3: "Como",
+            option3desc: "Desloque a posição personalizada e o nível de zoom.",
+            set: "Salvar a posição atual"
         }
     };
 
@@ -95,6 +159,22 @@
             option3: "Personalizzato",
             option3desc: "Impostare la posizione personalizzata e il livello di zoom.",
             set: "Salva posizione corrente"
+        }
+    };
+
+    I18n.translations.tr_TR.lssm.centermap = {
+        center: "merkez",
+        settings: {
+            title: "Merkezi-Harita",
+            choose: "Lütfen seçin",
+            option1: "Varsayılan",
+            option1desc: "Varsayılan zoom seviyesi ve kontrol merkezinde merkezleme ",
+            option2: "Dinamik",
+            alliance: "İttifakı dikkate alın",
+            option2desc: "Tüm görevlerin ve istasyonların görülebileceği orta harita.",
+            option3: "görenek",
+            option3desc: "Özel konum ve yakınlaştırma seviyesi ayarlayın.",
+            set: "Mevcut konumu kaydet"
         }
     };
 
@@ -130,7 +210,39 @@
         }
     };
 
-    I18n.translations.nl.lssm.centermap = {
+    I18n.translations.uk_UA.lssm.centermap = {
+        center: "Центр",
+        settings: {
+            title: "Центр-карта",
+            choose: "Виберіть будь ласка",
+            option1: "За замовчуванням",
+            option1desc: "Рівень масштабування та центральне значення в центрі управління",
+            option2: "Динамічний",
+            alliance: "Враховуйте альянс",
+            option2desc: "Центральна карта, щоб усі місії та станції були видні.",
+            option3: "Користувальницькі",
+            option3desc: "Встановіть власну позицію та рівень масштабування.",
+            set: "Зберегти поточну позицію"
+        }
+    };
+
+    I18n.translations.ja_JP.lssm.centermap = {
+        center: "センター",
+        settings: {
+            title: "センターマップ",
+            choose: "選んでください",
+            option1: "デフォルト",
+            option1desc: "デフォルトのズームレベルとコントロールセンターの中心 ",
+            option2: "動的",
+            alliance: "同盟を考慮する",
+            option2desc: "すべてのミッションとステーションが見えるセンターマップ。",
+            option3: "カスタム",
+            option3desc: "カスタムの位置とズームレベルを設定します。",
+            set: "現在の位置を保存"
+        }
+    };
+
+    I18n.translations.nl_NL.lssm.centermap = {
         center: "Centreren",
         settings: {
             title: "Kaart centreren",

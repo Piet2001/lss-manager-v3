@@ -6,31 +6,31 @@ $.get(missionlink)
         data = $(data);
 
         let vehicleDefinitons = {
-            truck: "Firetrucks",
-            platform: "Platform Truck",
-            heavyRescue: "Heavy Rescue",
-            boat: "Boat",
-            air: "Mobile Air",
-            bchief: "Battalion Chief",
-            tanker: "Water Tanker",
-            hazmat: "HazMat",
-            mcv: "Mobile Command Vehicle",
-            arff: "ARFF",
-            largeFireboat: "large fire boat",
-            als: "ALS Ambulance",
-            bls: "BLS Ambulance",
-            fly: "Fly-Car",
-            ems: "EMS Rescue",
-            mcu: "Mass Casualty Unit",
-            largeRescueboat: "large rescue boat",
-            police: "Police Car",
-            k9: "K-9",
-            pmotorcycle: "Police Motorcycle",
-            swatArmoured: "SWAT Armoured Vehicle",
-            swatSuv: "SWAT SUV",
-            hems: "HEMS",
-            policeHeli: "Police Helicopter",
-            rtw: "Ambulance"
+            truck: "(t|T)ankautospuiten",
+            noodhulpeen: "(n|N)oodhulpeenheden",
+            bchief: "OvD-B",
+            redvoertuig: "((r|R)edvoertuigen)|((h|H)oogwerker)",
+            slangenwagen: "(s|S)langenwagen",
+            hulpverlening: "(h|H)ulpverleningsvoertuigen",
+            adembescherming: "Adembeschermingsvoertuig",
+            hovd: "HOVD",
+            waarschuwing: "Waarschuwings",
+            gevaar: "Gevaarlijke Stoffen",
+            ovdp: "Officier(s?) van Dienst Politie",
+            commando: "Commandowagen",
+            ambulance: "Ambulance",
+            mmtarts: "MMT-arts",
+            megroep: "ME Groepsvoertuig",
+            mecommando: "ME Commandovoertuigen",
+            polHeli: "politie helikopter",
+            watervoertuig: "Waterongevallenvoertuig",
+            wateraanhanger: "(w|W)aterongevallenaanhangers",
+            hond: "Hondengeleider",
+            crashtender: "Crashtender",
+            afoosc: "AFO/OSC",
+            atc: "AT Commandant",
+            ato: "AT Operator",
+            atm: "AT Materiaalwagen"
         };
 
         let credits;
@@ -42,7 +42,7 @@ $.get(missionlink)
         let prisonersMax = 0;
         let patientsMin = 0;
         let patientsMax = 0;
-        let nef = 0;
+        let mmtarts = 0;
         let transport = 0;
         let specialisation;
         let tragehilfe = 0;
@@ -55,43 +55,41 @@ $.get(missionlink)
         data.find(".col-md-4:nth-of-type(1) table tbody tr").each(function(){
             let content = $(this).text().trim();
             let number = $(this).find("td:last-of-type").text().trim().replace(/\D/g, "");
-            if (content.match(/Average credits/)) {
+            if (content.match(/Credits/)) {
                 credits = number;
-            } else if (content.match(/Required|Requirement|Min./)) {
+            } else if (content.match(/Benodigd|Minimaal politie helikopter/)) {
                 stations[getStation(content)] = number;
-            } else if (content.match(/Place/)) {
+            } else if (content.match(/POI locatie/)) {
                 poi = getPOI(content);
             }
         });
         data.find(".col-md-4:nth-of-type(2) table tbody tr").each(function(){
             let content = $(this).text().trim();
             let number = $(this).find("td:last-of-type").text().trim().replace(/\D/g, "");
-            if (content.match(/Required/)) {
-                vehicles[getVehicle(content)] = number;
-            } else if (content.match(/Probability/)) {
+            if (content.match(/waarschijnlijkheid|benodigdheid/)) {
                 percentages[getVehicle(content)] = number;
+            } else if (content.match(/[bB]enodigd|Crashtender/)) {
+                vehicles[getVehicle(content)] = number;
             }
         });
         data.find(".col-md-4:nth-of-type(3) table tbody tr").each(function(){
             let content = $(this).text().trim();
             let number = $(this).find("td:last-of-type").text().trim().replace(/\D/g, "");
-            if (content.match(/Max\. Patients/)) {
+            if (content.match(/Maximale patiënten/)) {
                 patientsMax = number;
-            } else if (content.match(/Minimum patient number/)) {
+            } else if (content.match(/Minimale aantal slachtoffers/)) {
                 patientsMin = number;
-            } else if (content.match(/transported/)) {
+            } else if (content.match(/getransporteerd/)) {
                 transport = number;
-            } else if (content.match(/NEF/)) {
-                nef = number;
-            } else if (content.match(/Patient Specializations/)) {
+            } else if (content.match(/MMT-Arts/)) {
+                mmtarts = number;
+            } else if (content.match(/Gespecialiseerde afdeling/)) {
                 specialisation = $(this).find("td:last-of-type").text().trim();
-            } else if (content.match(/Maximum Number of Prisoners/)) {
+            } else if (content.match(/gevangenen/)) {
                 prisonersMax = number;
-            } else if (content.match(/SWAT Personnel/)) {
-                special["SWATPersonnel"] = number;
-            } else if (content.match(/Duration/)) {
+            } else if (content.match(/Duur/)) {
                 dauer = $(this).find("td:last-of-type").text().trim();
-            } else if (content.match(/Expandable/)) {
+            } else if (content.match(/Uitbreidingsmogelijkheid/)) {
                 let expansionLinks = $(this).find("a");
                 expansionLinks.each(function() {
                     expansions.push($(this).attr("href").replace(/\D/g, ""));
@@ -109,8 +107,8 @@ $.get(missionlink)
             if (transport) {
                 mission.transport = transport;
             }
-            if (nef) {
-                mission.nef = nef;
+            if (mmtarts) {
+                mission.mmtarts = mmtarts;
             }
             if (rth) {
                 mission.rth = rth;
@@ -136,8 +134,8 @@ $.get(missionlink)
                 if (transport) {
                     mission.patients.transport = transport;
                 }
-                if (nef) {
-                    mission.patients.nef = nef;
+                if (mmtarts) {
+                    mission.patients.mmtarts = mmtarts;
                 }
                 if (rth) {
                     mission.patients.rth = rth;
@@ -191,7 +189,7 @@ $.get(missionlink)
         $.post(`${lssm.config.server}/modules/lss-missionHelper/writeMission.php`, {
             mission: mission,
             id: missionID,
-            lang: "en"
+            lang: "nl_NL"
         })
             .done(response => {
                 if (response.startsWith('Error'))  {
@@ -210,57 +208,59 @@ $.get(missionlink)
         function getPOI(content) {
             let pois = [
                 "Park",
-                "Lake",
-                "Hospital",
-                "Forest",
-                "Bus stop",
-                "Tram stop",
-                "Train station \\(regional traffic\\)",
-                "Train station \\(regional traffic and long-distance travel\\)",
-                "Goods station",
-                "Supermarket \\(small\\)",
-                "Supermarket \\(big\\)",
-                "Gas station",
+                "Meer",
+                "Ziekenhuis",
+                "Bos",
+                "Bushalte",
+                "Tramhalte",
+                "Station",
+                "Centraal Station",
+                "Rangeeremplacement",
+                "Buurtsuper",
+                "Supermarkt",
+                "Tankstation",
                 "School",
                 "Museum",
-                "Mall",
-                "Car workshop",
-                "Highway exit",
-                "Christmas market",
-                "Storehouse",
-                "Discotheque",
-                "Stadium",
-                "Farm",
-                "Office building",
-                "Swimming bath",
-                "Railroad Crossing",
+                "Winkelcentrum",
+                "Garage",
+                "Snelweg oprit / afrit",
+                "Kerstmarkt",
+                "Magazijn",
+                "Café/Club",
+                "Stadion",
+                "Boerderij",
+                "Kantoorgebouw",
+                "Zwembad",
+                "Spoorwegovergang",
                 "Theater",
-                "Fairground",
-                "River",
-                "Small Airport \\(Runway\\)",
-                "Large Airport \\(Runway\\)",
-                "Airport Terminal",
-                "Bank",
-                "Warehouse",
-                "Bridge",
-                "Fast Food Restaurant",
-                "Cargo Port",
-                "Recycling Centre",
-                "High rise",
-                "Cruise ship dock",
-                "Marina",
-                "Rail Crossing",
-                "Tunnel",
-                "Cold Storage Warehouse",
-                "Power Plant",
-                "Factory",
-                "Scrap yard",
-                "Subway station",
-                "Small chemical storage tank",
-                "Large chemical storage tank",
+                "Marktplein",
+                "Rivier",
+                "Sloot",
+                "Vliegveld \\(klein\\): Start-/Landingsbaan",
+                "Vliegveld \\(klein\\): Gebouw",
+                "Vliegveld \\(klein\\): Vliegtuig parkeerplaats",
+                "Vliegveld \\(groot\\): Start-/Landingsbaan",
+                "Vliegveld \\(groot\\): Terminal",
+                "Vliegveld \\(groot\\): Platform / Gate",
+                "Vliegveld \\(groot\\): Parkeergarage",
+                "Parkeergarage",
+                "Verzorgingshuis",
+                "Manege",
                 "Hotel",
-                "Bar",
-                "Landfill site"
+                "Restaurant",
+                "Bankkantoor",
+                "Sporthal",
+                "Camping",
+                "Gevangenis",
+                "Asielzoekerscentrum",
+                "Afvalverwerker",
+                "Kerkgebouw",
+                "Bouwmarkt",
+                "Transformatorhuisje",
+                "Industrieterrein",
+                "Bedrijventerrein",
+                "Haventerrein",
+                "Bouwterrein"
             ];
             for (let i = 0; i < pois.length; i++) {
                 if (content.match(pois[i])) {
@@ -271,13 +271,12 @@ $.get(missionlink)
 
         function getStation(content) {
             let stationDefinitions = {
-                0: "Fire Station",
-                3: "Rescue Station",
-                5: "Police Station",
-                8: "Police Helicopter",
-                11: "fire boat",
-                12: "rescue boat",
-                "water": "Water Rescue"
+                0: "brandweerposten",
+                3: "Ambulancestandplaats",
+                5: "politiebureau",
+                9: "politie helikopter",
+                11: "Hoofdbureau",
+                "water": "waterongevallenbestrijdingafdelingen"
             };
             for (let station in stationDefinitions) {
                 if (content.match(stationDefinitions[station])) {

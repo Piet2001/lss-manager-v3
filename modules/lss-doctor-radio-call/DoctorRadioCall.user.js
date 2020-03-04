@@ -1,13 +1,13 @@
 (function(I18n, $) {
   'use strict';
 
-  I18n.translations.de.lssm.doctorradiocall = {
+  I18n.translations.de_DE.lssm.doctorradiocall = {
     nef: "NEF"
   };
-  I18n.translations.en.lssm.doctorradiocall = {
+  I18n.translations.en_US.lssm.doctorradiocall = {
     nef: "HEMS"
   };
-  I18n.translations.nl.lssm.doctorradiocall = {
+  I18n.translations.nl_NL.lssm.doctorradiocall = {
     nef: "MMT-Auto"
   };
 

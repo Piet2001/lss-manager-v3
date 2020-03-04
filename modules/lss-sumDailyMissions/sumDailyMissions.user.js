@@ -2,7 +2,7 @@
     let site_location = window.location.href;
     if(site_location.match('daily'))
     {
-        I18n.translations.de['lssm']['sumDailyMissions'] = {
+        I18n.translations.de_DE['lssm']['sumDailyMissions'] = {
             patient_treatment: 'Patienten Behandlung',
             education: 'Ausbildung',
             purchase: 'gekauft',
@@ -19,7 +19,7 @@
             num_team: 'Anzahl Verbandseinlieferungen'
         };
 
-        I18n.translations.en['lssm']['sumDailyMissions'] = {
+        I18n.translations.en_US['lssm']['sumDailyMissions'] = {
             patient_treatment: 'Patient Treatment',
             education: 'education',
             purchase: 'bought',
@@ -35,7 +35,23 @@
             num_team: 'Sum alliance'
         };
 
-        I18n.translations.es['lssm']['sumDailyMissions'] = {
+        I18n.translations.es_ES['lssm']['sumDailyMissions'] = {
+            patient_treatment: 'Patient Treatment',
+            education: 'education',
+            purchase: 'comprado',
+            cancelled: 'Cancelled',
+            extended: 'construida',
+            extended2: 'Extended',
+            built: 'constructed',
+            team: 'Alliance',
+            prisoner: 'Prisoner Transported',
+            num_missions: 'Sum missions',
+            num_patients: 'Sum patients',
+            num_prisoners: 'Sum prisoners',
+            num_team: 'Sum alliance'
+        };
+
+        I18n.translations.pt_PT['lssm']['sumDailyMissions'] = {
             patient_treatment: 'Patient Treatment',
             education: 'education',
             purchase: 'comprado',
@@ -83,6 +99,38 @@
             num_team: 'Sum alliance'
         };
 
+        I18n.translations.da_DK['lssm']['sumDailyMissions'] = {
+            patient_treatment: 'Patient Treatment',
+            education: 'education',
+            purchase: 'bought',
+            cancelled: 'Återlämna',
+            extended: 'uppförd',
+            extended2: 'Extended',
+            built: 'uppförd',
+            team: 'Alliance',
+            prisoner: 'Prisoner Transported',
+            num_missions: 'Sum missions',
+            num_patients: 'Sum patients',
+            num_prisoners: 'Sum prisoners',
+            num_team: 'Sum alliance'
+        };
+
+        I18n.translations.nb_NO['lssm']['sumDailyMissions'] = {
+            patient_treatment: 'Patient Treatment',
+            education: 'education',
+            purchase: 'bought',
+            cancelled: 'Återlämna',
+            extended: 'uppförd',
+            extended2: 'Extended',
+            built: 'uppförd',
+            team: 'Alliance',
+            prisoner: 'Prisoner Transported',
+            num_missions: 'Sum missions',
+            num_patients: 'Sum patients',
+            num_prisoners: 'Sum prisoners',
+            num_team: 'Sum alliance'
+        };
+
         I18n.translations.it_IT['lssm']['sumDailyMissions'] = {
             patient_treatment: 'Trattamento del paziente',
             education: 'educazione',
@@ -98,6 +146,23 @@
             num_prisoners: 'Sum prisoners',
             num_team: 'Sum alliance'
         };
+
+        I18n.translations.tr_TR['lssm']['sumDailyMissions'] = {
+            patient_treatment: 'Patient Treatment',
+            education: 'education',
+            purchase: 'bought',
+            cancelled: 'Cancelled',
+            extended: 'constructed',
+            extended2: 'Extended',
+            built: 'constructed',
+            team: 'Alliance',
+            prisoner: 'Prisoner Transported',
+            num_missions: 'Sum missions',
+            num_patients: 'Sum patients',
+            num_prisoners: 'Sum prisoners',
+            num_team: 'Sum alliance'
+        };
+
         I18n.translations.fr_FR['lssm']['sumDailyMissions'] = {
             patient_treatment: 'Patient Treatment',
             education: 'education',
@@ -113,6 +178,7 @@
             num_prisoners: 'Sum prisoners',
             num_team: 'Sum alliance'
         };
+
         I18n.translations.ru_RU['lssm']['sumDailyMissions'] = {
             patient_treatment: 'Patient Treatment',
             education: 'education',
@@ -129,7 +195,55 @@
             num_team: 'Sum alliance'
         };
 
-        I18n.translations.nl['lssm']['sumDailyMissions'] = {
+        I18n.translations.uk_UA['lssm']['sumDailyMissions'] = {
+            patient_treatment: 'Patient Treatment',
+            education: 'education',
+            purchase: 'bought',
+            cancelled: 'Cancelled',
+            extended: 'constructed',
+            extended2: 'Extended',
+            built: 'constructed',
+            team: 'Alliance',
+            prisoner: 'Prisoner Transported',
+            num_missions: 'Sum missions',
+            num_patients: 'Sum patients',
+            num_prisoners: 'Sum prisoners',
+            num_team: 'Sum alliance'
+        };
+
+        I18n.translations.cs_CZ['lssm']['sumDailyMissions'] = {
+            patient_treatment: 'Patient Treatment',
+            education: 'education',
+            purchase: 'bought',
+            cancelled: 'Cancelled',
+            extended: 'constructed',
+            extended2: 'Extended',
+            built: 'constructed',
+            team: 'Alliance',
+            prisoner: 'Prisoner Transported',
+            num_missions: 'Sum missions',
+            num_patients: 'Sum patients',
+            num_prisoners: 'Sum prisoners',
+            num_team: 'Sum alliance'
+        };
+
+        I18n.translations.ja_JP['lssm']['sumDailyMissions'] = {
+            patient_treatment: 'Patient Treatment',
+            education: 'education',
+            purchase: 'bought',
+            cancelled: 'Cancelled',
+            extended: 'constructed',
+            extended2: 'Extended',
+            built: 'constructed',
+            team: 'Alliance',
+            prisoner: 'Prisoner Transported',
+            num_missions: 'Sum missions',
+            num_patients: 'Sum patients',
+            num_prisoners: 'Sum prisoners',
+            num_team: 'Sum alliance'
+        };
+
+        I18n.translations.nl_NL['lssm']['sumDailyMissions'] = {
             patient_treatment: 'Patiënten behandeling',
             education: 'Opleiding',
             purchase: 'gekocht',

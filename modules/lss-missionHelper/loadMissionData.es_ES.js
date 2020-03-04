@@ -6,49 +6,19 @@ $.get(missionlink)
         data = $(data);
 
         let vehicleDefinitons = {
-            lf: 'Löschfahrzeug|^LF',
-            dlk: 'Drehleiter',
-            rw: 'Rüstwagen',
-            elw1: 'ELW 1',
-            elw2: 'ELW 2',
-            atem: 'GW-A',
-            oel: 'GW-Öl',
-            mess: 'GW-Mess',
-            gefahr: 'GW-Gefahrgut',
-            gwl2: 'GW(-| )L ?2(-| )Wasser',
-            dekon: 'Dekon(-| )P',
-            fwk: 'FwK',
-            hoehen: 'GW-Höhenrettung',
-            fustw: 'Streifenwagen',
-            boot: 'Boot',
-            lebefkw: 'leBefKw',
-            fukw: 'FüKw',
-            grukw: 'GruKw',
-            gefkw: 'GefKw',
-            wawe: 'Wasserwerfer',
-            nef: 'NEF',
-            rth: 'RTH',
-            lna: 'KdoW-LNA',
-            orgl: 'KdoW-OrgL',
-            rtw: 'RTW',
-            ktw: 'KTW oder RTW',
-            lfogkworw: 'LF oder GKW oder RW',
-            gkw: 'GKW',
-            mzkw: 'MzKW',
-            mtwtz: 'MTW-TZ',
-            radlader: 'BRmG R',
-            anhdle: 'Drucklufterzeugung',
-            polheli: 'Polizeihubschrauber',
-            flf: 'Flugfeldlöschfahrzeug',
-            rtf: 'Rettungstreppen',
-            taucher: 'Taucher',
-            mek: 'MEK-Fahrzeuge',
-            sek: 'SEK-Fahrzeuge',
-            gwwerk: 'GW-Werkfeuerwehr',
-            ulf: 'ULF',
-            tm: 'Teleskopmasten',
-            turbo: 'Turbolöscher',
-            gwsan: 'GW-San'
+            truck: "camiones de bomberos",
+            platform: "camiones con plataforma",
+            heavyRescue: "Furgones de Útiles Varios",
+            air: "aéreo",
+            bchief: "unidades de Mando y Comunicaciones",
+            mcv: "vehículos de mando",
+            tanker: "(c|C)amiones cisterna",
+            hazmat: "vehículos de materiales peligrosos",
+            police: "coches patrulla",
+            rth: "Helicóptero HSR",
+            arff: "CBA",
+            policeHeli: "Police Helicopter",
+            ambulance: "Ambulancias"
         };
 
         let credits;
@@ -73,57 +43,47 @@ $.get(missionlink)
         data.find(".col-md-4:nth-of-type(1) table tbody tr").each(function(){
             let content = $(this).text().trim();
             let number = $(this).find("td:last-of-type").text().trim().replace(/\D/g, "");
-            if (content.match(/Credits im Durchschnitt/)) {
+            if (content.match(/Media de créditos/)) {
                 credits = number;
-            } else if (content.match(/Vorr?aussetzung(en)? an|THW-Wachen|Polizeihubschrauberstationen/)) {
+            } else if (content.match(/necesarios|necesarias|Requisitos de/)) {
                 stations[getStation(content)] = number;
-            } else if (content.match(/Ort/)) {
+            } else if (content.match(/Lugar/)) {
                 poi = getPOI(content);
             }
         });
         data.find(".col-md-4:nth-of-type(2) table tbody tr").each(function(){
             let content = $(this).text().trim();
             let number = $(this).find("td:last-of-type").text().trim().replace(/\D/g, "");
-            if (content.match(/Wasserbedarf/)) {
-                water = number;
-            } else if (content.match(/Benötigte|BRmG R|Drucklufterzeugung/)) {
+            if (content.match(/Se necesitan|necesarios|necesarias/)) {
                 vehicles[getVehicle(content)] = number;
-            } else if (content.match(/Durchschnittliche min. Personalanzahl \(Feuerwehr\)/)) {
-                special["averageMinimumEmployeesFire"] = number;
-            } else if (content.match(/Durchschnittliche min. Personalanzahl \(Polizei\)/)) {
-                special["averageMinimumEmployeesPolice"] = number;
-            } else if (content.match(/Anforderungswahrscheinlichkeit/)) {
+            } else if (content.match(/Probabilidad/)) {
                 percentages[getVehicle(content)] = number;
             }
         });
         data.find(".col-md-4:nth-of-type(3) table tbody tr").each(function(){
             let content = $(this).text().trim();
             let number = $(this).find("td:last-of-type").text().trim().replace(/\D/g, "");
-            if (content.match(/Ausbreitungsmöglichkeiten/)) {
+            if (content.match(/N\.º máximo de pacientes/)) {
+                patientsMax = number;
+            } else if (content.match(/Número mínimo de pacientes/)) {
+                patientsMin = number;
+            } else if (content.match(/transportar/)) {
+                transport = number;
+            } else if (content.match(/NEF/)) {
+                nef = number;
+            } else if (content.match(/Especializaciones de pacientes/)) {
+                specialisation = $(this).find("td:last-of-type").text().trim();
+            } else if (content.match(/N\.º máximo de presos/)) {
+                prisonersMax = number;
+            } else if (content.match(/SWAT Personnel/)) {
+                special["SWATPersonnel"] = number;
+            } else if (content.match(/Duration/)) {
+                dauer = $(this).find("td:last-of-type").text().trim();
+            } else if (content.match(/expansión/)) {
                 let expansionLinks = $(this).find("a");
                 expansionLinks.each(function() {
                     expansions.push($(this).attr("href").replace(/\D/g, ""));
                 });
-            } else if (content.match(/Minimale Anzahl an Gefangene/)) {
-                prisonersMin = number;
-            } else if (content.match(/Maximale Anzahl an Gefangene/)) {
-                prisonersMax = number;
-            } else if (content.match(/Mindest Patientenanzah/)) {
-                patientsMin = number;
-            } else if (content.match(/Maximale Patientenanzahl/)) {
-                patientsMax = number;
-            } else if (content.match(/NEF/)) {
-                nef = number;
-            } else if (content.match(/transportiert/)) {
-                transport = number;
-            } else if (content.match(/Fachrichtung/)) {
-                specialisation = $(this).find("td:last-of-type").text().trim();
-            } else if (content.match(/Tragehilfe/)) {
-                tragehilfe = number;
-            } else if (content.match(/RTH/)) {
-                rth = number;
-            } else if (content.match(/Dauer/)) {
-                dauer = $(this).find("td:last-of-type").text().trim();
             }
         });
 
@@ -216,10 +176,10 @@ $.get(missionlink)
             mission.dauer = dauer;
         }
 
-        $.post(lssm.getlink(`/modules/lss-missionHelper/writeMission.php`), {
+        $.post(`${lssm.config.server}/modules/lss-missionHelper/writeMission.php`, {
             mission: mission,
             id: missionID,
-            lang: "de"
+            lang: "es_ES"
         })
             .done(response => {
                 if (response.startsWith('Error'))  {
@@ -232,55 +192,64 @@ $.get(missionlink)
                 lssm_missionhelper_adjustPosition();
             })
             .fail(reason => {
-               console.error(reason);
+                console.error(reason);
             });
 
         function getPOI(content) {
             let pois = [
-                "Park$",
-                "See",
-                "Krankenhaus",
-                "Wald",
-                "Bushaltestelle",
-                "Straßenbahnhaltestelle",
-                "Bahnhof \\(Regionalverkehr\\)",
-                "Bahnhof \\(Regionalverkehr und Fernverkehr\\)",
-                "Güterbahnhof",
-                "Supermarkt \\(Klein\\)",
-                "Supermarkt \\(Goß\\)",
-                "Tankstelle",
-                "Schule",
-                "Museum",
-                "Einkaufszentrum",
-                "Auto-Werkstatt",
-                "Autobahnauf.- / abfahrt",
-                "Weihnachtsmarkt",
-                "Lagerhalle",
-                "Diskothek",
-                "Stadion",
-                "Bauernhof",
-                "Bürokomplex",
-                "Schwimmbad",
-                "Bahnübergang",
-                "Theater",
-                "Festplatz",
-                "Fluss",
-                "Baumarkt",
-                "Flughafen \\(klein\\): Start-/Landebahn",
-                "Flughafen \\(klein\\): Gebäude",
-                "Flughafen \\(klein\\): Flugzeug Standplatz",
-                "Flughafen \\(groß\\): Start-/Landebahn",
-                "Flughafen \\(groß\\): Terminal",
-                "Flughafen \\(groß\\): Vorfeld / Standplätze",
-                "Flughafen \\(groß\\): Parkhaus",
-                "Biogasanlage",
-                "Bank",
-                "Kirche",
-                "Chemiepark",
-                "Industrie-Allgemein",
-                "Automobilindustrie",
-                "Müllverbrennungsanlage",
-                "Eishalle"
+                "Parque",
+                "Lago",
+                "Hospital",
+                "Bosque",
+                "Parada de autobús",
+                "Parada de tranvía",
+                "Parada de tren \\(cercanías\\)",
+                "Parada de tren \\(cercanías y larga distancia\\)",
+                "Estación de mercancías",
+                "Supermercado \\(pequeño\\)",
+                "Supermercado \\(grande\\)",
+                "Gasolinera",
+                "Escuela",
+                "Museo",
+                "Centro comercial",
+                "Taller",
+                "Salida de autopista",
+                "Mercado navideño",
+                "Depósito",
+                "Discoteca",
+                "Estadio",
+                "Granja",
+                "Edificio de oficinas",
+                "Piscina",
+                "Railroad Crossing",
+                "Cine",
+                "Feria",
+                "Río",
+                "Aeropuerto pequeño \\(pista\\)",
+                "Aeropuerto grande \\(pista\\)",
+                "Terminal de aeropuerto",
+                "Banco",
+                "Almacén",
+                "Puente",
+                "Restaurante de comida rápida",
+                "Puerto de mercancías",
+                "Centro de reciclaje",
+                "Rascacielos",
+                "Cubierta de yate",
+                "Puerto deportivo",
+                "Paso a nivel",
+                "Túnel",
+                "Almacén frigorífico",
+                "Central eléctrica",
+                "Fábrica",
+                "Chatarrería",
+                "Estación de metro",
+                "Almacén químico pequeño",
+                "Almacén químico grande",
+                "Hotel",
+                "Bar",
+                "Vertedero",
+                "Aparcamiento"
             ];
             for (let i = 0; i < pois.length; i++) {
                 if (content.match(pois[i])) {
@@ -291,16 +260,9 @@ $.get(missionlink)
 
         function getStation(content) {
             let stationDefinitions = {
-                0: "Feuerwachen",
-                2: "Rettungswachen",
-                6: "Polizeiwachen",
-                9: "THW-Wachen",
-                11: "Bereitschaftspolizeiwache",
-                13: "Polizeihubschrauberstationen",
-                15: "Wasserrettungswachen",
-                "sek": "SEK-Wachen",
-                "mek": "MEK-Wachen",
-                "werk": "Werkfeuerwehren"
+              0: "Parques de bomberos",
+              2: "Estaciones de rescate",
+              6: "comisarías de policía"
             };
             for (let station in stationDefinitions) {
                 if (content.match(stationDefinitions[station])) {

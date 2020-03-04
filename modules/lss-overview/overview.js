@@ -1,6 +1,6 @@
 (($, win, I18n) => {
     const prefix = lssm.config.prefix + "_overview";
-    I18n.translations.de.lssm.overview = {
+    I18n.translations.de_DE.lssm.overview = {
         vehicleType: 'Fahrzeugtyp',
         min: 'mindest Personal',
         max: 'maximal Personal',
@@ -20,7 +20,7 @@
         wtank: 'Wassertank'
     };
 
-    I18n.translations.en.lssm.overview = {
+    I18n.translations.en_US.lssm.overview = {
         vehicleType: 'Vehicle Type',
         min: 'minimum staff',
         max: 'maximum staff',
@@ -38,8 +38,8 @@
         extensions: 'extensions',
         maxBuildins: 'building boundary'
     };
-    I18n.translations.eu.lssm.overview = {};
-    I18n.translations.fj.lssm.overview = {};
+    I18n.translations.en_AU.lssm.overview = {};
+    I18n.translations.en_GB.lssm.overview = {};
 
     I18n.translations.sv_SE.lssm.overview = {
         vehicleType: 'fordonstyp',
@@ -60,7 +60,7 @@
         maxBuildins: 'bygggräns'
     };
 
-    I18n.translations.es.lssm.overview = {
+    I18n.translations.es_ES.lssm.overview = {
         vehicleType: 'Tipo de vehículo',
         min: 'mínimo personal',
         max: 'máximo personal',
@@ -79,7 +79,7 @@
         maxBuildins: 'límite de construcción'
     };
 
-    I18n.translations.nl.lssm.overview = {
+    I18n.translations.nl_NL.lssm.overview = {
         vehicleType: 'Type voertuig',
         min: 'minimum personeel',
         max: 'maximaal personeel',
@@ -109,7 +109,7 @@
         return;
     }
 
-    I18n.translations.de.lssm.overview.buildings = {
+    I18n.translations.de_DE.lssm.overview.buildings = {
         lst: {
             name: 'Leitstelle',
             credits: 0,
@@ -336,7 +336,7 @@
         }
     };
 
-    I18n.translations.de.lssm.overview.hiorgs = {
+    I18n.translations.de_DE.lssm.overview.hiorgs = {
         fw: 'Feuerwehr',
         fwspecial: 'Werk-/Flughafenfeuerwehr',
         rd: 'Rettungsdienst',
@@ -349,7 +349,7 @@
         seg: 'SEG'
     };
 
-    I18n.translations.de.lssm.overview.vehicles = {
+    I18n.translations.de_DE.lssm.overview.vehicles = {
         fw: {
             lf20: {
                 name: 'LF 20',
@@ -1131,14 +1131,14 @@
         }
     };
 
-    I18n.translations.en.lssm.overview.hiorgs = {
+    I18n.translations.en_US.lssm.overview.hiorgs = {
         fd: 'Fire Department',
         rd: 'Rescue Department',
         pol: 'Police',
         heli: 'Helicopter'
     };
 
-    I18n.translations.en.lssm.overview.buildings = {
+    I18n.translations.en_US.lssm.overview.buildings = {
         lst: {
             name: 'Dispatch Center',
             credits: 0,
@@ -1312,7 +1312,7 @@
         }
     };
 
-    I18n.translations.en.lssm.overview.vehicles = {
+    I18n.translations.en_US.lssm.overview.vehicles = {
         fd: {
             t1fe: {
                 name: 'Type 1 Fire Engine',
@@ -1567,14 +1567,14 @@
         }
     };
 
-    I18n.translations.fj.lssm.overview.hiorgs = {
+    I18n.translations.en_GB.lssm.overview.hiorgs = {
         fd: 'Fire Department',
         rd: 'Rescue Department',
         pol: 'Police',
         heli: 'Helicopter'
     };
 
-    I18n.translations.fj.lssm.overview.buildings = {
+    I18n.translations.en_GB.lssm.overview.buildings = {
         lst: {
             name: 'Dispatch Center',
             credits: 0,
@@ -1716,7 +1716,7 @@
         }
     };
 
-    I18n.translations.fj.lssm.overview.vehicles = {
+    I18n.translations.en_GB.lssm.overview.vehicles = {
         fd: {
             rl: {
                 name: 'Water Ladder',
@@ -1839,14 +1839,14 @@
         }
     };
 
-    I18n.translations.eu.lssm.overview.hiorgs = {
+    I18n.translations.en_AU.lssm.overview.hiorgs = {
         fd: 'Fire Department',
         rd: 'Rescue Department',
         pol: 'Police',
         heli: 'Helicopter'
     };
 
-    I18n.translations.eu.lssm.overview.buildings = {
+    I18n.translations.en_AU.lssm.overview.buildings = {
         lst: {
             name: 'Dispatch Center',
             credits: 0,
@@ -1953,7 +1953,7 @@
         }
     };
 
-    I18n.translations.eu.lssm.overview.vehicles = {
+    I18n.translations.en_AU.lssm.overview.vehicles = {
         fd: {
             t1fe: {
                 name: 'Class 2 Pumper',
@@ -2241,14 +2241,14 @@
         }
     };
 
-    I18n.translations.es.lssm.overview.hiorgs = {
+    I18n.translations.es_ES.lssm.overview.hiorgs = {
         fd: 'Parques de bomberos',
         rd: 'Estaciones de rescate',
         pol: 'comisarías de policía',
         heli: 'Helicopter'
     };
 
-    I18n.translations.es.lssm.overview.buildings = {
+    I18n.translations.es_ES.lssm.overview.buildings = {
         lst: {
             name: 'Centralita',
             credits: 0,
@@ -2353,7 +2353,7 @@
         }
     };
 
-    I18n.translations.es.lssm.overview.vehicles = {
+    I18n.translations.es_ES.lssm.overview.vehicles = {
         fd: {
             t1fe: {
                 name: 'Camión BUP',
@@ -2440,7 +2440,7 @@
         }
     };
 
-    I18n.translations.nl.lssm.overview.hiorgs = {
+    I18n.translations.nl_NL.lssm.overview.hiorgs = {
         brand: 'Brandweer',
         ambulance: 'Ambulance',
         pol: 'Politie',
@@ -2448,7 +2448,7 @@
         heli: 'Helikopter'
     };
 
-    I18n.translations.nl.lssm.overview.buildings = {
+    I18n.translations.nl_NL.lssm.overview.buildings = {
         lst: {
             name: 'Meldkamer',
             credits: 0,
@@ -2591,7 +2591,7 @@
         }
     };
 
-    I18n.translations.nl.lssm.overview.vehicles = {
+    I18n.translations.nl_NL.lssm.overview.vehicles = {
         brand: {
             siv: {
                 name: 'SIV',
@@ -2999,23 +2999,23 @@
 
             $('#' + hiorg).append('<input type="text" class="search_input_field pull-right" id="search_' + hiorg + '">');
 
-            if (I18n.locale === "de") {
+            if (I18n.locale === "de_DE") {
                 $('#' + hiorg).append('<table id="table-' + hiorg + '" class="table table-striped" role="grid"><thead><th>' + I18n.t('lssm.overview.vehicleType') + '</th><th>' + I18n.t('lssm.overview.min') + '</th><th>' + I18n.t('lssm.overview.max') + '</th><th>' + I18n.t('lssm.overview.cost') + '</th><th>' + I18n.t('lssm.overview.schooling') + '</th><th>' + I18n.t('lssm.overview.wtank') + '</th><th>' + I18n.t('lssm.overview.special') + '</th></thead><tbody id="table-' + hiorg + '-body"></tbody></table>')
-            } else if (I18n.locale === "en") {
+            } else if (I18n.locale === "en_US") {
                 $('#' + hiorg).append('<table id="table-' + hiorg + '" class="table table-striped" role="grid"><thead><th>' + I18n.t('lssm.overview.vehicleType') + '</th><th>' + I18n.t('lssm.overview.min') + '</th><th>' + I18n.t('lssm.overview.max') + '</th><th>' + I18n.t('lssm.overview.cost') + '</th><th>' + I18n.t('lssm.overview.schooling') + '</th><th>' + I18n.t('lssm.overview.special') + '</th></thead><tbody id="table-' + hiorg + '-body"></tbody></table>');
-            } else if (I18n.locale === "fj") {
+            } else if (I18n.locale === "en_GB") {
                 $('#' + hiorg).append('<table id="table-' + hiorg + '" class="table table-striped" role="grid"><thead><th>' + I18n.t('lssm.overview.vehicleType') + '</th><th>' + I18n.t('lssm.overview.min') + '</th><th>' + I18n.t('lssm.overview.max') + '</th><th>' + I18n.t('lssm.overview.cost') + '</th><th>' + I18n.t('lssm.overview.schooling') + '</th><th>' + I18n.t('lssm.overview.special') + '</th></thead><tbody id="table-' + hiorg + '-body"></tbody></table>');
-            } else if (I18n.locale === "nl") {
+            } else if (I18n.locale === "nl_NL") {
                 $('#' + hiorg).append('<table id="table-' + hiorg + '" class="table table-striped" role="grid"><thead><th>' + I18n.t('lssm.overview.vehicleType') + '</th><th>' + I18n.t('lssm.overview.min') + '</th><th>' + I18n.t('lssm.overview.max') + '</th><th>' + I18n.t('lssm.overview.cost') + '</th><th>' + I18n.t('lssm.overview.schooling') + '</th><th>' + I18n.t('lssm.overview.special') + '</th></thead><tbody id="table-' + hiorg + '-body"></tbody></table>');
             }
 
             for (let vehicle in I18n.t('lssm.overview.vehicles')[hiorg]) {
                 vehicle = I18n.t('lssm.overview.vehicles')[hiorg][vehicle];
-                if (I18n.locale === "de") {
+                if (I18n.locale === "de_DE") {
                     $('#table-' + hiorg + '-body').append('<tr><td>' + vehicle.name + '</td><td>' + (vehicle.min || vehicle.min === 0 ? vehicle.min : "undefined") + '</td><td>' + (vehicle.max || vehicle.max === 0 ? vehicle.max : "undefined") + '</td><td>' + (vehicle.credits ? vehicle.credits.toLocaleString() : "undefined") + ' Credits / ' + (vehicle.coins ? vehicle.coins.toLocaleString() : "undefined") + ' Coins</td><td>' + (vehicle.schooling ? vehicle.schooling : I18n.t('lssm.overview.none')) + '</td><td>' + (vehicle.wtank ? vehicle.wtank.toLocaleString() : 0) + ' L</td><td>' + (vehicle.special ? vehicle.special : "") + '</td></tr>');
-                } else if (I18n.locale === "en") {
+                } else if (I18n.locale === "en_US") {
                     $('#table-' + hiorg + '-body').append('<tr><td>' + vehicle.name + '</td><td>' + (vehicle.min || vehicle.min === 0 ? vehicle.min : "undefined") + '</td><td>' + (vehicle.max || vehicle.max === 0 ? vehicle.max : "undefined") + '</td><td>' + (vehicle.credits ? vehicle.credits.toLocaleString() : "undefined") + ' Credits / ' + (vehicle.coins ? vehicle.coins.toLocaleString() : "undefined") + ' Coins</td><td>' + (vehicle.schooling ? vehicle.schooling : I18n.t('lssm.overview.none')) + '</td><td>' + (vehicle.special ? vehicle.special : "") + '</td></tr>');
-                } else if (I18n.locale === "fj") {
+                } else if (I18n.locale === "en_GB") {
                     $('#table-' + hiorg + '-body').append('<tr><td>' + vehicle.name + '</td><td>' + (vehicle.min || vehicle.min === 0 ? vehicle.min : "undefined") + '</td><td>' + (vehicle.max || vehicle.max === 0 ? vehicle.max : "undefined") + '</td><td>' + (vehicle.credits ? vehicle.credits.toLocaleString() : "undefined") + ' Credits / ' + (vehicle.coins ? vehicle.coins.toLocaleString() : "undefined") + ' Coins</td><td>' + (vehicle.schooling ? vehicle.schooling : I18n.t('lssm.overview.none')) + '</td><td>' + (vehicle.special ? vehicle.special : "") + '</td></tr>');
                 } else if (I18n.locale === "nl") {
                     $('#table-' + hiorg + '-body').append('<tr><td>' + vehicle.name + '</td><td>' + (vehicle.min || vehicle.min === 0 ? vehicle.min : "undefined") + '</td><td>' + (vehicle.max || vehicle.max === 0 ? vehicle.max : "undefined") + '</td><td>' + (vehicle.credits ? vehicle.credits.toLocaleString() : "undefined") + ' Credits / ' + (vehicle.coins ? vehicle.coins.toLocaleString() : "undefined") + ' Coins</td><td>' + (vehicle.schooling ? vehicle.schooling : I18n.t('lssm.overview.none')) + '</td><td>' + (vehicle.special ? vehicle.special : "") + '</td></tr>');

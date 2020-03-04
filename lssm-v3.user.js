@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         LSS Manager v3 Autoupdater
-// @version      3.3.2
+// @version      3.3.4.4
 // @description  Das Tool für LSS
 // @author       lost | northdegree | mausmajor | dlrg-dominik | mrweezle | sanni | jan
 // @homepage     https://lss-manager.de
@@ -26,6 +26,26 @@
 // @include      *://www.operateur112.fr/*
 // @include      *://dispetcher112.ru/*
 // @include      *://www.dispetcher112.ru/*
+// @include      *://alarmcentral-spil.dk/*
+// @include      *://www.alarmcentral-spil.dk/*
+// @include      *://nodsentralspillet.com/*
+// @include      *://www.nodsentralspillet.com/*
+// @include      *://operacni-stredisko.cz/*
+// @include      *://www.operacni-stredisko.cz/*
+// @include      *://112-merkez.com/*
+// @include      *://www.112-merkez.com/*
+// @include      *://jogo-operador112.com/*
+// @include      *://www.jogo-operador112.com/*
+// @include      *://operador193.com/*
+// @include      *://www.operador193.com/*
+// @include      *://centro-de-mando.mx/*
+// @include      *://www.centro-de-mando.mx/*
+// @include      *://dyspetcher101-game.com/*
+// @include      *://www.dyspetcher101-game.com/*
+// @include      *://missionchief-japan.com/*
+// @include      *://www.missionchief-japan.com/*
+// @include      *://missionchief-korea.com/*
+// @include      *://www.missionchief-korea.com/*
 // @updateURL    https://github.com/LSS-Manager/lss-manager-v3/raw/master/lssm-v3.user.js
 // @grant        none
 // @run          document-start

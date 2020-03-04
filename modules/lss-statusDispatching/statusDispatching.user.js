@@ -2,7 +2,7 @@
 
     let LSS_FASTS5_STORAGE = "StatusDispatching";
 
-    I18n.translations.de.lssm.statusDispatching = {
+    I18n.translations.de_DE.lssm.statusDispatching = {
         name : 'Verbesserte Status 5',
         fms : 'Sprechwunsch bearbeiten',
         nextVehicle : 'Zum nächsten Fahrzeug im Status 5',
@@ -15,7 +15,7 @@
         fms5H1 : 'transportiert'
     };
 
-    I18n.translations.en.lssm.statusDispatching = {
+    I18n.translations.en_US.lssm.statusDispatching = {
         name : 'Enhanced transport requests',
         fms : 'Transport Requested',
         nextVehicle : 'Go to the next vehicle with a transport request',
@@ -28,7 +28,20 @@
         fms5H1 : 'transportiert'
     };
 
-    I18n.translations.es.lssm.statusDispatching = {
+    I18n.translations.es_ES.lssm.statusDispatching = {
+        name: 'Solicitudes de transporte mejoradas',
+        fms: 'Transporte Solicitado',
+        nextVehicle: 'Ir al vehículo siguiente con una orden de transporte',
+        backToAlarm: 'Volver a la misión',
+        settingsTitle: 'Órdenes de transporte ampliadas - Configuración',
+        settingsAttr: 'Haga clic en el botón "Transport Requested" en la máscara de la misión automáticamente.',
+        settingsAttrDesc: 'La activación de esta opción permite hacer clic automáticamente en el botón "transport requested" de la máscara de la misión. De esta forma, tendrá que pasar por todas las solicitudes de transporte antes de poder ver los detalles de la misión. Habilitar esta opción permite un procesamiento más rápido de las órdenes de transporte.<br>'
+            + 'Desactivar esta opción permite ver los detalles de la misión antes de procesar las solicitudes de transporte. Los botones "Ir al siguiente vehículo con una solicitud de transporte" y "Volver a la misión" no se ven afectados por esta configuración y siempre se hace clic automáticamente.',
+        close: 'Cerrar',
+        fms5H1: 'transportista'
+    };
+
+    I18n.translations.pt_PT.lssm.statusDispatching = {
         name: 'Solicitudes de transporte mejoradas',
         fms: 'Transporte Solicitado',
         nextVehicle: 'Ir al vehículo siguiente con una orden de transporte',
@@ -66,6 +79,45 @@
         close: 'Stänga',
         fms5H1: 'transportiert'
     };
+    
+    I18n.translations.cs_CZ.lssm.statusDispatching = {
+        name: 'Vylepšené požadavky na dopravu',
+        fms: 'Požadován transport',
+        nextVehicle: 'Přejít na další vozidlo s požadavkem na přepravu',
+        backToAlarm: 'Zpět na misi',
+        settingsTitle: 'Vylepšené požadavky na dopravu - nastavení',
+        settingsAttr: 'Automaticky klikněte na tlačítko „Požadován transport“ v masce mise',
+        settingsAttrDesc: 'Povolením této možnosti získáte automatické klepnutí na tlačítko „Požadovaný transport“ v masce mise. Tímto způsobem musíte projít všechny požadavky na dopravu, než budete moci zobrazit podrobnosti mise. Povolení této možnosti umožní rychlejší zpracování požadavků na přepravu.<br>'
+            + 'Deaktivace této možnosti umožní zobrazit podrobnosti mise před zpracováním přepravních požadavků. Tlačítka „Přejít na další vozidlo s požadavkem na přepravu“ a „Zpět na misi“ nejsou tímto nastavením ovlivněna a jsou vždy automaticky kliknuta.',
+        close: 'Zavřít',
+        fms5H1: 'transportní'
+    };
+
+    I18n.translations.da_DK.lssm.statusDispatching = {
+        name: 'Forbedrede transportanmodninger',
+        fms: 'Transport anmodet',
+        nextVehicle: 'Gå til det næste køretøj med en transportanmodning',
+        backToAlarm: 'Tilbage til mission',
+        settingsTitle: 'Forbedrede transportanmodninger - Indstillinger',
+        settingsAttr: 'Klik automatisk på knappen "Anmodet om transport" i missionmasken',
+        settingsAttrDesc: 'Aktivering af denne mulighed giver automatisk klik på knappen "anmodet om transport" i missionsmasken. På denne måde skal du gennemgå alle transportanmodninger, før du kan se detaljer til missionen. Aktivering af denne mulighed giver hurtigere behandling af transportanmodninger.<br>'
+            + 'Deaktivering af denne mulighed gør det muligt at se mission detaljer før behandling af transportanmodninger. Knapperne "Gå til det næste køretøj med en transportanmodning" og "Tilbage til mission" påvirkes ikke af denne indstilling og klikkes altid automatisk.',
+        close: 'Tæt',
+        fms5H1: 'transportiert'
+    };
+
+    I18n.translations.nb_NO.lssm.statusDispatching = {
+        name: 'Forbedrede transportforespørsler',
+        fms: 'Transport forespurt',
+        nextVehicle: 'Gå til neste kjøretøy med en transportforespørsel',
+        backToAlarm: 'Tilbake til misjonen',
+        settingsTitle: 'Forbedrede transportforespørsler - Innstillinger',
+        settingsAttr: 'Klikk automatisk på knappen "Forespurt transport" i oppdragsmaske',
+        settingsAttrDesc: 'Aktivering av dette alternativet gir automatisk klikk på "transport bedt om" -knappen i oppdragsmasken. På denne måten må du gå gjennom alle transportforespørsler før du kan se detaljer til oppdraget. Aktivering av dette alternativet gir raskere behandling av transportforespørsler. <br> '
+            + 'Deaktivering av dette alternativet gjør det mulig å se oppdragsdetaljer før du behandler transportforespørsler. Knappene "Gå til neste kjøretøy med transportforespørsel" og "Tilbake til oppdrag" påvirkes ikke av denne innstillingen og blir alltid automatisk klikket.',
+        close: 'Lukk',
+        fms5H1: 'transportiert'
+    };
 
     I18n.translations.it_IT.lssm.statusDispatching = {
         name: 'Richiesta di trasporto avanzatas',
@@ -80,6 +132,19 @@
         fms5H1: 'trasportista'
     };
 
+    I18n.translations.tr_TR.lssm.statusDispatching = {
+        name: 'Geliştirilmiş taşıma talepleri',
+        fms: 'Taşıma İstendi',
+        nextVehicle: 'Taşıma talebiyle bir sonraki araca git',
+        backToAlarm: 'Göreve geri dön',
+        settingsTitle: 'Geliştirilmiş taşıma istekleri - Ayarlar',
+        settingsAttr: 'Görev maskesinde "Taşıma İstendi" butonuna otomatik olarak tıklayın',
+        settingsAttrDesc: 'Bu seçeneğin etkinleştirilmesi, görev maskesindeki "taşıma talep edildi" düğmesine otomatik olarak tıklanmasını sağlar. Bu şekilde, görevin ayrıntılarını görüntüleyebilmeniz için önce tüm taşıma isteklerini gözden geçirmeniz gerekir. Bu seçeneğin etkinleştirilmesi, taşıma isteklerinin daha hızlı işlenmesine olanak tanır.<br>'
+            + 'Bu seçeneği devre dışı bırakmak, taşıma isteklerini işlemeden önce görev ayrıntılarını görmenizi sağlar. "Taşıma talebiyle bir sonraki araca git" ve "Göreve geri dön" düğmeleri bu ayardan etkilenmez ve her zaman otomatik olarak tıklanır.',
+        close: 'Kapat',
+        fms5H1: 'transportiert'
+    };
+
     I18n.translations.fr_FR.lssm.statusDispatching = {
         name: 'Demandes de transport améliorées',
         fms: 'Transport demandé',
@@ -87,7 +152,7 @@
         backToAlarm: 'Retour à la mission',
         settingsTitle: 'Demandes de transport améliorées - Paramètres',
         settingsAttr: 'Cliquez sur le bouton "Transport Demandé" dans le masque de mission automatiquement',
-        settingsAttrDesc: 'L\'activation de cette option permet de cliquer automatiquement sur le bouton "transport demandé" dans le masque de mission.De cette façon, vous devez passer en revue toutes les demandes de transport avant de pouvoir voir les détails de la mission.L\'activation de cette option permet un traitement plus rapide des demandes de transport.<br>'
+        settingsAttrDesc: 'L\'activation de cette option permet de cliquer automatiquement sur le bouton "transport demandé" dans le masque de mission. De cette façon, vous devez passer en revue toutes les demandes de transport avant de pouvoir voir les détails de la mission.L\'activation de cette option permet un traitement plus rapide des demandes de transport.<br>'
             + 'Désactiver cette option permet de voir les détails de la mission avant de traiter les demandes de transport. Les boutons "Aller au véhicule suivant avec une demande de transport" et "Retour à la mission" ne sont pas affectés par ce réglage et sont toujours cliqués automatiquement.',
         close: 'Fermer',
         fms5H1: 'transportiert'
@@ -106,7 +171,33 @@
         fms5H1: 'транспортник'
     };
 
-    I18n.translations.nl.lssm.statusDispatching = {
+    I18n.translations.uk_UA.lssm.statusDispatching = {
+        name: 'Розширені запити на транспорт',
+        fms: 'Запитаний транспорт',
+        nextVehicle: 'Перейдіть до наступного транспортного засобу із запитом на транспорт',
+        backToAlarm: 'Повернення до місії',
+        settingsTitle: 'Розширені запити на транспорт - Налаштування',
+        settingsAttr: 'Натисніть кнопку "Транспорт вимагається" в масці місії автоматично',
+        settingsAttrDesc: 'Увімкнення цієї опції забезпечує автоматичне натискання на кнопку "транспорт вимагається" в масці місії. Таким чином, ви повинні пройти всі транспортні запити, перш ніж переглядати деталі місії. Увімкнення цієї опції дозволяє швидше обробляти транспортні запити.<br>'
+            + 'Якщо вимкнути цю опцію, ви зможете побачити деталі місії перед обробкою транспортних запитів. Цей параметр не впливає на кнопки «Перейти до наступного транспортного засобу із запитом на транспорт» та «Повернутися до місії» і завжди автоматично натискається.',
+        close: 'Закрити',
+        fms5H1: 'перевезення'
+    };
+
+    I18n.translations.ja_JP.lssm.statusDispatching = {
+        name: '強化されたトランスポート要求',
+        fms: 'リクエストされた輸送',
+        nextVehicle: '輸送リクエストがある次の車両に移動する',
+        backToAlarm: 'ミッションに戻る',
+        settingsTitle: '強化されたトランスポート要求-設定',
+        settingsAttr: 'ミッションマスクの[トランスポート要求 ]ボタンをクリックします',
+        settingsAttrDesc: 'このオプションを有効にすると、ミッションマスクの[トランスポート要求]ボタンが自動的にクリックされます。 この方法では、ミッションの詳細を表示する前に、すべてのトランスポートリクエストを処理する必要があります。 このオプションを有効にすると、トランスポートリクエストの処理が高速になります。<br>'
+            + 'このオプションを無効にすると、トランスポートリクエストを処理する前にミッションの詳細を確認できます。 「輸送リクエストで次の車両に移動」および「ミッションに戻る」ボタンはこの設定の影響を受けず、常に自動的にクリックされます。',
+        close: '閉じる',
+        fms5H1: '輸送する'
+    };
+
+    I18n.translations.nl_NL.lssm.statusDispatching = {
         name : 'Verbeterde spraakaanvragen',
         fms : 'Spraakaanvraag beantwoorden',
         nextVehicle : 'Naar het volgende status 7 voertuig',

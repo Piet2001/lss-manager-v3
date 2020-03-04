@@ -3,7 +3,7 @@
     const LSS_STATUSCOUNT_STORAGE = "LSS_STATUSCOUNT_STORAGE";
     const status_list = [1, 2, 3, 4, 5, 6, 7, 9];
 
-    I18n.translations.de.lssm.statuscount = {
+    I18n.translations.de_DE.lssm.statuscount = {
         name: "Status-Zähler",
         settings: {
             show: "Ein-/Ausblenden",
@@ -27,7 +27,7 @@
             }
         }
     };
-    I18n.translations.en.lssm.statuscount = {
+    I18n.translations.en_US.lssm.statuscount = {
         name: "Status-Count",
         settings: {
             show: "Show/Hide",
@@ -51,7 +51,31 @@
             }
         }
     };
-    I18n.translations.es.lssm.statuscount = {
+    I18n.translations.cs_CZ.lssm.statuscount = {
+        name: "Počet stavů",
+        settings: {
+            show: "Zobrazit / skrýt",
+            status: {
+                show: {
+                    label: "Ukázat",
+                    description: "Má se stav vůbec zobrazovat? Důležité: Toto nastavení má vyšší prioritu než jiná nastavení, tj. Pokud je toto nastavení vypnuto, stav se nikdy nezobrazí."
+                },
+                hide: {
+                    label: "Zobrazit pouze na vyžádání",
+                    description: "Počítadlo se zobrazí, pouze pokud je v tomto stavu alespoň jedno vozidlo. (Pozor: Pokud je počítadlo zcela skryto, nikdy se nezobrazí, i když je toto nastavení aktivováno!)"
+                },
+                percent: {
+                    label: "Zobrazit procenta",
+                    description: "Mělo by se zobrazit procento tohoto stavu?"
+                }
+            },
+            round: {
+                label: "Zaokrouhlená procenta",
+                description: "Kolik desetinných míst by měla být zaokrouhlena na procenta (pokud jsou zobrazena)?"
+            }
+        }
+    };
+    I18n.translations.es_ES.lssm.statuscount = {
         name: "Cuenta de status",
         settings: {
             show: "Visualizar/Ocultar",
@@ -72,6 +96,30 @@
             round: {
                 label: "Porcentajes redondos",
                 description: "¿A cuántos decimales deben redondearse los porcentajes (si se visualizan)?"
+            }
+        }
+    };
+    I18n.translations.pt_PT.lssm.statuscount = {
+        name: "Conta de status",
+        settings: {
+            show: "Mostrar / Ocultar",
+            status: {
+                show: {
+                    label: "Mostrar",
+                    description: "O status deve ser exibido? Importante: Essa configuração tem uma prioridade mais alta que outras, ou seja, se desativada, o status nunca será exibido."
+                },
+                hide: {
+                    label: "Mostrar apenas sob demanda",
+                    description: "O contador é mostrado apenas se pelo menos um veículo estiver nesse estado. (Atenção: Se o contador estiver completamente oculto, ele nunca será exibido, mesmo que esta opção esteja ativada!)"
+                },
+                percent: {
+                    label: "Mostrar porcentagens",
+                    description: "A porcentagem desse status deve ser exibida?"
+                }
+            },
+            round: {
+                label: "Porcentagens redondas",
+                description: "Quantas casas decimais as porcentagens devem ser arredondadas (se exibidas)?"
             }
         }
     };
@@ -123,6 +171,54 @@
             }
         }
     };
+    I18n.translations.da_DK.lssm.statuscount = {
+        name: "Status-antal",
+        settings: {
+            show: "Vis / Skjul",
+            status: {
+                show: {
+                    label: "At vise",
+                    description: "Skal status overhovedet vises? Vigtigt: Denne indstilling har en højere prioritet end andre indstillinger, dvs. hvis denne indstilling er slået fra, vises status aldrig."
+                },
+                hide: {
+                    label: "Vis kun efter behov",
+                    description: "Tælleren vises kun, hvis mindst et køretøj er i denne status. (Bemærk: Hvis tælleren er helt skjult, vises den aldrig, selvom denne indstilling er aktiveret!)"
+                },
+                percent: {
+                    label: "Vis procenter",
+                    description: "Skal procentdelen af denne status vises?"
+                }
+            },
+            round: {
+                label: "Runde procenter",
+                description: "Hvor mange decimaler skal procentdelene (hvis vist) afrundes til?"
+            }
+        }
+    };
+    I18n.translations.nb_NO.lssm.statuscount = {
+        name: "Status-Count",
+        settings: {
+            show: "Vis skjul",
+            status: {
+                show: {
+                    label: "Forestilling",
+                    description: "Bør status vises i det hele tatt? Viktig: Denne innstillingen har høyere prioritet enn andre innstillinger, dvs. hvis denne innstillingen er slått av, vil statusen aldri vises."
+                },
+                hide: {
+                    label: "Vis bare på forespørsel",
+                    description: "Telleren vises bare hvis minst ett kjøretøy er i denne statusen. (Oppmerksomhet: Hvis telleren er helt skjult, vil den aldri vises, selv om denne innstillingen er aktivert!)"
+                },
+                percent: {
+                    label: "Vis prosenter",
+                    description: "Bør prosentandelen av denne statusen vises?"
+                }
+            },
+            round: {
+                label: "Runde prosenter",
+                description: "Hvor mange desimaler skal prosentene (hvis vist) rundes til?"
+            }
+        }
+    };
     I18n.translations.it_IT.lssm.statuscount = {
         name: "Stato - Conto",
         settings: {
@@ -144,6 +240,30 @@
             round: {
                 label: "Percentuali rotonde",
                 description: "A quante cifre decimali devono essere arrotondate le percentuali (se visualizzate)?"
+            }
+        }
+    };
+    I18n.translations.tr_TR.lssm.statuscount = {
+        name: "Durum-Sayım",
+        settings: {
+            show: "Göster / Gizle",
+            status: {
+                show: {
+                    label: "Göstermek",
+                    description: "Durum hiç görüntülenmeli mi? Önemli: Bu ayar diğer ayarlardan daha yüksek önceliğe sahiptir, yani bu ayar kapatılırsa durum hiçbir zaman gösterilmez."
+                },
+                hide: {
+                    label: "Yalnızca istek üzerine göster",
+                    description: "Sayaç sadece bu durumda en az bir araç varsa görüntülenir. (Dikkat: Sayaç tamamen gizlenmişse, bu ayar etkinleştirilmiş olsa bile asla gösterilmez!)"
+                },
+                percent: {
+                    label: "Yüzdeleri göster",
+                    description: "Bu durumun yüzdesi gösterilmeli mi?"
+                }
+            },
+            round: {
+                label: "Yuvarlak yüzdeler",
+                description: "Yüzdeler (görüntüleniyorsa) kaç ondalık basamağa yuvarlanmalıdır?"
             }
         }
     };
@@ -195,7 +315,55 @@
             }
         }
     };
-    I18n.translations.nl.lssm.statuscount = {
+    I18n.translations.uk_UA.lssm.statuscount = {
+        name: "Статус-підрахунок",
+        settings: {
+            show: "Показати сховати",
+            status: {
+                show: {
+                    label: "Показати",
+                    description: "Чи має статус відображатися взагалі? Важливо: Цей параметр має більш високий пріоритет, ніж інші параметри, тобто якщо це налаштування вимкнено, стан ніколи не відображатиметься."
+                },
+                hide: {
+                    label: "Показати лише на вимогу",
+                    description: "Лічильник відображається лише в тому випадку, якщо хоча б один транспортний засіб знаходиться в такому статусі. (Увага: Якщо лічильник повністю прихований, він ніколи не відображатиметься, навіть якщо це налаштування активовано!)"
+                },
+                percent: {
+                    label: "Показати відсотки",
+                    description: "Чи повинен відображатися відсоток цього статусу?"
+                }
+            },
+            round: {
+                label: "Круглі відсотки",
+                description: "На скільки десяткових знаків слід округлювати відсотки (якщо вони відображаються)?"
+            }
+        }
+    };
+    I18n.translations.ja_JP.lssm.statuscount = {
+        name: "ステータスカウント",
+        settings: {
+            show: "表示/非表示",
+            status: {
+                show: {
+                    label: "公演",
+                    description: "ステータスをまったく表示する必要がありますか？ 重要：この設定は他の設定よりも優先されます。つまり、この設定をオフにすると、ステータスは表示されません。"
+                },
+                hide: {
+                    label: "オンデマンドでのみ表示",
+                    description: "カウンターは、少なくとも1台の車両がこのステータスにある場合にのみ表示されます。 （注意：カウンターが完全に非表示の場合、この設定が有効になっていても表示されません！）"
+                },
+                percent: {
+                    label: "割合を表示",
+                    description: "このステータスの割合を表示する必要がありますか？"
+                }
+            },
+            round: {
+                label: "ラウンド率",
+                description: "パーセンテージ（表示されている場合）を丸める必要がある小数点以下の桁数は？"
+            }
+        }
+    };
+    I18n.translations.nl_NL.lssm.statuscount = {
         name: "Status-Teller",
         settings: {
             show: "Verberg/Toon",
