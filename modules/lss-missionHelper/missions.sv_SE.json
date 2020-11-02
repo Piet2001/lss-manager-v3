@@ -871,28 +871,24 @@
         "name": "Fylleri/LOB",
         "place": null,
         "average_credits": null,
-        "generated_by": "Polisstation",
+        "generated_by": "Ambulansstation",
         "icons": {
-            "0": "/images/bar_coktail_gruen.png",
-            "1": "/images/bar_coktail_gelb.png",
-            "2": "/images/bar_coktail_rot.png"
+            "0": "/images/medicalstore_gruen.png",
+            "1": "/images/medicalstore_gelb.png",
+            "2": "/images/medicalstore_rot.png"
         },
-        "requirements": {
-            "police_cars": 1
-        },
+        "requirements": {},
         "chances": {
             "patient_transport": 30
         },
         "additional": {
             "possible_patient": 1,
             "possible_patient_min": 1,
-            "filter_id": "police_station_missions",
-            "patient_at_end_of_mission": true,
+            "filter_id": "ambulance_station_missions",
             "patient_specializations": "Inv\u00e4rtesmedicinare"
         },
         "prerequisites": {
-            "rescue_stations": 1,
-            "police_stations": 1
+            "rescue_stations": 1
         }
     },
     "36": {
@@ -2746,7 +2742,8 @@
         "requirements": {
             "police_helicopters": 1,
             "police_cars": 8,
-            "k9": 1
+            "k9": 1,
+            "police_horse": 2
         },
         "chances": {
             "patient_transport": 30
@@ -2754,6 +2751,7 @@
         "additional": {
             "possible_patient": 1,
             "filter_id": "police_station_missions",
+            "need_police_horse_only_if_present": true,
             "patient_at_end_of_mission": true,
             "patient_specializations": "Inv\u00e4rtesmedicinare"
         },
@@ -2859,7 +2857,8 @@
         },
         "requirements": {
             "police_cars": 4,
-            "k9": 1
+            "k9": 1,
+            "police_horse": 5
         },
         "chances": {
             "patient_transport": 25
@@ -2867,9 +2866,12 @@
         "additional": {
             "possible_patient": 2,
             "possible_patient_min": 1,
-            "expansion_missions_ids": {},
+            "expansion_missions_ids": {
+                "0": 132
+            },
             "max_possible_prisoners": 2,
             "filter_id": "police_station_missions",
+            "need_police_horse_only_if_present": true,
             "patient_at_end_of_mission": true,
             "patient_specializations": "Traumatologi"
         },
@@ -2893,7 +2895,8 @@
         "requirements": {
             "police_helicopters": 1,
             "police_cars": 5,
-            "k9": 2
+            "k9": 2,
+            "police_horse": 8
         },
         "chances": {
             "patient_transport": 25
@@ -2904,6 +2907,7 @@
             "max_possible_prisoners": 25,
             "swat_personnel": 3,
             "filter_id": "police_station_missions",
+            "need_police_horse_only_if_present": true,
             "patient_at_end_of_mission": true,
             "patient_specializations": "Traumatologi"
         },
@@ -3014,14 +3018,16 @@
         "requirements": {
             "police_helicopters": 1,
             "police_cars": 6,
-            "k9": 2
+            "k9": 2,
+            "police_horse": 4
         },
         "chances": {},
         "additional": {
             "duration": "30 minuter",
             "swat_personnel": 8,
             "guard_mission": true,
-            "filter_id": "police_station_missions"
+            "filter_id": "police_station_missions",
+            "need_police_horse_only_if_present": true
         },
         "prerequisites": {
             "police_stations": 15
@@ -3206,7 +3212,8 @@
             "2": "/images/stadium_rot.png"
         },
         "requirements": {
-            "police_cars": 1
+            "police_cars": 1,
+            "police_horse": 5
         },
         "chances": {
             "patient_transport": 20
@@ -3215,6 +3222,7 @@
             "possible_patient": 10,
             "average_min_police_personnel": 24,
             "filter_id": "police_station_missions",
+            "need_police_horse_only_if_present": true,
             "patient_specializations": "Traumatologi"
         },
         "prerequisites": {
@@ -3647,7 +3655,8 @@
         "additional": {
             "possible_patient": 1,
             "possible_patient_min": 1,
-            "filter_id": "ambulance_station_missions"
+            "filter_id": "ambulance_station_missions",
+            "patient_specializations": "Inv\u00e4rtesmedicinare"
         },
         "prerequisites": {
             "rescue_stations": 5
@@ -3676,138 +3685,6 @@
         },
         "prerequisites": {
             "rescue_stations": 2
-        }
-    },
-    "171": {
-        "id": 171,
-        "name": "Solsting",
-        "place": null,
-        "average_credits": null,
-        "generated_by": "Ambulansstation",
-        "icons": {
-            "0": "/images/medicalstore_gruen.png",
-            "1": "/images/medicalstore_gelb.png",
-            "2": "/images/medicalstore_rot.png"
-        },
-        "requirements": {},
-        "chances": {
-            "patient_transport": 10
-        },
-        "additional": {
-            "possible_patient": 1,
-            "possible_patient_min": 1,
-            "filter_id": "ambulance_station_missions",
-            "date_start": "fre, 26 juni 2020 10.00.00 +0200",
-            "date_end": "tors, 01 okt 2020 00.00.00 +0200",
-            "patient_specializations": "Inv\u00e4rtesmedicinare"
-        },
-        "prerequisites": {
-            "rescue_stations": 2
-        }
-    },
-    "172": {
-        "id": 172,
-        "name": "V\u00e4rmeslag",
-        "place": null,
-        "average_credits": null,
-        "generated_by": "Ambulansstation",
-        "icons": {
-            "0": "/images/medicalstore_gruen.png",
-            "1": "/images/medicalstore_gelb.png",
-            "2": "/images/medicalstore_rot.png"
-        },
-        "requirements": {},
-        "chances": {
-            "patient_transport": 60
-        },
-        "additional": {
-            "possible_patient": 1,
-            "possible_patient_min": 1,
-            "filter_id": "ambulance_station_missions",
-            "date_start": "fre, 26 juni 2020 10.00.00 +0200",
-            "date_end": "tors, 01 okt 2020 00.00.00 +0200",
-            "patient_specializations": "Inv\u00e4rtesmedicinare"
-        },
-        "prerequisites": {
-            "rescue_stations": 4
-        }
-    },
-    "173": {
-        "id": 173,
-        "name": "V\u00e4rmekramp",
-        "place": null,
-        "average_credits": null,
-        "generated_by": "Ambulansstation",
-        "icons": {
-            "0": "/images/medicalstore_gruen.png",
-            "1": "/images/medicalstore_gelb.png",
-            "2": "/images/medicalstore_rot.png"
-        },
-        "requirements": {},
-        "chances": {
-            "patient_transport": 50
-        },
-        "additional": {
-            "possible_patient": 1,
-            "possible_patient_min": 1,
-            "filter_id": "ambulance_station_missions",
-            "date_start": "fre, 26 juni 2020 10.00.00 +0200",
-            "date_end": "tors, 01 okt 2020 00.00.00 +0200",
-            "patient_specializations": "Inv\u00e4rtesmedicinare"
-        },
-        "prerequisites": {
-            "rescue_stations": 4
-        }
-    },
-    "174": {
-        "id": 174,
-        "name": "Uttorkad person",
-        "place": null,
-        "average_credits": null,
-        "generated_by": "Ambulansstation",
-        "icons": {
-            "0": "/images/medicalstore_gruen.png",
-            "1": "/images/medicalstore_gelb.png",
-            "2": "/images/medicalstore_rot.png"
-        },
-        "requirements": {},
-        "chances": {
-            "patient_transport": 50
-        },
-        "additional": {
-            "possible_patient": 1,
-            "possible_patient_min": 1,
-            "filter_id": "ambulance_station_missions",
-            "date_start": "fre, 26 juni 2020 10.00.00 +0200",
-            "date_end": "tors, 01 okt 2020 00.00.00 +0200",
-            "patient_specializations": "Inv\u00e4rtesmedicinare"
-        },
-        "prerequisites": {
-            "rescue_stations": 3
-        }
-    },
-    "175": {
-        "id": 175,
-        "name": "Grillbrand",
-        "place": null,
-        "average_credits": 600,
-        "generated_by": "Brandstation",
-        "icons": {
-            "0": "/images/fire_gruen.png",
-            "1": "/images/fire_gelb.png",
-            "2": "/images/fire_rot.png"
-        },
-        "requirements": {
-            "firetrucks": 1
-        },
-        "chances": {},
-        "additional": {
-            "filter_id": "firehouse_missions",
-            "date_start": "fre, 26 juni 2020 10.00.00 +0200",
-            "date_end": "tors, 01 okt 2020 00.00.00 +0200"
-        },
-        "prerequisites": {
-            "fire_stations": 1
         }
     },
     "176": {
@@ -4305,6 +4182,413 @@
         "prerequisites": {
             "rescue_stations": 10,
             "police_stations": 9
+        }
+    },
+    "194": {
+        "id": 194,
+        "name": "IVPA - I v\u00e4ntan p\u00e5 ambulans",
+        "place": null,
+        "average_credits": 800,
+        "generated_by": "Ambulansstation",
+        "icons": {
+            "0": "/images/climbing_gruen.png",
+            "1": "/images/climbing_gelb.png",
+            "2": "/images/climbing_rot.png"
+        },
+        "requirements": {
+            "firetrucks": 1,
+            "police_cars": 1
+        },
+        "chances": {
+            "patient_transport": 100
+        },
+        "additional": {
+            "possible_patient": 1,
+            "possible_patient_min": 1,
+            "expansion_missions_ids": {
+                "0": 180
+            },
+            "filter_id": "ambulance_station_missions",
+            "patient_specializations": "Inv\u00e4rtesmedicinare"
+        },
+        "prerequisites": {
+            "rescue_stations": 5,
+            "police_stations": 2,
+            "fire_stations": 2
+        }
+    },
+    "195": {
+        "id": 195,
+        "name": "S\u00e4nkt allm\u00e4ntillst\u00e5nd",
+        "place": null,
+        "average_credits": null,
+        "generated_by": "Ambulansstation",
+        "icons": {
+            "0": "/images/medicalstore_gruen.png",
+            "1": "/images/medicalstore_gelb.png",
+            "2": "/images/medicalstore_rot.png"
+        },
+        "requirements": {},
+        "chances": {
+            "patient_transport": 70
+        },
+        "additional": {
+            "possible_patient": 1,
+            "possible_patient_min": 1,
+            "expansion_missions_ids": {
+                "0": 157,
+                "1": 180,
+                "2": 181,
+                "3": 183
+            },
+            "filter_id": "ambulance_station_missions",
+            "patient_specializations": "Inv\u00e4rtesmedicinare"
+        },
+        "prerequisites": {
+            "rescue_stations": 2
+        }
+    },
+    "196": {
+        "id": 196,
+        "name": "Brand i byggnad - underjordsanl\u00e4ggning",
+        "place": null,
+        "average_credits": 10210,
+        "generated_by": "Brandstation",
+        "icons": {
+            "0": "/images/blast_gruen.png",
+            "1": "/images/blast_gelb.png",
+            "2": "/images/blast_rot.png"
+        },
+        "requirements": {
+            "firetrucks": 10,
+            "battalion_chief_vehicles": 3,
+            "platform_trucks": 2,
+            "heavy_rescue_vehicles": 2,
+            "water_tankers": 2
+        },
+        "chances": {},
+        "additional": {
+            "filter_id": "firehouse_missions"
+        },
+        "prerequisites": {
+            "fire_stations": 10
+        }
+    },
+    "197": {
+        "id": 197,
+        "name": "M\u00e4nniskorov",
+        "place": null,
+        "average_credits": 7000,
+        "generated_by": "Polisstation",
+        "icons": {
+            "0": "/images/theft_gruen.png",
+            "1": "/images/theft_gelb.png",
+            "2": "/images/theft_rot.png"
+        },
+        "requirements": {
+            "police_helicopters": 2,
+            "police_cars": 10,
+            "k9": 5
+        },
+        "chances": {
+            "patient_transport": 80
+        },
+        "additional": {
+            "possible_patient": 1,
+            "possible_patient_min": 1,
+            "expansion_missions_ids": {
+                "0": 137
+            },
+            "max_possible_prisoners": 5,
+            "swat_personnel": 10,
+            "filter_id": "police_station_missions",
+            "patient_specializations": "Traumatologi"
+        },
+        "prerequisites": {
+            "police_stations": 12,
+            "police_helicopter_stations": 2
+        }
+    },
+    "198": {
+        "id": 198,
+        "name": "Inbrott - 'smash and grab'",
+        "place": null,
+        "average_credits": 4500,
+        "generated_by": "Polisstation",
+        "icons": {
+            "0": "/images/blast_gruen.png",
+            "1": "/images/blast_gelb.png",
+            "2": "/images/blast_rot.png"
+        },
+        "requirements": {
+            "police_cars": 10,
+            "k9": 5
+        },
+        "chances": {},
+        "additional": {
+            "expansion_missions_ids": {
+                "0": 137
+            },
+            "max_possible_prisoners": 4,
+            "filter_id": "police_station_missions"
+        },
+        "prerequisites": {
+            "police_stations": 7
+        }
+    },
+    "199": {
+        "id": 199,
+        "name": "F\u00f6rberedelse f\u00f6r grovtbrott",
+        "place": "H\u00f6ghus",
+        "average_credits": 1000,
+        "generated_by": "Polisstation",
+        "icons": {
+            "0": "/images/zoom_gruen.png",
+            "1": "/images/zoom_gelb.png",
+            "2": "/images/zoom_rot.png"
+        },
+        "requirements": {
+            "police_cars": 3
+        },
+        "chances": {
+            "patient_transport": 100
+        },
+        "additional": {
+            "possible_patient": 1,
+            "expansion_missions_ids": {
+                "0": 137
+            },
+            "max_possible_prisoners": 5,
+            "average_min_police_personnel": 5,
+            "filter_id": "police_station_missions",
+            "patient_specializations": "Traumatologi"
+        },
+        "prerequisites": {
+            "police_stations": 3
+        }
+    },
+    "200": {
+        "id": 200,
+        "name": "Brand i byggnad - publik lokal, museum",
+        "place": "Museum",
+        "average_credits": 2000,
+        "generated_by": "Brandstation",
+        "icons": {
+            "0": "/images/fire_gruen.png",
+            "1": "/images/fire_gelb.png",
+            "2": "/images/fire_rot.png"
+        },
+        "requirements": {
+            "firetrucks": 4,
+            "mobile_command_vehicles": 1
+        },
+        "chances": {
+            "patient_transport": 40
+        },
+        "additional": {
+            "possible_patient": 5,
+            "expansion_missions_ids": {
+                "0": 111
+            },
+            "filter_id": "firehouse_missions",
+            "patient_specializations": "Traumatologi"
+        },
+        "prerequisites": {
+            "fire_stations": 13
+        }
+    },
+    "210": {
+        "id": 210,
+        "name": "Kommendering - musikfestival",
+        "place": "Arena",
+        "average_credits": 8000,
+        "generated_by": "Polisstation",
+        "icons": {
+            "0": "/images/clock_gruen.png",
+            "1": "/images/clock_gelb.png",
+            "2": "/images/clock_rot.png"
+        },
+        "requirements": {
+            "firetrucks": 1,
+            "ambulances": 4,
+            "police_cars": 8,
+            "k9": 3,
+            "police_horse": 1
+        },
+        "chances": {},
+        "additional": {
+            "duration": "4 timmar",
+            "guard_mission": true,
+            "filter_id": "police_station_missions",
+            "need_police_horse_only_if_present": true
+        },
+        "prerequisites": {
+            "rescue_stations": 6,
+            "police_stations": 10,
+            "fire_stations": 2
+        }
+    },
+    "211": {
+        "id": 211,
+        "name": "Patrullering - park",
+        "place": "Park",
+        "average_credits": 1000,
+        "generated_by": "Polisstation",
+        "icons": {
+            "0": "/images/zoom_gruen.png",
+            "1": "/images/zoom_gelb.png",
+            "2": "/images/zoom_rot.png"
+        },
+        "requirements": {
+            "police_cars": 1,
+            "police_horse": 2
+        },
+        "chances": {},
+        "additional": {
+            "filter_id": "police_station_missions",
+            "need_police_horse_only_if_present": true
+        },
+        "prerequisites": {
+            "police_stations": 4
+        }
+    },
+    "212": {
+        "id": 212,
+        "name": "Patrullering - stadsmilj\u00f6",
+        "place": "Centrum",
+        "average_credits": 1900,
+        "generated_by": "Polisstation",
+        "icons": {
+            "0": "/images/zoom_gruen.png",
+            "1": "/images/zoom_gelb.png",
+            "2": "/images/zoom_rot.png"
+        },
+        "requirements": {
+            "police_cars": 1,
+            "police_horse": 3
+        },
+        "chances": {},
+        "additional": {
+            "filter_id": "police_station_missions",
+            "need_police_horse_only_if_present": true
+        },
+        "prerequisites": {
+            "police_stations": 6
+        }
+    },
+    "213": {
+        "id": 213,
+        "name": "Patrullering - krogmilj\u00f6",
+        "place": "Nattklubb",
+        "average_credits": 3000,
+        "generated_by": "Polisstation",
+        "icons": {
+            "0": "/images/dancinghall_gruen.png",
+            "1": "/images/dancinghall_gelb.png",
+            "2": "/images/dancinghall_rot.png"
+        },
+        "requirements": {
+            "police_cars": 1,
+            "police_horse": 4
+        },
+        "chances": {},
+        "additional": {
+            "filter_id": "police_station_missions",
+            "need_police_horse_only_if_present": true
+        },
+        "prerequisites": {
+            "police_stations": 6
+        }
+    },
+    "214": {
+        "id": 214,
+        "name": "Kommendering - torgm\u00f6te",
+        "place": "Torg",
+        "average_credits": 2500,
+        "generated_by": "Polisstation",
+        "icons": {
+            "0": "/images/zoom_gruen.png",
+            "1": "/images/zoom_gelb.png",
+            "2": "/images/zoom_rot.png"
+        },
+        "requirements": {
+            "police_cars": 4,
+            "k9": 3,
+            "police_horse": 2
+        },
+        "chances": {},
+        "additional": {
+            "duration": "2 timmar",
+            "guard_mission": true,
+            "filter_id": "police_station_missions",
+            "need_police_horse_only_if_present": true
+        },
+        "prerequisites": {
+            "police_stations": 8
+        }
+    },
+    "215": {
+        "id": 215,
+        "name": "R\u00f6klukt - ute",
+        "place": null,
+        "average_credits": 300,
+        "generated_by": "Brandstation",
+        "icons": {
+            "0": "/images/fire_gruen.png",
+            "1": "/images/fire_gelb.png",
+            "2": "/images/fire_rot.png"
+        },
+        "requirements": {
+            "firetrucks": 1
+        },
+        "chances": {},
+        "additional": {
+            "expansion_missions_ids": {
+                "0": 0,
+                "1": 1,
+                "2": 2,
+                "3": 3,
+                "4": 4,
+                "5": 7,
+                "6": 8,
+                "7": 9,
+                "8": 10,
+                "9": 11,
+                "10": 14,
+                "11": 16,
+                "12": 17,
+                "13": 18,
+                "14": 19
+            },
+            "filter_id": "firehouse_missions"
+        },
+        "prerequisites": {
+            "fire_stations": 1
+        }
+    },
+    "216": {
+        "id": 216,
+        "name": "\u00d6vrig r\u00e4ddning, d\u00f6rrbryt",
+        "place": "H\u00f6ghus",
+        "average_credits": 400,
+        "generated_by": "Brandstation",
+        "icons": {
+            "0": "/images/zoom_gruen.png",
+            "1": "/images/zoom_gelb.png",
+            "2": "/images/zoom_rot.png"
+        },
+        "requirements": {
+            "firetrucks": 1
+        },
+        "chances": {},
+        "additional": {
+            "expansion_missions_ids": {
+                "0": 180
+            },
+            "filter_id": "firehouse_missions"
+        },
+        "prerequisites": {
+            "fire_stations": 1
         }
     }
 }

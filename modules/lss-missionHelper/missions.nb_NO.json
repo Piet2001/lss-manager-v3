@@ -871,28 +871,24 @@
         "name": "Alkoholrus",
         "place": null,
         "average_credits": null,
-        "generated_by": "Politistasjon",
+        "generated_by": "Ambulansestasjon",
         "icons": {
-            "0": "/images/bar_coktail_gruen.png",
-            "1": "/images/bar_coktail_gelb.png",
-            "2": "/images/bar_coktail_rot.png"
+            "0": "/images/medicalstore_gruen.png",
+            "1": "/images/medicalstore_gelb.png",
+            "2": "/images/medicalstore_rot.png"
         },
-        "requirements": {
-            "police_cars": 1
-        },
+        "requirements": {},
         "chances": {
             "patient_transport": 30
         },
         "additional": {
             "possible_patient": 1,
             "possible_patient_min": 1,
-            "filter_id": "police_station_missions",
-            "patient_at_end_of_mission": true,
+            "filter_id": "ambulance_station_missions",
             "patient_specializations": "Generell medisin"
         },
         "prerequisites": {
-            "rescue_stations": 1,
-            "police_stations": 1
+            "rescue_stations": 1
         }
     },
     "36": {
@@ -2810,9 +2806,9 @@
         "average_credits": 1500,
         "generated_by": "Politistasjon",
         "icons": {
-            "0": "/images/fire_gruen.png",
-            "1": "/images/fire_gelb.png",
-            "2": "/images/fire_rot.png"
+            "0": "/images/shooting_gruen.png",
+            "1": "/images/shooting_gelb.png",
+            "2": "/images/shooting_rot.png"
         },
         "requirements": {
             "police_cars": 6
@@ -3392,138 +3388,6 @@
         },
         "prerequisites": {
             "rescue_stations": 1
-        }
-    },
-    "141": {
-        "id": 141,
-        "name": "Solstikk",
-        "place": null,
-        "average_credits": null,
-        "generated_by": "Ambulansestasjon",
-        "icons": {
-            "0": "/images/medicalstore_gruen.png",
-            "1": "/images/medicalstore_gelb.png",
-            "2": "/images/medicalstore_rot.png"
-        },
-        "requirements": {},
-        "chances": {
-            "patient_transport": 10
-        },
-        "additional": {
-            "possible_patient": 1,
-            "possible_patient_min": 1,
-            "filter_id": "ambulance_station_missions",
-            "date_start": "Fre, 26 Jun 2020 10:00:00 +0200",
-            "date_end": "Tor, 01 Okt 2020 00:00:00 +0200",
-            "patient_specializations": "Generell medisin"
-        },
-        "prerequisites": {
-            "rescue_stations": 2
-        }
-    },
-    "142": {
-        "id": 142,
-        "name": "Heteslag",
-        "place": null,
-        "average_credits": null,
-        "generated_by": "Ambulansestasjon",
-        "icons": {
-            "0": "/images/medicalstore_gruen.png",
-            "1": "/images/medicalstore_gelb.png",
-            "2": "/images/medicalstore_rot.png"
-        },
-        "requirements": {},
-        "chances": {
-            "patient_transport": 60
-        },
-        "additional": {
-            "possible_patient": 1,
-            "possible_patient_min": 1,
-            "filter_id": "ambulance_station_missions",
-            "date_start": "Fre, 26 Jun 2020 10:00:00 +0200",
-            "date_end": "Tor, 01 Okt 2020 00:00:00 +0200",
-            "patient_specializations": "Generell medisin"
-        },
-        "prerequisites": {
-            "rescue_stations": 4
-        }
-    },
-    "143": {
-        "id": 143,
-        "name": "Hetekrampe",
-        "place": null,
-        "average_credits": null,
-        "generated_by": "Ambulansestasjon",
-        "icons": {
-            "0": "/images/medicalstore_gruen.png",
-            "1": "/images/medicalstore_gelb.png",
-            "2": "/images/medicalstore_rot.png"
-        },
-        "requirements": {},
-        "chances": {
-            "patient_transport": 50
-        },
-        "additional": {
-            "possible_patient": 1,
-            "possible_patient_min": 1,
-            "filter_id": "ambulance_station_missions",
-            "date_start": "Fre, 26 Jun 2020 10:00:00 +0200",
-            "date_end": "Tor, 01 Okt 2020 00:00:00 +0200",
-            "patient_specializations": "Generell medisin"
-        },
-        "prerequisites": {
-            "rescue_stations": 4
-        }
-    },
-    "144": {
-        "id": 144,
-        "name": "Dehydrert person",
-        "place": null,
-        "average_credits": null,
-        "generated_by": "Ambulansestasjon",
-        "icons": {
-            "0": "/images/medicalstore_gruen.png",
-            "1": "/images/medicalstore_gelb.png",
-            "2": "/images/medicalstore_rot.png"
-        },
-        "requirements": {},
-        "chances": {
-            "patient_transport": 50
-        },
-        "additional": {
-            "possible_patient": 1,
-            "possible_patient_min": 1,
-            "filter_id": "ambulance_station_missions",
-            "date_start": "Fre, 26 Jun 2020 10:00:00 +0200",
-            "date_end": "Tor, 01 Okt 2020 00:00:00 +0200",
-            "patient_specializations": "Generell medisin"
-        },
-        "prerequisites": {
-            "rescue_stations": 3
-        }
-    },
-    "145": {
-        "id": 145,
-        "name": "Grillbrann",
-        "place": null,
-        "average_credits": 600,
-        "generated_by": "Brannstasjon",
-        "icons": {
-            "0": "/images/fire_gruen.png",
-            "1": "/images/fire_gelb.png",
-            "2": "/images/fire_rot.png"
-        },
-        "requirements": {
-            "firetrucks": 1
-        },
-        "chances": {},
-        "additional": {
-            "filter_id": "firehouse_missions",
-            "date_start": "Fre, 26 Jun 2020 10:00:00 +0200",
-            "date_end": "Tor, 01 Okt 2020 00:00:00 +0200"
-        },
-        "prerequisites": {
-            "fire_stations": 1
         }
     },
     "146": {
@@ -4328,6 +4192,166 @@
             "fire_stations": 15
         }
     },
+    "173": {
+        "id": 173,
+        "name": "Uhell med syre",
+        "place": null,
+        "average_credits": null,
+        "generated_by": "Ambulansestasjon",
+        "icons": {
+            "0": "/images/medicalstore_gruen.png",
+            "1": "/images/medicalstore_gelb.png",
+            "2": "/images/medicalstore_rot.png"
+        },
+        "requirements": {},
+        "chances": {
+            "patient_transport": 100
+        },
+        "additional": {
+            "possible_patient": 1,
+            "possible_patient_min": 1,
+            "filter_id": "ambulance_station_missions",
+            "patient_specializations": "Traume"
+        },
+        "prerequisites": {
+            "rescue_stations": 1
+        }
+    },
+    "174": {
+        "id": 174,
+        "name": "Liten brann p\u00e5 fabrikk",
+        "place": "Fabrikk",
+        "average_credits": 2000,
+        "generated_by": "Brannstasjon",
+        "icons": {
+            "0": "/images/fire_gruen.png",
+            "1": "/images/fire_gelb.png",
+            "2": "/images/fire_rot.png"
+        },
+        "requirements": {
+            "firetrucks": 4,
+            "battalion_chief_vehicles": 2
+        },
+        "chances": {
+            "patient_transport": 30
+        },
+        "additional": {
+            "possible_patient": 3,
+            "filter_id": "firehouse_missions",
+            "patient_specializations": "Generell medisin"
+        },
+        "prerequisites": {
+            "rescue_stations": 2,
+            "fire_stations": 8
+        }
+    },
+    "175": {
+        "id": 175,
+        "name": "Stor brann i fabrikk",
+        "place": "Fabrikk",
+        "average_credits": 9000,
+        "generated_by": "Brannstasjon",
+        "icons": {
+            "0": "/images/fire_gruen.png",
+            "1": "/images/fire_gelb.png",
+            "2": "/images/fire_rot.png"
+        },
+        "requirements": {
+            "firetrucks": 8,
+            "battalion_chief_vehicles": 4,
+            "mobile_command_vehicles": 1,
+            "platform_trucks": 2,
+            "heavy_rescue_vehicles": 2,
+            "water_tankers": 1,
+            "mobile_air_vehicles": 1,
+            "police_cars": 2
+        },
+        "chances": {
+            "patient_transport": 30
+        },
+        "additional": {
+            "possible_patient": 7,
+            "filter_id": "firehouse_missions",
+            "patient_specializations": "Generell medisin"
+        },
+        "prerequisites": {
+            "rescue_stations": 6,
+            "police_stations": 2,
+            "fire_stations": 15
+        }
+    },
+    "176": {
+        "id": 176,
+        "name": "Smuglingsfors\u00f8k",
+        "place": "Cargohavn",
+        "average_credits": 800,
+        "generated_by": "Politistasjon",
+        "icons": {
+            "0": "/images/bar_coktail_gruen.png",
+            "1": "/images/bar_coktail_gelb.png",
+            "2": "/images/bar_coktail_rot.png"
+        },
+        "requirements": {
+            "police_cars": 3,
+            "k9": 1
+        },
+        "chances": {},
+        "additional": {
+            "max_possible_prisoners": 1,
+            "filter_id": "police_station_missions"
+        },
+        "prerequisites": {
+            "police_stations": 7
+        }
+    },
+    "177": {
+        "id": 177,
+        "name": "Smuglingsfors\u00f8k",
+        "place": "Cruisehavn",
+        "average_credits": 800,
+        "generated_by": "Politistasjon",
+        "icons": {
+            "0": "/images/bar_coktail_gruen.png",
+            "1": "/images/bar_coktail_gelb.png",
+            "2": "/images/bar_coktail_rot.png"
+        },
+        "requirements": {
+            "police_cars": 3,
+            "k9": 1
+        },
+        "chances": {},
+        "additional": {
+            "max_possible_prisoners": 1,
+            "filter_id": "police_station_missions"
+        },
+        "prerequisites": {
+            "police_stations": 7
+        }
+    },
+    "178": {
+        "id": 178,
+        "name": "Smuglingsfors\u00f8k",
+        "place": "Godsstasjon",
+        "average_credits": 800,
+        "generated_by": "Politistasjon",
+        "icons": {
+            "0": "/images/bar_coktail_gruen.png",
+            "1": "/images/bar_coktail_gelb.png",
+            "2": "/images/bar_coktail_rot.png"
+        },
+        "requirements": {
+            "police_cars": 3,
+            "k9": 1
+        },
+        "chances": {},
+        "additional": {
+            "max_possible_prisoners": 1,
+            "filter_id": "police_station_missions"
+        },
+        "prerequisites": {
+            "police_stations": 7
+        }
+    },
     "179": {
         "id": 179,
         "name": "Bil under vann",
@@ -4546,6 +4570,354 @@
         "prerequisites": {
             "wasserrettung": 1,
             "rescue_stations": 1
+        }
+    },
+    "186": {
+        "id": 186,
+        "name": "Brann i kum",
+        "place": null,
+        "average_credits": 210,
+        "generated_by": "Brannstasjon",
+        "icons": {
+            "0": "/images/fire_gruen.png",
+            "1": "/images/fire_gelb.png",
+            "2": "/images/fire_rot.png"
+        },
+        "requirements": {
+            "firetrucks": 2,
+            "battalion_chief_vehicles": 1
+        },
+        "chances": {},
+        "additional": {
+            "filter_id": "firehouse_missions"
+        },
+        "prerequisites": {
+            "fire_stations": 6
+        }
+    },
+    "187": {
+        "id": 187,
+        "name": "Person fastklemt under tre",
+        "place": null,
+        "average_credits": 1000,
+        "generated_by": "Brannstasjon",
+        "icons": {
+            "0": "/images/sawmill_gruen.png",
+            "1": "/images/sawmill_gelb.png",
+            "2": "/images/sawmill_rot.png"
+        },
+        "requirements": {
+            "firetrucks": 1
+        },
+        "chances": {
+            "patient_transport": 100
+        },
+        "additional": {
+            "possible_patient": 1,
+            "possible_patient_min": 1,
+            "allow_rw_instead_of_lf": true,
+            "filter_id": "firehouse_missions",
+            "patient_at_end_of_mission": true,
+            "patient_specializations": "Traume"
+        },
+        "prerequisites": {
+            "rescue_stations": 5,
+            "fire_stations": 6
+        }
+    },
+    "188": {
+        "id": 188,
+        "name": "Konsert",
+        "place": "Stadion",
+        "average_credits": 7000,
+        "generated_by": "Brannstasjon",
+        "icons": {
+            "0": "/images/clock_gruen.png",
+            "1": "/images/clock_gelb.png",
+            "2": "/images/clock_rot.png"
+        },
+        "requirements": {
+            "firetrucks": 2,
+            "ambulances": 1,
+            "police_cars": 7
+        },
+        "chances": {},
+        "additional": {
+            "duration": "1 time",
+            "guard_mission": true,
+            "filter_id": "firehouse_missions"
+        },
+        "prerequisites": {
+            "rescue_stations": 1,
+            "police_stations": 5,
+            "fire_stations": 3
+        }
+    },
+    "189": {
+        "id": 189,
+        "name": "Brann i museum",
+        "place": "Museum",
+        "average_credits": 7500,
+        "generated_by": "Brannstasjon",
+        "icons": {
+            "0": "/images/fire_gruen.png",
+            "1": "/images/fire_gelb.png",
+            "2": "/images/fire_rot.png"
+        },
+        "requirements": {
+            "firetrucks": 6,
+            "battalion_chief_vehicles": 2,
+            "mobile_command_vehicles": 1,
+            "platform_trucks": 2,
+            "heavy_rescue_vehicles": 4,
+            "water_tankers": 1,
+            "mobile_air_vehicles": 2,
+            "police_cars": 2
+        },
+        "chances": {
+            "water_tankers": 20
+        },
+        "additional": {
+            "filter_id": "firehouse_missions"
+        },
+        "prerequisites": {
+            "police_stations": 2,
+            "fire_stations": 13
+        }
+    },
+    "199": {
+        "id": 199,
+        "name": "Uhell med motorsag",
+        "place": null,
+        "average_credits": 400,
+        "generated_by": "Ambulansestasjon",
+        "icons": {
+            "0": "/images/medicalstore_gruen.png",
+            "1": "/images/medicalstore_gelb.png",
+            "2": "/images/medicalstore_rot.png"
+        },
+        "requirements": {},
+        "chances": {
+            "patient_transport": 100
+        },
+        "additional": {
+            "possible_patient": 1,
+            "possible_patient_min": 1,
+            "filter_id": "ambulance_station_missions",
+            "patient_specializations": "Traume"
+        },
+        "prerequisites": {
+            "rescue_stations": 1
+        }
+    },
+    "201": {
+        "id": 201,
+        "name": "Trafikkuhell uten personskade",
+        "place": null,
+        "average_credits": 1200,
+        "generated_by": "Politistasjon",
+        "icons": {
+            "0": "/images/caraccident_gruen.png",
+            "1": "/images/caraccident_gelb.png",
+            "2": "/images/caraccident_rot.png"
+        },
+        "requirements": {
+            "firetrucks": 1,
+            "police_cars": 1,
+            "traffic_car": 1
+        },
+        "chances": {},
+        "additional": {
+            "filter_id": "police_station_missions",
+            "need_traffic_car_only_if_present": true
+        },
+        "prerequisites": {
+            "police_stations": 2,
+            "fire_stations": 1
+        }
+    },
+    "202": {
+        "id": 202,
+        "name": "Lastebilvelt",
+        "place": null,
+        "average_credits": 3500,
+        "generated_by": "Brannstasjon",
+        "icons": {
+            "0": "/images/caraccident_gruen.png",
+            "1": "/images/caraccident_gelb.png",
+            "2": "/images/caraccident_rot.png"
+        },
+        "requirements": {
+            "firetrucks": 2,
+            "battalion_chief_vehicles": 1,
+            "heavy_rescue_vehicles": 2,
+            "hazmat_vehicles": 1,
+            "police_cars": 1,
+            "traffic_car": 1
+        },
+        "chances": {
+            "patient_transport": 30
+        },
+        "additional": {
+            "possible_patient": 4,
+            "filter_id": "firehouse_missions",
+            "need_traffic_car_only_if_present": true,
+            "patient_specializations": "Traume"
+        },
+        "prerequisites": {
+            "police_stations": 3,
+            "fire_stations": 6
+        }
+    },
+    "203": {
+        "id": 203,
+        "name": "Bil i gr\u00f8ften",
+        "place": null,
+        "average_credits": 1200,
+        "generated_by": "Politistasjon",
+        "icons": {
+            "0": "/images/caraccident_gruen.png",
+            "1": "/images/caraccident_gelb.png",
+            "2": "/images/caraccident_rot.png"
+        },
+        "requirements": {
+            "firetrucks": 1,
+            "police_cars": 1,
+            "traffic_car": 1
+        },
+        "chances": {},
+        "additional": {
+            "expansion_missions_ids": {
+                "0": 73,
+                "1": 64
+            },
+            "filter_id": "police_station_missions",
+            "need_traffic_car_only_if_present": true
+        },
+        "prerequisites": {
+            "police_stations": 2,
+            "fire_stations": 1
+        }
+    },
+    "204": {
+        "id": 204,
+        "name": "Trafikkstopp (Ingen forsikring)",
+        "place": null,
+        "average_credits": 700,
+        "generated_by": "Politistasjon",
+        "icons": {
+            "0": "/images/caraccident_gruen.png",
+            "1": "/images/caraccident_gelb.png",
+            "2": "/images/caraccident_rot.png"
+        },
+        "requirements": {
+            "police_cars": 1,
+            "traffic_car": 1
+        },
+        "chances": {},
+        "additional": {
+            "filter_id": "police_station_missions",
+            "need_traffic_car_only_if_present": true
+        },
+        "prerequisites": {
+            "police_stations": 1
+        }
+    },
+    "205": {
+        "id": 205,
+        "name": "Trafikkstopp (Vinglete kj\u00f8ring)",
+        "place": null,
+        "average_credits": 700,
+        "generated_by": "Politistasjon",
+        "icons": {
+            "0": "/images/caraccident_gruen.png",
+            "1": "/images/caraccident_gelb.png",
+            "2": "/images/caraccident_rot.png"
+        },
+        "requirements": {
+            "police_cars": 1,
+            "traffic_car": 1
+        },
+        "chances": {},
+        "additional": {
+            "filter_id": "police_station_missions",
+            "need_traffic_car_only_if_present": true
+        },
+        "prerequisites": {
+            "police_stations": 1
+        }
+    },
+    "206": {
+        "id": 206,
+        "name": "Trafikkstopp (Ikke EU godkjent)",
+        "place": null,
+        "average_credits": 700,
+        "generated_by": "Politistasjon",
+        "icons": {
+            "0": "/images/caraccident_gruen.png",
+            "1": "/images/caraccident_gelb.png",
+            "2": "/images/caraccident_rot.png"
+        },
+        "requirements": {
+            "police_cars": 1,
+            "traffic_car": 1
+        },
+        "chances": {},
+        "additional": {
+            "filter_id": "police_station_missions",
+            "need_traffic_car_only_if_present": true
+        },
+        "prerequisites": {
+            "police_stations": 1
+        }
+    },
+    "207": {
+        "id": 207,
+        "name": "Trafikkstopp (Uaktsom kj\u00f8ring)",
+        "place": null,
+        "average_credits": 700,
+        "generated_by": "Politistasjon",
+        "icons": {
+            "0": "/images/caraccident_gruen.png",
+            "1": "/images/caraccident_gelb.png",
+            "2": "/images/caraccident_rot.png"
+        },
+        "requirements": {
+            "police_cars": 1,
+            "traffic_car": 1
+        },
+        "chances": {},
+        "additional": {
+            "filter_id": "police_station_missions",
+            "need_traffic_car_only_if_present": true
+        },
+        "prerequisites": {
+            "police_stations": 1
+        }
+    },
+    "208": {
+        "id": 208,
+        "name": "Promillekontroll",
+        "place": null,
+        "average_credits": 1000,
+        "generated_by": "Politistasjon",
+        "icons": {
+            "0": "/images/clock_gruen.png",
+            "1": "/images/clock_gelb.png",
+            "2": "/images/clock_rot.png"
+        },
+        "requirements": {
+            "traffic_car": 1
+        },
+        "chances": {},
+        "additional": {
+            "duration": "20 Minutter",
+            "guard_mission": true,
+            "filter_id": "police_station_missions",
+            "need_traffic_car_only_if_present": true
+        },
+        "prerequisites": {
+            "police_stations": 1
         }
     }
 }

@@ -931,15 +931,13 @@
         "name": "Intossicazione da alcol",
         "place": null,
         "average_credits": null,
-        "generated_by": "Stazione di polizia",
+        "generated_by": "Stazione ambulanze",
         "icons": {
-            "0": "/images/bar_coktail_gruen.png",
-            "1": "/images/bar_coktail_gelb.png",
-            "2": "/images/bar_coktail_rot.png"
+            "0": "/images/medicalstore_gruen.png",
+            "1": "/images/medicalstore_gelb.png",
+            "2": "/images/medicalstore_rot.png"
         },
-        "requirements": {
-            "police_cars": 1
-        },
+        "requirements": {},
         "chances": {
             "patient_transport": 30
         },
@@ -951,18 +949,16 @@
                 "1": "SC07V",
                 "2": "SC07R"
             },
-            "filter_id": "police_station_missions",
+            "filter_id": "ambulance_station_missions",
             "possible_patient_specializations": {
                 "0": "Medicina interna generale",
                 "1": "Medicina interna generale",
                 "2": "Medicina interna generale"
             },
-            "patient_at_end_of_mission": true,
             "patient_specializations": "Medicina interna generale"
         },
         "prerequisites": {
-            "rescue_stations": 1,
-            "police_stations": 1
+            "rescue_stations": 1
         }
     },
     "36": {
@@ -1527,7 +1523,7 @@
             "police_cars": 3
         },
         "chances": {
-            "patient_transport": 30
+            "patient_transport": 50
         },
         "additional": {
             "possible_patient": 3,
@@ -2432,6 +2428,7 @@
                 "3": "Medicina interna generale",
                 "4": "Traumatologia"
             },
+            "patient_at_end_of_mission": true,
             "patient_specializations": "Traumatologia"
         },
         "prerequisites": {
@@ -2817,7 +2814,6 @@
                 "2": "Medicina interna generale",
                 "3": "Traumatologia"
             },
-            "patient_at_end_of_mission": true,
             "patient_specializations": "Traumatologia"
         },
         "prerequisites": {
@@ -2877,6 +2873,7 @@
         "additional": {
             "possible_patient": 50,
             "possible_patient_min": 20,
+            "average_min_fire_personnel": 40,
             "patient_it_code_possible": {
                 "0": "ZC01R",
                 "1": "ZC01G",
@@ -2894,7 +2891,7 @@
             "patient_specializations": "Traumatologia"
         },
         "prerequisites": {
-            "rescue_stations": 12,
+            "rescue_stations": 14,
             "police_stations": 4,
             "fire_stations": 10
         }
@@ -3216,12 +3213,12 @@
         },
         "chances": {
             "water_tankers": 10,
-            "patient_transport": 8,
+            "patient_transport": 6,
             "helicopter": 1
         },
         "additional": {
             "possible_patient": 260,
-            "possible_patient_min": 180,
+            "possible_patient_min": 30,
             "patient_it_code_possible": {
                 "0": "YC01G",
                 "1": "YC01R",
@@ -3438,7 +3435,8 @@
             "2": "/images/theft_rot.png"
         },
         "requirements": {
-            "police_cars": 6
+            "police_cars": 4,
+            "commerce_police": 2
         },
         "chances": {},
         "additional": {
@@ -3446,7 +3444,8 @@
             "filter_id": "police_station_missions"
         },
         "prerequisites": {
-            "police_stations": 4
+            "police_stations": 4,
+            "commerce_police_stations": 2
         }
     },
     "130": {
@@ -3485,6 +3484,7 @@
                 "4": "Medicina interna generale",
                 "5": "Traumatologia"
             },
+            "patient_at_end_of_mission": true,
             "patient_specializations": "Traumatologia"
         },
         "prerequisites": {
@@ -3510,6 +3510,7 @@
             "police_cars": 2
         },
         "chances": {
+            "fwk": 50,
             "patient_transport": 90
         },
         "additional": {
@@ -4947,168 +4948,6 @@
             "fire_stations": 6
         }
     },
-    "184": {
-        "id": 184,
-        "name": "Insolazione",
-        "place": null,
-        "average_credits": null,
-        "generated_by": "Stazione ambulanze",
-        "icons": {
-            "0": "/images/medicalstore_gruen.png",
-            "1": "/images/medicalstore_gelb.png",
-            "2": "/images/medicalstore_rot.png"
-        },
-        "requirements": {},
-        "chances": {
-            "patient_transport": 10
-        },
-        "additional": {
-            "possible_patient": 1,
-            "possible_patient_min": 1,
-            "patient_it_code_possible": {
-                "0": "ZC19G",
-                "1": "ZC19R"
-            },
-            "filter_id": "ambulance_station_missions",
-            "possible_patient_specializations": {
-                "0": "Medicina interna generale",
-                "1": "Medicina interna generale"
-            },
-            "date_start": "Ven, 26 Giu 2020 10:00:00 +0200",
-            "date_end": "Gio, 01 Ott 2020 00:00:00 +0200",
-            "patient_specializations": "Medicina interna generale"
-        },
-        "prerequisites": {
-            "rescue_stations": 2
-        }
-    },
-    "185": {
-        "id": 185,
-        "name": "Colpo di calore",
-        "place": null,
-        "average_credits": null,
-        "generated_by": "Stazione ambulanze",
-        "icons": {
-            "0": "/images/medicalstore_gruen.png",
-            "1": "/images/medicalstore_gelb.png",
-            "2": "/images/medicalstore_rot.png"
-        },
-        "requirements": {},
-        "chances": {
-            "patient_transport": 60
-        },
-        "additional": {
-            "possible_patient": 1,
-            "possible_patient_min": 1,
-            "patient_it_code_possible": {
-                "0": "ZC19G",
-                "1": "ZC19R"
-            },
-            "filter_id": "ambulance_station_missions",
-            "possible_patient_specializations": {
-                "0": "Medicina interna generale",
-                "1": "Medicina interna generale"
-            },
-            "date_start": "Ven, 26 Giu 2020 10:00:00 +0200",
-            "date_end": "Gio, 01 Ott 2020 00:00:00 +0200",
-            "patient_specializations": "Medicina interna generale"
-        },
-        "prerequisites": {
-            "rescue_stations": 4
-        }
-    },
-    "186": {
-        "id": 186,
-        "name": "Crampo da calore",
-        "place": null,
-        "average_credits": null,
-        "generated_by": "Stazione ambulanze",
-        "icons": {
-            "0": "/images/medicalstore_gruen.png",
-            "1": "/images/medicalstore_gelb.png",
-            "2": "/images/medicalstore_rot.png"
-        },
-        "requirements": {},
-        "chances": {
-            "patient_transport": 50
-        },
-        "additional": {
-            "possible_patient": 1,
-            "possible_patient_min": 1,
-            "patient_it_code_possible": {
-                "0": "ZC19G"
-            },
-            "filter_id": "ambulance_station_missions",
-            "possible_patient_specializations": {
-                "0": "Medicina interna generale"
-            },
-            "date_start": "Ven, 26 Giu 2020 10:00:00 +0200",
-            "date_end": "Gio, 01 Ott 2020 00:00:00 +0200",
-            "patient_specializations": "Medicina interna generale"
-        },
-        "prerequisites": {
-            "rescue_stations": 4
-        }
-    },
-    "187": {
-        "id": 187,
-        "name": "Persona disidratata",
-        "place": null,
-        "average_credits": null,
-        "generated_by": "Stazione ambulanze",
-        "icons": {
-            "0": "/images/medicalstore_gruen.png",
-            "1": "/images/medicalstore_gelb.png",
-            "2": "/images/medicalstore_rot.png"
-        },
-        "requirements": {},
-        "chances": {
-            "patient_transport": 50
-        },
-        "additional": {
-            "possible_patient": 1,
-            "possible_patient_min": 1,
-            "patient_it_code_possible": {
-                "0": "ZC19G",
-                "1": "ZC19V"
-            },
-            "filter_id": "ambulance_station_missions",
-            "possible_patient_specializations": {
-                "0": "Medicina interna generale",
-                "1": "Medicina interna generale"
-            },
-            "date_start": "Ven, 26 Giu 2020 10:00:00 +0200",
-            "date_end": "Gio, 01 Ott 2020 00:00:00 +0200",
-            "patient_specializations": "Medicina interna generale"
-        },
-        "prerequisites": {
-            "rescue_stations": 3
-        }
-    },
-    "188": {
-        "id": 188,
-        "name": "Barbecue in fiamme",
-        "place": null,
-        "average_credits": 600,
-        "generated_by": "Caserma dei vigili del fuoco",
-        "icons": {
-            "0": "/images/fire_gruen.png",
-            "1": "/images/fire_gelb.png",
-            "2": "/images/fire_rot.png"
-        },
-        "requirements": {
-            "firetrucks": 1
-        },
-        "chances": {},
-        "additional": {
-            "filter_id": "firehouse_missions",
-            "date_start": "Ven, 26 Giu 2020 10:00:00 +0200",
-            "date_end": "Gio, 01 Ott 2020 00:00:00 +0200"
-        },
-        "prerequisites": {
-            "fire_stations": 1
-        }
-    },
     "189": {
         "id": 189,
         "name": "Incendio palo elettrico",
@@ -5869,7 +5708,6 @@
         },
         "requirements": {},
         "chances": {
-            "nef": 0,
             "patient_transport": 0
         },
         "additional": {
@@ -6088,7 +5926,8 @@
                 "3": "Traumatologia",
                 "4": "Medicina interna generale",
                 "5": "Traumatologia"
-            }
+            },
+            "patient_at_end_of_mission": true
         },
         "prerequisites": {
             "rescue_stations": 2,
@@ -6174,6 +6013,1054 @@
             "police_stations": 4,
             "police_helicopter_stations": 1,
             "fire_stations": 8
+        }
+    },
+    "222": {
+        "id": 222,
+        "name": "Chiusura uscita autostradale",
+        "place": "Uscita autostradale",
+        "average_credits": 1500,
+        "generated_by": "Stazione di polizia",
+        "icons": {
+            "0": "/images/clock_gruen.png",
+            "1": "/images/clock_gelb.png",
+            "2": "/images/clock_rot.png"
+        },
+        "requirements": {
+            "police_cars": 2
+        },
+        "chances": {},
+        "additional": {
+            "duration": "45 Minuti",
+            "guard_mission": true,
+            "filter_id": "police_station_missions"
+        },
+        "prerequisites": {
+            "police_stations": 4
+        }
+    },
+    "223": {
+        "id": 223,
+        "name": "Sversamento di olio su strada",
+        "place": null,
+        "average_credits": 580,
+        "generated_by": "Caserma dei vigili del fuoco",
+        "icons": {
+            "0": "/images/fire_gruen.png",
+            "1": "/images/fire_gelb.png",
+            "2": "/images/fire_rot.png"
+        },
+        "requirements": {
+            "firetrucks": 1,
+            "heavy_rescue_vehicles": 1,
+            "police_cars": 1
+        },
+        "chances": {},
+        "additional": {
+            "expansion_missions_ids": {
+                "0": 25,
+                "1": 118,
+                "2": 106
+            },
+            "filter_id": "firehouse_missions"
+        },
+        "prerequisites": {
+            "police_stations": 1,
+            "fire_stations": 1
+        }
+    },
+    "224": {
+        "id": 224,
+        "name": "Frodi sul carburante",
+        "place": "Stazione di servizio",
+        "average_credits": 550,
+        "generated_by": "Stazione di polizia",
+        "icons": {
+            "0": "/images/blast_gruen.png",
+            "1": "/images/blast_gelb.png",
+            "2": "/images/blast_rot.png"
+        },
+        "requirements": {
+            "police_cars": 1
+        },
+        "chances": {},
+        "additional": {
+            "filter_id": "police_station_missions"
+        },
+        "prerequisites": {
+            "police_stations": 2
+        }
+    },
+    "225": {
+        "id": 225,
+        "name": "Albero su rotaie",
+        "place": "Stazione ferroviaria (traffico regionale)",
+        "average_credits": 1000,
+        "generated_by": "Caserma dei vigili del fuoco",
+        "icons": {
+            "0": "/images/fire_gruen.png",
+            "1": "/images/fire_gelb.png",
+            "2": "/images/fire_rot.png"
+        },
+        "requirements": {
+            "firetrucks": 1,
+            "heavy_rescue_vehicles": 1,
+            "police_cars": 1
+        },
+        "chances": {},
+        "additional": {
+            "expansion_missions_ids": {
+                "0": 193
+            },
+            "filter_id": "firehouse_missions"
+        },
+        "prerequisites": {
+            "police_stations": 1,
+            "fire_stations": 1
+        }
+    },
+    "226": {
+        "id": 226,
+        "name": "Accoltellamento",
+        "place": null,
+        "average_credits": 850,
+        "generated_by": "Stazione di polizia",
+        "icons": {
+            "0": "/images/shooting_gruen.png",
+            "1": "/images/shooting_gelb.png",
+            "2": "/images/shooting_rot.png"
+        },
+        "requirements": {
+            "police_cars": 3
+        },
+        "chances": {
+            "patient_transport": 100
+        },
+        "additional": {
+            "possible_patient": 3,
+            "possible_patient_min": 1,
+            "patient_it_code_possible": {
+                "0": "SC01R",
+                "1": "SC01G",
+                "2": "ZC01R",
+                "3": "SC01V"
+            },
+            "filter_id": "police_station_missions",
+            "possible_patient_specializations": {
+                "0": "Medicina interna generale",
+                "1": "Traumatologia",
+                "2": "Medicina interna generale",
+                "3": "Traumatologia",
+                "4": "Medicina interna generale",
+                "5": "Traumatologia",
+                "6": "Medicina interna generale",
+                "7": "Traumatologia"
+            }
+        },
+        "prerequisites": {
+            "rescue_stations": 2,
+            "police_stations": 2
+        }
+    },
+    "227": {
+        "id": 227,
+        "name": "Cacciatore ferito da un cinghiale",
+        "place": "Bosco",
+        "average_credits": 550,
+        "generated_by": "Stazione ambulanze",
+        "icons": {
+            "0": "/images/ambulance_gruen.png",
+            "1": "/images/ambulance_gelb.png",
+            "2": "/images/ambulance_rot.png"
+        },
+        "requirements": {},
+        "chances": {
+            "patient_transport": 85
+        },
+        "additional": {
+            "possible_patient": 1,
+            "possible_patient_min": 1,
+            "patient_it_code_possible": {
+                "0": "ZC01R",
+                "1": "ZC01G",
+                "2": "ZC01V"
+            },
+            "filter_id": "ambulance_station_missions",
+            "possible_patient_specializations": {
+                "0": "Medicina interna generale",
+                "1": "Traumatologia",
+                "2": "Medicina interna generale",
+                "3": "Traumatologia",
+                "4": "Medicina interna generale",
+                "5": "Traumatologia"
+            }
+        },
+        "prerequisites": {
+            "rescue_stations": 1
+        }
+    },
+    "228": {
+        "id": 228,
+        "name": "Soccorso Paziente Bariatrico",
+        "place": null,
+        "average_credits": 1200,
+        "generated_by": "Caserma dei vigili del fuoco",
+        "icons": {
+            "0": "/images/ambulance_gruen.png",
+            "1": "/images/ambulance_gelb.png",
+            "2": "/images/ambulance_rot.png"
+        },
+        "requirements": {
+            "firetrucks": 1,
+            "platform_trucks": 1,
+            "heavy_rescue_vehicles": 1
+        },
+        "chances": {
+            "platform_trucks": 30,
+            "patient_transport": 100
+        },
+        "additional": {
+            "possible_patient": 1,
+            "possible_patient_min": 1,
+            "patient_it_code_possible": {
+                "0": "KC19R",
+                "1": "KC19G",
+                "2": "KC19V"
+            },
+            "filter_id": "firehouse_missions",
+            "possible_patient_specializations": {
+                "0": "Medicina interna generale",
+                "1": "Medicina interna generale",
+                "2": "Medicina interna generale"
+            },
+            "patient_at_end_of_mission": true
+        },
+        "prerequisites": {
+            "fire_stations": 4
+        }
+    },
+    "229": {
+        "id": 229,
+        "name": "Crollo fabbrica (GRANDE)",
+        "place": "Fabbrica",
+        "average_credits": 15500,
+        "generated_by": "Caserma dei vigili del fuoco",
+        "icons": {
+            "0": "/images/fire_gruen.png",
+            "1": "/images/fire_gelb.png",
+            "2": "/images/fire_rot.png"
+        },
+        "requirements": {
+            "firetrucks": 14,
+            "battalion_chief_vehicles": 2,
+            "mobile_command_vehicles": 1,
+            "platform_trucks": 2,
+            "heavy_rescue_vehicles": 8,
+            "water_tankers": 1,
+            "mobile_air_vehicles": 1,
+            "hazmat_vehicles": 2,
+            "police_cars": 8
+        },
+        "chances": {
+            "patient_transport": 25
+        },
+        "additional": {
+            "possible_patient": 50,
+            "possible_patient_min": 6,
+            "patient_it_code_possible": {
+                "0": "ZC01R",
+                "1": "ZC01G",
+                "2": "ZC01V"
+            },
+            "filter_id": "firehouse_missions",
+            "possible_patient_specializations": {
+                "0": "Medicina interna generale",
+                "1": "Traumatologia",
+                "2": "Medicina interna generale",
+                "3": "Traumatologia",
+                "4": "Medicina interna generale",
+                "5": "Traumatologia"
+            }
+        },
+        "prerequisites": {
+            "fire_stations": 15
+        }
+    },
+    "230": {
+        "id": 230,
+        "name": "Incendio centrale elettrica (MEDIA)",
+        "place": "Centrale elettrica",
+        "average_credits": 4000,
+        "generated_by": "Caserma dei vigili del fuoco",
+        "icons": {
+            "0": "/images/fire_gruen.png",
+            "1": "/images/fire_gelb.png",
+            "2": "/images/fire_rot.png"
+        },
+        "requirements": {
+            "firetrucks": 4,
+            "battalion_chief_vehicles": 1,
+            "platform_trucks": 1,
+            "heavy_rescue_vehicles": 2,
+            "mobile_air_vehicles": 1,
+            "hazmat_vehicles": 1,
+            "police_cars": 2
+        },
+        "chances": {
+            "patient_transport": 60
+        },
+        "additional": {
+            "possible_patient": 10,
+            "possible_patient_min": 4,
+            "patient_it_code_possible": {
+                "0": "ZC01R",
+                "1": "ZC01G",
+                "2": "ZC01V",
+                "3": "ZC03R",
+                "4": "ZC03G",
+                "5": "ZC03V"
+            },
+            "filter_id": "firehouse_missions",
+            "possible_patient_specializations": {
+                "0": "Medicina interna generale",
+                "1": "Traumatologia",
+                "2": "Medicina interna generale",
+                "3": "Traumatologia",
+                "4": "Medicina interna generale",
+                "5": "Traumatologia",
+                "6": "Medicina interna generale",
+                "7": "Medicina interna generale",
+                "8": "Medicina interna generale"
+            }
+        },
+        "prerequisites": {
+            "rescue_stations": 1,
+            "police_stations": 4,
+            "fire_stations": 11
+        }
+    },
+    "231": {
+        "id": 231,
+        "name": "Controllo rilevatore antincendio",
+        "place": null,
+        "average_credits": 500,
+        "generated_by": "Caserma dei vigili del fuoco",
+        "icons": {
+            "0": "/images/clock_gruen.png",
+            "1": "/images/clock_gelb.png",
+            "2": "/images/clock_rot.png"
+        },
+        "requirements": {
+            "firetrucks": 1
+        },
+        "chances": {},
+        "additional": {
+            "duration": "8 Minuti",
+            "guard_mission": true,
+            "filter_id": "firehouse_missions"
+        },
+        "prerequisites": {}
+    },
+    "232": {
+        "id": 232,
+        "name": "Incendio centrale elettrica (GRANDE)",
+        "place": null,
+        "average_credits": 8000,
+        "generated_by": "Caserma dei vigili del fuoco",
+        "icons": {
+            "0": "/images/fire_gruen.png",
+            "1": "/images/fire_gelb.png",
+            "2": "/images/fire_rot.png"
+        },
+        "requirements": {
+            "firetrucks": 8,
+            "battalion_chief_vehicles": 2,
+            "mobile_command_vehicles": 1,
+            "platform_trucks": 2,
+            "heavy_rescue_vehicles": 4,
+            "water_tankers": 1,
+            "mobile_air_vehicles": 1,
+            "hazmat_vehicles": 1,
+            "police_cars": 4
+        },
+        "chances": {
+            "hazmat_vehicles": 20,
+            "patient_transport": 40
+        },
+        "additional": {
+            "possible_patient": 20,
+            "possible_patient_min": 10,
+            "patient_it_code_possible": {
+                "0": "ZC01R",
+                "1": "ZC01G",
+                "2": "ZC01V",
+                "3": "ZC03R",
+                "4": "ZC03G",
+                "5": "ZC03V"
+            },
+            "filter_id": "firehouse_missions",
+            "possible_patient_specializations": {
+                "0": "Medicina interna generale",
+                "1": "Traumatologia",
+                "2": "Medicina interna generale",
+                "3": "Traumatologia",
+                "4": "Medicina interna generale",
+                "5": "Traumatologia",
+                "6": "Medicina interna generale",
+                "7": "Medicina interna generale",
+                "8": "Medicina interna generale"
+            }
+        },
+        "prerequisites": {
+            "fire_stations": 12
+        }
+    },
+    "233": {
+        "id": 233,
+        "name": "Maxitamponamento in galleria",
+        "place": null,
+        "average_credits": 4000,
+        "generated_by": "Caserma dei vigili del fuoco",
+        "icons": {
+            "0": "/images/fire_gruen.png",
+            "1": "/images/fire_gelb.png",
+            "2": "/images/fire_rot.png"
+        },
+        "requirements": {
+            "firetrucks": 2,
+            "battalion_chief_vehicles": 1,
+            "heavy_rescue_vehicles": 3,
+            "water_tankers": 2,
+            "mobile_air_vehicles": 1,
+            "hazmat_vehicles": 1,
+            "police_cars": 2
+        },
+        "chances": {
+            "battalion_chief_vehicles": 30,
+            "water_tankers": 20,
+            "hazmat_vehicles": 20,
+            "patient_transport": 30
+        },
+        "additional": {
+            "possible_patient": 14,
+            "possible_patient_min": 4,
+            "patient_it_code_possible": {
+                "0": "SC01R",
+                "1": "SC01G",
+                "2": "SC01V"
+            },
+            "filter_id": "firehouse_missions",
+            "possible_patient_specializations": {
+                "0": "Medicina interna generale",
+                "1": "Traumatologia",
+                "2": "Medicina interna generale",
+                "3": "Traumatologia",
+                "4": "Medicina interna generale",
+                "5": "Traumatologia"
+            }
+        },
+        "prerequisites": {
+            "fire_stations": 11
+        }
+    },
+    "234": {
+        "id": 234,
+        "name": "Assideramento",
+        "place": "Magazzino a celle frigorifere",
+        "average_credits": null,
+        "generated_by": "Stazione ambulanze",
+        "icons": {
+            "0": "/images/medicalstore_gruen.png",
+            "1": "/images/medicalstore_gelb.png",
+            "2": "/images/medicalstore_rot.png"
+        },
+        "requirements": {},
+        "chances": {
+            "patient_transport": 90
+        },
+        "additional": {
+            "possible_patient": 1,
+            "possible_patient_min": 1,
+            "patient_it_code_possible": {
+                "0": "ZC03R",
+                "1": "ZC01G",
+                "2": "ZC03V"
+            },
+            "filter_id": "ambulance_station_missions",
+            "possible_patient_specializations": {
+                "0": "Medicina interna generale",
+                "1": "Medicina interna generale",
+                "2": "Traumatologia",
+                "3": "Medicina interna generale"
+            }
+        },
+        "prerequisites": {
+            "rescue_stations": 1
+        }
+    },
+    "235": {
+        "id": 235,
+        "name": "Guidatore Contromano",
+        "place": "Uscita autostradale",
+        "average_credits": 1000,
+        "generated_by": "Stazione di polizia",
+        "icons": {
+            "0": "/images/caraccident_gruen.png",
+            "1": "/images/caraccident_gelb.png",
+            "2": "/images/caraccident_rot.png"
+        },
+        "requirements": {
+            "police_cars": 2
+        },
+        "chances": {},
+        "additional": {
+            "expansion_missions_ids": {
+                "0": 25,
+                "1": 73,
+                "2": 106,
+                "3": 109
+            },
+            "filter_id": "police_station_missions"
+        },
+        "prerequisites": {
+            "police_stations": 2
+        }
+    },
+    "236": {
+        "id": 236,
+        "name": "Controlli doganali",
+        "place": "Porto mercantile",
+        "average_credits": 850,
+        "generated_by": "Stazione di polizia",
+        "icons": {
+            "0": "/images/clock_gruen.png",
+            "1": "/images/clock_gelb.png",
+            "2": "/images/clock_rot.png"
+        },
+        "requirements": {
+            "k9": 1,
+            "commerce_police": 1
+        },
+        "chances": {},
+        "additional": {
+            "duration": "15 Minuti",
+            "guard_mission": true,
+            "filter_id": "police_station_missions"
+        },
+        "prerequisites": {
+            "police_stations": 4,
+            "commerce_police_stations": 1
+        }
+    },
+    "237": {
+        "id": 237,
+        "name": "Controlli doganali",
+        "place": "Molo navi da crociera",
+        "average_credits": 850,
+        "generated_by": "Stazione di polizia",
+        "icons": {
+            "0": "/images/clock_gruen.png",
+            "1": "/images/clock_gelb.png",
+            "2": "/images/clock_rot.png"
+        },
+        "requirements": {
+            "k9": 1,
+            "commerce_police": 1
+        },
+        "chances": {},
+        "additional": {
+            "duration": "15 Minuti",
+            "guard_mission": true,
+            "filter_id": "police_station_missions"
+        },
+        "prerequisites": {
+            "police_stations": 4,
+            "commerce_police_stations": 1
+        }
+    },
+    "238": {
+        "id": 238,
+        "name": "Controlli doganali",
+        "place": "Terminal aeroporto",
+        "average_credits": 850,
+        "generated_by": "Stazione di polizia",
+        "icons": {
+            "0": "/images/clock_gruen.png",
+            "1": "/images/clock_gelb.png",
+            "2": "/images/clock_rot.png"
+        },
+        "requirements": {
+            "k9": 1,
+            "commerce_police": 1
+        },
+        "chances": {},
+        "additional": {
+            "duration": "15 Minuti",
+            "guard_mission": true,
+            "filter_id": "police_station_missions"
+        },
+        "prerequisites": {
+            "police_stations": 4,
+            "commerce_police_stations": 1
+        }
+    },
+    "239": {
+        "id": 239,
+        "name": "Controllo igienico sanitario",
+        "place": "Tavola calda",
+        "average_credits": 560,
+        "generated_by": "Stazione di polizia",
+        "icons": {
+            "0": "/images/shooting_gruen.png",
+            "1": "/images/shooting_gelb.png",
+            "2": "/images/shooting_rot.png"
+        },
+        "requirements": {
+            "police_cars": 1,
+            "commerce_police": 1
+        },
+        "chances": {},
+        "additional": {
+            "filter_id": "police_station_missions"
+        },
+        "prerequisites": {
+            "police_stations": 2,
+            "commerce_police_stations": 1
+        }
+    },
+    "240": {
+        "id": 240,
+        "name": "Pacco sospetto",
+        "place": "Stazione metropolitana",
+        "average_credits": 1200,
+        "generated_by": "Stazione di polizia",
+        "icons": {
+            "0": "/images/shooting_gruen.png",
+            "1": "/images/shooting_gelb.png",
+            "2": "/images/shooting_rot.png"
+        },
+        "requirements": {
+            "ambulances": 1,
+            "police_cars": 3,
+            "fbi_bomb": 1
+        },
+        "chances": {},
+        "additional": {
+            "filter_id": "police_station_missions",
+            "need_bomb_only_if_present": true
+        },
+        "prerequisites": {
+            "rescue_stations": 1,
+            "police_stations": 4
+        }
+    },
+    "241": {
+        "id": 241,
+        "name": "Pacco sospetto",
+        "place": "Stazione ferroviaria (traffico regionale e viaggi a lunga distanza)",
+        "average_credits": 1200,
+        "generated_by": "Stazione di polizia",
+        "icons": {
+            "0": "/images/shooting_gruen.png",
+            "1": "/images/shooting_gelb.png",
+            "2": "/images/shooting_rot.png"
+        },
+        "requirements": {
+            "ambulances": 1,
+            "police_cars": 3,
+            "fbi_bomb": 1
+        },
+        "chances": {},
+        "additional": {
+            "filter_id": "police_station_missions",
+            "need_bomb_only_if_present": true
+        },
+        "prerequisites": {
+            "rescue_stations": 1,
+            "police_stations": 4
+        }
+    },
+    "242": {
+        "id": 242,
+        "name": "Pacco sospetto",
+        "place": "Terminal aeroporto",
+        "average_credits": 1200,
+        "generated_by": "Stazione di polizia",
+        "icons": {
+            "0": "/images/shooting_gruen.png",
+            "1": "/images/shooting_gelb.png",
+            "2": "/images/shooting_rot.png"
+        },
+        "requirements": {
+            "ambulances": 1,
+            "police_cars": 3,
+            "fbi_bomb": 1
+        },
+        "chances": {},
+        "additional": {
+            "filter_id": "police_station_missions",
+            "need_bomb_only_if_present": true
+        },
+        "prerequisites": {
+            "rescue_stations": 1,
+            "police_stations": 4
+        }
+    },
+    "243": {
+        "id": 243,
+        "name": "Verifica esercizio commerciale",
+        "place": "Supermercato (grande)",
+        "average_credits": 680,
+        "generated_by": "Stazione di polizia",
+        "icons": {
+            "0": "/images/shooting_gruen.png",
+            "1": "/images/shooting_gelb.png",
+            "2": "/images/shooting_rot.png"
+        },
+        "requirements": {
+            "police_cars": 1,
+            "commerce_police": 1
+        },
+        "chances": {},
+        "additional": {
+            "filter_id": "police_station_missions"
+        },
+        "prerequisites": {
+            "police_stations": 2,
+            "commerce_police_stations": 1
+        }
+    },
+    "244": {
+        "id": 244,
+        "name": "Verifica esercizio commerciale",
+        "place": "Supermercato (piccolo)",
+        "average_credits": 680,
+        "generated_by": "Stazione di polizia",
+        "icons": {
+            "0": "/images/shooting_gruen.png",
+            "1": "/images/shooting_gelb.png",
+            "2": "/images/shooting_rot.png"
+        },
+        "requirements": {
+            "police_cars": 1,
+            "commerce_police": 1
+        },
+        "chances": {},
+        "additional": {
+            "filter_id": "police_station_missions"
+        },
+        "prerequisites": {
+            "police_stations": 2,
+            "commerce_police_stations": 1
+        }
+    },
+    "245": {
+        "id": 245,
+        "name": "Container sospetto",
+        "place": "Porto mercantile",
+        "average_credits": 1500,
+        "generated_by": "Stazione di polizia",
+        "icons": {
+            "0": "/images/shooting_gruen.png",
+            "1": "/images/shooting_gelb.png",
+            "2": "/images/shooting_rot.png"
+        },
+        "requirements": {
+            "police_cars": 1,
+            "k9": 1,
+            "commerce_police": 2
+        },
+        "chances": {},
+        "additional": {
+            "filter_id": "police_station_missions"
+        },
+        "prerequisites": {
+            "police_stations": 2,
+            "commerce_police_stations": 2
+        }
+    },
+    "246": {
+        "id": 246,
+        "name": "Controllo fiscale",
+        "place": "Edificio adibito a uffici",
+        "average_credits": 700,
+        "generated_by": "Stazione di polizia",
+        "icons": {
+            "0": "/images/shooting_gruen.png",
+            "1": "/images/shooting_gelb.png",
+            "2": "/images/shooting_rot.png"
+        },
+        "requirements": {
+            "police_cars": 1,
+            "commerce_police": 1
+        },
+        "chances": {},
+        "additional": {
+            "filter_id": "police_station_missions"
+        },
+        "prerequisites": {
+            "police_stations": 2,
+            "commerce_police_stations": 1
+        }
+    },
+    "247": {
+        "id": 247,
+        "name": "Disinnesco ordigno bellico",
+        "place": null,
+        "average_credits": 2800,
+        "generated_by": "Stazione di polizia",
+        "icons": {
+            "0": "/images/shooting_gruen.png",
+            "1": "/images/shooting_gelb.png",
+            "2": "/images/shooting_rot.png"
+        },
+        "requirements": {
+            "firetrucks": 1,
+            "ambulances": 1,
+            "heavy_rescue_vehicles": 1,
+            "police_cars": 3,
+            "fbi_bomb": 1
+        },
+        "chances": {},
+        "additional": {
+            "filter_id": "police_station_missions",
+            "need_bomb_only_if_present": true
+        },
+        "prerequisites": {
+            "rescue_stations": 1,
+            "police_stations": 6,
+            "fire_stations": 1
+        }
+    },
+    "248": {
+        "id": 248,
+        "name": "Perquisizione domestica",
+        "place": null,
+        "average_credits": 1100,
+        "generated_by": "Stazione di polizia",
+        "icons": {
+            "0": "/images/shooting_gruen.png",
+            "1": "/images/shooting_gelb.png",
+            "2": "/images/shooting_rot.png"
+        },
+        "requirements": {
+            "police_cars": 2,
+            "commerce_police": 1
+        },
+        "chances": {},
+        "additional": {
+            "filter_id": "police_station_missions"
+        },
+        "prerequisites": {
+            "police_stations": 6,
+            "commerce_police_stations": 1
+        }
+    },
+    "249": {
+        "id": 249,
+        "name": "Controllo mezzi pesanti",
+        "place": "Porto mercantile",
+        "average_credits": 1100,
+        "generated_by": "Stazione di polizia",
+        "icons": {
+            "0": "/images/shooting_gruen.png",
+            "1": "/images/shooting_gelb.png",
+            "2": "/images/shooting_rot.png"
+        },
+        "requirements": {
+            "police_cars": 2,
+            "commerce_police": 1
+        },
+        "chances": {},
+        "additional": {
+            "filter_id": "police_station_missions"
+        },
+        "prerequisites": {
+            "police_stations": 6,
+            "commerce_police_stations": 1
+        }
+    },
+    "250": {
+        "id": 250,
+        "name": "Controllo mezzi pesanti",
+        "place": "Uscita autostradale",
+        "average_credits": 1100,
+        "generated_by": "Stazione di polizia",
+        "icons": {
+            "0": "/images/shooting_gruen.png",
+            "1": "/images/shooting_gelb.png",
+            "2": "/images/shooting_rot.png"
+        },
+        "requirements": {
+            "police_cars": 2,
+            "commerce_police": 1
+        },
+        "chances": {},
+        "additional": {
+            "filter_id": "police_station_missions"
+        },
+        "prerequisites": {
+            "police_stations": 6,
+            "commerce_police_stations": 1
+        }
+    },
+    "251": {
+        "id": 251,
+        "name": "Sgombero area abusiva (PICCOLO)",
+        "place": null,
+        "average_credits": 1100,
+        "generated_by": "Stazione di polizia",
+        "icons": {
+            "0": "/images/shooting_gruen.png",
+            "1": "/images/shooting_gelb.png",
+            "2": "/images/shooting_rot.png"
+        },
+        "requirements": {
+            "police_cars": 3,
+            "commerce_police": 1
+        },
+        "chances": {},
+        "additional": {
+            "filter_id": "police_station_missions"
+        },
+        "prerequisites": {
+            "police_stations": 6,
+            "commerce_police_stations": 1
+        }
+    },
+    "252": {
+        "id": 252,
+        "name": "Sgombero area abusiva (MEDIO)",
+        "place": null,
+        "average_credits": 1800,
+        "generated_by": "Stazione di polizia",
+        "icons": {
+            "0": "/images/shooting_gruen.png",
+            "1": "/images/shooting_gelb.png",
+            "2": "/images/shooting_rot.png"
+        },
+        "requirements": {
+            "police_cars": 4,
+            "k9": 1,
+            "commerce_police": 2
+        },
+        "chances": {},
+        "additional": {
+            "filter_id": "police_station_missions"
+        },
+        "prerequisites": {
+            "police_stations": 8,
+            "commerce_police_stations": 2
+        }
+    },
+    "253": {
+        "id": 253,
+        "name": "Sgombero area abusiva (GRANDE)",
+        "place": null,
+        "average_credits": 3500,
+        "generated_by": "Stazione di polizia",
+        "icons": {
+            "0": "/images/shooting_gruen.png",
+            "1": "/images/shooting_gelb.png",
+            "2": "/images/shooting_rot.png"
+        },
+        "requirements": {
+            "ambulances": 2,
+            "swat_armored_vehicle": 2,
+            "police_helicopters": 1,
+            "police_cars": 6,
+            "k9": 1,
+            "commerce_police": 2
+        },
+        "chances": {},
+        "additional": {
+            "max_possible_prisoners": 4,
+            "filter_id": "police_station_missions"
+        },
+        "prerequisites": {
+            "rescue_stations": 1,
+            "police_stations": 10,
+            "police_helicopter_stations": 1,
+            "commerce_police_stations": 2
+        }
+    },
+    "263": {
+        "id": 263,
+        "name": "Inalazione di sostanze nocive",
+        "place": "Piccolo serbatoio di accumulo sostanze chimiche",
+        "average_credits": null,
+        "generated_by": "Stazione ambulanze",
+        "icons": {
+            "0": "/images/medicalstore_gruen.png",
+            "1": "/images/medicalstore_gelb.png",
+            "2": "/images/medicalstore_rot.png"
+        },
+        "requirements": {
+            "firetrucks": 1,
+            "police_cars": 1
+        },
+        "chances": {
+            "patient_transport": 100
+        },
+        "additional": {
+            "possible_patient": 1,
+            "possible_patient_min": 1,
+            "patient_it_code_possible": {
+                "0": "ZC03R",
+                "1": "ZC01G"
+            },
+            "filter_id": "ambulance_station_missions",
+            "possible_patient_specializations": {
+                "0": "Medicina interna generale",
+                "1": "Medicina interna generale",
+                "2": "Traumatologia"
+            },
+            "patient_at_end_of_mission": true
+        },
+        "prerequisites": {
+            "rescue_stations": 1,
+            "police_stations": 1,
+            "fire_stations": 1
+        }
+    },
+    "264": {
+        "id": 264,
+        "name": "Rapina in banca",
+        "place": "Banca",
+        "average_credits": 2400,
+        "generated_by": "Stazione di polizia",
+        "icons": {
+            "0": "/images/shooting_gruen.png",
+            "1": "/images/shooting_gelb.png",
+            "2": "/images/shooting_rot.png"
+        },
+        "requirements": {
+            "swat_suv": 2,
+            "police_cars": 4,
+            "k9": 1
+        },
+        "chances": {
+            "patient_transport": 90
+        },
+        "additional": {
+            "possible_patient": 2,
+            "possible_patient_min": 1,
+            "patient_it_code_possible": {
+                "0": "PC01R",
+                "1": "PC01G"
+            },
+            "filter_id": "police_station_missions",
+            "possible_patient_specializations": {
+                "0": "Medicina interna generale",
+                "1": "Traumatologia",
+                "2": "Medicina interna generale",
+                "3": "Traumatologia"
+            },
+            "patient_at_end_of_mission": true
+        },
+        "prerequisites": {
+            "rescue_stations": 1,
+            "police_stations": 6
         }
     }
 }

@@ -137,7 +137,6 @@
         },
         "chances": {
             "platform_trucks": 30,
-            "nef": 0,
             "patient_transport": 50
         },
         "additional": {
@@ -667,7 +666,6 @@
             "firetrucks": 1
         },
         "chances": {
-            "nef": 0,
             "patient_transport": 40
         },
         "additional": {
@@ -888,31 +886,27 @@
         "name": "Alcoholic intoxication",
         "place": null,
         "average_credits": null,
-        "generated_by": "Police station",
+        "generated_by": "Ambulance station",
         "icons": {
-            "0": "/images/bar_coktail_gruen.png",
-            "1": "/images/bar_coktail_gelb.png",
-            "2": "/images/bar_coktail_rot.png"
+            "0": "/images/medicalstore_gruen.png",
+            "1": "/images/medicalstore_gelb.png",
+            "2": "/images/medicalstore_rot.png"
         },
-        "requirements": {
-            "police_cars": 1
-        },
+        "requirements": {},
         "chances": {
             "patient_transport": 30
         },
         "additional": {
             "possible_patient": 1,
             "possible_patient_min": 1,
-            "filter_id": "police_station_missions",
+            "filter_id": "ambulance_station_missions",
             "patient_us_code_possible": {
                 "0": "23-B-1"
             },
-            "patient_at_end_of_mission": true,
             "patient_specializations": "General Internal"
         },
         "prerequisites": {
-            "rescue_stations": 1,
-            "police_stations": 1
+            "rescue_stations": 1
         }
     },
     "35": {
@@ -958,7 +952,6 @@
         },
         "requirements": {},
         "chances": {
-            "nef": 0,
             "patient_transport": 100
         },
         "additional": {
@@ -995,7 +988,6 @@
         },
         "requirements": {},
         "chances": {
-            "nef": 0,
             "patient_transport": 50
         },
         "additional": {
@@ -1029,7 +1021,6 @@
         },
         "requirements": {},
         "chances": {
-            "nef": 0,
             "patient_transport": 50
         },
         "additional": {
@@ -1091,7 +1082,6 @@
         },
         "requirements": {},
         "chances": {
-            "nef": 0,
             "patient_transport": 90
         },
         "additional": {
@@ -1121,7 +1111,6 @@
         },
         "requirements": {},
         "chances": {
-            "nef": 0,
             "patient_transport": 30
         },
         "additional": {
@@ -1211,7 +1200,6 @@
         },
         "requirements": {},
         "chances": {
-            "nef": 0,
             "patient_transport": 50
         },
         "additional": {
@@ -1629,8 +1617,10 @@
         "additional": {
             "possible_patient": 3,
             "expansion_missions_ids": {
-                "0": 90,
-                "1": 298
+                "0": 298
+            },
+            "followup_missions_ids": {
+                "0": 90
             },
             "max_possible_prisoners": 2,
             "filter_id": "police_station_missions",
@@ -1665,8 +1655,10 @@
         "chances": {},
         "additional": {
             "expansion_missions_ids": {
-                "0": 59,
-                "1": 90
+                "0": 59
+            },
+            "followup_missions_ids": {
+                "0": 90
             },
             "max_possible_prisoners": 1,
             "filter_id": "police_station_missions"
@@ -1744,7 +1736,7 @@
         },
         "chances": {},
         "additional": {
-            "expansion_missions_ids": {
+            "followup_missions_ids": {
                 "0": 90
             },
             "max_possible_prisoners": 1,
@@ -2298,7 +2290,7 @@
         },
         "chances": {},
         "additional": {
-            "expansion_missions_ids": {
+            "followup_missions_ids": {
                 "0": 90
             },
             "max_possible_prisoners": 1,
@@ -2393,7 +2385,7 @@
         "additional": {
             "possible_patient": 1,
             "possible_patient_min": 1,
-            "expansion_missions_ids": {
+            "followup_missions_ids": {
                 "0": 90
             },
             "filter_id": "police_station_missions",
@@ -2500,7 +2492,7 @@
         },
         "chances": {},
         "additional": {
-            "expansion_missions_ids": {
+            "followup_missions_ids": {
                 "0": 90
             },
             "filter_id": "police_station_missions"
@@ -2660,7 +2652,6 @@
         },
         "requirements": {},
         "chances": {
-            "nef": 0,
             "patient_transport": 70
         },
         "additional": {
@@ -2745,7 +2736,6 @@
             "police_cars": 2
         },
         "chances": {
-            "nef": 0,
             "patient_transport": 50
         },
         "additional": {
@@ -7299,7 +7289,6 @@
         },
         "requirements": {},
         "chances": {
-            "nef": 0,
             "patient_transport": 0
         },
         "additional": {
@@ -10317,7 +10306,8 @@
                 "13": "26-A-9",
                 "14": "26-A-10",
                 "15": "26-A-11"
-            }
+            },
+            "patient_specializations": "General Internal"
         },
         "prerequisites": {
             "rescue_stations": 1
@@ -10342,7 +10332,7 @@
         },
         "additional": {
             "possible_patient": 1,
-            "expansion_missions_ids": {
+            "followup_missions_ids": {
                 "0": 90
             },
             "max_possible_prisoners": 2,
@@ -10378,7 +10368,7 @@
         },
         "chances": {},
         "additional": {
-            "expansion_missions_ids": {
+            "followup_missions_ids": {
                 "0": 90
             },
             "max_possible_prisoners": 1,
@@ -10832,6 +10822,9 @@
             "possible_patient": 1,
             "possible_patient_min": 1,
             "filter_id": "ambulance_station_missions",
+            "patient_us_code_possible": {
+                "0": "17-D-5"
+            },
             "patient_specializations": "General Internal"
         },
         "prerequisites": {
@@ -10930,6 +10923,9 @@
             "expansion_missions_ids": {
                 "0": 370
             },
+            "followup_missions_ids": {
+                "0": 471
+            },
             "filter_id": "firehouse_missions"
         },
         "prerequisites": {
@@ -10959,6 +10955,9 @@
             "expansion_missions_ids": {
                 "0": 371
             },
+            "followup_missions_ids": {
+                "0": 472
+            },
             "filter_id": "firehouse_missions"
         },
         "prerequisites": {
@@ -10987,6 +10986,9 @@
         },
         "chances": {},
         "additional": {
+            "followup_missions_ids": {
+                "0": 473
+            },
             "filter_id": "firehouse_missions"
         },
         "prerequisites": {
@@ -11015,6 +11017,9 @@
             "expansion_missions_ids": {
                 "0": 373
             },
+            "followup_missions_ids": {
+                "0": 471
+            },
             "filter_id": "firehouse_missions"
         },
         "prerequisites": {
@@ -11040,6 +11045,9 @@
         },
         "chances": {},
         "additional": {
+            "followup_missions_ids": {
+                "0": 472
+            },
             "filter_id": "firehouse_missions"
         },
         "prerequisites": {
@@ -11089,6 +11097,9 @@
         "additional": {
             "expansion_missions_ids": {
                 "0": 389
+            },
+            "followup_missions_ids": {
+                "0": 470
             },
             "filter_id": "firehouse_missions"
         },
@@ -11533,6 +11544,9 @@
             "expansion_missions_ids": {
                 "0": 393
             },
+            "followup_missions_ids": {
+                "0": 470
+            },
             "filter_id": "firehouse_missions"
         },
         "prerequisites": {
@@ -11698,6 +11712,9 @@
             "expansion_missions_ids": {
                 "0": 394
             },
+            "followup_missions_ids": {
+                "0": 471
+            },
             "filter_id": "firehouse_missions"
         },
         "prerequisites": {
@@ -11727,6 +11744,9 @@
         "additional": {
             "expansion_missions_ids": {
                 "0": 395
+            },
+            "followup_missions_ids": {
+                "0": 472
             },
             "filter_id": "firehouse_missions"
         },
@@ -11759,7 +11779,8 @@
         "additional": {
             "followup_missions_ids": {
                 "0": 369,
-                "1": 389
+                "1": 389,
+                "2": 473
             },
             "filter_id": "firehouse_missions"
         },
@@ -11888,6 +11909,9 @@
             "expansion_missions_ids": {
                 "0": 400
             },
+            "followup_missions_ids": {
+                "0": 476
+            },
             "filter_id": "firehouse_missions",
             "patient_us_code_possible": {
                 "0": "8-D-1",
@@ -11940,6 +11964,9 @@
             "expansion_missions_ids": {
                 "0": 423
             },
+            "followup_missions_ids": {
+                "0": 478
+            },
             "filter_id": "firehouse_missions",
             "patient_us_code_possible": {
                 "0": "8-D-1",
@@ -11989,6 +12016,9 @@
             "possible_patient": 6,
             "expansion_missions_ids": {
                 "0": 402
+            },
+            "followup_missions_ids": {
+                "0": 477
             },
             "filter_id": "firehouse_missions",
             "patient_us_code_possible": {
@@ -12042,6 +12072,9 @@
             "expansion_missions_ids": {
                 "0": 424
             },
+            "followup_missions_ids": {
+                "0": 479
+            },
             "filter_id": "firehouse_missions",
             "patient_us_code_possible": {
                 "0": "8-D-1",
@@ -12065,224 +12098,6 @@
             "rescue_stations": 8,
             "police_stations": 4,
             "fire_stations": 12
-        }
-    },
-    "403": {
-        "id": 403,
-        "name": "Sunstroke",
-        "place": null,
-        "average_credits": null,
-        "generated_by": "Ambulance station",
-        "icons": {
-            "0": "/images/medicalstore_gruen.png",
-            "1": "/images/medicalstore_gelb.png",
-            "2": "/images/medicalstore_rot.png"
-        },
-        "requirements": {},
-        "chances": {
-            "patient_transport": 10
-        },
-        "additional": {
-            "possible_patient": 1,
-            "possible_patient_min": 1,
-            "filter_id": "ambulance_station_missions",
-            "patient_us_code_possible": {
-                "0": "26-A-3",
-                "1": "26-A-6",
-                "2": "26-A-11",
-                "3": "26-A-18",
-                "4": "26-C-2",
-                "5": "19-C-2",
-                "6": "28-C-8C",
-                "7": "28-C-8E",
-                "8": "28-C-8F",
-                "9": "28-C-8H",
-                "10": "28-C-8I",
-                "11": "28-C-8J",
-                "12": "28-C-8L",
-                "13": "28-C-8M",
-                "14": "28-C-8U",
-                "15": "28-C-8X",
-                "16": "28-C-8Z",
-                "17": "20-A-1H",
-                "18": "20-B-0H",
-                "19": "20-B-1H",
-                "20": "20-C-0H",
-                "21": "20-C-1H",
-                "22": "20-D-0H",
-                "23": "20-D-1H",
-                "24": "20-D-2H",
-                "25": "12-A-3",
-                "26": "12-A-5",
-                "27": "31-D-1",
-                "28": "31-D-2"
-            },
-            "date_start": "Fri, 26 Jun 2020 10:00:00 -0400",
-            "date_end": "Thu, 01 Oct 2020 00:00:00 -0400",
-            "patient_specializations": "General Internal"
-        },
-        "prerequisites": {
-            "rescue_stations": 2
-        }
-    },
-    "404": {
-        "id": 404,
-        "name": "Heat stroke",
-        "place": null,
-        "average_credits": null,
-        "generated_by": "Ambulance station",
-        "icons": {
-            "0": "/images/medicalstore_gruen.png",
-            "1": "/images/medicalstore_gelb.png",
-            "2": "/images/medicalstore_rot.png"
-        },
-        "requirements": {},
-        "chances": {
-            "patient_transport": 60
-        },
-        "additional": {
-            "possible_patient": 1,
-            "possible_patient_min": 1,
-            "filter_id": "ambulance_station_missions",
-            "patient_us_code_possible": {
-                "0": "26-A-3",
-                "1": "26-A-6",
-                "2": "26-A-11",
-                "3": "26-A-18",
-                "4": "26-C-2",
-                "5": "19-C-2",
-                "6": "28-C-8C",
-                "7": "28-C-8E",
-                "8": "28-C-8F",
-                "9": "28-C-8H",
-                "10": "28-C-8I",
-                "11": "28-C-8J",
-                "12": "28-C-8L",
-                "13": "28-C-8M",
-                "14": "28-C-8U",
-                "15": "28-C-8X",
-                "16": "28-C-8Z",
-                "17": "20-A-1H",
-                "18": "20-B-0H",
-                "19": "20-B-1H",
-                "20": "20-C-0H",
-                "21": "20-C-1H",
-                "22": "20-D-0H",
-                "23": "20-D-1H",
-                "24": "20-D-2H",
-                "25": "12-A-3",
-                "26": "12-A-5",
-                "27": "31-D-1",
-                "28": "31-D-2"
-            },
-            "date_start": "Fri, 26 Jun 2020 10:00:00 -0400",
-            "date_end": "Thu, 01 Oct 2020 00:00:00 -0400",
-            "patient_specializations": "General Internal"
-        },
-        "prerequisites": {
-            "rescue_stations": 4
-        }
-    },
-    "405": {
-        "id": 405,
-        "name": "Heat cramp",
-        "place": null,
-        "average_credits": null,
-        "generated_by": "Ambulance station",
-        "icons": {
-            "0": "/images/medicalstore_gruen.png",
-            "1": "/images/medicalstore_gelb.png",
-            "2": "/images/medicalstore_rot.png"
-        },
-        "requirements": {},
-        "chances": {
-            "patient_transport": 50
-        },
-        "additional": {
-            "possible_patient": 1,
-            "possible_patient_min": 1,
-            "filter_id": "ambulance_station_missions",
-            "patient_us_code_possible": {
-                "0": "20-A-1H",
-                "1": "26-A-6",
-                "2": "26-A-6",
-                "3": "20-B-0H",
-                "4": "20-B-1H",
-                "5": "20-C-0H",
-                "6": "20-C-1H",
-                "7": "20-D-0H",
-                "8": "20-D-1H",
-                "9": "20-D-2H",
-                "10": "26-A-18"
-            },
-            "date_start": "Fri, 26 Jun 2020 10:00:00 -0400",
-            "date_end": "Thu, 01 Oct 2020 00:00:00 -0400",
-            "patient_specializations": "General Internal"
-        },
-        "prerequisites": {
-            "rescue_stations": 4
-        }
-    },
-    "406": {
-        "id": 406,
-        "name": "Dehydrated person",
-        "place": null,
-        "average_credits": null,
-        "generated_by": "Ambulance station",
-        "icons": {
-            "0": "/images/medicalstore_gruen.png",
-            "1": "/images/medicalstore_gelb.png",
-            "2": "/images/medicalstore_rot.png"
-        },
-        "requirements": {},
-        "chances": {
-            "patient_transport": 50
-        },
-        "additional": {
-            "possible_patient": 1,
-            "possible_patient_min": 1,
-            "filter_id": "ambulance_station_missions",
-            "patient_us_code_possible": {
-                "0": "26-A-3",
-                "1": "20-A-1H",
-                "2": "20-B-0H",
-                "3": "20-B-1H",
-                "4": "20-C-0H",
-                "5": "20-C-1H",
-                "6": "20-D-0H",
-                "7": "20-D-1H",
-                "8": "20-D-2H"
-            },
-            "date_start": "Fri, 26 Jun 2020 10:00:00 -0400",
-            "date_end": "Thu, 01 Oct 2020 00:00:00 -0400",
-            "patient_specializations": "General Internal"
-        },
-        "prerequisites": {
-            "rescue_stations": 3
-        }
-    },
-    "407": {
-        "id": 407,
-        "name": "Barbecue fire",
-        "place": null,
-        "average_credits": 600,
-        "generated_by": "Fire station",
-        "icons": {
-            "0": "/images/fire_gruen.png",
-            "1": "/images/fire_gelb.png",
-            "2": "/images/fire_rot.png"
-        },
-        "requirements": {
-            "firetrucks": 1
-        },
-        "chances": {},
-        "additional": {
-            "filter_id": "firehouse_missions",
-            "date_start": "Fri, 26 Jun 2020 10:00:00 -0400",
-            "date_end": "Thu, 01 Oct 2020 00:00:00 -0400"
-        },
-        "prerequisites": {
-            "fire_stations": 1
         }
     },
     "420": {
@@ -12331,6 +12146,9 @@
             "possible_patient": 1,
             "possible_patient_min": 1,
             "filter_id": "ambulance_station_missions",
+            "patient_us_code_possible": {
+                "0": "10-D-2"
+            },
             "patient_specializations": "General Surgeon"
         },
         "prerequisites": {
@@ -12393,6 +12211,10 @@
         },
         "additional": {
             "possible_patient": 15,
+            "followup_missions_ids": {
+                "0": 480,
+                "1": 482
+            },
             "filter_id": "firehouse_missions",
             "patient_us_code_possible": {
                 "0": "8-D-1",
@@ -12446,6 +12268,10 @@
         },
         "additional": {
             "possible_patient": 15,
+            "followup_missions_ids": {
+                "0": 481,
+                "1": 483
+            },
             "filter_id": "firehouse_missions",
             "patient_us_code_possible": {
                 "0": "8-D-1",
@@ -12494,6 +12320,10 @@
             "possible_patient": 1,
             "possible_patient_min": 1,
             "filter_id": "firehouse_missions",
+            "patient_us_code_possible": {
+                "0": "77-D-1",
+                "1": "77-D-10"
+            },
             "patient_specializations": "Traumatology"
         },
         "prerequisites": {
@@ -12525,6 +12355,9 @@
             "possible_patient": 1,
             "possible_patient_min": 1,
             "filter_id": "ambulance_station_missions",
+            "patient_us_code_possible": {
+                "0": "73-B-2"
+            },
             "patient_at_end_of_mission": true,
             "patient_specializations": "Traumatology"
         },
@@ -12557,6 +12390,9 @@
             "possible_patient": 1,
             "possible_patient_min": 1,
             "filter_id": "ambulance_station_missions",
+            "patient_us_code_possible": {
+                "0": "73-B-2"
+            },
             "patient_at_end_of_mission": true,
             "patient_specializations": "Traumatology"
         },
@@ -12710,6 +12546,9 @@
             "expansion_missions_ids": {
                 "0": 369
             },
+            "followup_missions_ids": {
+                "0": 470
+            },
             "filter_id": "firehouse_missions"
         },
         "prerequisites": {
@@ -12736,6 +12575,9 @@
         "additional": {
             "expansion_missions_ids": {
                 "0": 372
+            },
+            "followup_missions_ids": {
+                "0": 470
             },
             "filter_id": "firehouse_missions"
         },
@@ -12787,6 +12629,97 @@
             "fire_stations": 10
         }
     },
+    "435": {
+        "id": 435,
+        "name": "Overturned tanker truck",
+        "place": null,
+        "average_credits": 3500,
+        "generated_by": "Fire station",
+        "icons": {
+            "0": "/images/radiation_gruen.png",
+            "1": "/images/radiation_gelb.png",
+            "2": "/images/radiation_rot.png"
+        },
+        "requirements": {
+            "firetrucks": 4,
+            "battalion_chief_vehicles": 1,
+            "mobile_command_vehicles": 1,
+            "heavy_rescue_vehicles": 1,
+            "hazmat_vehicles": 1,
+            "police_cars": 2
+        },
+        "chances": {
+            "patient_transport": 50
+        },
+        "additional": {
+            "possible_patient": 1,
+            "filter_id": "firehouse_missions",
+            "patient_us_code_possible": {
+                "0": "77-C-2",
+                "1": "77-D-10"
+            },
+            "patient_specializations": "Traumatology"
+        },
+        "prerequisites": {
+            "rescue_stations": 2,
+            "police_stations": 2,
+            "fire_stations": 13
+        }
+    },
+    "436": {
+        "id": 436,
+        "name": "Concussion",
+        "place": null,
+        "average_credits": null,
+        "generated_by": "Ambulance station",
+        "icons": {
+            "0": "/images/medicalstore_gruen.png",
+            "1": "/images/medicalstore_gelb.png",
+            "2": "/images/medicalstore_rot.png"
+        },
+        "requirements": {},
+        "chances": {
+            "patient_transport": 60
+        },
+        "additional": {
+            "possible_patient": 1,
+            "possible_patient_min": 1,
+            "filter_id": "ambulance_station_missions",
+            "patient_us_code_possible": {
+                "0": "30-D-2",
+                "1": "30-D-3",
+                "2": "30-B-1",
+                "3": "30-B-3"
+            },
+            "patient_specializations": "General Internal"
+        },
+        "prerequisites": {
+            "rescue_stations": 1
+        }
+    },
+    "437": {
+        "id": 437,
+        "name": "Reported fraud",
+        "place": null,
+        "average_credits": 300,
+        "generated_by": "Police station",
+        "icons": {
+            "0": "/images/theft_gruen.png",
+            "1": "/images/theft_gelb.png",
+            "2": "/images/theft_rot.png"
+        },
+        "requirements": {
+            "police_cars": 1
+        },
+        "chances": {},
+        "additional": {
+            "max_possible_prisoners": 1,
+            "filter_id": "police_station_missions"
+        },
+        "prerequisites": {
+            "police_stations": 1
+        }
+    },
     "438": {
         "id": 438,
         "name": "Serve court order",
@@ -12830,10 +12763,7 @@
         },
         "chances": {},
         "additional": {
-            "filter_id": "police_station_missions",
-            "subsequent_missions_ids": {
-                "0": 440
-            }
+            "filter_id": "police_station_missions"
         },
         "prerequisites": {
             "police_stations": 3
@@ -12856,6 +12786,7 @@
         "chances": {},
         "additional": {
             "duration": "15 minutes",
+            "guard_mission": true,
             "filter_id": "police_station_missions"
         },
         "prerequisites": {
@@ -13171,6 +13102,10 @@
         "additional": {
             "possible_patient": 1,
             "filter_id": "police_station_missions",
+            "patient_us_code_possible": {
+                "0": "77-D-7",
+                "1": "77-D-6"
+            },
             "patient_specializations": "Traumatology"
         },
         "prerequisites": {
@@ -13267,6 +13202,10 @@
             "possible_patient": 1,
             "max_possible_prisoners": 1,
             "filter_id": "police_station_missions",
+            "patient_us_code_possible": {
+                "0": "114-D-1",
+                "1": "114-D-2"
+            },
             "patient_specializations": "Traumatology"
         },
         "prerequisites": {
@@ -13340,6 +13279,9 @@
             "possible_patient": 4,
             "possible_patient_min": 1,
             "filter_id": "police_station_missions",
+            "patient_us_code_possible": {
+                "0": "77-D-6"
+            },
             "patient_specializations": "Traumatology"
         },
         "prerequisites": {
@@ -13424,7 +13366,7 @@
     "463": {
         "id": 463,
         "name": "Silent alarm triggered inside bank",
-        "place": "High Rise",
+        "place": "Bank",
         "average_credits": 500,
         "generated_by": "Police station",
         "icons": {
@@ -13511,6 +13453,9 @@
             "possible_patient": 1,
             "possible_patient_min": 1,
             "filter_id": "police_station_missions",
+            "patient_us_code_possible": {
+                "0": "135-D-2"
+            },
             "patient_specializations": "Traumatology"
         },
         "prerequisites": {
@@ -13541,6 +13486,11 @@
             "possible_patient": 17,
             "max_possible_prisoners": 2,
             "filter_id": "police_station_missions",
+            "patient_us_code_possible": {
+                "0": "135-D-1",
+                "1": "113-D-1",
+                "2": "113-D-2"
+            },
             "patient_specializations": "General Surgeon"
         },
         "prerequisites": {
@@ -13590,6 +13540,477 @@
         },
         "prerequisites": {
             "police_stations": 1
+        }
+    },
+    "470": {
+        "id": 470,
+        "name": "Small wildfire cleanup",
+        "place": null,
+        "average_credits": 700,
+        "generated_by": "Fire station",
+        "icons": {
+            "0": "/images/fire_gruen.png",
+            "1": "/images/fire_gelb.png",
+            "2": "/images/fire_rot.png"
+        },
+        "requirements": {
+            "brush_truck": 2
+        },
+        "chances": {},
+        "additional": {
+            "filter_id": "firehouse_missions"
+        },
+        "prerequisites": {
+            "brush_extension": 1
+        }
+    },
+    "471": {
+        "id": 471,
+        "name": "Medium wildfire cleanup",
+        "place": null,
+        "average_credits": 2000,
+        "generated_by": "Fire station",
+        "icons": {
+            "0": "/images/fire_gruen.png",
+            "1": "/images/fire_gelb.png",
+            "2": "/images/fire_rot.png"
+        },
+        "requirements": {
+            "firetrucks": 1,
+            "brush_truck": 4
+        },
+        "chances": {},
+        "additional": {
+            "filter_id": "firehouse_missions"
+        },
+        "prerequisites": {
+            "brush_extension": 2,
+            "fire_stations": 1
+        }
+    },
+    "472": {
+        "id": 472,
+        "name": "Large wildfire cleanup",
+        "place": null,
+        "average_credits": 4500,
+        "generated_by": "Fire station",
+        "icons": {
+            "0": "/images/fire_gruen.png",
+            "1": "/images/fire_gelb.png",
+            "2": "/images/fire_rot.png"
+        },
+        "requirements": {
+            "firetrucks": 2,
+            "brush_truck": 7,
+            "battalion_chief_vehicles": 1
+        },
+        "chances": {},
+        "additional": {
+            "filter_id": "firehouse_missions"
+        },
+        "prerequisites": {
+            "brush_extension": 2,
+            "fire_stations": 6
+        }
+    },
+    "473": {
+        "id": 473,
+        "name": "Major wildfire cleanup",
+        "place": null,
+        "average_credits": 9500,
+        "generated_by": "Fire station",
+        "icons": {
+            "0": "/images/fire_gruen.png",
+            "1": "/images/fire_gelb.png",
+            "2": "/images/fire_rot.png"
+        },
+        "requirements": {
+            "firetrucks": 4,
+            "brush_truck": 10,
+            "battalion_chief_vehicles": 2,
+            "mobile_command_vehicles": 1
+        },
+        "chances": {},
+        "additional": {
+            "filter_id": "firehouse_missions"
+        },
+        "prerequisites": {
+            "brush_extension": 2,
+            "fire_stations": 12
+        }
+    },
+    "474": {
+        "id": 474,
+        "name": "Carpentry workshop fire",
+        "place": "Carpentry Workshop",
+        "average_credits": 4200,
+        "generated_by": "Fire station",
+        "icons": {
+            "0": "/images/fire_gruen.png",
+            "1": "/images/fire_gelb.png",
+            "2": "/images/fire_rot.png"
+        },
+        "requirements": {
+            "firetrucks": 10,
+            "battalion_chief_vehicles": 4,
+            "mobile_command_vehicles": 1,
+            "platform_trucks": 2,
+            "water_tankers": 1,
+            "mobile_air_vehicles": 1,
+            "police_cars": 2
+        },
+        "chances": {
+            "patient_transport": 25
+        },
+        "additional": {
+            "possible_patient": 3,
+            "filter_id": "firehouse_missions",
+            "patient_us_code_possible": {
+                "0": "69-E-6"
+            },
+            "patient_specializations": "General Internal"
+        },
+        "prerequisites": {
+            "rescue_stations": 2,
+            "police_stations": 2,
+            "fire_stations": 13
+        }
+    },
+    "475": {
+        "id": 475,
+        "name": "Person stuck on playground equipment",
+        "place": "Playground",
+        "average_credits": 500,
+        "generated_by": "Fire station",
+        "icons": {
+            "0": "/images/medicalstore_gruen.png",
+            "1": "/images/medicalstore_gelb.png",
+            "2": "/images/medicalstore_rot.png"
+        },
+        "requirements": {
+            "firetrucks": 1
+        },
+        "chances": {
+            "patient_transport": 20
+        },
+        "additional": {
+            "possible_patient": 1,
+            "possible_patient_min": 1,
+            "filter_id": "ambulance_station_missions",
+            "patient_us_code_possible": {
+                "0": "32-B-1"
+            },
+            "patient_at_end_of_mission": true,
+            "patient_specializations": "General Internal"
+        },
+        "prerequisites": {
+            "rescue_stations": 1,
+            "fire_stations": 1
+        }
+    },
+    "476": {
+        "id": 476,
+        "name": "Train station collapse (Small) (Fire alarm system)",
+        "place": "Train station (regional traffic)",
+        "average_credits": 4000,
+        "generated_by": "Fire station",
+        "icons": {
+            "0": "/images/tramway_gruen.png",
+            "1": "/images/tramway_gelb.png",
+            "2": "/images/tramway_rot.png"
+        },
+        "requirements": {
+            "firetrucks": 4,
+            "battalion_chief_vehicles": 1,
+            "heavy_rescue_vehicles": 2
+        },
+        "chances": {
+            "patient_transport": 20
+        },
+        "additional": {
+            "possible_patient": 5,
+            "filter_id": "firehouse_missions",
+            "patient_us_code_possible": {
+                "0": "22-D-3Y"
+            },
+            "patient_specializations": "Traumatology"
+        },
+        "prerequisites": {
+            "rescue_stations": 5,
+            "fire_stations": 8
+        }
+    },
+    "477": {
+        "id": 477,
+        "name": "Train station collapse (Small) (Fire alarm system)",
+        "place": "Train station (regional traffic and long-distance travel)",
+        "average_credits": 3200,
+        "generated_by": "Fire station",
+        "icons": {
+            "0": "/images/tramway_gruen.png",
+            "1": "/images/tramway_gelb.png",
+            "2": "/images/tramway_rot.png"
+        },
+        "requirements": {
+            "firetrucks": 4,
+            "battalion_chief_vehicles": 1,
+            "heavy_rescue_vehicles": 2
+        },
+        "chances": {
+            "patient_transport": 20
+        },
+        "additional": {
+            "possible_patient": 5,
+            "filter_id": "firehouse_missions",
+            "patient_us_code_possible": {
+                "0": "22-D-3Y"
+            },
+            "patient_specializations": "Traumatology"
+        },
+        "prerequisites": {
+            "rescue_stations": 5,
+            "fire_stations": 8
+        }
+    },
+    "478": {
+        "id": 478,
+        "name": "Train station collapse (Medium)",
+        "place": "Train station (regional traffic)",
+        "average_credits": 6000,
+        "generated_by": "Fire station",
+        "icons": {
+            "0": "/images/tramway_gruen.png",
+            "1": "/images/tramway_gelb.png",
+            "2": "/images/tramway_rot.png"
+        },
+        "requirements": {
+            "firetrucks": 6,
+            "battalion_chief_vehicles": 2,
+            "heavy_rescue_vehicles": 4,
+            "police_cars": 2
+        },
+        "chances": {
+            "patient_transport": 20
+        },
+        "additional": {
+            "possible_patient": 10,
+            "filter_id": "firehouse_missions",
+            "patient_us_code_possible": {
+                "0": "22-D-3Y"
+            },
+            "patient_specializations": "Traumatology"
+        },
+        "prerequisites": {
+            "rescue_stations": 8,
+            "police_stations": 2,
+            "fire_stations": 12
+        }
+    },
+    "479": {
+        "id": 479,
+        "name": "Train station collapse (Medium)",
+        "place": "Train station (regional traffic and long-distance travel)",
+        "average_credits": 6000,
+        "generated_by": "Fire station",
+        "icons": {
+            "0": "/images/tramway_gruen.png",
+            "1": "/images/tramway_gelb.png",
+            "2": "/images/tramway_rot.png"
+        },
+        "requirements": {
+            "firetrucks": 6,
+            "battalion_chief_vehicles": 2,
+            "heavy_rescue_vehicles": 4,
+            "police_cars": 2
+        },
+        "chances": {
+            "patient_transport": 20
+        },
+        "additional": {
+            "possible_patient": 10,
+            "filter_id": "firehouse_missions",
+            "patient_us_code_possible": {
+                "0": "22-D-3Y"
+            },
+            "patient_specializations": "Traumatology"
+        },
+        "prerequisites": {
+            "rescue_stations": 8,
+            "police_stations": 2,
+            "fire_stations": 12
+        }
+    },
+    "480": {
+        "id": 480,
+        "name": "Train station collapse (Large)",
+        "place": "Train station (regional traffic)",
+        "average_credits": 9800,
+        "generated_by": "Fire station",
+        "icons": {
+            "0": "/images/tramway_gruen.png",
+            "1": "/images/tramway_gelb.png",
+            "2": "/images/tramway_rot.png"
+        },
+        "requirements": {
+            "firetrucks": 8,
+            "battalion_chief_vehicles": 4,
+            "mobile_command_vehicles": 1,
+            "platform_trucks": 1,
+            "heavy_rescue_vehicles": 6,
+            "police_cars": 4
+        },
+        "chances": {
+            "patient_transport": 20
+        },
+        "additional": {
+            "possible_patient": 15,
+            "filter_id": "firehouse_missions",
+            "patient_us_code_possible": {
+                "0": "22-D-3Y"
+            },
+            "patient_specializations": "Traumatology"
+        },
+        "prerequisites": {
+            "rescue_stations": 13,
+            "police_stations": 3,
+            "fire_stations": 15
+        }
+    },
+    "481": {
+        "id": 481,
+        "name": "Train station collapse (Large)",
+        "place": "Train station (regional traffic and long-distance travel)",
+        "average_credits": 9800,
+        "generated_by": "Fire station",
+        "icons": {
+            "0": "/images/tramway_gruen.png",
+            "1": "/images/tramway_gelb.png",
+            "2": "/images/tramway_rot.png"
+        },
+        "requirements": {
+            "firetrucks": 8,
+            "battalion_chief_vehicles": 4,
+            "mobile_command_vehicles": 1,
+            "platform_trucks": 1,
+            "heavy_rescue_vehicles": 6,
+            "police_cars": 4
+        },
+        "chances": {
+            "patient_transport": 20
+        },
+        "additional": {
+            "possible_patient": 15,
+            "filter_id": "firehouse_missions",
+            "patient_us_code_possible": {
+                "0": "22-D-3Y"
+            },
+            "patient_specializations": "Traumatology"
+        },
+        "prerequisites": {
+            "rescue_stations": 13,
+            "police_stations": 3,
+            "fire_stations": 15
+        }
+    },
+    "482": {
+        "id": 482,
+        "name": "Train station collapse (Major)",
+        "place": "Train station (regional traffic)",
+        "average_credits": 15000,
+        "generated_by": "Fire station",
+        "icons": {
+            "0": "/images/tramway_gruen.png",
+            "1": "/images/tramway_gelb.png",
+            "2": "/images/tramway_rot.png"
+        },
+        "requirements": {
+            "firetrucks": 12,
+            "battalion_chief_vehicles": 6,
+            "mobile_command_vehicles": 2,
+            "platform_trucks": 1,
+            "heavy_rescue_vehicles": 8,
+            "police_cars": 6
+        },
+        "chances": {
+            "patient_transport": 20
+        },
+        "additional": {
+            "possible_patient": 20,
+            "filter_id": "firehouse_missions",
+            "patient_us_code_possible": {
+                "0": "22-D-3Y"
+            },
+            "patient_specializations": "Traumatology"
+        },
+        "prerequisites": {
+            "rescue_stations": 18,
+            "police_stations": 5,
+            "fire_stations": 20
+        }
+    },
+    "483": {
+        "id": 483,
+        "name": "Train station collapse (Major)",
+        "place": "Train station (regional traffic and long-distance travel)",
+        "average_credits": 15000,
+        "generated_by": "Fire station",
+        "icons": {
+            "0": "/images/tramway_gruen.png",
+            "1": "/images/tramway_gelb.png",
+            "2": "/images/tramway_rot.png"
+        },
+        "requirements": {
+            "firetrucks": 12,
+            "battalion_chief_vehicles": 6,
+            "mobile_command_vehicles": 2,
+            "platform_trucks": 1,
+            "heavy_rescue_vehicles": 8,
+            "police_cars": 6
+        },
+        "chances": {
+            "patient_transport": 20
+        },
+        "additional": {
+            "possible_patient": 20,
+            "filter_id": "firehouse_missions",
+            "patient_us_code_possible": {
+                "0": "22-D-3Y"
+            },
+            "patient_specializations": "Traumatology"
+        },
+        "prerequisites": {
+            "rescue_stations": 18,
+            "police_stations": 5,
+            "fire_stations": 20
+        }
+    },
+    "484": {
+        "id": 484,
+        "name": "Accident with chainsaw",
+        "place": null,
+        "average_credits": 400,
+        "generated_by": "Ambulance station",
+        "icons": {
+            "0": "/images/medicalstore_gruen.png",
+            "1": "/images/medicalstore_gelb.png",
+            "2": "/images/medicalstore_rot.png"
+        },
+        "requirements": {},
+        "chances": {
+            "patient_transport": 100
+        },
+        "additional": {
+            "possible_patient": 1,
+            "possible_patient_min": 1,
+            "filter_id": "ambulance_station_missions",
+            "patient_us_code_possible": {
+                "0": "27-D-4",
+                "1": "27-D-5"
+            },
+            "patient_specializations": "Traumatology"
+        },
+        "prerequisites": {
+            "rescue_stations": 1
         }
     }
 }

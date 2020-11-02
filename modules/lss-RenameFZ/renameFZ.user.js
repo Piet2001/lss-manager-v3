@@ -153,7 +153,8 @@
                 91: 'Rettungshundefahrzeug',
                 92: 'Anh Hund',
                 93: 'MTW-OV',
-                94: 'DHuFüKw'
+                94: 'DHuFüKw',
+                95: 'Polizeimotorrad'
             }
         }
     };
@@ -288,7 +289,8 @@
                 18: "Fire Station (Small)",
                 19: "Police Station (Small station)",
                 20: "Ambulance station (Small station)",
-                21: "Clinic"
+                21: "Clinic",
+                22: "Home Response Location"
             },
             vehicleTypes: {
                 0: 'Water Ladder',
@@ -311,7 +313,12 @@
                 17: 'CARP',
                 18: 'Co-Responder Vehicle',
                 19: 'Joint Response Unit',
-                20: 'Operational Team Leader'
+                20: 'Operational Team Leader',
+                21: 'General Practitioner',
+                22: 'Community First Responder',
+                23: 'Crew Carrier',
+                24: 'Traffic Car',
+                25: 'Armed Traffic Car'
             }
         }
     };
@@ -345,7 +352,7 @@
                 1: 'Light Tanker',
                 2: 'Turntable Ladder',
                 3: 'Support Vehicle',
-                4: 'Rescue',
+                4: 'Major Rescue Vehicle',
                 5: 'Ambulance',
                 6: 'Bulk Water Tanker',
                 7: 'HAZMAT',
@@ -362,7 +369,8 @@
                 18: 'TOG SUV',
                 19: 'Tanker',
                 20: 'SES Vehicle',
-                21: 'Multi-Purpose Boat'
+                21: 'Rescue Boat',
+                22: 'Mounted Police'
             }
         }
     };
@@ -415,7 +423,8 @@
                 13: 'Letecká služba PČR',
                 18: "Požární stanice (malá)",
                 19: "Obvodní oddělení Policie (malá)",
-                20: "Výjezdová základna záchranné služby (malé)"
+                20: "Výjezdová základna záchranné služby (malé)",
+                21: "Pyrotechnická služba PČR"
             },
             vehicleTypes: {
                 0: 'CAS 20',
@@ -435,7 +444,9 @@
                 14: 'Policejní motocykl',
                 15: 'URNA SUV',
                 16: 'Protiplynový automobil',
-                17: 'MOS'
+                17: 'MOS',
+                18: 'Vozidlo vyšetřovatelů DN',
+                19: 'Vozidlo pyrotechika PČR'
             }
         }
     };
@@ -521,7 +532,8 @@
                 26: 'Łódź SP',
                 27: 'SRWys',
                 28: 'SLRr',
-                29: 'GLBA'
+                29: 'GLBA',
+                30: 'Radiowóz WRD'
             }
         }
     };
@@ -600,7 +612,8 @@
                 20: 'Liten räddningsbåt',
                 21: 'Terrängbil',
                 22: 'Bandvagn',
-                23: 'ATV'
+                23: 'ATV',
+                24: 'Polishäst'
             }
         }
     };
@@ -677,7 +690,8 @@
                 17: 'AKS Patruljevogn',
                 18: 'Dykkerbil',
                 19: 'Kystlivredderbil',
-                20: 'Bådtrailer'
+                20: 'Bådtrailer',
+                21: 'Indsatsleder Politi'
             }
         }
     };
@@ -755,7 +769,9 @@
                 18: 'Redningsbil',
                 19: 'Dykkerbil',
                 20: 'Lett redningsbåt',
-                21: 'Branntankbil'
+                21: 'Branntankbil',
+                22: 'Utrykningspolitibil',
+                23: 'Utrykningsenhetbil'
             }
         }
     };
@@ -808,7 +824,8 @@
                 13: "Elibase polizia",
                 18: "Caserma dei vigili del fuoco (piccola)",
                 19: "Stazione di polizia (stazione piccola)",
-                20: "Stazione ambulanze (stazione piccola)"
+                20: "Stazione ambulanze (stazione piccola)",
+                21: "Caserma della Finanza"
             },
             vehicleTypes: {
                 0: 'ABP',
@@ -831,7 +848,9 @@
                 17: 'UOPI Suv',
                 18: 'VLV',
                 19: 'MSA',
-                20: 'Ambulanza Ordinaria'
+                20: 'Ambulanza Ordinaria',
+                21: 'Volante Finanza',
+                22: 'Furgone artificieri'
             }
         }
     };
@@ -881,6 +900,7 @@
                 5: "Station d’hélicoptère",
                 6: "Poste de police",
                 7: "Centre de Traitement des Appels",
+                13: "Forces aériennes de la Gendarmerie nationale",
                 18: "Centre de Première Intervention",
                 19: "Commissariat (police)",
                 20: "Poste ambulancier (petit)"
@@ -903,7 +923,10 @@
                 14: 'VGRIMP',
                 15: 'BEA',
                 16: 'VPL',
-                17: 'BLS'
+                17: 'BLS',
+                18: 'Choucas',
+                19: 'Equipe cynophile',
+                20: 'Unité motocycliste',
             }
         }
     };
@@ -1212,7 +1235,10 @@
                 54: 'AT-O',
                 55: 'AT-M',
                 56: 'DA-VL',
-                57: 'DA OVDG-RR'
+                57: 'DA OVDG-RR',
+                58: 'DB-AV',
+                59: 'NH-O',
+                60: 'DB-Bike'
             }
         }
     };

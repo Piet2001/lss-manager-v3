@@ -80,7 +80,12 @@ else if (I18n.locale == "en_GB") {
         "17": ["CARP", 0],
         "18": ["Co-Responder Vehicle", 0],
         "19": ["Joint Response Unit", 2],
-        "20": ["Operational Team Leader", 1]
+        "20": ["Operational Team Leader", 1],
+        "21": ["General Practitioner", 1],
+        "22": ["Community First Responder", 1],
+        "23": ["Crew Carrier", 0],
+        "24": ["Traffic Car", 2],
+        "25": ["Armed Traffic Car", 2]
     };
 }
 else if (I18n.locale == "en_AU") {
@@ -89,7 +94,7 @@ else if (I18n.locale == "en_AU") {
         "1": ["Light Tanker", 0],
         "2": ["Turntable Ladder", 0],
         "3": ["Support Vehicle", 0],
-        "4": ["Rescue", 0],
+        "4": ["Major Rescue Vehicle", 0],
         "5": ["Ambulance", 1],
         "6": ["Bulk Water Tanker", 0],
         "7": ["HAZMAT", 0],
@@ -106,7 +111,8 @@ else if (I18n.locale == "en_AU") {
         "18": ["TOG SUV", 2],
         "19": ["Tanker", 0],
         "20": ["SES Vehicle", 4],
-        "21": ["Multi-Purpose Boat", 4]
+        "21": ["Rescue Boat", 4],
+        "22": ["Mounted Police", 2]
     };
 }
 else if (I18n.locale == "pt_PT") {
@@ -150,7 +156,8 @@ else if (I18n.locale == "sv_SE") {
         "20": ["Liten räddningsbåt", 0],
         "21": ["Terrängbil", 0],
         "22": ["Bandvagn", 0],
-        "23": ["ATV", 0]
+        "23": ["ATV", 0],
+        "24": ["Polishäst", 2]
     };
 }
 else if (I18n.locale == "cs_CZ") {
@@ -172,7 +179,9 @@ else if (I18n.locale == "cs_CZ") {
         "14": ["Policejní motocykl", 2],
         "15": ["URNA SUV", 2],
         "16": ["Protiplynový automobil", 0],
-        "17": ["MOS", 0]
+        "17": ["MOS", 0],
+        "18": ["Vozidlo vyšetřovatelů DN", 2],
+        "19": ["Vozidlo pyrotechika PČR", 2]
     };
 }
 else if (I18n.locale == "da_DK") {
@@ -197,7 +206,8 @@ else if (I18n.locale == "da_DK") {
         "17": ["AKS Patruljevogn", 2],
         "18": ["Dykkerbil", 4],
         "19": ["Kystlivredderbil", 4],
-        "20": ["Bådtrailer", 4]
+        "20": ["Bådtrailer", 4],
+        "21": ["Indsatsleder Politi", 2]
     };
 }
 else if (I18n.locale == "nb_NO") {
@@ -223,7 +233,9 @@ else if (I18n.locale == "nb_NO") {
         "18": ["Redningsbil", 0],
         "19": ["Dykkerbil", 4],
         "20": ["Lett redningsbåt", 4],
-        "21": ["Branntankbil", 0]
+        "21": ["Branntankbil", 0],
+        "22": ["Utrykningspolitibil", 2],
+        "23": ["Utrykningsenhetbil", 2]
     };
 }
 else if (I18n.locale == "pl_PL") {
@@ -257,7 +269,8 @@ else if (I18n.locale == "pl_PL") {
         "26": ["Łódź SP", 4],
         "27": ["SRWys", 0],
         "28": ["SLRr", 0],
-        "29": ["GLBA", 0]
+        "29": ["GLBA", 0],
+        "30": ["Radiowóz WRD", 2]
     };
 }
 else if (I18n.locale == "it_IT") {
@@ -282,7 +295,9 @@ else if (I18n.locale == "it_IT") {
         "17": ["UOPI Suv", 2],
         "18": ["VLV", 1],
         "19": ["MSA", 1],
-        "20": ["Ambulanza Ordinaria", 1]
+        "20": ["Ambulanza Ordinaria", 1],
+        "21": ["Volante Finanza", 2],
+        "22": ["Furgone artificieri", 2]
     };
 }
 else if (I18n.locale == "fr_FR") {
@@ -309,6 +324,9 @@ else if (I18n.locale == "fr_FR") {
         "15": ["BEA", 0],
         "16": ["VPL", 4],
         "17": ["BLS", 4],
+        "18": ["Choucas", 2],
+        "19": ["Equipe cynophile", 2],
+        "20": ["Unité motocycliste", 2]
     };
 }
 else if (I18n.locale == "ko_KR") {
@@ -403,7 +421,10 @@ else if (I18n.locale == "nl_NL") {
         "54": ["AT-O | AT-Operator", 2],
         "55": ["AT-M | AT-Materiaalwagen", 2],
         "56": ["DA-VL | Dienstauto Voorlichter", 0],
-        "57": ["DA OVDG-RR | Dienstvoertuig Officier van Dienst-Geneeskundig/Rapid Responder", 1]
+        "57": ["DA OVDG-RR | Dienstvoertuig Officier van Dienst-Geneeskundig/Rapid Responder", 1],
+        "58": ["DB-AV | Dienstbus Arrestantenvervoer", 2],
+        "59": ["NH-O | Noodhulp Onopvallend", 2],
+        "60": ["DB-Bike | Dienstbus Biketeam", 2]
     };
 }
 else if (I18n.locale == "de_DE") {
@@ -527,7 +548,8 @@ else if (I18n.locale == "de_DE") {
         "91": ["Rettungshundefahrzeug", 1],
         "92": ["Anh Hund", 3],
         "93": ["MTW-OV", 3],
-        "94": ["DHuFüKw", 2]
+        "94": ["DHuFüKw", 2],
+        "95": ["Polizeimotorrad", 2]
     };
 }
 lssm.getVehicleNameById = function(vehicleId) {

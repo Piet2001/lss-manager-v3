@@ -1832,12 +1832,16 @@
             "2": "/images/theft_rot.png"
         },
         "requirements": {
-            "police_cars": 1
+            "police_cars": 1,
+            "bike_police": 1
         },
-        "chances": {},
+        "chances": {
+            "bike_police": 30
+        },
         "additional": {
             "max_possible_prisoners": 1,
-            "filter_id": "police_station_missions"
+            "filter_id": "police_station_missions",
+            "need_bike_police_only_if_present": true
         },
         "prerequisites": {
             "police_stations": 1
@@ -1855,12 +1859,16 @@
             "2": "/images/theft_rot.png"
         },
         "requirements": {
-            "police_cars": 1
+            "police_cars": 1,
+            "bike_police": 1
         },
-        "chances": {},
+        "chances": {
+            "bike_police": 30
+        },
         "additional": {
             "max_possible_prisoners": 1,
-            "filter_id": "police_station_missions"
+            "filter_id": "police_station_missions",
+            "need_bike_police_only_if_present": true
         },
         "prerequisites": {
             "police_stations": 1
@@ -3828,7 +3836,8 @@
         },
         "additional": {
             "possible_patient": 2,
-            "filter_id": "firehouse_missions"
+            "filter_id": "firehouse_missions",
+            "patient_specializations": "Traumatologie"
         },
         "prerequisites": {
             "police_stations": 2,
@@ -4673,7 +4682,8 @@
         "additional": {
             "possible_patient": 1,
             "filter_id": "water_watch_missions",
-            "patient_at_end_of_mission": true
+            "patient_at_end_of_mission": true,
+            "patient_specializations": "Interne Geneeskunde"
         },
         "prerequisites": {
             "wasserrettung": 1,
@@ -4711,7 +4721,8 @@
         "additional": {
             "possible_patient": 3,
             "filter_id": "water_watch_missions",
-            "patient_at_end_of_mission": true
+            "patient_at_end_of_mission": true,
+            "patient_specializations": "Traumatologie"
         },
         "prerequisites": {
             "wasserrettung": 2,
@@ -5702,11 +5713,15 @@
             "2": "/images/theft_rot.png"
         },
         "requirements": {
-            "police_cars": 2
+            "police_cars": 2,
+            "bike_police": 1
         },
-        "chances": {},
+        "chances": {
+            "bike_police": 10
+        },
         "additional": {
-            "filter_id": "police_station_missions"
+            "filter_id": "police_station_missions",
+            "need_bike_police_only_if_present": true
         },
         "prerequisites": {
             "police_stations": 2
@@ -15579,7 +15594,8 @@
         "additional": {
             "possible_patient": 1,
             "possible_patient_min": 1,
-            "filter_id": "ambulance_station_missions"
+            "filter_id": "ambulance_station_missions",
+            "patient_specializations": "Traumatologie"
         },
         "prerequisites": {
             "rescue_stations": 10,
@@ -15604,7 +15620,8 @@
         "additional": {
             "possible_patient": 1,
             "possible_patient_min": 1,
-            "filter_id": "ambulance_station_missions"
+            "filter_id": "ambulance_station_missions",
+            "patient_specializations": "Cardiologie"
         },
         "prerequisites": {
             "rescue_stations": 1
@@ -15801,7 +15818,8 @@
         "additional": {
             "possible_patient": 1,
             "possible_patient_min": 1,
-            "filter_id": "ambulance_station_missions"
+            "filter_id": "ambulance_station_missions",
+            "patient_specializations": "Algemene Heelkunde"
         },
         "prerequisites": {
             "rescue_stations": 1
@@ -15825,142 +15843,11 @@
         "additional": {
             "possible_patient": 1,
             "possible_patient_min": 1,
-            "filter_id": "ambulance_station_missions"
+            "filter_id": "ambulance_station_missions",
+            "patient_specializations": "Traumatologie"
         },
         "prerequisites": {
             "rescue_stations": 1
-        }
-    },
-    "617": {
-        "id": 617,
-        "name": "Zonnesteek",
-        "place": null,
-        "average_credits": null,
-        "generated_by": "Ambulance, standplaats",
-        "icons": {
-            "0": "/images/medicalstore_gruen.png",
-            "1": "/images/medicalstore_gelb.png",
-            "2": "/images/medicalstore_rot.png"
-        },
-        "requirements": {},
-        "chances": {
-            "patient_transport": 10
-        },
-        "additional": {
-            "possible_patient": 1,
-            "possible_patient_min": 1,
-            "filter_id": "ambulance_station_missions",
-            "date_start": "vrij 26 jun 2020 10:00:00 CEST",
-            "date_end": "do 01 okt 2020 00:00:00 CEST",
-            "patient_specializations": "Interne Geneeskunde"
-        },
-        "prerequisites": {
-            "rescue_stations": 2
-        }
-    },
-    "618": {
-        "id": 618,
-        "name": "Hitteslag",
-        "place": null,
-        "average_credits": null,
-        "generated_by": "Ambulance, standplaats",
-        "icons": {
-            "0": "/images/medicalstore_gruen.png",
-            "1": "/images/medicalstore_gelb.png",
-            "2": "/images/medicalstore_rot.png"
-        },
-        "requirements": {},
-        "chances": {
-            "patient_transport": 60
-        },
-        "additional": {
-            "possible_patient": 1,
-            "possible_patient_min": 1,
-            "filter_id": "ambulance_station_missions",
-            "date_start": "vrij 26 jun 2020 10:00:00 CEST",
-            "date_end": "do 01 okt 2020 00:00:00 CEST",
-            "patient_specializations": "Interne Geneeskunde"
-        },
-        "prerequisites": {
-            "rescue_stations": 4
-        }
-    },
-    "619": {
-        "id": 619,
-        "name": "Hittekramp",
-        "place": null,
-        "average_credits": null,
-        "generated_by": "Ambulance, standplaats",
-        "icons": {
-            "0": "/images/medicalstore_gruen.png",
-            "1": "/images/medicalstore_gelb.png",
-            "2": "/images/medicalstore_rot.png"
-        },
-        "requirements": {},
-        "chances": {
-            "patient_transport": 50
-        },
-        "additional": {
-            "possible_patient": 1,
-            "possible_patient_min": 1,
-            "filter_id": "ambulance_station_missions",
-            "date_start": "vrij 26 jun 2020 10:00:00 CEST",
-            "date_end": "do 01 okt 2020 00:00:00 CEST",
-            "patient_specializations": "Interne Geneeskunde"
-        },
-        "prerequisites": {
-            "rescue_stations": 4
-        }
-    },
-    "620": {
-        "id": 620,
-        "name": "Uitgedroogde persoon",
-        "place": null,
-        "average_credits": null,
-        "generated_by": "Ambulance, standplaats",
-        "icons": {
-            "0": "/images/medicalstore_gruen.png",
-            "1": "/images/medicalstore_gelb.png",
-            "2": "/images/medicalstore_rot.png"
-        },
-        "requirements": {},
-        "chances": {
-            "patient_transport": 50
-        },
-        "additional": {
-            "possible_patient": 1,
-            "possible_patient_min": 1,
-            "filter_id": "ambulance_station_missions",
-            "date_start": "vrij 26 jun 2020 10:00:00 CEST",
-            "date_end": "do 01 okt 2020 00:00:00 CEST",
-            "patient_specializations": "Interne Geneeskunde"
-        },
-        "prerequisites": {
-            "rescue_stations": 3
-        }
-    },
-    "621": {
-        "id": 621,
-        "name": "Barbecuebrand",
-        "place": null,
-        "average_credits": 600,
-        "generated_by": "Brandweer, Kazerne",
-        "icons": {
-            "0": "/images/fire_gruen.png",
-            "1": "/images/fire_gelb.png",
-            "2": "/images/fire_rot.png"
-        },
-        "requirements": {
-            "firetrucks": 1
-        },
-        "chances": {},
-        "additional": {
-            "filter_id": "firehouse_missions",
-            "date_start": "vrij 26 jun 2020 10:00:00 CEST",
-            "date_end": "do 01 okt 2020 00:00:00 CEST"
-        },
-        "prerequisites": {
-            "fire_stations": 1
         }
     },
     "622": {
@@ -16767,6 +16654,622 @@
             "rescue_stations": 5,
             "police_stations": 5,
             "fire_stations": 16
+        }
+    },
+    "649": {
+        "id": 649,
+        "name": "Persoon valt voorbijgangers lastig",
+        "place": "Park",
+        "average_credits": 500,
+        "generated_by": "Politie, Opkomstbureau",
+        "icons": {
+            "0": "/images/baseball_gruen.png",
+            "1": "/images/baseball_gelb.png",
+            "2": "/images/baseball_rot.png"
+        },
+        "requirements": {
+            "police_cars": 1
+        },
+        "chances": {},
+        "additional": {
+            "max_possible_prisoners": 1,
+            "filter_id": "police_station_missions"
+        },
+        "prerequisites": {
+            "police_stations": 1
+        }
+    },
+    "650": {
+        "id": 650,
+        "name": "Personen vallen voorbijgangers lastig",
+        "place": "Park",
+        "average_credits": 840,
+        "generated_by": "Politie, Opkomstbureau",
+        "icons": {
+            "0": "/images/baseball_gruen.png",
+            "1": "/images/baseball_gelb.png",
+            "2": "/images/baseball_rot.png"
+        },
+        "requirements": {
+            "police_cars": 3
+        },
+        "chances": {},
+        "additional": {
+            "max_possible_prisoners": 2,
+            "filter_id": "police_station_missions"
+        },
+        "prerequisites": {
+            "police_stations": 3
+        }
+    },
+    "651": {
+        "id": 651,
+        "name": "Aanrijding heftruck",
+        "place": "Bedrijventerrein",
+        "average_credits": null,
+        "generated_by": "Ambulance, standplaats",
+        "icons": {
+            "0": "/images/medicalstore_gruen.png",
+            "1": "/images/medicalstore_gelb.png",
+            "2": "/images/medicalstore_rot.png"
+        },
+        "requirements": {},
+        "chances": {
+            "patient_transport": 80
+        },
+        "additional": {
+            "possible_patient": 1,
+            "possible_patient_min": 1,
+            "filter_id": "ambulance_station_missions",
+            "patient_specializations": "Traumatologie"
+        },
+        "prerequisites": {
+            "rescue_stations": 1
+        }
+    },
+    "652": {
+        "id": 652,
+        "name": "Stellingkast op persoon gevallen",
+        "place": "Bedrijventerrein",
+        "average_credits": null,
+        "generated_by": "Ambulance, standplaats",
+        "icons": {
+            "0": "/images/medicalstore_gruen.png",
+            "1": "/images/medicalstore_gelb.png",
+            "2": "/images/medicalstore_rot.png"
+        },
+        "requirements": {},
+        "chances": {
+            "patient_transport": 80
+        },
+        "additional": {
+            "possible_patient": 1,
+            "possible_patient_min": 1,
+            "filter_id": "ambulance_station_missions",
+            "patient_specializations": "Traumatologie"
+        },
+        "prerequisites": {
+            "rescue_stations": 1
+        }
+    },
+    "653": {
+        "id": 653,
+        "name": "Brand bij zendmast",
+        "place": "Zendmast",
+        "average_credits": 500,
+        "generated_by": "Brandweer, Kazerne",
+        "icons": {
+            "0": "/images/fire_gruen.png",
+            "1": "/images/fire_gelb.png",
+            "2": "/images/fire_rot.png"
+        },
+        "requirements": {
+            "firetrucks": 1
+        },
+        "chances": {},
+        "additional": {
+            "expansion_missions_ids": {
+                "0": 654
+            },
+            "filter_id": "firehouse_missions"
+        },
+        "prerequisites": {
+            "fire_stations": 1
+        }
+    },
+    "654": {
+        "id": 654,
+        "name": "Brand bij zendmast",
+        "place": "Zendmast",
+        "average_credits": 2030,
+        "generated_by": "Brandweer, Kazerne",
+        "icons": {
+            "0": "/images/fire_gruen.png",
+            "1": "/images/fire_gelb.png",
+            "2": "/images/fire_rot.png"
+        },
+        "requirements": {
+            "firetrucks": 1,
+            "battalion_chief_vehicles": 1,
+            "police_cars": 2
+        },
+        "chances": {
+            "patient_transport": 100
+        },
+        "additional": {
+            "possible_patient": 10,
+            "possible_patient_min": 2,
+            "filter_id": "firehouse_missions",
+            "patient_specializations": "Traumatologie"
+        },
+        "prerequisites": {
+            "rescue_stations": 5,
+            "police_stations": 2,
+            "fire_stations": 6
+        }
+    },
+    "655": {
+        "id": 655,
+        "name": "Koperdiefstal",
+        "place": "Rangeeremplacement",
+        "average_credits": 840,
+        "generated_by": "Politie, Opkomstbureau",
+        "icons": {
+            "0": "/images/theft_gruen.png",
+            "1": "/images/theft_gelb.png",
+            "2": "/images/theft_rot.png"
+        },
+        "requirements": {
+            "police_cars": 3
+        },
+        "chances": {},
+        "additional": {
+            "expansion_missions_ids": {
+                "0": 656
+            },
+            "filter_id": "police_station_missions"
+        },
+        "prerequisites": {
+            "police_stations": 3
+        }
+    },
+    "656": {
+        "id": 656,
+        "name": "Koperdiefstal",
+        "place": "Rangeeremplacement",
+        "average_credits": 2480,
+        "generated_by": "Politie, Hoofdbureau",
+        "icons": {
+            "0": "/images/theft_gruen.png",
+            "1": "/images/theft_gelb.png",
+            "2": "/images/theft_rot.png"
+        },
+        "requirements": {
+            "hondengeleider": 1,
+            "police_cars": 5,
+            "ovdp": 1
+        },
+        "chances": {
+            "ovdp": 10
+        },
+        "additional": {
+            "filter_id": "riot_police_missions"
+        },
+        "prerequisites": {
+            "police_stations": 6,
+            "bereitschaftspolizei": 1
+        }
+    },
+    "657": {
+        "id": 657,
+        "name": "Hoge koorts",
+        "place": null,
+        "average_credits": null,
+        "generated_by": "Ambulance, standplaats",
+        "icons": {
+            "0": "/images/medicalstore_gruen.png",
+            "1": "/images/medicalstore_gelb.png",
+            "2": "/images/medicalstore_rot.png"
+        },
+        "requirements": {},
+        "chances": {
+            "patient_transport": 70
+        },
+        "additional": {
+            "possible_patient": 1,
+            "possible_patient_min": 1,
+            "filter_id": "ambulance_station_missions",
+            "patient_specializations": "Interne Geneeskunde"
+        },
+        "prerequisites": {
+            "rescue_stations": 1
+        }
+    },
+    "658": {
+        "id": 658,
+        "name": "Hand in keukenmixer",
+        "place": null,
+        "average_credits": null,
+        "generated_by": "Ambulance, standplaats",
+        "icons": {
+            "0": "/images/medicalstore_gruen.png",
+            "1": "/images/medicalstore_gelb.png",
+            "2": "/images/medicalstore_rot.png"
+        },
+        "requirements": {},
+        "chances": {
+            "patient_transport": 80
+        },
+        "additional": {
+            "possible_patient": 1,
+            "possible_patient_min": 1,
+            "filter_id": "ambulance_station_missions",
+            "patient_specializations": "Algemene Heelkunde"
+        },
+        "prerequisites": {
+            "rescue_stations": 1
+        }
+    },
+    "659": {
+        "id": 659,
+        "name": "Brand in hoogspanningsruimte",
+        "place": "Transformatorhuisje",
+        "average_credits": 1250,
+        "generated_by": "Brandweer, Kazerne",
+        "icons": {
+            "0": "/images/fire_gruen.png",
+            "1": "/images/fire_gelb.png",
+            "2": "/images/fire_rot.png"
+        },
+        "requirements": {
+            "firetrucks": 1,
+            "battalion_chief_vehicles": 1,
+            "heavy_rescue_vehicles": 1
+        },
+        "chances": {
+            "battalion_chief_vehicles": 10
+        },
+        "additional": {
+            "expansion_missions_ids": {
+                "0": 660,
+                "1": 661
+            },
+            "filter_id": "firehouse_missions"
+        },
+        "prerequisites": {
+            "fire_stations": 6
+        }
+    },
+    "660": {
+        "id": 660,
+        "name": "Brand in hoogspanningsruimte",
+        "place": "Transformatorhuisje",
+        "average_credits": 2180,
+        "generated_by": "Brandweer, Kazerne",
+        "icons": {
+            "0": "/images/fire_gruen.png",
+            "1": "/images/fire_gelb.png",
+            "2": "/images/fire_rot.png"
+        },
+        "requirements": {
+            "firetrucks": 2,
+            "battalion_chief_vehicles": 1,
+            "heavy_rescue_vehicles": 1,
+            "water_tankers": 1,
+            "police_cars": 1
+        },
+        "chances": {
+            "patient_transport": 100
+        },
+        "additional": {
+            "possible_patient": 2,
+            "possible_patient_min": 1,
+            "expansion_missions_ids": {
+                "0": 661
+            },
+            "filter_id": "firehouse_missions",
+            "patient_specializations": "Traumatologie"
+        },
+        "prerequisites": {
+            "rescue_stations": 1,
+            "police_stations": 1,
+            "fire_stations": 7
+        }
+    },
+    "661": {
+        "id": 661,
+        "name": "Brand in hoogspanningsruimte",
+        "place": "Transformatorhuisje",
+        "average_credits": 10660,
+        "generated_by": "Brandweer, Kazerne",
+        "icons": {
+            "0": "/images/fire_gruen.png",
+            "1": "/images/fire_gelb.png",
+            "2": "/images/fire_rot.png"
+        },
+        "requirements": {
+            "firetrucks": 4,
+            "spokesman": 1,
+            "battalion_chief_vehicles": 1,
+            "mobile_command_vehicles": 1,
+            "elw3": 1,
+            "heavy_rescue_vehicles": 1,
+            "water_tankers": 2,
+            "mobile_air_vehicles": 1,
+            "gwmess": 3,
+            "hazmat_vehicles": 1,
+            "police_cars": 3,
+            "ovdp": 1
+        },
+        "chances": {
+            "nef": 30,
+            "patient_transport": 100
+        },
+        "additional": {
+            "possible_patient": 4,
+            "possible_patient_min": 1,
+            "filter_id": "firehouse_missions",
+            "patient_specializations": "Traumatologie"
+        },
+        "prerequisites": {
+            "rescue_stations": 10,
+            "police_stations": 5,
+            "fire_stations": 18
+        }
+    },
+    "662": {
+        "id": 662,
+        "name": "Verkeerscontrole",
+        "place": null,
+        "average_credits": 2205,
+        "generated_by": "Politie, Opkomstbureau",
+        "icons": {
+            "0": "/images/clock_gruen.png",
+            "1": "/images/clock_gelb.png",
+            "2": "/images/clock_rot.png"
+        },
+        "requirements": {
+            "police_cars": 2
+        },
+        "chances": {},
+        "additional": {
+            "duration": "1 uur",
+            "guard_mission": true,
+            "filter_id": "police_station_missions"
+        },
+        "prerequisites": {
+            "police_stations": 2
+        }
+    },
+    "663": {
+        "id": 663,
+        "name": "Verkeerscontrole",
+        "place": "Verzorgingsplaats (Snelweg)",
+        "average_credits": 6450,
+        "generated_by": "Politie, Opkomstbureau",
+        "icons": {
+            "0": "/images/clock_gruen.png",
+            "1": "/images/clock_gelb.png",
+            "2": "/images/clock_rot.png"
+        },
+        "requirements": {
+            "police_cars": 6
+        },
+        "chances": {},
+        "additional": {
+            "duration": "2 uur",
+            "guard_mission": true,
+            "filter_id": "police_station_missions"
+        },
+        "prerequisites": {
+            "police_stations": 5
+        }
+    },
+    "664": {
+        "id": 664,
+        "name": "Acute buikpijn door stomp",
+        "place": null,
+        "average_credits": 500,
+        "generated_by": "Ambulance, standplaats",
+        "icons": {
+            "0": "/images/medicalstore_gruen.png",
+            "1": "/images/medicalstore_gelb.png",
+            "2": "/images/medicalstore_rot.png"
+        },
+        "requirements": {
+            "police_cars": 1
+        },
+        "chances": {
+            "patient_transport": 80
+        },
+        "additional": {
+            "possible_patient": 1,
+            "possible_patient_min": 1,
+            "filter_id": "ambulance_station_missions",
+            "patient_specializations": "Urologie"
+        },
+        "prerequisites": {
+            "rescue_stations": 1,
+            "police_stations": 1
+        }
+    },
+    "665": {
+        "id": 665,
+        "name": "Acute buikpijn door val",
+        "place": null,
+        "average_credits": null,
+        "generated_by": "Ambulance, standplaats",
+        "icons": {
+            "0": "/images/medicalstore_gruen.png",
+            "1": "/images/medicalstore_gelb.png",
+            "2": "/images/medicalstore_rot.png"
+        },
+        "requirements": {},
+        "chances": {
+            "patient_transport": 80
+        },
+        "additional": {
+            "possible_patient": 1,
+            "possible_patient_min": 1,
+            "filter_id": "ambulance_station_missions",
+            "patient_specializations": "Urologie"
+        },
+        "prerequisites": {
+            "rescue_stations": 1
+        }
+    },
+    "669": {
+        "id": 669,
+        "name": "Toezicht Park",
+        "place": "Park",
+        "average_credits": 2110,
+        "generated_by": "Politie, Opkomstbureau",
+        "icons": {
+            "0": "/images/clock_gruen.png",
+            "1": "/images/clock_gelb.png",
+            "2": "/images/clock_rot.png"
+        },
+        "requirements": {
+            "bike_police": 1
+        },
+        "chances": {},
+        "additional": {
+            "duration": "1 uur",
+            "guard_mission": true,
+            "filter_id": "police_station_missions"
+        },
+        "prerequisites": {
+            "police_stations": 6
+        }
+    },
+    "670": {
+        "id": 670,
+        "name": "Toezicht Winkelcentrum",
+        "place": "Winkelcentrum",
+        "average_credits": 2210,
+        "generated_by": "Politie, Opkomstbureau",
+        "icons": {
+            "0": "/images/clock_gruen.png",
+            "1": "/images/clock_gelb.png",
+            "2": "/images/clock_rot.png"
+        },
+        "requirements": {
+            "bike_police": 1
+        },
+        "chances": {},
+        "additional": {
+            "duration": "1 uur",
+            "guard_mission": true,
+            "filter_id": "police_station_missions"
+        },
+        "prerequisites": {
+            "police_stations": 6
+        }
+    },
+    "671": {
+        "id": 671,
+        "name": "Toezicht Horeca",
+        "place": "Caf\u00e9/Club",
+        "average_credits": 7245,
+        "generated_by": "Politie, Hoofdbureau",
+        "icons": {
+            "0": "/images/clock_gruen.png",
+            "1": "/images/clock_gelb.png",
+            "2": "/images/clock_rot.png"
+        },
+        "requirements": {
+            "hondengeleider": 1,
+            "police_cars": 3,
+            "bike_police": 1
+        },
+        "chances": {},
+        "additional": {
+            "duration": "2 uur",
+            "guard_mission": true,
+            "filter_id": "riot_police_missions",
+            "need_bike_police_only_if_present": true
+        },
+        "prerequisites": {
+            "police_stations": 6,
+            "bereitschaftspolizei": 1
+        }
+    },
+    "672": {
+        "id": 672,
+        "name": "Vluchtende verdachte in voetgangersgebied",
+        "place": "Supermarkt",
+        "average_credits": 945,
+        "generated_by": "Politie, Opkomstbureau",
+        "icons": {
+            "0": "/images/theft_gruen.png",
+            "1": "/images/theft_gelb.png",
+            "2": "/images/theft_rot.png"
+        },
+        "requirements": {
+            "police_cars": 2,
+            "bike_police": 1
+        },
+        "chances": {},
+        "additional": {
+            "filter_id": "police_station_missions",
+            "need_bike_police_only_if_present": true
+        },
+        "prerequisites": {
+            "police_stations": 6
+        }
+    },
+    "673": {
+        "id": 673,
+        "name": "Ruzie tijdens uitgaansnacht",
+        "place": "Caf\u00e9/Club",
+        "average_credits": 2415,
+        "generated_by": "Politie, Hoofdbureau",
+        "icons": {
+            "0": "/images/theft_gruen.png",
+            "1": "/images/theft_gelb.png",
+            "2": "/images/theft_rot.png"
+        },
+        "requirements": {
+            "hondengeleider": 1,
+            "police_cars": 3,
+            "ovdp": 1,
+            "bike_police": 1
+        },
+        "chances": {
+            "ovdp": 20,
+            "bike_police": 80
+        },
+        "additional": {
+            "filter_id": "riot_police_missions",
+            "need_bike_police_only_if_present": true
+        },
+        "prerequisites": {
+            "police_stations": 6,
+            "bereitschaftspolizei": 1
+        }
+    },
+    "674": {
+        "id": 674,
+        "name": "Aanhouding verdachte in winkelcentrum",
+        "place": "Winkelcentrum",
+        "average_credits": 1055,
+        "generated_by": "Politie, Opkomstbureau",
+        "icons": {
+            "0": "/images/theft_gruen.png",
+            "1": "/images/theft_gelb.png",
+            "2": "/images/theft_rot.png"
+        },
+        "requirements": {
+            "police_cars": 2,
+            "bike_police": 1
+        },
+        "chances": {},
+        "additional": {
+            "filter_id": "police_station_missions",
+            "need_bike_police_only_if_present": true
+        },
+        "prerequisites": {
+            "police_stations": 6
         }
     }
 }

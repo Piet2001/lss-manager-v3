@@ -319,12 +319,48 @@ const lssm_missionhelper_adjustPosition = () => {
             break;
         case 'pl_PL':
             managed_settings.settings.waterpl = {
-                default: false,
+                default: true,
                 ui: {
                     label: I18n.t('lssm.missionhelper.settings.waterpl.label'),
                     type: 'toggle',
                     description: I18n.t(
                         'lssm.missionhelper.settings.waterpl.description'
+                    ),
+                },
+            };
+            break;
+        case 'da_DK':
+            managed_settings.settings.subsequent = {
+                default: false,
+                ui: {
+                    label: I18n.t('lssm.missionhelper.settings.subsequent.label'),
+                    type: 'toggle',
+                    description: I18n.t(
+                        'lssm.missionhelper.settings.subsequent.description'
+                    ),
+                },
+            };
+            break;
+        case 'sv_SE':
+            managed_settings.settings.show_phorse = {
+                default: false,
+                ui: {
+                    label: I18n.t('lssm.missionhelper.settings.show_phorse.label'),
+                    type: 'toggle',
+                    description: I18n.t(
+                        'lssm.missionhelper.settings.show_phorse.description'
+                    ),
+                },
+            };
+            break;
+        case 'en_AU':
+            managed_settings.settings.show_phorse = {
+                default: false,
+                ui: {
+                    label: I18n.t('lssm.missionhelper.settings.show_phorse.label'),
+                    type: 'toggle',
+                    description: I18n.t(
+                        'lssm.missionhelper.settings.show_phorse.description'
                     ),
                 },
             };
@@ -449,20 +485,26 @@ const lssm_missionhelper_adjustPosition = () => {
             if (SETTINGS.show_rdu && MISSION.requirements.rescue_dog_units) {
                 document
                     .getElementById('missionH1')
-                    .insertAdjacentHTML('beforeend', '&nbsp;🐶');
+                    .insertAdjacentHTML('beforeend', '&nbsp;🐕‍🦺');
+            }
+
+            if (SETTINGS.show_phorse && MISSION.requirements.police_horse) {
+                document
+                    .getElementById('missionH1')
+                    .insertAdjacentHTML('beforeend', '&nbsp;🐎');
             }
 
             if (SETTINGS.show_k9 && (MISSION.requirements.k9 || MISSION.requirements.hondengeleider)) {
                 document
                     .getElementById('missionH1')
-                    .insertAdjacentHTML('beforeend', '&nbsp;🐕‍🦺');
+                    .insertAdjacentHTML('beforeend', '&nbsp;🐶');
             }
 
             if (SETTINGS.name || SETTINGS.id || SETTINGS.type || SETTINGS.poi) {
                 content.innerHTML += `<h3>${((SETTINGS.name && MISSION.name) ||
                     '') +
                     (SETTINGS.show_rdu1 && MISSION.requirements.rescue_dog_units
-                        ? '&nbsp;🐶'
+                        ? '&nbsp;🐕‍🦺'
                         : '')}<sub>${(SETTINGS.id &&
                     `&nbsp;<sub>ID: ${MISSION_ID}</sub>`) ||
                     ''}${(SETTINGS.type &&
@@ -617,7 +659,7 @@ const lssm_missionhelper_adjustPosition = () => {
                     else if (SETTINGS.show_droinv &&
                         MISSION.additional &&
                         MISSION.additional.allow_drone_instead_of_investigation &&
-                        vehicle === 'fbi_investigation') vehicleName = 'fbi_drone';
+                        vehicle === 'fbi_investigation') vehicleName = 'allow_drone_instead_of_investigation';
                     else if (SETTINGS.show_arfflf &&
                         MISSION.additional &&
                         MISSION.additional.allow_arff_instead_of_lf &&
