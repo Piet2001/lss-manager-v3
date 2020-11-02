@@ -1,19 +1,14 @@
 (function (I18n, $) {
 	I18n.translations.de_DE.lssm.telemetry = {
-		question: "Der LSS-Manager sendet Nicht-Personenbezogene Daten an die Entwickler zur Verbesserung des Skriptes und zum finden von Fehlern.\r\n"+
+		question: "Der LSS-Manager sendet Meta-Daten an die Entwickler zur Verbesserung des Skriptes und zum finden von Fehlern.\r\n"+
 		"Zu diesen Daten gehören: Deine ID, dein Nutzername, die Anzahl der Wachen, der genutzte Browser und aktivierte Module.\r\n\r\n"+
 		"Stimmst zu diesem zu?"
 	};
     I18n.translations.en_US.lssm.telemetry = {
-		question: "The LSS Manager sends non-personal data to the developers to improve the script and find errors.\r\n" +
+		question: "The LSS Manager sends meta-data to the developers to improve the script and find errors.\r\n" +
 		"These data include: your ID, username, the number of guards, the browser used, and enabled modules.\r\n\r\n" +
 		"Do you agree with this?"
 	};
-	I18n.translations.es_ES.lssm.telemetry = {
-		question: "El Administrador LSS envía datos no personales a los desarrolladores para mejorar el script y encontrar errores.\r\n" +
-		"Estos datos incluyen: su ID, nombre de usuario, el número de guardias, el navegador utilizado y los módulos habilitados.\r\n\r\n" +
-		"¿Está de acuerdo con esto?"
-    };
     I18n.translations.pt_PT.lssm.telemetry = {
         question: "O LSS Manager envia dados não pessoais aos desenvolvedores para melhorar o script e encontrar erros.\r\n" +
             "Esses dados incluem: seu ID, nome de usuário, número de guardas, navegador usado e módulos ativados.\r\n\r\n" +
@@ -49,34 +44,24 @@
             "Questi dati includono: il tuo ID, il tuo nome utente, il numero di guardie, il browser utilizzato e i moduli abilitati.\r\n\r\n" +
             "Sei d'accordo con questo?"
     };
-    I18n.translations.tr_TR.lssm.telemetry = {
-        question: "LSS Yöneticisi, komut dosyasını geliştirmek ve hataları bulmak için geliştiricilere kişisel olmayan veriler gönderir.\r\n" +
-            "Bu veriler şunları içerir: kimliğiniz, kullanıcı adınız, korumaların sayısı, kullanılan tarayıcı ve etkin modüller.\r\n\r\n" +
-            "Buna katılıyor musun?"
-    };
     I18n.translations.fr_FR.lssm.telemetry = {
         question: "Le gestionnaire LSS envoie des données non personnelles aux développeurs pour améliorer le script et trouver des erreurs.\r\n" +
             "Ces données comprennent : votre identifiant, votre nom d'utilisateur, le nombre de gardes, le navigateur utilisé et les modules activés.\r\n\r\n" +
             "Êtes-vous d'accord avec cela ?"
     };
-    I18n.translations.ru_RU.lssm.telemetry = {
-        question: "Менеджер LSS отправляет разработчикам неличные данные для улучшения скрипта и поиска ошибок.\r\n" +
-            "Эти данные включают в себя: ваш ID, имя пользователя, количество охранников, используемый браузер и включенные модули.\r\n\r\n" +
-            "Вы согласны с этим?"
+    I18n.translations.ko_KR.lssm.telemetry = {
+        question: "LSS Manager는 비 개인 데이터를 개발자에게 보내서 스크립트를 개선하고 오류를 찾습니다.\r\n" +
+            "이러한 데이터에는 ID, 사용자 이름, 가드 수, 사용 된 브라우저 및 활성화 된 모듈이 포함됩니다.\r\n\r\n" +
+            "이것에 동의하십니까?"
     };
-    I18n.translations.uk_UA.lssm.telemetry = {
-        question: "Менеджер LSS надсилає розробникам неособисті дані для покращення сценарію та пошуку помилок.\r\n" +
-            "Ці дані включають: ваш ідентифікатор, ім’я користувача, кількість охоронців, використовуваний браузер та активовані модулі.\r\n\r\n" +
-            "Чи згодні ви з цим?"
-    };
-    I18n.translations.ja_JP.lssm.telemetry = {
-        question: "LSSマネージャーは、非個人データを開発者に送信して、スクリプトを改善し、エラーを見つけます。\r\n" +
-            "これらのデータには、ID、ユーザー名、ガードの数、使用されているブラウザー、有効なモジュールが含まれます。\r\n\r\n" +
-            "これに同意しますか？"
+    I18n.translations.ro_RO.lssm.telemetry = {
+        question: "LSS Manager trimite date non-personale dezvoltatorilor pentru a îmbunătăți script-ul și pentru a găsi erori.\r\n" +
+            "Aceste date includ: ID-ul dvs., numele de utilizator, numărul de gărzi, browserul utilizat și modulele activate.\r\n\r\n" +
+            "Ești de acord cu asta?"
     };
 	I18n.translations.nl_NL.lssm.telemetry = {
 		question: "De LSS Manager stuurt niet-persoonlijke gegevens naar de ontwikkelaars om het script te verbeteren en fouten te vinden.\r\n" +
-			"Deze gegevens omvatten: uw ID, gebruikersnaam, het aantal bewakers, de gebruikte browser en ingeschakelde modules.\r\n\r\n" +
+			"Deze gegevens omvatten: uw ID, gebruikersnaam, het aantal posten, de gebruikte browser en ingeschakelde modules.\r\n\r\n" +
 			"Bent u het hiermee eens?"
 	};
 
@@ -127,24 +112,29 @@
     {
         let data = {};
         // Lets grab the users key
-        $.get(lssm.config.key_link + user_id, function (data) {
-            try
-            {
-                // Try to parse the answer as JSON
-                data = JSON.parse(data);
-                lssm.key = data.code;
-                let name = $.trim($("#navbar_profile_link").text());
-                data.bro = getUserAgent();
-                data.pro = user_premium;
-                data.bui = lssm.buildings.length;
-                data.version = lssm.config.version;
-                data.mods = getModules();
-                data = JSON.stringify(data);
-                $.post(lssm.config.stats_uri, {
-                    uid: user_id, key: lssm.key, game: lssm.config.game, uname: name, data: data
-                });
-            } catch (e) {
-                lssm.key = null;
+        $.ajax({
+            url: lssm.config.key_link + user_id,
+            headers: {
+                'X-LSS-Manager': lssm.headerVersion()
+            },
+            success(data) {
+                try {
+                    // Try to parse the answer as JSON
+                    data = JSON.parse(data);
+                    lssm.key = data.code;
+                    let name = $.trim($("#navbar_profile_link").text());
+                    data.bro = getUserAgent();
+                    data.pro = user_premium;
+                    data.bui = lssm.buildings.length;
+                    data.version = lssm.config.version;
+                    data.mods = getModules();
+                    data = JSON.stringify(data);
+                    $.post(lssm.config.stats_uri, {
+                        uid: user_id, key: lssm.key, game: lssm.config.game, uname: name, data: data
+                    });
+                } catch (e) {
+                    lssm.key = null;
+                }
             }
         });
     }

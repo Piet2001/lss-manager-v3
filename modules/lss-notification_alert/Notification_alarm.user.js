@@ -43,27 +43,6 @@
     }
   }
 
-  I18n.translations.es_ES.lssm['n-alarm'] = {
-    not_support: "Este navegador no soporta Notificaciones HTML5",
-    inithead: "Initalización",
-    chat_message: "Mensaje de chat de ",
-    blend: "Ocultar después:",
-    seconds: "segunda porción",
-    settings: {
-      title: "Notificación-Alerta",
-      chat_title: "Mensajes de chat",
-      chat_text: "Recibe mensajes de chat como notificación.",
-      s5_title: "Solicitud de transporte",
-      save: "Guardar",
-      close: "Cerrar",
-      s5_text: "Obtener órdenes de transporte como notificación",
-      status_title: "Estado",
-      status_text: "Obtenga todos los mensajes de estado como notificación.",
-      chatp_title: "Obtener mensajes de chat como ventana emergente de información",
-      chatp_text: "Obtener todos los mensajes de chat como mensaje emergente en el lado derecho"
-    }
-  }
-
   I18n.translations.pt_PT.lssm['n-alarm'] = {
     not_support: "Este navegador não suporta notificações HTML5",
     inithead: "Inicialização",
@@ -211,27 +190,6 @@
     }
   }
 
-  I18n.translations.tr_TR.lssm['n-alarm'] = {
-    not_support: "Bu tarayıcı HTML5-Bildirimlerini desteklemiyor",
-    inithead: "Başlatma",
-    chat_message: "Adlı kişiden gelen sohbet mesajı ",
-    blend: "Sonra gizle:",
-    seconds: "saniye",
-    settings: {
-      title: "Bildirim-Uyarısı",
-      chat_title: "Sohbet mesajları",
-      chat_text: "Sohbet mesajlarını bildirim olarak alın.",
-      s5_title: "Taşıma Talebi",
-      save: "Kaydetmek",
-      close: "Yakın",
-      s5_text: "Aktarım Isteklerini bildirim olarak alma",
-      status_title: "Durum",
-      status_text: "Tüm durum iletilerini bildirim olarak alın.",
-      chatp_title: "Bilgi açılır pencere olarak sohbet mesajları alma",
-      chatp_text: "Tüm sohbet mesajlarını sağ tarafta açılır ileti olarak alın"
-    }
-  }
-
   I18n.translations.fr_FR.lssm['n-alarm'] = {
     not_support: "Ce navigateur ne supporte pas les notifications HTML5.",
     inithead: "Initalisation",
@@ -253,48 +211,47 @@
     }
   }
 
-  I18n.translations.ru_RU.lssm['n-alarm'] = {
-    not_support: "Этот браузер не поддерживает HTML5-уведомления.",
-    inithead: "Инитализация",
-    chat_message: "Сообщение чата от ",
-    blend: "Спрячься после:",
-    seconds: "секунды",
+  I18n.translations.ko_KR.lssm['n-alarm'] = {
+    not_support: "이 브라우저는 HTML5 알림을 지원하지 않습니다",
+    inithead: "초기화",
+    chat_message: "님의 채팅 메시지 ",
+    blend: "후 숨기기 :",
+    seconds: "초",
     settings: {
-      title: "Уведомление-оповещение-оповещение",
-      chat_title: "Сообщения чата",
-      chat_text: "Получать сообщения в чате в качестве уведомления.",
-      s5_title: "Запрос на транспортировку",
-      save: "Сохранить",
-      close: "Близко",
-      s5_text: "Получать запросы на транспортировку в качестве уведомления",
-      status_title: "Статус",
-      status_text: "Получать все сообщения о состоянии в виде уведомлений.",
-      chatp_title: "Получать сообщения чата в виде всплывающего окна информации",
-      chatp_text: "Получить все сообщения чата в виде всплывающего сообщения на правой стороне экрана."
+      title: "알림 알림",
+      chat_title: "채팅 메시지",
+      chat_text: "채팅 메시지를 알림으로받습니다.",
+      s5_title: "운송 요청",
+      save: "저장",
+      close: "닫기",
+      s5_text: "전송 요청을 알림으로 가져 오기",
+      status_title: "상태",
+      status_text: "모든 상태 메시지를 알림으로받습니다.",
+      chatp_title: "정보 팝업으로 채팅 메시지 받기",
+      chatp_text: "오른쪽에 모든 채팅 메시지를 팝업 메시지로 표시"
     }
   }
 
-  I18n.translations.uk_UA.lssm['n-alarm'] = {
-    not_support: "Цей браузер не підтримує HTML5-сповіщення",
-    inithead: "Ініціалізація",
-    chat_message: "Повідомлення чату від ",
-    blend: "Сховати після:",
-    seconds: "секунд",
+  I18n.translations.ro_RO.lssm['n-alarm'] = {
+    not_support: "Acest browser nu acceptă notificări HTML5",
+    inithead: "Initalizare",
+    chat_message: "Mesaj de chat de la ",
+    blend: "Ascunde după:",
+    seconds: "Secunde",
     settings: {
-      title: "Повідомлення-Повідомлення",
-      chat_title: "Повідомлення чату",
-      chat_text: "Отримуйте повідомлення в чаті як сповіщення.",
-      s5_title: "Запит на транспорт",
-      save: "Зберегти",
-      close: "Закрити",
-      s5_text: "Отримайте запити на транспорт як повідомлення",
-      status_title: "Статус",
-      status_text: "Отримати всі повідомлення про стан як сповіщення.",
-      chatp_title: "Отримуйте повідомлення в чаті як спливаюче повідомлення",
-      chatp_text: "Отримайте всі повідомлення в чаті як спливаюче повідомлення праворуч"
+      title: "Notificare-Alertă",
+      chat_title: "Cat mesaje",
+      chat_text: "Obțineți mesajele de chat ca notificare.",
+      s5_title: "Cerere de transport",
+      save: "Salva",
+      close: "Închide",
+      s5_text: "Obțineți solicitările de transport ca notificare",
+      status_title: "Starea",
+      status_text: "Obțineți toate mesajele de stare ca notificare.",
+      chatp_title: "Obțineți mesaje de chat ca informații pop-up",
+      chatp_text: "Obținetoate mesajele de chat ca mesaj pop-up în partea dreaptă"
     }
   }
-
 
   I18n.translations.nl_NL.lssm['n-alarm'] = {
     not_support: "Deze browser ondersteunt helaas geen HTML5-meldingen",
@@ -467,7 +424,7 @@
   $mainDiv.click(function() {
     $(this).hide('slow');
   });
-    let $contentDiv = $('<div class="panel-body" style="background-color: white;"></div>');
+    let $contentDiv = $('<div class="panel-body" style="background-color: white; color: black;"></div>');
     let $ul = $('<ul id="chatNoteUl"></ul>');
   $ul.css({
     'list-style': 'none',
@@ -487,7 +444,7 @@
   }
 
   function ChatPopup(date, user_id, username, mission_id, message) {
-      let e = "<li><span class='mission_chat_message_username'>[" + date + "] <a href='/profile/" + user_id + "' class='lightbox-open'>" + username + ":</a></span>";
+      let e = "<li><span class='mission_chat_message_username'>[" + date + "] <a href='/profile/" + user_id + "' class='lightbox-open' style='color: blue;'>" + username + ":</a></span>";
     mission_id && (e = e + "<a href='/missions/" + mission_id + "' class='lightbox-open'><span class='glyphicon glyphicon-bell'></span></a> ");
     e = e + " " + message + "</li>";
     $(e).appendTo($ul).delay(getSetting('n-alarm-timeout-chatp') * 1000).hide('slow', function() {

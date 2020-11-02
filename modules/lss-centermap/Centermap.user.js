@@ -81,7 +81,7 @@
             set: "Spara aktuell position"
         }
     };
-
+    
     I18n.translations.da_DK.lssm.centermap = {
         center: "Centrum",
         settings: {
@@ -97,7 +97,7 @@
             set: "Gem den aktuelle position"
         }
     };
-
+    
     I18n.translations.nb_NO.lssm.centermap = {
         center: "Senter",
         settings: {
@@ -111,22 +111,6 @@
             option3: "Tilpasset",
             option3desc: "Angi tilpasset posisjon og zoomnivå.",
             set: "Lagre gjeldende posisjon"
-        }
-    };
-
-    I18n.translations.es_ES.lssm.centermap = {
-        center: "Centro",
-        settings: {
-            title: "Mapa del centro",
-            choose: "Por favor, seleccione",
-            option1: "Predeterminado",
-            option1desc: "Nivel de zoom predeterminado y centrado en el centro de control ",
-            option2: "Dinámico",
-            alliance: "Tener en cuenta la alianza",
-            option2desc: "Mapa del centro que indica que todas las misiones y estaciones son visibles.",
-            option3: "A medida",
-            option3desc: "Establecer la posición personalizada y el nivel de zoom.",
-            set: "Guardar la posición actual"
         }
     };
 
@@ -162,22 +146,6 @@
         }
     };
 
-    I18n.translations.tr_TR.lssm.centermap = {
-        center: "merkez",
-        settings: {
-            title: "Merkezi-Harita",
-            choose: "Lütfen seçin",
-            option1: "Varsayılan",
-            option1desc: "Varsayılan zoom seviyesi ve kontrol merkezinde merkezleme ",
-            option2: "Dinamik",
-            alliance: "İttifakı dikkate alın",
-            option2desc: "Tüm görevlerin ve istasyonların görülebileceği orta harita.",
-            option3: "görenek",
-            option3desc: "Özel konum ve yakınlaştırma seviyesi ayarlayın.",
-            set: "Mevcut konumu kaydet"
-        }
-    };
-
     I18n.translations.fr_FR.lssm.centermap = {
         center: "Centre",
         settings: {
@@ -194,51 +162,35 @@
         }
     };
 
-    I18n.translations.ru_RU.lssm.centermap = {
-        center: "Центр",
+    I18n.translations.ko_KR.lssm.centermap = {
+        center: "센터",
         settings: {
-            title: "Карта-центр",
-            choose: "Пожалуйста, выберите",
-            option1: "По умолчанию",
-            option1desc: "Уровень масштабирования по умолчанию и центр внимания на блоке управления ",
-            option2: "Динамический",
-            alliance: "Принять во внимание альянс",
-            option2desc: "Карта центра, чтобы все миссии и станции были видны.",
-            option3: "Пользовательский",
-            option3desc: "Установите пользовательское положение и уровень масштабирования.",
-            set: "Сохранить текущее положение"
+            title: "센터 맵",
+            choose: "선택 해주세요",
+            option1: "기본",
+            option1desc: "기본 줌 레벨 및 제어 센터 중심 ",
+            option2: "동적",
+            alliance: "동맹을 고려",
+            option2desc: "모든 미션과 스테이션이 보이는 센터 맵.",
+            option3: "커스텀",
+            option3desc: "맞춤 위치 및 확대 / 축소 수준을 설정하십시오.",
+            set: "현재 위치 저장"
         }
     };
 
-    I18n.translations.uk_UA.lssm.centermap = {
-        center: "Центр",
+    I18n.translations.ro_RO.lssm.centermap = {
+        center: "Centrul",
         settings: {
-            title: "Центр-карта",
-            choose: "Виберіть будь ласка",
-            option1: "За замовчуванням",
-            option1desc: "Рівень масштабування та центральне значення в центрі управління",
-            option2: "Динамічний",
-            alliance: "Враховуйте альянс",
-            option2desc: "Центральна карта, щоб усі місії та станції були видні.",
-            option3: "Користувальницькі",
-            option3desc: "Встановіть власну позицію та рівень масштабування.",
-            set: "Зберегти поточну позицію"
-        }
-    };
-
-    I18n.translations.ja_JP.lssm.centermap = {
-        center: "センター",
-        settings: {
-            title: "センターマップ",
-            choose: "選んでください",
-            option1: "デフォルト",
-            option1desc: "デフォルトのズームレベルとコントロールセンターの中心 ",
-            option2: "動的",
-            alliance: "同盟を考慮する",
-            option2desc: "すべてのミッションとステーションが見えるセンターマップ。",
-            option3: "カスタム",
-            option3desc: "カスタムの位置とズームレベルを設定します。",
-            set: "現在の位置を保存"
+            title: "Centru-hartă",
+            choose: "Vă rugăm să selectați",
+            option1: "Implicit",
+            option1desc: "Nivelul de zoom implicit și centrarea pe centrul de control ",
+            option2: "Dinamic",
+            alliance: "Ia în considerare alianța",
+            option2desc: "Harta centrală că toate misiunile și stațiile sunt vizibile.",
+            option3: "Particularizate",
+            option3desc: "Setați poziția personalizată și nivelul de zoom.",
+            set: "Salvare poziție curentă"
         }
     };
 

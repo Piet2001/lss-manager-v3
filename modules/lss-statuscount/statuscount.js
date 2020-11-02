@@ -75,30 +75,6 @@
             }
         }
     };
-    I18n.translations.es_ES.lssm.statuscount = {
-        name: "Cuenta de status",
-        settings: {
-            show: "Visualizar/Ocultar",
-            status: {
-                show: {
-                    label: "Mostrar",
-                    description: "¿Debería visualizarse el status? Importante: este ajuste tiene mayor prioridad que otros, es decir, si está desactivado, nunca se mostrará el estado."
-                },
-                hide: {
-                    label: "Mostrar sólo bajo demanda",
-                    description: "El contador sólo se muestra si al menos un vehículo se encuentra en este estado. (Atención: Si el contador está completamente oculto, nunca se mostrará, incluso si esta opción está activada!)"
-                },
-                percent: {
-                    label: "Mostrar porcentajes",
-                    description: "¿Debe visualizarse el porcentaje de este status?"
-                }
-            },
-            round: {
-                label: "Porcentajes redondos",
-                description: "¿A cuántos decimales deben redondearse los porcentajes (si se visualizan)?"
-            }
-        }
-    };
     I18n.translations.pt_PT.lssm.statuscount = {
         name: "Conta de status",
         settings: {
@@ -243,30 +219,6 @@
             }
         }
     };
-    I18n.translations.tr_TR.lssm.statuscount = {
-        name: "Durum-Sayım",
-        settings: {
-            show: "Göster / Gizle",
-            status: {
-                show: {
-                    label: "Göstermek",
-                    description: "Durum hiç görüntülenmeli mi? Önemli: Bu ayar diğer ayarlardan daha yüksek önceliğe sahiptir, yani bu ayar kapatılırsa durum hiçbir zaman gösterilmez."
-                },
-                hide: {
-                    label: "Yalnızca istek üzerine göster",
-                    description: "Sayaç sadece bu durumda en az bir araç varsa görüntülenir. (Dikkat: Sayaç tamamen gizlenmişse, bu ayar etkinleştirilmiş olsa bile asla gösterilmez!)"
-                },
-                percent: {
-                    label: "Yüzdeleri göster",
-                    description: "Bu durumun yüzdesi gösterilmeli mi?"
-                }
-            },
-            round: {
-                label: "Yuvarlak yüzdeler",
-                description: "Yüzdeler (görüntüleniyorsa) kaç ondalık basamağa yuvarlanmalıdır?"
-            }
-        }
-    };
     I18n.translations.fr_FR.lssm.statuscount = {
         name: "Nombre de statuts",
         settings: {
@@ -291,75 +243,51 @@
             }
         }
     };
-    I18n.translations.ru_RU.lssm.statuscount = {
-        name: "Статус-счет",
+    I18n.translations.ko_KR.lssm.statuscount = {
+        name: "상태 카운트",
         settings: {
-            show: "Показать/скрыть",
+            show: "표시 / 숨기기",
             status: {
                 show: {
-                    label: "Показать",
-                    description: "Должен ли вообще отображаться статус? Важно: Этот параметр имеет более высокий приоритет, чем другие параметры, т.е. если этот параметр выключен, состояние никогда не будет отображаться."
+                    label: "보여 주다",
+                    description: "상태가 전혀 표시되어야합니까? 중요 :이 설정은 다른 설정보다 우선 순위가 높습니다. 즉,이 설정이 꺼져 있으면 상태가 표시되지 않습니다."
                 },
                 hide: {
-                    label: "Показать только по требованию",
-                    description: "Счетчик отображается только в том случае, если хотя бы одно транспортное средство находится в этом состоянии. (Внимание: Если счетчик полностью скрыт, он никогда не будет отображаться, даже если эта настройка включена!)"
+                    label: "요청시에만 표시",
+                    description: "카운터는 하나 이상의 차량이이 상태에있는 경우에만 표시됩니다. (주의 : 카운터가 완전히 숨겨져 있으면이 설정이 활성화되어 있어도 표시되지 않습니다!)"
                 },
                 percent: {
-                    label: "Показать проценты",
-                    description: "Должен ли отображаться процент от этого состояния?"
+                    label: "백분율 표시",
+                    description: "이 상태의 백분율이 표시되어야합니까?"
                 }
             },
             round: {
-                label: "Процентные доли округления",
-                description: "Сколько знаков после запятой должно округляться до процентного соотношения (если отображаются)?"
+                label: "라운드 비율",
+                description: "백분율 (표시된 경우)을 몇 자리로 반올림해야합니까?"
             }
         }
     };
-    I18n.translations.uk_UA.lssm.statuscount = {
-        name: "Статус-підрахунок",
+    I18n.translations.ro_RO.lssm.statuscount = {
+        name: "Număr de stare",
         settings: {
-            show: "Показати сховати",
+            show: "Afișare/Ascundere",
             status: {
                 show: {
-                    label: "Показати",
-                    description: "Чи має статус відображатися взагалі? Важливо: Цей параметр має більш високий пріоритет, ніж інші параметри, тобто якщо це налаштування вимкнено, стан ніколи не відображатиметься."
+                    label: "Arată",
+                    description: "Starea ar trebui să fie afișată? Important: Această setare are o prioritate mai mare decât alte setări, adică dacă această setare este dezactivată, starea nu va fi afișată niciodată."
                 },
                 hide: {
-                    label: "Показати лише на вимогу",
-                    description: "Лічильник відображається лише в тому випадку, якщо хоча б один транспортний засіб знаходиться в такому статусі. (Увага: Якщо лічильник повністю прихований, він ніколи не відображатиметься, навіть якщо це налаштування активовано!)"
+                    label: "Arată numai la cerere",
+                    description: "Contorul este afișat numai dacă cel puțin un vehicul este în această stare. (Atenție: În cazul în care contorul este complet ascuns, acesta nu va fi afișat, chiar dacă această setare este activat!)"
                 },
                 percent: {
-                    label: "Показати відсотки",
-                    description: "Чи повинен відображатися відсоток цього статусу?"
+                    label: "Afișare procentaje",
+                    description: "Ar trebui să se afișeze procentul din această stare?"
                 }
             },
             round: {
-                label: "Круглі відсотки",
-                description: "На скільки десяткових знаків слід округлювати відсотки (якщо вони відображаються)?"
-            }
-        }
-    };
-    I18n.translations.ja_JP.lssm.statuscount = {
-        name: "ステータスカウント",
-        settings: {
-            show: "表示/非表示",
-            status: {
-                show: {
-                    label: "公演",
-                    description: "ステータスをまったく表示する必要がありますか？ 重要：この設定は他の設定よりも優先されます。つまり、この設定をオフにすると、ステータスは表示されません。"
-                },
-                hide: {
-                    label: "オンデマンドでのみ表示",
-                    description: "カウンターは、少なくとも1台の車両がこのステータスにある場合にのみ表示されます。 （注意：カウンターが完全に非表示の場合、この設定が有効になっていても表示されません！）"
-                },
-                percent: {
-                    label: "割合を表示",
-                    description: "このステータスの割合を表示する必要がありますか？"
-                }
-            },
-            round: {
-                label: "ラウンド率",
-                description: "パーセンテージ（表示されている場合）を丸める必要がある小数点以下の桁数は？"
+                label: "Procente rotunde",
+                description: "Câte zecimale ar trebui rotunjite procentele (dacă sunt afișate)?"
             }
         }
     };

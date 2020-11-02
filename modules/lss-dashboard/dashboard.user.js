@@ -23,8 +23,8 @@ I18n.translations.de_DE['lssm']['dashboard'] = {
     carswp: 'FAHRZEUGE',
     patiwp: 'PATIENTEN',
     levwp: 'STUFE',
-    categories: ['Feuerwehr', 'Rettungsdienst', 'Polizei', 'THW', 'Krankenhaus', 'Wasserrettung', 'SEG', 'Bereitschaftspolizei'],
-    categories_data: ['fw', 'rd', 'pol', 'thw', 'kh', 'wret', 'seg', 'bepo'],
+    categories: ['Feuerwehr', 'Rettungsdienst', 'Polizei', 'THW', 'Krankenhaus', 'Wasserrettung', 'SEG', 'Bereitschaftspolizei', 'Rettungshundestaffel'],
+    categories_data: ['fw', 'rd', 'pol', 'thw', 'kh', 'wret', 'seg', 'bepo', 'rhs'],
     categories_data_school: ['fw_school', 'rd_school', 'pol_school', 'thw_school'],
     nofz: "Keine Fahrzeuge vorhanden",
 }
@@ -238,36 +238,6 @@ I18n.translations.nb_NO['lssm']['dashboard'] = {
     categories_data_school: ['fw_school', 'rd_school', 'pol_school', 'kh_clinic'],
     nofz: "No vehicles found",
 }
-I18n.translations.es_ES['lssm']['dashboard'] = {
-    name: "Tablero de mandos",
-    vehicles: {
-        name: "Vehículos",
-        type: "Tipo de vehículo",
-        available: "Disponible",
-        onsite: "En el sitio",
-        request: "Solicitar",
-        transport: "Transporte",
-        fms6: "Estado 6",
-    },
-    total: "Suma",
-    overview: "Panorama general",
-    distribution: "Distribución",
-    station_plan: "Planificación de la estación",
-    loading: "El tablero se está cargando",
-    ge: 'Edificios',
-    school: 'Escuelas',
-    wachen: 'Estación',
-    other: 'Otros',
-    anz: 'Importe',
-    perwp: 'EMPLEADO',
-    carswp: 'AUTOMÓVILES',
-    patiwp: 'PACIENTES',
-    levwp: 'NIVEL',
-    categories: ['Fire Stations', 'Rescue Stations', 'Police Stations', 'Hospitals'],
-    categories_data: ['fw', 'rd', 'pol', 'kh'],
-    categories_data_school: ['fw_school', 'rd_school', 'pol_school', 'kh_clinic'],
-    nofz: "No vehicles found",
-}
 I18n.translations.it_IT['lssm']['dashboard'] = {
     name: "Cruscotto",
     vehicles: {
@@ -277,26 +247,26 @@ I18n.translations.it_IT['lssm']['dashboard'] = {
         onsite: "In loco",
         request: "Richiesta",
         transport: "Trasporto",
-        fms6: "Stato 6",
+        fms6: "Non disponibile",
     },
     total: "Somma",
     overview: "Panoramica",
     distribution: "Distribuzione",
-    station_plan: "Pianificazione della stazione",
+    station_plan: "Postazioni",
     loading: "Il cruscotto si sta caricando",
     ge: 'Edifici',
     school: 'Scuole',
-    wachen: 'Stazione',
+    wachen: 'Postazioni',
     other: 'Altro',
     anz: 'Quantità',
-    perwp: 'LAVORO',
-    carswp: 'AUTO',
+    perwp: 'PERSONALE',
+    carswp: 'VEICOLI',
     patiwp: 'PAZIENTI',
     levwp: 'LIVELLO',
-    categories: ['Fire Stations', 'Rescue Stations', 'Police Stations', 'Hospitals'],
+    categories: ['Pompieri', 'Ambulanze', 'Polizia', 'Ospedali'],
     categories_data: ['fw', 'rd', 'pol', 'kh'],
     categories_data_school: ['fw_school', 'rd_school', 'pol_school', 'kh_clinic'],
-    nofz: "No vehicles found",
+    nofz: "Nessun veicolo trovato",
 }
 I18n.translations.fr_FR['lssm']['dashboard'] = {
     name: "Tableau de bord",
@@ -328,36 +298,6 @@ I18n.translations.fr_FR['lssm']['dashboard'] = {
     categories_data_school: ['fw_school', 'rd_school', 'pol_school', 'kh_clinic'],
     nofz: "Aucun véhicule trouvé",
 }
-I18n.translations.tr_TR['lssm']['dashboard'] = {
-    name: "Dashboard",
-    vehicles: {
-        name: "Vehicles",
-        type: "Vehicle type",
-        available: "Available",
-        onsite: "On Site",
-        request: "Request",
-        transport: "Transport",
-        fms6: "Status 6",
-    },
-    total: "Sum",
-    overview: "Overview",
-    distribution: "Distribution",
-    station_plan: "Station planning",
-    loading: "Dashboard is loading",
-    ge: 'Buildings',
-    school: 'Schools',
-    wachen: 'Station',
-    other: 'Other',
-    anz: 'Amount',
-    perwp: 'EMPLOYEE',
-    carswp: 'CARS',
-    patiwp: 'PATIENTS',
-    levwp: 'LEVEL',
-    categories: ['Fire Stations', 'Rescue Stations', 'Police Stations', 'Hospitals'],
-    categories_data: ['fw', 'rd', 'pol', 'kh'],
-    categories_data_school: ['fw_school', 'rd_school', 'pol_school', 'kh_clinic'],
-    nofz: "No vehicles found",
-}
 I18n.translations.pt_PT['lssm']['dashboard'] = {
     name: "Dashboard",
     vehicles: {
@@ -388,37 +328,7 @@ I18n.translations.pt_PT['lssm']['dashboard'] = {
     categories_data_school: ['fw_school', 'rd_school', 'pol_school', 'kh_clinic'],
     nofz: "No vehicles found",
 }
-I18n.translations.ru_RU['lssm']['dashboard'] = {
-    name: "Приборная панель",
-    vehicles: {
-        name: "Транспортные средства",
-        type: "Тип транспортного средства",
-        available: "В наличии",
-        onsite: "На сайте",
-        request: "Запрос",
-        transport: "Транспорт",
-        fms6: "Статус 6",
-    },
-    total: "Сумма",
-    overview: "Обзор",
-    distribution: "Распределение",
-    station_plan: "Планирование станции",
-    loading: "Приборная панель загружается",
-    ge: 'Здания',
-    school: 'Школы',
-    wachen: 'Вокзал',
-    other: 'Другое',
-    anz: 'Сумма',
-    perwp: 'ЭМПЛОИЯ',
-    carswp: 'САРС',
-    patiwp: 'ПАТИЕНТЫ',
-    levwp: 'ЛЕВЕЛЬ',
-    categories: ['Fire Stations', 'Rescue Stations', 'Police Stations', 'Hospitals'],
-    categories_data: ['fw', 'rd', 'pol', 'kh'],
-    categories_data_school: ['fw_school', 'rd_school', 'pol_school', 'kh_clinic'],
-    nofz: "Транспортные средства не найдены",
-}
-I18n.translations.uk_UA['lssm']['dashboard'] = {
+I18n.translations.ko_KR['lssm']['dashboard'] = {
     name: "Dashboard",
     vehicles: {
         name: "Vehicles",
@@ -448,7 +358,7 @@ I18n.translations.uk_UA['lssm']['dashboard'] = {
     categories_data_school: ['fw_school', 'rd_school', 'pol_school', 'kh_clinic'],
     nofz: "No vehicles found",
 }
-I18n.translations.ja_JP['lssm']['dashboard'] = {
+I18n.translations.ro_RO['lssm']['dashboard'] = {
     name: "Dashboard",
     vehicles: {
         name: "Vehicles",
@@ -533,7 +443,8 @@ jQuery.expr[":"].conaintsci = jQuery.expr.createPseudo(function (arg) {
             'kh_clinic': 0,
             'wret': 0,
             'seg': 0,
-            'bepo': 0
+            'bepo': 0,
+            'rhs': 0
         };
         $.each(lssm.buildings, function (key, build) {
             switch (build.building_type) {
@@ -582,8 +493,13 @@ jQuery.expr[":"].conaintsci = jQuery.expr.createPseudo(function (arg) {
                 case BUILDING_TYPE_SEG:
                     building_amount.seg += 1;
                     break;
+                //BPol
                 case BUILDING_TYPE_BEREITSCHAFTSPOLIZEI:
                     building_amount.bepo += 1;
+                    break;
+                //RHS
+                case BUILDING_TYPE_RESCUE_DOG_UNIT:
+                    building_amount.rhs += 1;
                     break;
             }
         });
@@ -603,7 +519,7 @@ jQuery.expr[":"].conaintsci = jQuery.expr.createPseudo(function (arg) {
                 backgroundColor: 'rgba(0,0,0,0)',
                 height: '200'
             },
-            colors: ["red", "orange", "green", "blue", "gold", 'black', 'yellow', 'darkgreen'],
+            colors: ["red", "orange", "green", "blue", "gold", 'black', 'yellow', 'darkgreen', 'purple'],
             title: {
                 text: I18n.t('lssm.dashboard.ge')
             },
@@ -764,7 +680,10 @@ jQuery.expr[":"].conaintsci = jQuery.expr.createPseudo(function (arg) {
                 case BUILDING_TYPE_SEG:
                     appendto = "rd";
                     icon = "fa-ambulance";
-                    maxcars = 9;
+                    break;
+                case BUILDING_TYPE_RESCUE_DOG_UNIT:
+                    appendto = "rd";
+                    icon = "fa-search";
                     break;
                 case BUILDING_TYPE_POLIZEIWACHE:
                 case BUILDING_TYPE_BEREITSCHAFTSPOLIZEI:
@@ -774,7 +693,6 @@ jQuery.expr[":"].conaintsci = jQuery.expr.createPseudo(function (arg) {
                     break;
                 case BUILDING_TYPE_THW:
                     appendto = "thw";
-                    maxcars = 15;
                     break;
                 case BUILDING_TYPE_FEUERWEHRSCHULE:
                 case BUILDING_TYPE_RETTUNGSSCHULE:
@@ -824,7 +742,7 @@ jQuery.expr[":"].conaintsci = jQuery.expr.createPseudo(function (arg) {
                 bd_data +=
                     '<span class="label label-primary">' +
                     '<i class="glyphicon glyphicon-home"></i> ' +
-                    '<span>' + vehicles.length + '/' + maxcars + ' </span>' +
+                    '<span>' + vehicles.length + '/' + vehicles.length + ' </span>' +
                     I18n.t('lssm.dashboard.carswp') +
                     '</span>';
             else if (maxcars < 0)

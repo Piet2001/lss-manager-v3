@@ -2,7 +2,7 @@
     const lsName = "lssmVerbandsverwaltung_" + user_id + "_" + alliance_id;
     const updateMin = 30; // Minuten-Inetrval in dem geupdatet wird
 
-    if (!document.URL.match(/(leitstellenspiel|missionchief|missionchief-australia|centro-de-mando|meldkamerspel|larmcentralen-spelet|operatorratunkowy|operatore112|operateur112|dispetcher112|alarmcentral-spil|nodsentralspillet|operacni-stredisko|112-merkez|operador193|jogo-operador112|dyspetcher101-game|missionchief-japan)(\.de|\.com|\.co\.uk|\.dk|\.cz|\.es|\.mx|\.se|\.pl|\.it|\.fr|\.ru|.pt)\/#?$/)) return;
+    if (!document.URL.match(/(leitstellenspiel|missionchief|missionchief-australia|meldkamerspel|larmcentralen-spelet|alarmcentral-spil|operatorratunkowy|operatore112|operateur112|nodsentralspillet|operacni-stredisko|operador193|jogo-operador112|missionchief-korea|jocdispecerat112)(\.de|\.com|\.co\.uk|\.dk|\.cz|\.se|\.pl|\.it|\.fr|.gr)\/#?$/)) return;
 
     I18n.translations.de_DE.lssm.verbandsverwaltung = {
         name: 'Verwaltung',
@@ -27,18 +27,6 @@
         updateMessage: 'Values update automatically<br>every ' + updateMin + ' minutes.',
         chartErr: 'Could not load chart "{{chart}}"!<br>We already know that this happens with some browsers, but not yet why. Please <b>don\'t</b> report us this error as we are already on this problem!',
         hoverTip: 'Tip: Hover over an element to display a value history.'
-    };
-    I18n.translations.es_ES.lssm.verbandsverwaltung = {
-        name: 'Administración',
-        allianceFunds: 'Fondos de la Alianza',
-        allianceCredits: 'Créditos Obtenidos',
-        users: 'Miembros',
-        onlineUsers: 'Miembros en línea',
-        allianceRank: 'Rango en Alliancelista',
-        page: 'Página',
-        updateMessage: 'Los valores se actualizan automáticamente<br>cada ' + updateMin + ' actas.',
-        chartErr: 'No se pudo cargar el gráfico "{{chart}}"!<br>Ya sabemos que esto sucede con algunos navegadores, pero aún no sabemos por qué. Por favor <b>no nos informe de este error ya que estamos en este problema!',
-        hoverTip: 'Consejo: Pase el ratón por encima de un elemento para mostrar un historial de valores.'
     };
     I18n.translations.pt_PT.lssm.verbandsverwaltung = {
         name: 'Administração',
@@ -124,18 +112,6 @@
         chartErr: 'Impossibile caricare il grafico "{{chart}}"!<br>Sappiamo già che questo accade con alcuni browser, ma non ancora perché. Per favore <b>don\'t</b> segnalateci questo errore perché siamo già su questo problema!',
         hoverTip: 'Suggerimento: passare con il mouse su un elemento per visualizzare la cronologia dei valori.'
     };
-    I18n.translations.tr_TR.lssm.verbandsverwaltung = {
-        name: 'yönetim',
-        allianceFunds: 'İttifak Fonları',
-        allianceCredits: 'Kazanılan Krediler',
-        users: 'Üyeler',
-        onlineUsers: 'Çevrimiçi üyeler',
-        allianceRank: 'Alliancelist sıralaması',
-        page: 'Sayfa',
-        updateMessage: 'Değerler otomatik olarak güncellenir<br>her ' + updateMin + ' dakika.',
-        chartErr: 'Grafik yüklenemedi "{{chart}}"!<br>Bunun bazı tarayıcılarda olduğunu zaten biliyoruz, ancak nedenini henüz bilmiyoruz. Lütfen zaten bu sorunu yaşadığımız için <b> bize bu hatayı bildirin!',
-        hoverTip: 'İpucu: Bir değer geçmişi görüntülemek için imlecinizi bir öğenin üzerine getirin.'
-    };
     I18n.translations.fr_FR.lssm.verbandsverwaltung = {
         name: 'Administration',
         allianceFunds: 'Fonds Alliance',
@@ -148,41 +124,29 @@
         chartErr: 'Impossible de charger le graphique "{{chart}}"!<br>Nous savons déjà que cela se produit avec certains navigateurs, mais pas encore pourquoi. S\'il vous plaît<b>don\'t</b> nous signaler cette erreur comme nous sommes déjà sur ce problème !',
         hoverTip: 'Astuce : Survolez un élément pour afficher l\'historique des valeurs.'
     };
-    I18n.translations.ru_RU.lssm.verbandsverwaltung = {
-        name: 'Администрация',
-        allianceFunds: 'Альянс Фонды',
-        allianceCredits: 'Заработанные Кредиты',
-        users: 'Члены',
-        onlineUsers: 'Участники онлайн',
-        allianceRank: 'Рейтинг в Альянс-листе',
-        page: 'Страница',
-        updateMessage: 'Обновление значений автоматически<br> для каждого из них ' + updateMin + ' протокол.',
-        chartErr: 'Не смог загрузить диаграмму "{{chart}}"!<br>Мы уже знаем, что это происходит с некоторыми браузерами, но пока не знаем, почему. Пожалуйста, <b>don\'t</b> сообщите нам об этой ошибке, поскольку мы уже сталкиваемся с этой проблемой!',
-        hoverTip: 'Совет: наведите указатель мыши на элемент, чтобы отобразить историю значений.'
+    I18n.translations.ko_KR.lssm.verbandsverwaltung = {
+        name: '관리',
+        allianceFunds: '얼라이언스 기금',
+        allianceCredits: '적립 된 크레딧',
+        users: '회원',
+        onlineUsers: '온라인 회원',
+        allianceRank: '얼라이언스 목록에서 순위',
+        page: '페이지',
+        updateMessage: '값이 자동으로 업데이트됩니다<br>마다 ' + updateMin + ' 의사록.',
+        chartErr: '차트를로드 할 수 없습니다 "{{chart}}"!<br>우리는 이것이 이미 일부 브라우저에서 발생한다는 것을 알고 있지만 아직 이유는 없습니다. 부디 <b>하지마</b> 이미이 문제에 대해이 오류를보고하십시오!',
+        hoverTip: '팁 : 요소 위에 마우스를 올려 놓으면 값 기록이 표시됩니다..'
     };
-    I18n.translations.uk_UA.lssm.verbandsverwaltung = {
-        name: 'Адміністрація',
-        allianceFunds: 'Фонди Альянсу',
-        allianceCredits: 'Зароблені кредити',
-        users: 'Члени',
-        onlineUsers: 'Учасники онлайн',
-        allianceRank: 'Місце у Альянсі',
-        page: 'Сторінка',
-        updateMessage: 'Значення оновлюються автоматично<br>кожен ' + updateMin + ' хвилин.',
-        chartErr: 'Не вдалося завантажити діаграму "{{chart}}"!<br>Ми вже знаємо, що це відбувається з деякими браузерами, але ще не чому. Будь ласка, <b> не \ t </b> повідомте про цю помилку, оскільки ми вже вирішуємо цю проблему!',
-        hoverTip: 'Порада: Наведіть курсор на елемент, щоб відобразити історію значень.'
-    };
-    I18n.translations.ja_JP.lssm.verbandsverwaltung = {
-        name: '運営管理',
-        allianceFunds: 'アライアンス基金',
-        allianceCredits: '獲得したクレジット',
-        users: '会員',
-        onlineUsers: 'オンライン会員',
-        allianceRank: 'アライアンス・リストのランク',
-        page: 'ページ',
-        updateMessage: '値は自動的に<br>更新されます ' + updateMin + ' 分。',
-        chartErr: 'グラフを読み込めませんでした "{{chart}}"!<br>一部のブラウザでこれが発生することはすでにわかっていますが、まだ理由はわかりません。<br> この問題は既に報告されているため、このエラーを報告しないでください。',
-        hoverTip: 'ヒント：要素にカーソルを合わせると、値の履歴が表示されます.'
+    I18n.translations.ro_RO.lssm.verbandsverwaltung = {
+        name: 'Administrare',
+        allianceFunds: 'Fondurile Alianței',
+        allianceCredits: 'Credite câștigate',
+        users: 'Membri',
+        onlineUsers: 'Membrii online',
+        allianceRank: 'Rang în Lista Alianței',
+        page: 'Pagina',
+        updateMessage: 'Actualizarea automată a valorilor<br>Fiecare ' + updateMin + ' Minute.',
+        chartErr: 'Imposibil de încărcat diagrama "{{chart}}"!<br>Știm deja că acest lucru se întâmplă cu unele browsere, dar nu încă de ce. Vă rugăm să nu \'t raport- ne această eroare ca suntem deja pe această problemă!',
+        hoverTip: 'Indicație: treceți cu mouse-ul peste un element pentru a afișa un istoric de valori.'
     };
     I18n.translations.nl_NL.lssm.verbandsverwaltung = {
         name: 'Administratie',
@@ -198,10 +162,11 @@
     };
     async function loadChart(element, name, data) {
         try {
+            const width = $('#alliance_li ul').width();
             element.highcharts({
                 chart: {
-                    width: $('#alliance_li ul').width() - 10,
-                    height: $('#alliance_li ul').width() - 10
+                    width:  width > 300 ? width - 10 : 290,
+                    height: width > 300 ? width - 10 : 290
                 },
                 title: {
                     text: name
@@ -238,33 +203,33 @@
         let lastArr = storage[lastKey];
         if (lastArr.finance_active) {
             $("#verbandsverwaltungAllianceFunds").html(
-                '<a href="/verband/kasse" class="lightbox-open">' +
-                '' + I18n.t('lssm.verbandsverwaltung.allianceFunds') + ': ' +
-                '' + lastArr.credits.toLocaleString() + ' Credits' +
-                '</a>'
+              '<a href="/verband/kasse" class="lightbox-open">' +
+              '' + I18n.t('lssm.verbandsverwaltung.allianceFunds') + ': ' +
+              '' + lastArr.credits.toLocaleString() + ' Credits' +
+              '</a>'
             );
         }
         // Write total earned credits
         $('#verbandsverwaltungAllianceCredits').html(
-            I18n.t('lssm.verbandsverwaltung.allianceCredits') + ': ' + lastArr.total.toLocaleString() + ' Credits'
+          I18n.t('lssm.verbandsverwaltung.allianceCredits') + ': ' + lastArr.total.toLocaleString() + ' Credits'
         );
 
         // And display the latest values
         $('#verbandsverwaltungAllianceRank').html(
-            '<a href="/alliances?page=' + lastArr.page + '" class="lightbox-open">' +
-            '' + I18n.t('lssm.verbandsverwaltung.allianceRank') + ': ' +
-            '' + lastArr.rank.toLocaleString() + ' (' +
-            '' + I18n.t('lssm.verbandsverwaltung.page') + ' ' + lastArr.page.toLocaleString() + ')' +
-            '</a>'
+          '<a href="/alliances?page=' + lastArr.page + '" class="lightbox-open">' +
+          '' + I18n.t('lssm.verbandsverwaltung.allianceRank') + ': ' +
+          '' + lastArr.rank.toLocaleString() + ' (' +
+          '' + I18n.t('lssm.verbandsverwaltung.page') + ' ' + lastArr.page.toLocaleString() + ')' +
+          '</a>'
         );
 
         // Display current member statistic
         $('#verbandsverwaltungUsers').html(
-            '<a href="/verband/mitglieder" class="lightbox-open">' +
-            '' + I18n.t('lssm.verbandsverwaltung.onlineUsers') + ': ' +
-            '' + lastArr.online.toLocaleString() + '/' + lastArr.users.toLocaleString() + ' ' +
-            '(' + Math.round((100 / lastArr.users) * lastArr.online) + '%)' +
-            '</a>'
+          '<a href="/verband/mitglieder" class="lightbox-open">' +
+          '' + I18n.t('lssm.verbandsverwaltung.onlineUsers') + ': ' +
+          '' + lastArr.online.toLocaleString() + '/' + lastArr.users.toLocaleString() + ' ' +
+          '(' + Math.round((100 / lastArr.users) * lastArr.online) + '%)' +
+          '</a>'
         );
         // Write History into Tables and output the stats
         let userData = [];
@@ -328,19 +293,22 @@
         localStorage[lsName] = JSON.stringify(storage);
 
         if (lastEntry <= time-(updateMin*60) || !lastEntry) {
-            $.get("/api/allianceinfo")
-                .then(response => {
+            $.ajax({
+                url: '/api/allianceinfo',
+                headers: {
+                    'X-LSS-Manager': lssm.headerVersion()
+                },
+                success(response) {
 
                     // Write up-to-date values into localstorage
                     storage[time] = {
                         "credits": response.credits_current,
                         "total": parseInt(response.credits_total),
                         "rank": response.rank,
-                        "page": parseInt(response.rank / 20) + (response.rank%20 ? 1 : 0),
+                        "page": parseInt(response.rank / 20) + (response.rank % 20 ? 1 : 0),
                         "users": response.user_count,
                         "online": response.user_online_count
                     };
-
 
 
                     if (!response.finance_active) {
@@ -357,7 +325,8 @@
                     // Write the new json into the localstorage
                     localStorage[lsName] = JSON.stringify(storage);
                     drawGUI(storage, time);
-                });
+                }
+            });
 
         } else {
             drawGUI(storage, lastEntry);
@@ -382,22 +351,24 @@
         $('#verbandsverwaltungCharts').toggle();
     });
 
-    $('#verbandsverwaltungDropdown').css('position', 'absolute');
-    $('#verbandsverwaltungCharts').css('position', 'absolute');
-    $('#verbandsverwaltungDropdown').css('z-index', '999');
-    $('#verbandsverwaltungCharts').css('z-index', '999');
-    $('#verbandsverwaltungDropdown').css('background', '#BA1D1A');
-    $('#verbandsverwaltungCharts').css('background', '#BA1D1A');
-    $('#verbandsverwaltungDropdown').css('width', '100%');
-    $('#verbandsverwaltungCharts').css('width', '100%');
-    $('#verbandsverwaltungDropdown').css('top', '0px');
-    $('#verbandsverwaltungCharts').css('top', '0px');
-    $('#verbandsverwaltungDropdown').css('left', (0 - $('#alliance_li ul').width()) + 'px');
-    $('#verbandsverwaltungCharts').css('left', (0 + $('#alliance_li ul').width()) + 'px');
-    $('#verbandsverwaltungDropdown').css('padding', '5px');
-    $('#verbandsverwaltungCharts').css('padding', '5px');
-    $('#verbandsverwaltungDropdown').css('border', '1px solid black');
-    $('#verbandsverwaltungCharts').css('border', '1px solid black');
+    $('#verbandsverwaltungDropdown').css('position', 'absolute')
+        .css('z-index', '999')
+        .css('background', '#BA1D1A')
+        .css('width', '100%')
+        .css('min-width', '300px')
+        .css('top', '0px')
+        .css('right', $('#alliance_li ul').width() + 'px')
+        .css('padding', '5px')
+        .css('border', '1px solid black');
+    $('#verbandsverwaltungCharts').css('position', 'absolute')
+        .css('z-index', '999')
+        .css('background', '#BA1D1A')
+        .css('width', '100%')
+        .css('min-width', '300px')
+        .css('top', '0px')
+        .css('left', (0 + $('#alliance_li ul').width()) + 'px')
+        .css('padding', '5px')
+        .css('border', '1px solid black');
 
     // Alte Verbandsverwaltungs-Einsträge löschen
     for (let localStorageItem in localStorage) {

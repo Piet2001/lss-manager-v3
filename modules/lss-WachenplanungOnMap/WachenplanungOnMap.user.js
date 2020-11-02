@@ -20,12 +20,17 @@
             thw: false,
             bp: false,
             kh: false,
+            seg: false,
+            wr: false,
+            phl: false,
+            rhl: false,
+            rhs: false,
             radius: 5,
             showCars: true,
             showSlider: true,
             showRadInput: false
         }, locale: I18n.locale || 'de_DE', translations: {
-            de: {
+            de_DE: {
                 attributionControl: "Wachen-Planung by Lost &amp; Northdegree"
             }
         }, prefix: 'WachenplanungOnMap'
@@ -33,18 +38,19 @@
         7: ['#5e5e5e', 'ils'],
         0: ['#ff4b38', 'fw'],
         6: ['#1d9b1d', 'pol'],
-        2: ['#f9ffb7', 'rw'],
+        2: ['#eb7900', 'rw'],
         9: ['#002aff', 'thw'],
         11: ['#0e4f0e', 'bp'],
         4: ['#fff000', 'kh'],
-        12: ['#cdd668', 'seg'],
+        12: ['#cc6d00', 'seg'],
         15: ['#009dff', 'wr'],
         13: ['#147014', 'phl'],
-        5: ['#e6f268', 'rhl'],
+        5: ['#ed9e00', 'rhl'],
         17: ['#0e4f0e', 'bp'],
         18: ['#ff4b38', 'fw'],
         19: ['#1d9b1d', 'pol'],
-        20: ['#f9ffb7', 'rw']
+        20: ['#eb7900', 'rw'],
+        21: ['#457865', 'rhs']
     };
 
     function rmLayer(id) {
@@ -111,6 +117,10 @@
                 settings.set['bp'] = el.prop('checked');
                 drawCircles(false, 11);
                 break;
+            case settings.prefix + '_mark_bp':
+                settings.set['bp'] = el.prop('checked');
+                drawCircles(false, 17);
+                break;
             case settings.prefix + '_mark_kh':
                 settings.set['kh'] = el.prop('checked');
                 drawCircles(false, 4);
@@ -130,6 +140,10 @@
             case settings.prefix + '_mark_rhl':
                 settings.set['rhl'] = el.prop('checked');
                 drawCircles(false, 5);
+                break;
+            case settings.prefix + '_mark_rhs':
+                settings.set['rhs'] = el.prop('checked');
+                drawCircles(false, 21)
                 break;
             case settings.prefix + '_mark_showCars':
                 settings.set['showCars'] = el.prop('checked');
@@ -215,9 +229,13 @@
                 break;
             case BUILDING_TYPE_POLIZEISONDEREINHEITEN:
                 building_marker_image = "/images/building_polizeisondereinheiten.png"
+                break;
 
             case BUILDING_TYPE_SEG:
                 building_marker_image = "/images/building_seg.png";
+                break;
+            case BUILDING_TYPE_RESCUE_DOG_UNIT:
+                building_marker_image = "/images/building_rescue_dog_unit.png";
                 break;
 
             case BUILDING_TYPE_BEREITSTELLUNGSRAUM:
@@ -264,8 +282,8 @@
         // Type
 
         form += '<div class="input-group select required building_building_type"><div class="input-group-addon"><label class="select required " for="building_building_type"><abbr title="required">*</abbr> ' + I18n.t('lssm.wpom.btype') + '</label></div><select class="select required form-control" id="building_building_type"><option value=""></option>';
-        for (let i in btypes) {
-            form += '<option value="' + i + '">' + btypes[i] + '</option>';
+        for (let i in lssm.buildingTypes) {
+            form += '<option value="' + i + '">' + lssm.buildingTypes[i] + '</option>';
         }
         form += '</select></div>';
         // Name
@@ -376,6 +394,7 @@
         html += '<div class="lssm_wachen_selector"><div class="onoffswitch"><input class="onoffswitch-checkbox" id="' + settings.prefix + '_mark_kh" ' + (settings.set.kh ? 'checked="true"' : "") + ' name="onoffswitch" type="checkbox"><label class="onoffswitch-label" for="' + settings.prefix + '_mark_kh"></label></div><span class="label label-kh">Krankenhaus</span></div>';
         html += '<div class="lssm_wachen_selector"><div class="onoffswitch"><input class="onoffswitch-checkbox" id="' + settings.prefix + '_mark_thw" ' + (settings.set.thw ? 'checked="true"' : "") + ' name="onoffswitch" type="checkbox"><label class="onoffswitch-label" for="' + settings.prefix + '_mark_thw"></label></div><span class="label label-thw">THW</span></div>';
         html += '<div class="lssm_wachen_selector"><div class="onoffswitch"><input class="onoffswitch-checkbox" id="' + settings.prefix + '_mark_wr" ' + (settings.set.wr ? 'checked="true"' : "") + ' name="onoffswitch" type="checkbox"><label class="onoffswitch-label" for="' + settings.prefix + '_mark_wr"></label></div><span class="label label-wr">Wasserrettung</span></div>';
+        html += '<div class="lssm_wachen_selector"><div class="onoffswitch"><input class="onoffswitch-checkbox" id="' + settings.prefix + '_mark_rhs" ' + (settings.set.rhs ? 'checked="true"' : "") + ' name="onoffswitch" type="checkbox"><label class="onoffswitch-label" for="' + settings.prefix + '_mark_rhs"></label></div><span class="label label-rhs">Rettungshundestaffel</span></div>';
         html += '<div class="lssm_wachen_selector"><div class="onoffswitch"><input class="onoffswitch-checkbox" id="' + settings.prefix + '_mark_showCars" ' + (settings.set.showCars ? 'checked="true"' : "") + ' name="onoffswitch" type="checkbox"><label class="onoffswitch-label" for="' + settings.prefix + '_mark_showCars"></label></div><span class="label label-default">Zeige Fahrzeuge?</span></div>';
         html += '</div>';
         $('#map_outer').append(html);
@@ -443,20 +462,6 @@
     createSettings();
     // alle aktiven Typen zeichnen
     drawCircles(true);
-    let btypes = {};
-    $.get('/buildings/new')
-        .fail(function () {
-            console.log("Could not get building list. Disabling mapmarkers.");
-            $("#WachenplanungOnMap_remmarker").remove();
-            $("#WachenplanungOnMap_addmarker").remove();
-        })
-        .done(function (data) {
-            $.each($(data).find("#building_building_type option"), function (key, value) {
-                "use strict";
-                if (value.value !== "")
-                    btypes[value.value] = value.text;
-            });
-        });
     let pmid = 0;
     let plannedMarkers = lssm.settings.get("wpomp", []);
     let plannedMarkersMap = [];

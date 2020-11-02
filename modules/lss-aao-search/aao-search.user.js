@@ -15,7 +15,7 @@
         search_aao: "Hledání AAO",
         use_dd: "Použít rozbalovací nabídku: ",
         reset: "Obnovit",
-        select: "Please select..."
+        select: "Vyberte..."
     };
     I18n.translations.pl_PL['lssm']['aaosearch'] = {
         search_aao: "Szukaj AAO",
@@ -45,13 +45,7 @@
         search_aao: "Ricerca AAO",
         use_dd: "Utilizzare il menu a tendina: ",
         reset: "Reset",
-        select: "Please select..."
-    };
-    I18n.translations.tr_TR['lssm']['aaosearch'] = {
-        search_aao: "AAO'da Ara",
-        use_dd: "Açılır listeyi kullan: ",
-        reset: "Sıfırla",
-        select: "Lütfen seçin..."
+        select: "Si prega di selezionare..."
     };
     I18n.translations.fr_FR['lssm']['aaosearch'] = {
         search_aao: "Recherche AAO",
@@ -59,37 +53,25 @@
         reset: "Réinitialiser",
         select: "Veuillez sélectionner....."
     };
-    I18n.translations.ru_RU['lssm']['aaosearch'] = {
-        search_aao: "Поиск в ААО",
-        use_dd: "Использовать выпадающий список: ",
-        reset: "Сброс",
-        select: "Пожалуйста, выберите...."
-    };
-    I18n.translations.uk_UA['lssm']['aaosearch'] = {
-        search_aao: "Пошук AAO",
-        use_dd: "Використовувати спадне меню: ",
-        reset: "Скидання",
-        select: "Виберіть будь ласка..."
-    };
-    I18n.translations.es_ES['lssm']['aaosearch'] = {
-        search_aao: "Buscar AAO",
-        use_dd: "Use el menú desplegable: ",
-        reset: "Reiniciar",
-        select: "Por favor seleccione...."
-    };
     I18n.translations.pt_PT['lssm']['aaosearch'] = {
         search_aao: "Pesquisa AAO",
         use_dd: "Use o menu suspenso: ",
         reset: "Redefinir",
         select: "Por favor, selecione..."
     };
-    I18n.translations.ja_JP['lssm']['aaosearch'] = {
-        search_aao: "AAOを検索",
-        use_dd: "ドロップダウンを使用： ",
-        reset: "リセットする",
-        select: "選んでください..."
+    I18n.translations.ko_KR['lssm']['aaosearch'] = {
+        search_aao: "AAO 검색",
+        use_dd: "드롭 다운 사용 : ",
+        reset: "초기화",
+        select: "선택 해주세요..."
     };
-	I18n.translations.nl_NL['lssm']['aaosearch'] = {
+    I18n.translations.ro_RO['lssm']['aaosearch'] = {
+        search_aao: "Caută AAO",
+        use_dd: "Utilizare verticală: ",
+        reset: "Reseta",
+        select: "Citește și..."
+    };
+    I18n.translations.nl_NL['lssm']['aaosearch'] = {
         search_aao: "AUR Doorzoeken",
         use_dd: "Gebruik dropdown-menu: ",
         reset: "Reset",

@@ -169,7 +169,7 @@
     };
     I18n.translations.pl_PL.lssm.extendedBuilding = {
         title: 'Rozszerzony widok budynku',
-        crew: 'Załoga (Max)',
+        crew: 'Załoga (maks.)',
         fms: 'Status',
         assignment: 'Przydzielenie personelu',
         neededPersonnel: 'Potrzebny personel',
@@ -283,19 +283,19 @@
         title: 'Udvidet bygningsvisning',
         crew: 'Mandskab (maks.)',
         fms: 'Status',
-        assignment: 'Assign Personnel',
-        neededPersonnel: 'Needed Personnel',
-        expansionFinished: 'Finished',
-        expansionNotStarted: 'Not started',
-        personnelOverview: 'Personnel Overview',
-        schooling: 'Uddannelse',
+        assignment: 'Tildel personale',
+        neededPersonnel: 'Nødvendigt personale',
+        expansionFinished: 'Færdig',
+        expansionNotStarted: 'Ikke startet',
+        personnelOverview: 'Personaleoversigt',
+        schooling: 'Undervisning',
         schoolingsMulti: 'Alle kombinationer af uddannelser',
         schoolingsSingle: 'Enkeltuddannelser',
-        amount: 'Amount',
-        expansionName: 'Description',
+        amount: 'Beløb',
+        expansionName: 'Beskrivelse',
         vehicleType: 'Type',
-        binding: 'Assigned to',
-        bindingAmount: 'Bound',
+        binding: 'Tildelt',
+        bindingAmount: 'bundet',
         settings: {
             neededPersonnel: {
                 label: 'Påkrævet personale',
@@ -391,62 +391,6 @@
             }
         }
     };
-    I18n.translations.es_ES.lssm.extendedBuilding = {
-        title: 'Vista ampliada del edificio',
-        crew: 'Tripulación (máx.)',
-        fms: 'Estado',
-        assignment: 'Asignar personal',
-        neededPersonnel: 'Personal Necesario',
-        expansionFinished: 'Acabado',
-        expansionNotStarted: 'No iniciado',
-        personnelOverview: 'Resumen de personal',
-        schooling: 'Educación',
-        schoolingsMulti: 'Todas las combinaciones de educación',
-        schoolingsSingle: 'Educación individual',
-        amount: 'Importe',
-        expansionName: 'Descripción',
-        vehicleType: 'Tipo',
-        binding: 'Asignado a',
-        bindingAmount: 'Encuadernado',
-        settings: {
-            neededPersonnel: {
-                label: 'Personal necesario',
-                description: 'Muestra el personal necesario si todos los vehículos van a estar completamente ocupados.',
-            },
-            switchStatus: {
-                label: 'Cambio rápido de estado',
-                description: 'El estado de un vehículo se puede cambiar directamente entre S2 y S6 a través de la pantalla de estado.',
-            },
-            assignmentBtn: {
-                label: 'Asignación rápida',
-                description: 'Añade un botón para llegar rápidamente a la ventana "Asignar personal',
-            },
-            assignedWorkers: {
-                label: 'Personal asignado',
-                description: 'Muestra para cada vehículo cuánto personal está asignado',
-            },
-            currentCrew: {
-                label: 'Tripulación actual',
-                description: 'Indica para cada vehículo cuántas personas están sentadas actualmente en el vehículo',
-            },
-            expansions: {
-                label: 'Mostrar ampliaciones',
-                description: 'Mostrar el estado actual de las ampliaciones',
-            },
-            personnelOverview: {
-                label: 'Resumen de personal ampliado',
-                description: 'Muestra en el resumen de personal la cantidad de personal que tiene cada formación.',
-            },
-            vehicleType: {
-                label: 'Mostrar tipo de vehículo',
-                description: 'Muestra el tipo de vehículo en la lista de vehículos.',
-            },
-            expansionDate: {
-                label: 'Fecha de finalización de la ampliación',
-                description: 'Muestra en la lista de ampliaciones también cuándo se terminará la construcción (trabajos sólo en relación con el ajuste "Mostrar ampliaciones").',
-            }
-        }
-    };
     I18n.translations.pt_PT.lssm.extendedBuilding = {
         title: 'Vista expandida do edifício',
         crew: 'Equipe (máx.)',
@@ -512,7 +456,7 @@
         expansionFinished: 'Finito',
         expansionNotStarted: 'Non iniziato',
         personnelOverview: 'Panoramica del personale',
-        schooling: 'Educazione',
+        schooling: 'Formazione',
         schoolingsMulti: 'Tutte le Combinazioni di Educazione',
         schoolingsSingle: 'Educazioni individuali',
         amount: 'Quantità',
@@ -559,62 +503,6 @@
             }
         }
     };
-    I18n.translations.tr_TR.lssm.extendedBuilding = {
-        title: 'Genişletilmiş Bina Görünümü',
-        crew: 'Crew (Max)',
-        fms: 'Status',
-        assignment: 'Assign Personnel',
-        neededPersonnel: 'Needed Personnel',
-        expansionFinished: 'Finished',
-        expansionNotStarted: 'Not started',
-        personnelOverview: 'Personnel Overview',
-        schooling: 'Education',
-        schoolingsMulti: 'All Combinations of Educations',
-        schoolingsSingle: 'Single Educations',
-        amount: 'Amount',
-        expansionName: 'Description',
-        vehicleType: 'Type',
-        binding: 'Assigned to',
-        bindingAmount: 'Bound',
-        settings: {
-            neededPersonnel: {
-                label: 'Gerekli personel',
-                description: 'Tüm araçların tamamen dolu olup olmayacağını gerekli personeli gösterir',
-            },
-            switchStatus: {
-                label: 'Hızlı durum değişikliği',
-                description: 'Durum göstergesi aracılığıyla bir aracın durumu doğrudan S2 ve S6 arasında değiştirilebilir',
-            },
-            assignmentBtn: {
-                label: 'Hızlı atama',
-                description: '"Personel ata" penceresine hızlıca ulaşmak için bir düğme ekler',
-            },
-            assignedWorkers: {
-                label: 'Atanan personel',
-                description: 'Her araç için ne kadar personelin atandığını gösterir',
-            },
-            currentCrew: {
-                label: 'Mevcut Ekip',
-                description: 'Her araç için, şu anda araçta kaç personelin oturduğunu gösterir',
-            },
-            expansions: {
-                label: 'Genişlemeleri göster',
-                description: 'Genişletmelerin mevcut durumunu göster',
-            },
-            personnelOverview: {
-                label: 'Genişletilmiş personele genel bakış',
-                description: 'Personele genel bakışta hangi eğitimin ne kadar eğitime sahip olduğunu gösterir',
-            },
-            vehicleType: {
-                label: 'Araç tipini göster',
-                description: 'Araç listesinde araç tipini gösterir.',
-            },
-            expansionDate: {
-                label: 'Genişlemenin tamamlanma tarihi',
-                description: 'Genişlemeler listesinde inşaatın ne zaman biteceğini gösterir (yalnızca "Genişlemeleri göster" ayarıyla bağlantılı olarak çalışır)',
-            }
-        }
-    };
     I18n.translations.fr_FR.lssm.extendedBuilding = {
         title: 'Vue agrandie du bâtiment',
         crew: 'Équipage (max.)',
@@ -624,7 +512,7 @@
         expansionFinished: 'Fini',
         expansionNotStarted: 'Pas commencé',
         personnelOverview: 'Aperçu du personnel',
-        schooling: 'L\'éducation',
+        schooling: 'Formation',
         schoolingsMulti: 'Toutes les combinaisons d\'études',
         schoolingsSingle: 'Études individuelles',
         amount: 'Montant',
@@ -671,171 +559,115 @@
             }
         }
     };
-    I18n.translations.ru_RU.lssm.extendedBuilding = {
-        title: 'Расширенный вид на здание',
-        crew: 'Команда (макс.)',
-        fms: 'Статус',
-        assignment: 'Назначение персонала',
-        neededPersonnel: 'Необходимый персонал',
-        expansionFinished: 'Готово',
-        expansionNotStarted: 'Не начал',
-        personnelOverview: 'Обзор персонала',
-        schooling: 'Образование',
-        schoolingsMulti: 'Все комбинации образования',
-        schoolingsSingle: 'Одиночное образование',
-        amount: 'Сумма',
-        expansionName: 'Описание',
-        vehicleType: 'Type',
-        binding: 'Назначенный',
-        bindingAmount: 'Связанный',
+    I18n.translations.ko_KR.lssm.extendedBuilding = {
+        title: '확장 된 건물 전망',
+        crew: '승무원 (최대)',
+        fms: '상태',
+        assignment: '인사 할당',
+        neededPersonnel: '필요한 인원',
+        expansionFinished: '끝마친',
+        expansionNotStarted: '시작되지 않음',
+        personnelOverview: '인사 개요',
+        schooling: '교육',
+        schoolingsMulti: '교육의 모든 조합',
+        schoolingsSingle: '단일 교육',
+        amount: '양',
+        expansionName: '기술',
+        vehicleType: '유형',
+        binding: '할당',
+        bindingAmount: '경계',
         settings: {
             neededPersonnel: {
-                label: 'Необходимый персонал',
-                description: 'Показывает необходимый персонал, если все транспортные средства должны быть полностью заняты.',
+                label: '필요한 인원',
+                description: '모든 차량을 완전히 점유해야 할 경우 필요한 인원을 표시합니다',
             },
             switchStatus: {
-                label: 'Быстрое изменение статуса',
-                description: 'Состояние автомобиля можно изменить непосредственно между S2 и S6 с помощью индикатора состояния.',
+                label: '빠른 상태 변경',
+                description: '차량 상태는 상태 표시를 통해 S2와 S6 사이에서 직접 변경할 수 있습니다',
             },
             assignmentBtn: {
-                label: 'Быстрое назначение',
-                description: 'Добавляет кнопку для быстрого перехода к окну "Назначение персонала".',
+                label: '빠른 할당',
+                description: '"직원 지정"창으로 빠르게 이동하는 버튼 추가',
             },
             assignedWorkers: {
-                label: 'Назначенный персонал',
-                description: 'Показывает, сколько персонала назначено для каждого транспортного средства.',
+                label: '지정된 인원',
+                description: '각 차량에 할당 된 인원 수를 표시합니다',
             },
             currentCrew: {
-                label: 'Текущая команда',
-                description: 'Указывает на каждое транспортное средство, сколько сотрудников в настоящее время находится на нем.',
+                label: '현재 승무원',
+                description: '현재 차량에 몇 명의 인원이 앉아 있는지를 각 차량에 표시',
             },
             expansions: {
-                label: 'Показать экспансии',
-                description: 'Показывать текущее состояние расширений',
+                label: '확장 표시',
+                description: '확장의 현재 상태 표시',
             },
             personnelOverview: {
-                label: 'Расширенный обзор персонала',
-                description: 'Показывает в обзоре персонала, какое количество персонала прошло обучение',
+                label: '확장 된 인력 개요',
+                description: '직원 개요에 직원이 어느 정도의 교육을 받았는지 표시',
             },
             vehicleType: {
-                label: 'Показать тип автомобиля',
-                description: 'Показывает тип транспортного средства в списке транспортных средств.',
+                label: '차량 종류 표시',
+                description: '차량 목록에 차량 유형을 표시합니다.',
             },
             expansionDate: {
-                label: 'Дата завершения расширения производства',
-                description: 'Показывает в списке расширений также, когда строительство будет завершено (работы только в связи с настройкой "Показать расширения").',
+                label: '확장 완료 날짜',
+                description: '구성이 완료 될 때도 확장 목록에 표시됩니다 ( "확장 표시"설정과 관련하여 작동)',
             }
         }
     };
-    I18n.translations.uk_UA.lssm.extendedBuilding = {
-        title: 'Розширений вигляд будівлі',
-        crew: 'Команда (макс.)',
-        fms: 'Статус',
-        assignment: 'Призначити персонал',
-        neededPersonnel: 'Необхідний персонал',
+    I18n.translations.ro_RO.lssm.extendedBuilding = {
+        title: 'Vedere extinsă la clădire',
+        crew: 'Echipaj (max)',
+        fms: 'Statut',
+        assignment: 'Assign Personnel',
+        neededPersonnel: 'Needed Personnel',
         expansionFinished: 'Finished',
         expansionNotStarted: 'Not started',
         personnelOverview: 'Personnel Overview',
-        schooling: 'Навчання',
+        schooling: 'Education',
         schoolingsMulti: 'All Combinations of Educations',
         schoolingsSingle: 'Single Educations',
         amount: 'Amount',
         expansionName: 'Description',
         vehicleType: 'Type',
-        binding: 'Призначено',
-        bindingAmount: 'Bound',
+        binding: 'Atribuit',
+        bindingAmount: 'Legat',
         settings: {
             neededPersonnel: {
-                label: 'Необхідний персонал',
-                description: 'Показує необхідний персонал, якщо всі транспортні засоби повинні бути повністю зайняті',
+                label: 'Personal necesar',
+                description: 'Arată personalul necesar în cazul în care toate vehiculele urmează să fie ocupate',
             },
             switchStatus: {
-                label: 'Швидка зміна статусу',
-                description: 'Статус транспортного засобу можна змінювати безпосередньо між S2 та S6 через дисплей статусу',
+                label: 'Schimbare rapidă a stării',
+                description: 'Starea unui vehicul poate fi schimbată direct între S2 și S6 prin afișarea stării',
             },
             assignmentBtn: {
-                label: 'Швидке призначення',
-                description: 'Додає кнопку для швидкого переходу до вікна "Призначити персонал"',
+                label: 'Atribuire rapidă',
+                description: 'Adaugă un buton pentru a ajunge rapid la fereastra "Atribuire personal"',
             },
             assignedWorkers: {
-                label: 'Призначений персонал',
-                description: 'Показує для кожного транспортного засобу, скільки призначено персоналу',
+                label: 'Personal alocat',
+                description: 'Arată pentru fiecare vehicul cât de mult personal este alocat',
             },
             currentCrew: {
-                label: 'Поточний екіпаж',
-                description: 'Позначає для кожного транспортного засобу, скільки персоналу зараз сидить на транспортному засобі',
+                label: 'Echipajul curent',
+                description: 'Indică pentru fiecare vehicul câți angajați se află în prezent pe vehicul',
             },
             expansions: {
-                label: 'Показати розширення',
-                description: 'Показати поточний стан розширень',
+                label: 'Afișare expansiuni',
+                description: 'Afișarea stării curente a extinderilor',
             },
             personnelOverview: {
-                label: 'Розширений огляд персоналу',
-                description: 'Показує на огляді персоналу, скільки персоналу має яку підготовку',
+                label: 'Prezentare generală extinsă a personalului',
+                description: 'Arată în prezentarea generală a personalului cât de mult personal are ce formare',
             },
             vehicleType: {
-                label: 'Показати тип транспортного засобу',
-                description: 'Показує тип транспортного засобу в списку транспортних засобів.',
+                label: 'Afișare tip vehicul',
+                description: 'Afișează tipul vehiculului în lista de vehicule.',
             },
             expansionDate: {
-                label: 'Дата завершення розширення',
-                description: 'Показує в списку розширень також, коли будівництво буде закінчено (працює лише у зв\'язку з налаштуванням "Показати розширення")',
-            }
-        }
-    };
-    I18n.translations.ja_JP.lssm.extendedBuilding = {
-        title: '拡張ビルビュー',
-        crew: '乗組員（最大）',
-        fms: '状態',
-        assignment: '人員を割り当てる',
-        neededPersonnel: '要人員',
-        expansionFinished: '完成した',
-        expansionNotStarted: '始まっていない',
-        personnelOverview: '人事概要',
-        schooling: '教育',
-        schoolingsMulti: '教育のすべての組み合わせ',
-        schoolingsSingle: '単一の教育',
-        amount: '量',
-        expansionName: '説明',
-        vehicleType: 'タイプ',
-        binding: 'に割り当てられた',
-        bindingAmount: 'バウンド',
-        settings: {
-            neededPersonnel: {
-                label: '必要な人員',
-                description: 'すべての車両を完全に占有する場合に必要な人員を表示します',
-            },
-            switchStatus: {
-                label: '高速ステータス変更',
-                description: '車両のステータスは、ステータスディスプレイを介してS2とS6の間で直接変更できます。',
-            },
-            assignmentBtn: {
-                label: 'クイック割り当て',
-                description: '「担当者の割り当て」ウィンドウにすばやくアクセスするためのボタンを追加します',
-            },
-            assignedWorkers: {
-                label: '担当者',
-                description: '各車両に割り当てられている人員の量を示します',
-            },
-            currentCrew: {
-                label: '現在の乗組員',
-                description: '各車両について、現在車両に座っている人員の数を示します',
-            },
-            expansions: {
-                label: '展開を表示',
-                description: '展開の現在のステータスを表示する',
-            },
-            personnelOverview: {
-                label: '拡張要員の概要',
-                description: '人員の概要に、どの人員がどのトレーニングを受けているかを示します',
-            },
-            vehicleType: {
-                label: '車種を表示',
-                description: '車両リストに車両のタイプを表示します。',
-            },
-            expansionDate: {
-                label: '拡張の完了日',
-                description: '展開が終了するときにも展開リストに表示されます（[展開を表示]設定に関連してのみ機能します）',
+                label: 'Data finalizării extinderii',
+                description: 'Se afișează în lista de extinderi și când construcția va fi terminată (lucrări numai în legătură cu setarea "Arată extinderi")',
             }
         }
     };

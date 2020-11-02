@@ -358,19 +358,6 @@
             }
         ]
     };
-    I18n.translations.es_ES.lssm.heatmap = {
-        active: 'Activo',
-        vehicleType: 'Grupos',
-        radius: 'Radio',
-        intensity: 'Intensidad',
-        close: 'Cerrar',
-        vehicleGroups: [
-            {
-                name: 'Combinación propia',
-                vehicles: []
-            }
-        ]
-    };
     I18n.translations.pt_PT.lssm.heatmap = {
         active: 'Ativo',
         vehicleType: 'Grupos',
@@ -449,19 +436,6 @@
             }
         ]
     };
-    I18n.translations.tr_TR.lssm.heatmap = {
-        active: 'Aktif',
-        vehicleType: 'Gruplar',
-        radius: 'yarıçap',
-        intensity: 'yoğunluk',
-        close: 'Kapat',
-        vehicleGroups: [
-            {
-                name: 'Kendi Kombinasyonu',
-                vehicles: []
-            }
-        ]
-    };
     I18n.translations.fr_FR.lssm.heatmap = {
         active: 'Actif',
         vehicleType: 'Groupes',
@@ -475,41 +449,28 @@
             }
         ]
     };
-    I18n.translations.ru_RU.lssm.heatmap = {
-        active: 'Активный',
-        vehicleType: 'Группы',
-        radius: 'Радиус',
-        intensity: 'Интенсивность',
-        close: 'Близко',
+    I18n.translations.ko_KR.lssm.heatmap = {
+        active: '유효한',
+        vehicleType: '여러 떼',
+        radius: '반지름',
+        intensity: '강렬',
+        close: '닫기',
         vehicleGroups: [
             {
-                name: 'Собственная комбинация',
+                name: '자신의 조합',
                 vehicles: []
             }
         ]
     };
-    I18n.translations.uk_UA.lssm.heatmap = {
-        active: 'Активний',
-        vehicleType: 'Групи',
-        radius: 'Радіус',
-        intensity: 'Інтенсивність',
-        close: 'Закрити',
+    I18n.translations.ro_RO.lssm.heatmap = {
+        active: 'Activ',
+        vehicleType: 'Grupuri',
+        radius: 'Rază',
+        intensity: 'Intensitate',
+        close: 'Închide',
         vehicleGroups: [
             {
-                name: 'Власна комбінація',
-                vehicles: []
-            }
-        ]
-    };
-    I18n.translations.ja_JP.lssm.heatmap = {
-        active: 'アクティブ',
-        vehicleType: 'グループ',
-        radius: '半径',
-        intensity: '強度',
-        close: '閉じる',
-        vehicleGroups: [
-            {
-                name: '独自の組み合わせ',
+                name: 'Combinație proprie',
                 vehicles: []
             }
         ]
@@ -649,7 +610,7 @@
                 $(wrapper).attr('data-opened', 'true');
                 let form = $('#ls-heatmap-config .ls-form-group');
                 // Active
-                form.append(`<tr class="ls-heatmap-option"><td>${I18n.t('lssm.heatmap.active')}</td><td><input class="ls-input" type="checkbox" id="heatmap-active" ${getSetting('heatmap-active') ? 'checked' : ''}></td></tr>`);
+                form.append(`<tr class="ls-heatmap-option"><td>${I18n.t('lssm.heatmap.active')}</td><td><input class="ls-input" type="checkbox" id="heatmap-active" ${getSetting('heatmap-active') ? 'checked' : ''}></td><td><button id="heatmap_reset" class="btn btn-default btn-xs">${I18n.t('lssm.heatmap.reset')}</button></td></tr>`);
                 // Vehicle-Selection
                 let vehicle_options = '';
                 for (let key in vehicleGroups) {
@@ -666,7 +627,7 @@
                 form.append(`<tr class="ls-heatmap-option"><td>${I18n.t('lssm.heatmap.intensity')}</td><td><div class="value-slider" data-min="0" data-max="50" data-value="${getSetting('heatmap-intensity')}" id="heatmap-intensity"><div id="intensity-handle" class="ui-slider-handle"></div></div></td></tr>`);
 
                 // Btns
-                form.append(`<tr class="ls-heatmap-option"><td><button id="heatmap_close" class="btn btn-default btn-xs">${I18n.t('lssm.heatmap.close')}</button></td><td><button id="heatmap_reset" class="btn btn-default btn-xs">${I18n.t('lssm.heatmap.reset')}</button></td></tr>`);
+                form.append(`<tr class="ls-heatmap-option"><td><button id="heatmap_close" class="btn btn-default btn-xs">${I18n.t('lssm.heatmap.close')}</button></td></tr>`);
 
                 $('#heatmap_close').click(() => {
                     $('#ls-heatmap-config-img').click();

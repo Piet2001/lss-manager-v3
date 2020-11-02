@@ -17,9 +17,6 @@
     I18n.translations.nb_NO['lssm']['allianceMissionlistShare'] = {
         title: "Slipp i allianse"
     };
-    I18n.translations.es_ES['lssm']['allianceMissionlistShare'] = {
-        title: "Lanzamiento en alianza"
-    };
     I18n.translations.pt_PT['lssm']['allianceMissionlistShare'] = {
         title: "Lançamento da Aliança"
     };
@@ -29,20 +26,14 @@
     I18n.translations.it_IT['lssm']['allianceMissionlistShare'] = {
         title: "Rilascio in alleanza"
     };
-    I18n.translations.tr_TR['lssm']['allianceMissionlistShare'] = {
-        title: "İttifakta salıverme"
-    };
     I18n.translations.fr_FR['lssm']['allianceMissionlistShare'] = {
         title: "Libération en alliance"
     };
-    I18n.translations.ru_RU['lssm']['allianceMissionlistShare'] = {
-        title: "Освобождение в альянсе"
+    I18n.translations.ko_KR['lssm']['allianceMissionlistShare'] = {
+        title: "동맹의 석방"
     };
-    I18n.translations.uk_UA['lssm']['allianceMissionlistShare'] = {
-        title: "Відпустіть в союзі"
-    };
-    I18n.translations.ja_JP['lssm']['allianceMissionlistShare'] = {
-        title: "提携リリース"
+    I18n.translations.ro_RO['lssm']['allianceMissionlistShare'] = {
+        title: "Eliberarea în alianță"
     };
     I18n.translations.nl_NL['lssm']['allianceMissionlistShare'] = {
         title: "In team vrijgeven"
@@ -85,7 +76,10 @@
     $('#missions-panel-body').on('click', '.allianceShareButton', function (e) {
         e.preventDefault();
         $.ajax({
-            url: '/missions/' + $(this).attr('data-header') + '/alliance'
+            url: '/missions/' + $(this).attr('data-header') + '/alliance',
+            headers: {
+                'X-LSS-Manager': lssm.headerVersion()
+            },
         });
         $(this).addClass('btn__disabled');
     });
