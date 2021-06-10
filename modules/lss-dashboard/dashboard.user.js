@@ -1,4 +1,4 @@
-I18n.translations.de['lssm']['dashboard'] = {
+I18n.translations.de_DE['lssm']['dashboard'] = {
     name: "Dashboard",
     vehicles: {
         name: "Fahrzeuge",
@@ -23,12 +23,12 @@ I18n.translations.de['lssm']['dashboard'] = {
     carswp: 'FAHRZEUGE',
     patiwp: 'PATIENTEN',
     levwp: 'STUFE',
-    categories: ['Feuerwehr', 'Rettungsdienst', 'Polizei', 'THW', 'Krankenhaus', 'Wasserrettung', 'SEG', 'Bereitschaftspolizei'],
-    categories_data: ['fw', 'rd', 'pol', 'thw', 'kh', 'wret', 'seg', 'bepo'],
+    categories: ['Feuerwehr', 'Rettungsdienst', 'Polizei', 'THW', 'Krankenhaus', 'Wasserrettung', 'SEG', 'Bereitschaftspolizei', 'Rettungshundestaffel'],
+    categories_data: ['fw', 'rd', 'pol', 'thw', 'kh', 'wret', 'seg', 'bepo', 'rhs'],
     categories_data_school: ['fw_school', 'rd_school', 'pol_school', 'thw_school'],
     nofz: "Keine Fahrzeuge vorhanden",
 }
-I18n.translations.en['lssm']['dashboard'] = {
+I18n.translations.en_US['lssm']['dashboard'] = {
     name: "Dashboard",
     vehicles: {
         name: "Vehicles",
@@ -58,7 +58,7 @@ I18n.translations.en['lssm']['dashboard'] = {
     categories_data_school: ['fw_school', 'rd_school', 'pol_school', 'kh_clinic'],
     nofz: "No vehicles found",
 }
-I18n.translations.fj['lssm']['dashboard'] = {
+I18n.translations.en_GB['lssm']['dashboard'] = {
     name: "Dashboard",
     vehicles: {
         name: "Vehicles",
@@ -88,7 +88,7 @@ I18n.translations.fj['lssm']['dashboard'] = {
     categories_data_school: ['fw_school', 'rd_school', 'pol_school', 'kh_clinic'],
     nofz: "No vehicles found",
 }
-I18n.translations.eu['lssm']['dashboard'] = {
+I18n.translations.en_AU['lssm']['dashboard'] = {
     name: "Dashboard",
     vehicles: {
         name: "Vehicles",
@@ -118,7 +118,37 @@ I18n.translations.eu['lssm']['dashboard'] = {
     categories_data_school: ['fw_school', 'rd_school', 'pol_school', 'kh_clinic'],
     nofz: "No vehicles found",
 }
-I18n.translations.eu['lssm']['dashboard'] = {
+I18n.translations.es_ES['lssm']['dashboard'] = {
+    name: "Tablero de mandos",
+    vehicles: {
+        name: "Vehículos",
+        type: "Tipo de vehículo",
+        available: "Disponible",
+        onsite: "En el sitio",
+        request: "Solicitar",
+        transport: "Transporte",
+        fms6: "Estado 6",
+    },
+    total: "Suma",
+    overview: "Panorama general",
+    distribution: "Distribución",
+    station_plan: "Planificación de la estación",
+    loading: "El tablero se está cargando",
+    ge: 'Edificios',
+    school: 'Escuelas',
+    wachen: 'Estación',
+    other: 'Otros',
+    anz: 'Importe',
+    perwp: 'EMPLEADO',
+    carswp: 'AUTOMÓVILES',
+    patiwp: 'PACIENTES',
+    levwp: 'NIVEL',
+    categories: ['Fire Stations', 'Rescue Stations', 'Police Stations', 'Hospitals'],
+    categories_data: ['fw', 'rd', 'pol', 'kh'],
+    categories_data_school: ['fw_school', 'rd_school', 'pol_school', 'kh_clinic'],
+    nofz: "No vehicles found",
+}
+I18n.translations.cs_CZ['lssm']['dashboard'] = {
     name: "Dashboard",
     vehicles: {
         name: "Vehicles",
@@ -178,31 +208,61 @@ I18n.translations.sv_SE['lssm']['dashboard'] = {
     categories_data_school: ['fw_school', 'rd_school', 'pol_school', 'kh_clinic'],
     nofz: "No vehicles found",
 }
-I18n.translations.es['lssm']['dashboard'] = {
-    name: "Tablero de mandos",
+I18n.translations.da_DK['lssm']['dashboard'] = {
+    name: "Dashboard",
     vehicles: {
-        name: "Vehículos",
-        type: "Tipo de vehículo",
-        available: "Disponible",
-        onsite: "En el sitio",
-        request: "Solicitar",
-        transport: "Transporte",
-        fms6: "Estado 6",
+        name: "Vehicles",
+        type: "Vehicle type",
+        available: "Available",
+        onsite: "On Site",
+        request: "Request",
+        transport: "Transport",
+        fms6: "Status 6",
     },
-    total: "Suma",
-    overview: "Panorama general",
-    distribution: "Distribución",
-    station_plan: "Planificación de la estación",
-    loading: "El tablero se está cargando",
-    ge: 'Edificios',
-    school: 'Escuelas',
-    wachen: 'Estación',
-    other: 'Otros',
-    anz: 'Importe',
-    perwp: 'EMPLEADO',
-    carswp: 'AUTOMÓVILES',
-    patiwp: 'PACIENTES',
-    levwp: 'NIVEL',
+    total: "Sum",
+    overview: "Overview",
+    distribution: "Distribution",
+    station_plan: "Station planning",
+    loading: "Dashboard is loading",
+    ge: 'Buildings',
+    school: 'Schools',
+    wachen: 'Station',
+    other: 'Other',
+    anz: 'Amount',
+    perwp: 'EMPLOYEE',
+    carswp: 'CARS',
+    patiwp: 'PATIENTS',
+    levwp: 'LEVEL',
+    categories: ['Fire Stations', 'Rescue Stations', 'Police Stations', 'Hospitals'],
+    categories_data: ['fw', 'rd', 'pol', 'kh'],
+    categories_data_school: ['fw_school', 'rd_school', 'pol_school', 'kh_clinic'],
+    nofz: "No vehicles found",
+}
+I18n.translations.nb_NO['lssm']['dashboard'] = {
+    name: "Dashboard",
+    vehicles: {
+        name: "Vehicles",
+        type: "Vehicle type",
+        available: "Available",
+        onsite: "On Site",
+        request: "Request",
+        transport: "Transport",
+        fms6: "Status 6",
+    },
+    total: "Sum",
+    overview: "Overview",
+    distribution: "Distribution",
+    station_plan: "Station planning",
+    loading: "Dashboard is loading",
+    ge: 'Buildings',
+    school: 'Schools',
+    wachen: 'Station',
+    other: 'Other',
+    anz: 'Amount',
+    perwp: 'EMPLOYEE',
+    carswp: 'CARS',
+    patiwp: 'PATIENTS',
+    levwp: 'LEVEL',
     categories: ['Fire Stations', 'Rescue Stations', 'Police Stations', 'Hospitals'],
     categories_data: ['fw', 'rd', 'pol', 'kh'],
     categories_data_school: ['fw_school', 'rd_school', 'pol_school', 'kh_clinic'],
@@ -217,28 +277,148 @@ I18n.translations.it_IT['lssm']['dashboard'] = {
         onsite: "In loco",
         request: "Richiesta",
         transport: "Trasporto",
-        fms6: "Stato 6",
+        fms6: "Non disponibile",
     },
     total: "Somma",
     overview: "Panoramica",
     distribution: "Distribuzione",
-    station_plan: "Pianificazione della stazione",
+    station_plan: "Postazioni",
     loading: "Il cruscotto si sta caricando",
     ge: 'Edifici',
     school: 'Scuole',
-    wachen: 'Stazione',
+    wachen: 'Postazioni',
     other: 'Altro',
     anz: 'Quantità',
-    perwp: 'LAVORO',
-    carswp: 'AUTO',
+    perwp: 'PERSONALE',
+    carswp: 'VEICOLI',
     patiwp: 'PAZIENTI',
     levwp: 'LIVELLO',
+    categories: ['Pompieri', 'Ambulanze', 'Polizia', 'Ospedali'],
+    categories_data: ['fw', 'rd', 'pol', 'kh'],
+    categories_data_school: ['fw_school', 'rd_school', 'pol_school', 'kh_clinic'],
+    nofz: "Nessun veicolo trovato",
+}
+I18n.translations.fr_FR['lssm']['dashboard'] = {
+    name: "Tableau de bord",
+    vehicles: {
+        name: "Véhicules",
+        type: "Type de véhicule",
+        available: "Disponible",
+        onsite: "Sur place",
+        request: "Demande",
+        transport: "Transport",
+        fms6: "Statut 6",
+    },
+    total: "Somme",
+    overview: "Vue d'ensemble",
+    distribution: "Distribution",
+    station_plan: "Planification des stations",
+    loading: "Le tableau de bord se charge",
+    ge: 'Bâtiments',
+    school: 'Écoles',
+    wachen: 'Gare',
+    other: 'Autre',
+    anz: 'Montant',
+    perwp: 'EMPLOYÉ',
+    carswp: 'CARS',
+    patiwp: 'PATIENTS',
+    levwp: 'NIVEAU',
+    categories: ['Fire Stations', 'Rescue Stations', 'Police Stations', 'Hospitals'],
+    categories_data: ['fw', 'rd', 'pol', 'kh'],
+    categories_data_school: ['fw_school', 'rd_school', 'pol_school', 'kh_clinic'],
+    nofz: "Aucun véhicule trouvé",
+}
+I18n.translations.pt_PT['lssm']['dashboard'] = {
+    name: "Dashboard",
+    vehicles: {
+        name: "Vehicles",
+        type: "Vehicle type",
+        available: "Available",
+        onsite: "On Site",
+        request: "Request",
+        transport: "Transport",
+        fms6: "Status 6",
+    },
+    total: "Sum",
+    overview: "Overview",
+    distribution: "Distribution",
+    station_plan: "Station planning",
+    loading: "Dashboard is loading",
+    ge: 'Buildings',
+    school: 'Schools',
+    wachen: 'Station',
+    other: 'Other',
+    anz: 'Amount',
+    perwp: 'EMPLOYEE',
+    carswp: 'CARS',
+    patiwp: 'PATIENTS',
+    levwp: 'LEVEL',
     categories: ['Fire Stations', 'Rescue Stations', 'Police Stations', 'Hospitals'],
     categories_data: ['fw', 'rd', 'pol', 'kh'],
     categories_data_school: ['fw_school', 'rd_school', 'pol_school', 'kh_clinic'],
     nofz: "No vehicles found",
 }
-I18n.translations.nl['lssm']['dashboard'] = {
+I18n.translations.ko_KR['lssm']['dashboard'] = {
+    name: "Dashboard",
+    vehicles: {
+        name: "Vehicles",
+        type: "Vehicle type",
+        available: "Available",
+        onsite: "On Site",
+        request: "Request",
+        transport: "Transport",
+        fms6: "Status 6",
+    },
+    total: "Sum",
+    overview: "Overview",
+    distribution: "Distribution",
+    station_plan: "Station planning",
+    loading: "Dashboard is loading",
+    ge: 'Buildings',
+    school: 'Schools',
+    wachen: 'Station',
+    other: 'Other',
+    anz: 'Amount',
+    perwp: 'EMPLOYEE',
+    carswp: 'CARS',
+    patiwp: 'PATIENTS',
+    levwp: 'LEVEL',
+    categories: ['Fire Stations', 'Rescue Stations', 'Police Stations', 'Hospitals'],
+    categories_data: ['fw', 'rd', 'pol', 'kh'],
+    categories_data_school: ['fw_school', 'rd_school', 'pol_school', 'kh_clinic'],
+    nofz: "No vehicles found",
+}
+I18n.translations.ro_RO['lssm']['dashboard'] = {
+    name: "Dashboard",
+    vehicles: {
+        name: "Vehicles",
+        type: "Vehicle type",
+        available: "Available",
+        onsite: "On Site",
+        request: "Request",
+        transport: "Transport",
+        fms6: "Status 6",
+    },
+    total: "Sum",
+    overview: "Overview",
+    distribution: "Distribution",
+    station_plan: "Station planning",
+    loading: "Dashboard is loading",
+    ge: 'Buildings',
+    school: 'Schools',
+    wachen: 'Station',
+    other: 'Other',
+    anz: 'Amount',
+    perwp: 'EMPLOYEE',
+    carswp: 'CARS',
+    patiwp: 'PATIENTS',
+    levwp: 'LEVEL',
+    categories: ['Fire Stations', 'Rescue Stations', 'Police Stations', 'Hospitals'],
+    categories_data: ['fw', 'rd', 'pol', 'kh'],
+    categories_data_school: ['fw_school', 'rd_school', 'pol_school', 'kh_clinic'],
+    nofz: "No vehicles found",
+}
+I18n.translations.nl_NL['lssm']['dashboard'] = {
     name: "Dashboard",
     vehicles: {
         name: "Voertuigen",
@@ -293,7 +473,8 @@ jQuery.expr[":"].conaintsci = jQuery.expr.createPseudo(function (arg) {
             'kh_clinic': 0,
             'wret': 0,
             'seg': 0,
-            'bepo': 0
+            'bepo': 0,
+            'rhs': 0
         };
         $.each(lssm.buildings, function (key, build) {
             switch (build.building_type) {
@@ -342,8 +523,13 @@ jQuery.expr[":"].conaintsci = jQuery.expr.createPseudo(function (arg) {
                 case BUILDING_TYPE_SEG:
                     building_amount.seg += 1;
                     break;
+                //BPol
                 case BUILDING_TYPE_BEREITSCHAFTSPOLIZEI:
                     building_amount.bepo += 1;
+                    break;
+                //RHS
+                case BUILDING_TYPE_RESCUE_DOG_UNIT:
+                    building_amount.rhs += 1;
                     break;
             }
         });
@@ -363,7 +549,7 @@ jQuery.expr[":"].conaintsci = jQuery.expr.createPseudo(function (arg) {
                 backgroundColor: 'rgba(0,0,0,0)',
                 height: '200'
             },
-            colors: ["red", "orange", "green", "blue", "gold", 'black', 'yellow', 'darkgreen'],
+            colors: ["red", "orange", "green", "blue", "gold", 'black', 'yellow', 'darkgreen', 'purple'],
             title: {
                 text: I18n.t('lssm.dashboard.ge')
             },
@@ -524,7 +710,10 @@ jQuery.expr[":"].conaintsci = jQuery.expr.createPseudo(function (arg) {
                 case BUILDING_TYPE_SEG:
                     appendto = "rd";
                     icon = "fa-ambulance";
-                    maxcars = 9;
+                    break;
+                case BUILDING_TYPE_RESCUE_DOG_UNIT:
+                    appendto = "rd";
+                    icon = "fa-search";
                     break;
                 case BUILDING_TYPE_POLIZEIWACHE:
                 case BUILDING_TYPE_BEREITSCHAFTSPOLIZEI:
@@ -534,7 +723,6 @@ jQuery.expr[":"].conaintsci = jQuery.expr.createPseudo(function (arg) {
                     break;
                 case BUILDING_TYPE_THW:
                     appendto = "thw";
-                    maxcars = 15;
                     break;
                 case BUILDING_TYPE_FEUERWEHRSCHULE:
                 case BUILDING_TYPE_RETTUNGSSCHULE:
@@ -584,7 +772,7 @@ jQuery.expr[":"].conaintsci = jQuery.expr.createPseudo(function (arg) {
                 bd_data +=
                     '<span class="label label-primary">' +
                     '<i class="glyphicon glyphicon-home"></i> ' +
-                    '<span>' + vehicles.length + '/' + maxcars + ' </span>' +
+                    '<span>' + vehicles.length + '/' + vehicles.length + ' </span>' +
                     I18n.t('lssm.dashboard.carswp') +
                     '</span>';
             else if (maxcars < 0)
@@ -797,7 +985,7 @@ jQuery.expr[":"].conaintsci = jQuery.expr.createPseudo(function (arg) {
             $('#wp_sub').append('<a class="btn btn-sm btn-default" href="#" id="wp_a_fw">' + I18n.t('lssm.dashboard.categories')[0] + '</a>')
                 .append('<a class="btn btn-sm btn-default" href="#" id="wp_a_rd">' + I18n.t('lssm.dashboard.categories')[1] + '</a>')
                 .append('<a class="btn btn-sm btn-default" href="#" id="wp_a_pol">' + I18n.t('lssm.dashboard.categories')[2] + '</a>');
-            if (I18n.locale == "de")
+            if (I18n.locale == "de_DE")
                 $('#wp_sub').append('<a class="btn btn-sm btn-default" href="#" id="wp_a_thw">THW</a>')
                     .append('<a class="btn btn-sm btn-default" href="#" id="wp_a_wret">Wasser</a>')
             $("#wp_sub").append('<a class="btn btn-sm btn-default" href="#" id="wp_a_sch">' + I18n.t('lssm.dashboard.school') + '</a>')

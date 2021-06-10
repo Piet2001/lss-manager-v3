@@ -1,7 +1,7 @@
 (function($, I18n) {
     let LSS_NOTIFICATION_STORAGE = "LSS_NOTIFICATION_STORAGE";
 
-  I18n.translations.de.lssm['n-alarm'] = {
+  I18n.translations.de_DE.lssm['n-alarm'] = {
     not_support: "Dieser Browser unterstützt leider keine HTML5-Notifications",
     inithead: "Initalisierung",
     chat_message: "Chatnachricht von ",
@@ -22,7 +22,7 @@
     }
   }
 
-  I18n.translations.en.lssm['n-alarm'] = {
+  I18n.translations.en_US.lssm['n-alarm'] = {
     not_support: "This browser doesn't support HTML5-Notifications",
     inithead: "Initalization",
     chat_message: "Chat message from ",
@@ -43,7 +43,7 @@
     }
   }
 
-  I18n.translations.es.lssm['n-alarm'] = {
+  I18n.translations.es_ES.lssm['n-alarm'] = {
     not_support: "Este navegador no soporta Notificaciones HTML5",
     inithead: "Initalización",
     chat_message: "Mensaje de chat de ",
@@ -61,6 +61,47 @@
       status_text: "Obtenga todos los mensajes de estado como notificación.",
       chatp_title: "Obtener mensajes de chat como ventana emergente de información",
       chatp_text: "Obtener todos los mensajes de chat como mensaje emergente en el lado derecho"
+    }
+  }
+  I18n.translations.pt_PT.lssm['n-alarm'] = {
+    not_support: "Este navegador não suporta notificações HTML5",
+    inithead: "Inicialização",
+    chat_message: "Mensagem de chat de ",
+    blend: "Esconder-se depois:",
+    seconds: "segundos",
+    settings: {
+      title: "Alerta de notificação",
+      chat_title: "Mensagens de chat",
+      chat_text: "Obtenha mensagens de chat como notificação.",
+      s5_title: "Pedido de Transporte",
+      save: "Salvar",
+      close: "Fechar",
+      s5_text: "Obtenha Pedidos de Transporte como notificação",
+      status_title: "Estado",
+      status_text: "Obtenha todas as mensagens de estado como notificação.",
+      chatp_title: "Obtenha mensagens de chat como popup de informação",
+      chatp_text: "Obtenha todas as mensagens de chat como mensagem popup no lado direito"
+    }
+  }
+
+  I18n.translations.cs_CZ.lssm['n-alarm'] = {
+    not_support: "Tento prohlížeč nepodporuje oznámení HTML5",
+    inithead: "Inicializace",
+    chat_message: "Chatová zpráva od ",
+    blend: "Skrýt za:",
+    seconds: "sekundy",
+    settings: {
+      title: "Oznámení-upozornění",
+      chat_title: "Chatovací zprávy",
+      chat_text: "Získejte zprávy chatu jako upozornění.",
+      s5_title: "Žádost o přepravu",
+      save: "Uložit",
+      close: "Zavřít",
+      s5_text: "Získejte oznámení o přepravě jako oznámení",
+      status_title: "Postavení",
+      status_text: "Získejte všechny zprávy o stavu jako upozornění.",
+      chatp_title: "Získejte zprávy chatu jako informační vyskakovací okno",
+      chatp_text: "Získejte všechny chatové zprávy jako vyskakovací zprávu na pravé straně"
     }
   }
 
@@ -106,6 +147,48 @@
     }
   }
 
+  I18n.translations.da_DK.lssm['n-alarm'] = {
+    not_support: "Denne browser understøtter ikke HTML5-meddelelser",
+    inithead: "Initialisering",
+    chat_message: "Chatbesked fra ",
+    blend: "Skjul efter:",
+    seconds: "sekunder",
+    settings: {
+      title: "Meddelelse-Alert",
+      chat_title: "Chatbeskeder",
+      chat_text: "Få chatbeskeder som anmeldelse.",
+      s5_title: "Transportanmodning",
+      save: "Gemme",
+      close: "Tæt",
+      s5_text: "Få transportanmodninger som anmeldelse",
+      status_title: "Status",
+      status_text: "Få alle statusmeddelelser som anmeldelse.",
+      chatp_title: "Hent chatbeskeder som informations popup",
+      chatp_text: "Hent alle chatbeskeder som popup-besked i højre side"
+    }
+  }
+
+  I18n.translations.nb_NO.lssm['n-alarm'] = {
+    not_support: "Denne nettleseren støtter ikke HTML5-varsler",
+    inithead: "initialisering",
+    chat_message: "Chat melding fra ",
+    blend: "Skjul etter:",
+    seconds: "sekunder",
+    settings: {
+      title: "Varsling-varsel",
+      chat_title: "Chatmeldinger",
+      chat_text: "Få chat-meldinger som varsling.",
+      s5_title: "Transportforespørsel",
+      save: "Lagre",
+      close: "Lukk",
+      s5_text: "Få transportforespørsler som varsling",
+      status_title: "Status",
+      status_text: "Få alle statusmeldinger som varsling.",
+      chatp_title: "Få chattemeldinger som informasjons popup",
+      chatp_text: "Få alle chatmeldinger som popup-melding på høyre side"
+    }
+  }
+
   I18n.translations.it_IT.lssm['n-alarm'] = {
     not_support: "Questo browser non supporta le notifiche HTML5-Notifiche",
     inithead: "Initalizzazione",
@@ -127,7 +210,70 @@
     }
   }
 
-  I18n.translations.nl.lssm['n-alarm'] = {
+  I18n.translations.fr_FR.lssm['n-alarm'] = {
+    not_support: "Ce navigateur ne supporte pas les notifications HTML5.",
+    inithead: "Initalisation",
+    chat_message: "Message instantané de la part de ",
+    blend: "Cachez-vous après :",
+    seconds: "secondes",
+    settings: {
+      title: "Notification-Alerte",
+      chat_title: "Messages de clavardage",
+      chat_text: "Recevoir les messages de chat comme notification.",
+      s5_title: "Demande de transport",
+      save: "Sauvegarder",
+      close: "Fermer",
+      s5_text: "Obtenir les demandes de transport comme notification",
+      status_title: "Statut",
+      status_text: "Obtenir tous les messages d'état comme notification.",
+      chatp_title: "Obtenir des messages de chat sous forme de popup d'information",
+      chatp_text: "Obtenir tous les messages du chat sous forme de message popup sur le côté droit"
+    }
+  }
+
+  I18n.translations.ko_KR.lssm['n-alarm'] = {
+    not_support: "이 브라우저는 HTML5 알림을 지원하지 않습니다",
+    inithead: "초기화",
+    chat_message: "님의 채팅 메시지 ",
+    blend: "후 숨기기 :",
+    seconds: "초",
+    settings: {
+      title: "알림 알림",
+      chat_title: "채팅 메시지",
+      chat_text: "채팅 메시지를 알림으로받습니다.",
+      s5_title: "운송 요청",
+      save: "저장",
+      close: "닫기",
+      s5_text: "전송 요청을 알림으로 가져 오기",
+      status_title: "상태",
+      status_text: "모든 상태 메시지를 알림으로받습니다.",
+      chatp_title: "정보 팝업으로 채팅 메시지 받기",
+      chatp_text: "오른쪽에 모든 채팅 메시지를 팝업 메시지로 표시"
+    }
+  }
+
+  I18n.translations.ro_RO.lssm['n-alarm'] = {
+    not_support: "Acest browser nu acceptă notificări HTML5",
+    inithead: "Initalizare",
+    chat_message: "Mesaj de chat de la ",
+    blend: "Ascunde după:",
+    seconds: "Secunde",
+    settings: {
+      title: "Notificare-Alertă",
+      chat_title: "Cat mesaje",
+      chat_text: "Obțineți mesajele de chat ca notificare.",
+      s5_title: "Cerere de transport",
+      save: "Salva",
+      close: "Închide",
+      s5_text: "Obțineți solicitările de transport ca notificare",
+      status_title: "Starea",
+      status_text: "Obțineți toate mesajele de stare ca notificare.",
+      chatp_title: "Obțineți mesaje de chat ca informații pop-up",
+      chatp_text: "Obținetoate mesajele de chat ca mesaj pop-up în partea dreaptă"
+    }
+  }
+
+  I18n.translations.nl_NL.lssm['n-alarm'] = {
     not_support: "Deze browser ondersteunt helaas geen HTML5-meldingen",
     inithead: "Aan het laden",
     chat_message: "Chatbericht van ",
@@ -298,7 +444,7 @@
   $mainDiv.click(function() {
     $(this).hide('slow');
   });
-    let $contentDiv = $('<div class="panel-body" style="background-color: white;"></div>');
+    let $contentDiv = $('<div class="panel-body" style="background-color: white; color: black;"></div>');
     let $ul = $('<ul id="chatNoteUl"></ul>');
   $ul.css({
     'list-style': 'none',
@@ -318,7 +464,7 @@
   }
 
   function ChatPopup(date, user_id, username, mission_id, message) {
-      let e = "<li><span class='mission_chat_message_username'>[" + date + "] <a href='/profile/" + user_id + "' class='lightbox-open'>" + username + ":</a></span>";
+      let e = "<li><span class='mission_chat_message_username'>[" + date + "] <a href='/profile/" + user_id + "' class='lightbox-open' style='color: blue;'>" + username + ":</a></span>";
     mission_id && (e = e + "<a href='/missions/" + mission_id + "' class='lightbox-open'><span class='glyphicon glyphicon-bell'></span></a> ");
     e = e + " " + message + "</li>";
     $(e).appendTo($ul).delay(getSetting('n-alarm-timeout-chatp') * 1000).hide('slow', function() {

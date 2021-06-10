@@ -1,15 +1,21 @@
 (function ($, I18n) {
-    I18n.translations.de['lssm']['aaosearch'] = {
+    I18n.translations.de_DE['lssm']['aaosearch'] = {
         search_aao: "AAO suchen",
         use_dd: "Dropdown nutzen: ",
         reset: "Zurücksetzen",
         select: "Bitte wählen..."
     };
-    I18n.translations.en['lssm']['aaosearch'] = {
+    I18n.translations.en_US['lssm']['aaosearch'] = {
         search_aao: "Search AAO",
         use_dd: "Use dropdown: ",
         reset: "Reset",
         select: "Please select..."
+    };
+    I18n.translations.cs_CZ['lssm']['aaosearch'] = {
+        search_aao: "Hledání AAO",
+        use_dd: "Použít rozbalovací nabídku: ",
+        reset: "Obnovit",
+        select: "Vyberte..."
     };
     I18n.translations.pl_PL['lssm']['aaosearch'] = {
         search_aao: "Szukaj AAO",
@@ -23,19 +29,55 @@
         reset: "Återställa",
         select: "Vänligen välj..."
     };
-    I18n.translations.it_IT['lssm']['aaosearch'] = {
-        search_aao: "Ricerca AAO",
-        use_dd: "Utilizzare il menu a tendina: ",
-        reset: "Reset",
-        select: "Please select..."
-    };
-    I18n.translations.es['lssm']['aaosearch'] = {
+    I18n.translations.es_ES['lssm']['aaosearch'] = {
         search_aao: "Buscar AAO",
         use_dd: "Use el menú desplegable: ",
         reset: "Reiniciar",
         select: "Por favor seleccione...."
     };
-	  I18n.translations.nl['lssm']['aaosearch'] = {
+    I18n.translations.da_DK['lssm']['aaosearch'] = {
+        search_aao: "Søg i AAO",
+        use_dd: "Brug rulleliste: ",
+        reset: "Nulstil",
+        select: "Vælg venligst..."
+    };
+    I18n.translations.nb_NO['lssm']['aaosearch'] = {
+        search_aao: "Søk i AAO",
+        use_dd: "Bruk rullegardin: ",
+        reset: "Nullstille",
+        select: "Vennligst velg..."
+    };
+    I18n.translations.it_IT['lssm']['aaosearch'] = {
+        search_aao: "Ricerca AAO",
+        use_dd: "Utilizzare il menu a tendina: ",
+        reset: "Reset",
+        select: "Si prega di selezionare..."
+    };
+    I18n.translations.fr_FR['lssm']['aaosearch'] = {
+        search_aao: "Recherche AAO",
+        use_dd: "Utiliser le menu déroulant: ",
+        reset: "Réinitialiser",
+        select: "Veuillez sélectionner....."
+    };
+    I18n.translations.pt_PT['lssm']['aaosearch'] = {
+        search_aao: "Pesquisa AAO",
+        use_dd: "Use o menu suspenso: ",
+        reset: "Redefinir",
+        select: "Por favor, selecione..."
+    };
+    I18n.translations.ko_KR['lssm']['aaosearch'] = {
+        search_aao: "AAO 검색",
+        use_dd: "드롭 다운 사용 : ",
+        reset: "초기화",
+        select: "선택 해주세요..."
+    };
+    I18n.translations.ro_RO['lssm']['aaosearch'] = {
+        search_aao: "Caută AAO",
+        use_dd: "Utilizare verticală: ",
+        reset: "Reseta",
+        select: "Citește și..."
+    };
+    I18n.translations.nl_NL['lssm']['aaosearch'] = {
         search_aao: "AUR Doorzoeken",
         use_dd: "Gebruik dropdown-menu: ",
         reset: "Reset",
@@ -94,7 +136,7 @@
     function activateSearch()
     {
         "use strict";
-        $("#mission-aao-group").before('<input type="text" search_class="aao_searchable" class="search_input_field" id="lssm_aao_search" style="min-width: 400px;" placeholder="'+I18n.t('lssm.aaosearch.search_aao')+'">');
+        $("#mission-aao-group").before('<input type="text" search_class="aao_searchable" autocomplete="off" class="search_input_field" id="lssm_aao_search" style="min-width: 400px;" placeholder="'+I18n.t("lssm.aaosearch.search_aao") +'">');
         $('#lssm_aao_search').focus();
         $("#mission-aao-group").before('<div id="lssm_aao_results"></div>');
         $("#mission-aao-group").before('<div id="lssm_vehicle_group_results"></div>');
