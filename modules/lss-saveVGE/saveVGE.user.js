@@ -29,6 +29,12 @@
         noVGE:"Inget räddat Alliance Mission!",
         VGEs:"VGEs"
     };
+    I18n.translations.es_ES['lssm']['saveVGE'] = {
+        save: "Guardar",
+        del: "Borrar",
+        noVGE: "No se ha salvado la misión de la Alianza!",
+        VGEs: "VGEs"
+    };
     I18n.translations.da_DK['lssm']['saveVGE'] = {
         save: "Gemme",
         del: "Slet",
@@ -83,7 +89,7 @@
         });
     }
     function buildOptions(onlyOption) {
-        let select = $('<ul class="dropdown-menu" style="background:white !important" aria-labelledby="vgeSaveDropdown" id="vgeSaveDropdownUl"></ul>');
+        let select = $('<ul class="dropdown-menu" aria-labelledby="vgeSaveDropdown" id="vgeSaveDropdownUl"></ul>');
         let h = "";
         for (let i in saveMissions) {
             h += '<li><a href="#" data-value="' + i + '">' + i + '</a></li>';

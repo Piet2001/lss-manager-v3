@@ -7,12 +7,15 @@
 // 3 = THW
 // 4 = Wasserrettung
 if (I18n.locale == "en_US") {
+    lssm.educations = [
+        'HazMat',
+    ];
     lssm.carsById = {
         "0": ["Type 1 fire engine", 0],
         "1": ["Type 2 fire engine", 0],
         "2": ["Platform truck", 0],
-        "3": ["Battalion Chief Unit", 0],
-        "4": ["Heavy Rescue Vehicle", 0],
+        "3": ["Battalion chief unit", 0],
+        "4": ["Heavy rescue vehicle", 0],
         "5": ["ALS Ambulance", 1],
         "6": ["Mobile air", 0],
         "7": ["Water Tanker", 0],
@@ -30,7 +33,7 @@ if (I18n.locale == "en_US") {
         "19": ["K-9 Unit", 2],
         "20": ["Mass Casualty Unit", 1],
         "21": ["Heavy Rescue + Boat", 0],
-        "22": ["Boat Trailer", 0],
+        "22": ["Light Boat Trailer", 0],
         "23": ["Police Motorcycle", 2],
         "24": ["Large Fireboat", 0],
         "25": ["Large Rescue Boat", 1],
@@ -55,7 +58,21 @@ if (I18n.locale == "en_US") {
         "44": ["FBI Mobile Command Center", 2],
         "45": ["FBI Bomb Technician Vehicle", 2],
         "46": ["FBI Surveillance Drone", 2],
-        "47": ["Sheriff Unit", 2]
+        "47": ["Sheriff Unit", 2],
+        "48": ["EMS Fire Engine/Ambulance", 1],
+        "49": ["Tactical Ambulance", 1],
+        "50": ["Hazmat Ambulance", 1],
+        "51": ["DEA Unit", 2],
+        "52": ["DEA Clan Lab", 2],
+        "53": ["ATF Unit", 2],
+        "54": ["ATF Lab Vehicle", 2],
+        "55": ["Patrol Boat", 2],
+        "56": ["Warden's Truck", 2],
+        "57": ["EMS Mass Casualty Trailer (large)", 1],
+        "58": ["EMS Mass Casualty Trailer (small)", 1],
+        "59": ["EMS Operations Support", 1],
+        "60": ["EMS Mobile Command Unit", 1],
+        "61": ["ALS Rescue Ambulance", 1]
     };
 }
 else if (I18n.locale == "en_GB") {
@@ -85,7 +102,14 @@ else if (I18n.locale == "en_GB") {
         "22": ["Community First Responder", 1],
         "23": ["Crew Carrier", 0],
         "24": ["Traffic Car", 2],
-        "25": ["Armed Traffic Car", 2]
+        "25": ["Armed Traffic Car", 2],
+        "26": ["Heavy 4x4 Tanker", 0],
+        "27": ["PRV", 1],
+        "28": ["SRV", 1],
+        "29": ["Welfare Vehicle", 1],
+        "30": ["ATV Carrier", 1],
+        "31": ["Ambulance Control Unit", 1],
+        "32": ["CBRN Vehicle", 1]
     };
 }
 else if (I18n.locale == "en_AU") {
@@ -112,23 +136,37 @@ else if (I18n.locale == "en_AU") {
         "19": ["Tanker", 0],
         "20": ["SES Vehicle", 4],
         "21": ["Rescue Boat", 4],
-        "22": ["Mounted Police", 2]
+        "22": ["Mounted Police", 2],
+        "23": ["Paramedic Supervisor", 1],
+        "24": ["ICP", 1],
+        "25": ["ICS", 1],
+        "26": ["Ambulance Rescue", 1],
+        "27": ["Mass Casualty Unit", 1]
     };
 }
 else if (I18n.locale == "pt_PT") {
     lssm.carsById = {
-        "0": ["VRCI", 0],
+        "0": ["VFCI", 0],
         "1": ["VLCI", 0],
         "2": ["VE", 0],
         "3": ["VCOT", 0],
         "4": ["VSAT", 0],
         "5": ["ABSC", 1],
         "6": ["VTTU", 0],
-        "7": ["VPME", 0],
-        "8": ["Carro patrulha", 2],
+        "7": ["VPMA", 0],
+        "8": ["CP", 2],
         "9": ["Heli INEM", 1],
         "10": ["VCOC", 0],
-        "11": ["VUCI", 0]
+        "11": ["VUCI", 0],
+        "12": ["UEP/UI - CIEXSS", 2],
+        "13": ["EPRI", 2],
+        "14": ["VP", 0],
+        "15": ["UAAR", 0],
+        "16": ["VSAE", 0],
+        "17": ["VMER", 1],
+        "18": ["SIV", 1],
+        "19": ["Mota INEM", 1],
+        "20": ["VIC", 1],
     };
 }
 else if (I18n.locale == "sv_SE") {
@@ -136,7 +174,7 @@ else if (I18n.locale == "sv_SE") {
         "0": ["BAS 1 - Släckbil", 0],
         "1": ["BAS 2 - Släckbil", 0],
         "2": ["Stegbil", 0],
-        "3": ["Befälsfordon", 0],
+        "3": ["Brandbefäl", 0],
         "4": ["Lastväxlare", 0],
         "5": ["Ambulans", 1],
         "6": ["Tankbil", 0],
@@ -144,8 +182,8 @@ else if (I18n.locale == "sv_SE") {
         "8": ["Radiobil", 2],
         "9": ["Ambulanshelikopter", 1],
         "10": ["Luftfordon", 0],
-        "11": ["Mobilt ledningsfordon", 0],
-        "12": ["Räddningsfordon", 0],
+        "11": ["Räddningsledning", 0],
+        "12": ["Räddningsbil", 0],
         "13": ["Polishelikopter", 2],
         "14": ["Bepansrat insatsfordon", 2],
         "15": ["Hundenhet", 2],
@@ -157,7 +195,17 @@ else if (I18n.locale == "sv_SE") {
         "21": ["Terrängbil", 0],
         "22": ["Bandvagn", 0],
         "23": ["ATV", 0],
-        "24": ["Polishäst", 2]
+        "24": ["Polishäst", 2],
+        "25": ["Brandhelikopter", 0],
+        "26": ["Vattenbombare", 0],
+        "27": ["Stor Vattenbombare", 0],
+        "28": ["Akutläkarbil", 1],
+        "29": ["FIP", 0],
+        "30": ["Lättvårdsambulans", 1],
+        "31": ["Ledningsfordon", 1],
+        "32": ["Jourläkare", 1],
+        "33": ["IVPA", 1],
+        "34": ["MC-Ambulans", 1]
     };
 }
 else if (I18n.locale == "cs_CZ") {
@@ -167,7 +215,7 @@ else if (I18n.locale == "cs_CZ") {
         "2": ["AZ", 0],
         "3": ["VEA", 0],
         "4": ["TA", 0],
-        "5": ["Sanitka", 1],
+        "5": ["RZP", 1],
         "6": ["KHA", 0],
         "7": ["TACH", 0],
         "8": ["Policejní automobil", 2],
@@ -181,7 +229,15 @@ else if (I18n.locale == "cs_CZ") {
         "16": ["Protiplynový automobil", 0],
         "17": ["MOS", 0],
         "18": ["Vozidlo vyšetřovatelů DN", 2],
-        "19": ["Vozidlo pyrotechika PČR", 2]
+        "19": ["Vozidlo pyrotechika PČR", 2],
+        "20": ["Přívěs se člunem", 4],
+        "21": ["Přívěs se člunem VZS ČČK", 4],
+        "22": ["Potápěčský automobil", 4],
+        "23": ["SUV VZS ČČK", 4],
+        "24": ["Dodávka VZS ČČK", 4],
+        "25": ["RV", 1],
+        "26": ["IP", 1],
+        "27": ["RLP", 1]
     };
 }
 else if (I18n.locale == "da_DK") {
@@ -189,8 +245,8 @@ else if (I18n.locale == "da_DK") {
         "0": ["Autosprøjte", 0],
         "1": ["Slangetender", 0],
         "2": ["Stigevogn", 0],
-        "3": ["Indsatsleder", 0],
-        "4": ["Pionertjenesten", 0],
+        "3": ["Indsatsleder Brand", 0],
+        "4": ["Redningsvogn", 0],
         "5": ["Ambulance", 1],
         "6": ["Tankvogn", 0],
         "7": ["CBRN", 0],
@@ -207,7 +263,11 @@ else if (I18n.locale == "da_DK") {
         "18": ["Dykkerbil", 4],
         "19": ["Kystlivredderbil", 4],
         "20": ["Bådtrailer", 4],
-        "21": ["Indsatsleder Politi", 2]
+        "21": ["Indsatsleder Politi", 2],
+        "22": ["Nødbehlandler", 1],
+        "23": ["Akutlæge", 1],
+        "24": ["Indsatsleder Akutlæge", 1],
+        "25": ["Mobil Behandlingsplads", 1]
     };
 }
 else if (I18n.locale == "nb_NO") {
@@ -215,7 +275,7 @@ else if (I18n.locale == "nb_NO") {
         "0": ["Mannskapsbil", 0],
         "1": ["Lett mannskapsbil", 0],
         "2": ["Stigebil", 0],
-        "3": ["Innsatslederbil", 0],
+        "3": ["Innsatslederbil brann", 0],
         "4": ["Tungredningsbil", 0],
         "5": ["Ambulanse", 1],
         "6": ["Tankbil", 0],
@@ -235,25 +295,34 @@ else if (I18n.locale == "nb_NO") {
         "20": ["Lett redningsbåt", 4],
         "21": ["Branntankbil", 0],
         "22": ["Utrykningspolitibil", 2],
-        "23": ["Utrykningsenhetbil", 2]
+        "23": ["Utrykningsenhetbil", 2],
+        "24": ["Legebil", 1],
+        "25": ["Innsatslederbil helse", 1],
+        "26": ["Akuttbil"],
+        "27": ["Ambulansemotorsykkel"],
+        "28": ["Syketransport"],
+        "29": ["First responder bil"],
+        "30": ["Akutthjelper"],
+        "31": ["Intensivambulanse", 1],
+        "32": ["Akuttbil"]
     };
 }
 else if (I18n.locale == "pl_PL") {
     lssm.carsById = {
         "0": ["Ciężki samochód gaśniczy", 0],
         "1": ["Średni samochód gaśniczy", 0],
-        "2": ["Drabina mechaniczna", 0],
-        "3": ["Samochód Oficera Operacyjnego", 0],
+        "2": ["SD", 0],
+        "3": ["SLOp", 0],
         "4": ["Samochód ratownictwa technicznego", 0],
         "5": ["Ambulans P", 1],
         "6": ["Cysterna gaśnicza", 0],
         "7": ["Samochód ratownictwa chemicznego", 0],
-        "8": ["Radiowóz", 2],
+        "8": ["Radiowóz OPI", 2],
         "9": ["Śmigłowiec LPR", 1],
         "10": ["SPGaz", 0],
         "11": ["Samochód Dowodzenia i Łączności", 0],
         "12": ["GBARt", 0],
-        "13": ["Podnośnik hydrauliczny", 0],
+        "13": ["SH", 0],
         "14": ["Helikopter Policyjny", 2],
         "15": ["Opancerzony Pojazd SPKP", 2],
         "16": ["Jednostka K-9", 2],
@@ -270,11 +339,16 @@ else if (I18n.locale == "pl_PL") {
         "27": ["SRWys", 0],
         "28": ["SLRr", 0],
         "29": ["GLBA", 0],
-        "30": ["Radiowóz WRD", 2]
+        "30": ["Radiowóz WRD", 2],
+        "31": ["Ambulans S", 1],
+        "32": ["Samochód Lekarza", 1],
+        "33": ["Motoambulans", 1],
+        "34": ["Ambulans T", 1],
+        "35": ["SRMed", 0]
     };
 }
 else if (I18n.locale == "it_IT") {
-   lssm.carsById = {
+    lssm.carsById = {
         "0": ["ABP", 0],
         "1": ["AS", 0],
         "2": ["AV/FNZ", 0],
@@ -287,7 +361,7 @@ else if (I18n.locale == "it_IT") {
         "9": ["APS", 0],
         "10": ["AF/ARIA", 0],
         "11": ["UCL", 0],
-        "12": ["Autogrù", 0],
+        "12": ["AG", 0],
         "13": ["Elicottero della Polizia", 2],
         "14": ["Furgone Antisommossa", 2],
         "15": ["Unità cinofila antidroga", 2],
@@ -297,7 +371,12 @@ else if (I18n.locale == "it_IT") {
         "19": ["MSA", 1],
         "20": ["Ambulanza Ordinaria", 1],
         "21": ["Volante Finanza", 2],
-        "22": ["Furgone artificieri", 2]
+        "22": ["Furgone artificieri", 2],
+        "23": ["Camion NSSA", 4],
+        "24": ["Pickup SAF", 4],
+        "25": ["Barce", 4],
+        "26": ["AF/BUS", 0],
+        "27": ["DTS", 1]
     };
 }
 else if (I18n.locale == "fr_FR") {
@@ -326,7 +405,44 @@ else if (I18n.locale == "fr_FR") {
         "17": ["BLS", 4],
         "18": ["Choucas", 2],
         "19": ["Equipe cynophile", 2],
-        "20": ["Unité motocycliste", 2]
+        "20": ["Unité motocycliste", 2],
+        "21": ["CCFS", 0],
+        "22": ["CCFM", 0],
+        "23": ["CCFL", 0],
+        "24": ["VLHR", 0],
+        "25": ["VSAV", 0],
+        "26": ["VL SSSM", 0],
+        "27": ["VLM", 1],
+        "28": ["AR", 1],
+        "29": ["PC DSM", 1],
+        "30": ["Ambulance Type A", 1]
+    };
+}
+else if (I18n.locale == "es_ES") {
+    lssm.carsById = {
+        "0": ["Camión BUP", 0],
+        "1": ["Camión BUL", 0],
+        "2": ["Camión AE", 0],
+        "3": ["Vehículo UMC", 0],
+        "4": ["FUV", 0],
+        "5": ["Ambulancia", 1],
+        "6": ["Camión BNP", 0],
+        "7": ["Camión TPP", 0],
+        "8": ["Coche patrulla", 2],
+        "9": ["HEMS", 1],
+        "10": ["Vehículo aéreo", 0],
+        "11": ["Vehículo de mando móvil", 0],
+        "12": ["Vehículo de rescate", 0],
+        "13": ["Helicóptero de Policía", 2],
+        "14": ["Unidad Antidisturbios", 2],
+        "15": ["Unidad GEO", 2],
+        "16": ["Unidad Canina", 2],
+        "17": ["Moto de Policía", 2],
+        "18": ["VIR", 1],
+        "19": ["Unidad logística de AMV", 1],
+        "20": ["Médico de cabecera", 1],
+        "21": ["Motocicleta de intervención rápida", 1],
+        "22": ["Ambulancia SVB", 1]
     };
 }
 else if (I18n.locale == "ko_KR") {
@@ -340,9 +456,15 @@ else if (I18n.locale == "ko_KR") {
         "6": ["물탱크차", 0],
         "7": ["생화학 인명구조차", 0],
         "8": ["사고 대응차량(IRV)", 2],
-        "9": ["수색구조용 헬기", 1],
+        "9": ["구급 헬리콥터", 1],
         "10": ["이동식 호흡 장비", 0],
-        "11": ["구조 공작차", 0]
+        "11": ["구조 공작차", 0],
+        "12": ["사다리차", 0],
+        "13": ["긴급 이송차", 1],
+        "14": ["구급 지휘차", 1],
+        "15": ["일반의", 1],
+        "16": ["긴급 이송용 오토바이", 1],
+        "17": ["기본 인명 지원(BLS) 구급차", 1]
     };
 }
 else if (I18n.locale == "ro_RO") {
@@ -356,10 +478,16 @@ else if (I18n.locale == "ro_RO") {
         "6": ["Cisternă de apă", 0],
         "7": ["Materiale periculoase", 0],
         "8": ["Mașină de patrulare", 2],
-        "9": ["Salvare aeriană", 1],
+        "9": ["Elicopter SMURD", 1],
         "10": ["Mașină de suport logistic", 0],
         "11": ["Mașină de comanda și control", 0],
-        "12": ["Mașină de intervenții accidente colective", 0]
+        "12": ["Mașină de intervenții accidente colective", 0],
+        "13": ["Platforma Autoutilitara", 0],
+        "14": ["Vehicul EMS netransportant", 1],
+        "15": ["Unitate transport Supervizor", 1],
+        "16": ["Medic generalist", 1],
+        "17": ["Motocicletă-ambulanță", 1],
+        "18": ["Ambulanță tip B (BLS)", 1],
     };
 }
 else if (I18n.locale == "nl_NL") {
@@ -404,7 +532,7 @@ else if (I18n.locale == "nl_NL") {
         "37": ["MMT-Auto", 1],
         "38": ["OvD-G | Officier van Dienst - Geneeskunde", 1],
         "39": ["ME Commandovoertuig | Mobiele Eenheid - Commandovoertuig", 2],
-        "40": ["ME Groepsvoertuig | Mobiele Eenheid - Groepsvoertuig", 2],
+        "40": ["ME Flex | Mobiele Eenheid - Flexbus", 2],
         "41": ["CT (8x8) | Crashtender (8x8)", 0],
         "42": ["CT (6x6) | Crashtender (6x6)", 0],
         "43": ["CT (4x4) | Crashtender (4x4)", 0],
@@ -424,7 +552,14 @@ else if (I18n.locale == "nl_NL") {
         "57": ["DA OVDG-RR | Dienstvoertuig Officier van Dienst-Geneeskundig/Rapid Responder", 1],
         "58": ["DB-AV | Dienstbus Arrestantenvervoer", 2],
         "59": ["NH-O | Noodhulp Onopvallend", 2],
-        "60": ["DB-Bike | Dienstbus Biketeam", 2]
+        "60": ["DB-Bike | Dienstbus Biketeam", 2],
+        "61": ["SLH | Slangenhaakarmbak", 0],
+        "62": ["TS-HV | Tankautospuit-Hulpverlening", 0],
+        "63": ["DM-RR | Rapid Responder - Motor", 1],
+        "64": ["ME-AE | ME - Aanhoudingseenheid", 2],
+        "65": ["DAT-RB | Dienstauto Terreinwaardig - Reddingsbrigade", 4],
+        "66": ["KHV | Kusthulpverleningsvoertuig", 4],
+        "67": ["BA-RB | Bootaanhanger Reddingsbrigade", 4]
     };
 }
 else if (I18n.locale == "de_DE") {
@@ -452,7 +587,7 @@ else if (I18n.locale == "de_DE") {
         'Rettungswache (Kleinwache)',
         'Rettungshundestaffel'
     ];
-    
+
     lssm.carsById = {
         "0": ["LF 20", 0],
         "1": ["LF 10", 0],
@@ -549,22 +684,25 @@ else if (I18n.locale == "de_DE") {
         "92": ["Anh Hund", 3],
         "93": ["MTW-OV", 3],
         "94": ["DHuFüKw", 2],
-        "95": ["Polizeimotorrad", 2]
+        "95": ["Polizeimotorrad", 2],
+        "96": ["Außenlastbehälter (allgemein)", 2],
+        "97": ["ITW", 1],
+        "98": ["Zivilstreifenwagen", 2]
     };
 }
-lssm.getVehicleNameById = function(vehicleId) {
-    if(vehicleId in lssm.carsById){
+lssm.getVehicleNameById = function (vehicleId) {
+    if (vehicleId in lssm.carsById) {
         return lssm.carsById[vehicleId][0];
     } else {
         return null;
     }
 }
 
-lssm.car_list = function(building) {
+lssm.car_list = function (building) {
     // liefert die Fahrzeuge einer Wache zurück
     let data = [];
     $.each(lssm.vehicles, function (vid, car) {
-        if(car.building != building)
+        if (car.building != building)
             return true;
         data.push({
             "id": vid,
@@ -577,20 +715,20 @@ lssm.car_list = function(building) {
     });
     return data;
 }
-lssm.car_list_all = function() {
+lssm.car_list_all = function () {
     return lssm.vehicles;
 }
 // Formatiert Fahrzeugliste um (mit FMS)
-lssm.car_list_printable = function(list) {
+lssm.car_list_printable = function (list) {
     let data = "";
     $.each(list, function (key, car) {
         data += "<div style=\"margin-top: 3px;\"><span class=\"building_list_fms building_list_fms_" + car.fms_real + "\">" + car.fms_show + "</span> " + car.name +
-          "</div>";
+            "</div>";
     });
     return data;
 }
 
-lssm.get_vehicles = function(async=true, overwritePathSetting=false) {
+lssm.get_vehicles = function (async = true, overwritePathSetting = false) {
     let path = window.location.pathname.length;
     if (path <= 2 || overwritePathSetting) {
         let tmpCar = {};
@@ -630,7 +768,7 @@ lssm.statusCount = {
     9: 0
 };
 
-lssm.updateStatusCount = function(async=true) {
+lssm.updateStatusCount = function (async = true) {
     $.ajax({
         url: "/api/vehicle_states",
         method: "GET",
@@ -648,11 +786,10 @@ lssm.updateStatusCount = function(async=true) {
 };
 
 // Funktion zum Updaten des FMS eigener Fzg.
-$(document).bind(lssm.hook.postname("radioMessage"), function(event, t) {
-    if(t.type === "vehicle_fms"
-      && lssm.vehicles.hasOwnProperty(t.id)
-      && !t.fms_text.startsWith("[Verband]"))
-    {
+$(document).bind(lssm.hook.postname("radioMessage"), function (event, t) {
+    if (t.type === "vehicle_fms"
+        && lssm.vehicles.hasOwnProperty(t.id)
+        && !t.fms_text.startsWith("[Verband]")) {
         let vehicle = lssm.vehicles[t.id];
         lssm.statusCount[vehicle.fms_show]--;
         lssm.vehicles[t.id].name = t.caption;
@@ -662,7 +799,7 @@ $(document).bind(lssm.hook.postname("radioMessage"), function(event, t) {
     }
 });
 
-lssm.get_buildings = function(async=true, overwritePathSetting=false) {
+lssm.get_buildings = function (async = true, overwritePathSetting = false) {
     let path = window.location.pathname.length;
     if (path <= 2 || overwritePathSetting) {
         $.ajax({
@@ -680,7 +817,7 @@ lssm.get_buildings = function(async=true, overwritePathSetting=false) {
     }
 };
 // liefert ein Div zurück welches auf der Karte verschoben werden kann und seine Position speichert und beim laden wieder annimmt.
-lssm.newDragableDivOnMap=function(id, classe, pos) {
+lssm.newDragableDivOnMap = function (id, classe, pos) {
     function changeX(p, m) {
         if (p <= -m + info._div.offsetWidth + 20)
             return -m + info._div.offsetWidth + 20;
@@ -702,7 +839,7 @@ lssm.newDragableDivOnMap=function(id, classe, pos) {
 
     info.onAdd = function () {
         this._div = L.DomUtil.create('div', classe || "");
-        this._div.id = id+"Div";
+        this._div.id = id + "Div";
         let m = map.getSize();
         L.DomUtil.setPosition(info._div, new L.Point(changeX(pos.x, m.x), changeY(pos.y, m.y)));
         this.update();
@@ -716,8 +853,8 @@ lssm.newDragableDivOnMap=function(id, classe, pos) {
             x: changeX(p.x, m.x),
             y: changeY(p.y, m.y)
         };
-        lssm.settings.set(lssm.config.prefix + "_"+id+"Position",pos);
-        L.DomUtil.setPosition(info._div, new L.Point(pos.x,pos.y));
+        lssm.settings.set(lssm.config.prefix + "_" + id + "Position", pos);
+        L.DomUtil.setPosition(info._div, new L.Point(pos.x, pos.y));
     };
 
     info.addTo(map);
@@ -729,25 +866,25 @@ lssm.newDragableDivOnMap=function(id, classe, pos) {
 
 // Add custom String format function
 if (!String.format) {
-//	console.log("execute");
-    String.format = function(format) {
+    //	console.log("execute");
+    String.format = function (format) {
         let args = Array.prototype.slice.call(arguments, 1);
-        return format.replace(/{(\d+)}/g, function(match, number) {
+        return format.replace(/{(\d+)}/g, function (match, number) {
             return typeof args[number] != 'undefined' ? args[number] : match;
         });
     };
 }
-lssm.notification = function(msg, type, duration) {
+lssm.notification = function (msg, type, duration) {
     type = (typeof type === 'undefined') ? 'alert-success' : type;
     duration = (typeof duration === 'undefined') ? 2000 : duration;
     $("#content")
-      .before(
-        '<div class="alert alert-dismissable ' + type + '" id="lssm_notification" ' +
-        'style="text-align:center;width:90%"><a href="#" class="close" data-dismiss="alert" ' +
-        'aria-label="close">&times;</a>' + msg +
-        '</div>');
-    setTimeout(function() {
-        $("#lssm_notification").slideUp("slow", function() {
+        .before(
+            '<div class="alert alert-dismissable ' + type + '" id="lssm_notification" ' +
+            'style="text-align:center;width:90%"><a href="#" class="close" data-dismiss="alert" ' +
+            'aria-label="close">&times;</a>' + msg +
+            '</div>');
+    setTimeout(function () {
+        $("#lssm_notification").slideUp("slow", function () {
             $("#lssm_notification").remove();
         });
     }, duration);
